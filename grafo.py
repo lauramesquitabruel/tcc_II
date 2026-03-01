@@ -1,10 +1,10 @@
-from aresta import Aresta
+import numpy as np
 
 class Grafo:
     def __init__(self, vertices):
         self.num_vertices = vertices
         self.num_arestas = 0
-        self.matriz_adj = [self.num_vertices][self.num_vertices]
+        self.matriz_adj = np.zeros((vertices, vertices))
 
     def tem_aresta(self, aresta):
         if self.matriz_adj[aresta.v1][aresta.v2]:
