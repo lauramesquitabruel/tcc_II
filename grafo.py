@@ -25,11 +25,11 @@ class Grafo:
         self.matriz_adj[aresta.v1][aresta.v2] = 0
         self.num_arestas = self.num_arestas - 1
 
-    def imprime(self):
+    def imprime(self, str):
         for i in range(self.num_vertices):
-            print(f"{i}: ", end="")
+            print(f"{str[i]}({i}): ", end="")
             for j in range(self.num_vertices): 
                 if self.matriz_adj[i][j] != 0:
-                    print(f" -> {j}", end="") 
+                    print(f" -> {str[j]}({j})", end="") 
             print()
         print("\n")

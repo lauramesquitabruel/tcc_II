@@ -3,9 +3,14 @@ import pandas as pd
 from grafo import Grafo
 from aresta import Aresta
 
-S = "atagct"
-T = "ctaggcta"
-ALFABETO = ['a', 't', 'g', 'c']
+#S = "atagct"
+S = "ebacded"
+#T = "ctaggcta"
+#ALFABETO = ['a', 't', 'g', 'c']
+S = "ebacded"
+T = "bdcdebedd"
+ALFABETO = ['e', 'b', 'a', 'c', 'd']
+
 n_s = len(S)
 n_t = len(T)
 
