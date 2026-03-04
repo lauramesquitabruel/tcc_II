@@ -26,10 +26,10 @@ class Grafo:
         self.num_arestas = self.num_arestas - 1
 
     def imprime(self):
-        for i in range (0, self.num_vertices, i +1):
-            print("{i}: ")
-            for j in range (0, self.num_vertices, j +1): 
-                if (self.matriz_adj[i][j] != 0):
-                    print("   {j}") 
-            
-            print("\n")
+        for i in range(self.num_vertices):
+            print(f"{i}: ", end="")
+            for j in range(self.num_vertices): 
+                if self.matriz_adj[i][j] != 0:
+                    print(f" -> {j}", end="") 
+            print()
+        print("\n")
