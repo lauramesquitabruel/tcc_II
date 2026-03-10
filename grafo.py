@@ -59,6 +59,14 @@ class Grafo:
                 if validacao.issubset(abudantes):
                     self.insere_aresta(Aresta(i, j))
 
+    def arestas(self):
+        arestas = []
+        for i in range(self.num_vertices):
+            for j in range(self.num_vertices):
+                if (self.matriz_adj[i][j] != 0):
+                    arestas.append(Aresta(i, j))
+        return arestas
+
     def imprime(self, str):
         for i in range(self.num_vertices):
             print(f"{str[i]}({i}): ", end="")

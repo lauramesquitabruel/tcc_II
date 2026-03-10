@@ -1,37 +1,63 @@
 import gurobipy as gp
 from gurobipy import GRB
+from grafo import Grafo
 
 #https://github.com/FernandoFdeS/alocador_de_salas
 
-#modelo
-m = gp.Model()
+def main():
+    S = input()
+    T = input()
+    alfabeto = input()
 
-#variáveis
-x = {}
+    g1 = Grafo(len(S))
+    g2 = Grafo(len(T))
 
-#variáveis de decisão
-xt1 = m.addVars(vtype=GRB.BINARY, name="xt1")
-xte1 = m.addVars(vtype=GRB.BINARY, name="xte1")
-yt2 = m.addVars(vtype=GRB.BINARY, name="yt2")
-yte2 = m.addVars(vtype=GRB.BINARY, name="yte2")
+    g1.cria_grafo_substrings_comuns(S, T)
+    g2.cria_grafo_substrings_comuns(S, T)
 
-#arestas
-for e in g1.arestas:
-    t1 = m.addVars(vtype=GRB.BINARY, name="t1")
+    ge1 = Grafo(len(S))
+    ge2 = Grafo(len(T))
 
-for e in g2.arestas:
-    t2 = m.addVars(vtype=GRB.BINARY, name="t2")
+    a1 = ge1.rotulos_abundantes(S, T, alfabeto)
+    a2 = ge2.rotulos_abundantes(T, S, alfabeto)
 
-for e in ge1.arestas:
-    te1 = m.addVars(vtype=GRB.BINARY, name="te1")
+    ge1.cria_grafo_blocos_exclusivos(S, a1)
+    ge2.cria_grafo_blocos_exclusivos(T, a2)
 
-for e in ge2.arestas:
-    te2 = m.addVars(vtype=GRB.BINARY, name="te2")
+    #modelo
+    m = gp.Model()
+
+    #variáveis
+    x = {}
+
+    #variáveis de decisão
+    xt1 = m.addVars(vtype=GRB.BINARY, name="xt1")
+    xte1 = m.addVars(vtype=GRB.BINARY, name="xte1")
+    yt2 = m.addVars(vtype=GRB.BINARY, name="yt2")
+    yte2 = m.addVars(vtype=GRB.BINARY, name="yte2")
+
+    #arestas
+    for t1 in g1.arestas:
+        x[t1] = m.addVars(vtype=GRB.BINARY, name="t1")
+
+    for t2 in g2.arestas:
+        x[t2] = m.addVars(vtype=GRB.BINARY, name="t2")
+
+    for e in ge1.arestas:
+        te1 = m.addVars(vtype=GRB.BINARY, name="te1")
+
+    for e in ge2.arestas:
+        te2 = m.addVars(vtype=GRB.BINARY, name="te2")
 
 
-#restrições
-m.addConstrs(
-    gp.quicksum(x[[t1.v1, t1.v2]] for t1 in g1.arestas_contem_k(k)) * xt1 + 
-    gp.quicksum(x[[te1.v1, te1.v2]] for te1 in ge1.arestas_contem k(k)) * xte1 = 1
-    for k in range (0, len(S)-1)
-)
+    #restrições
+
+    for k in range(len(S)):
+        e1 = g1.arestas_contem_k(k)
+        ee1 = ge1.arestas_contem_k(k)
+
+        m.addConstrs(
+            gp.quicksum(x[t1] for t1 in e1) + 
+            gp.quicksum(x[te1] for te1 in ee1)  == 1,
+            name="fatoração em blocos que não se sobrepõem"
+        )
