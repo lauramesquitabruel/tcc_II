@@ -1,4 +1,5 @@
 import numpy as np
+from aresta import Aresta
 
 class Grafo:
     def __init__(self, vertices):
@@ -25,6 +26,22 @@ class Grafo:
         self.matriz_adj[aresta.v1][aresta.v2] = 0
         self.num_arestas = self.num_arestas - 1
 
+    def arestas_contem_k(self, k):
+        arestas = []
+        for i in range(self.num_vertices):
+            for j in range(self.num_vertices): 
+                if ((i <= k <= j) and self.matriz_adj[i][j] == 1):
+                    arestas.append((Aresta(i, j)))
+        return arestas
+    
+    def arestas(self):
+        arestas = []
+        for i in range(self.num_vertices):
+            for j in range(self.num_vertices): 
+                if (self.matriz_adj[i][j] == 1):
+                    arestas.append((Aresta(i, j)))
+        return arestas
+                    
     def imprime(self, str):
         for i in range(self.num_vertices):
             print(f"{str[i]}({i}): ", end="")
