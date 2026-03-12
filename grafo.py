@@ -32,6 +32,7 @@ class Grafo:
             for j in range(self.num_vertices):
                 if((i <= k <= j) and self.matriz_adj[i][j] != 0):
                     arestas.append(Aresta(i, j))
+        return arestas
     
     def cria_grafo_substrings_comuns(self, S1, S2):
         for i in range(len(S1)):
