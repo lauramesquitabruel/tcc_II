@@ -67,6 +67,20 @@ class Grafo:
                 if (self.matriz_adj[i][j] != 0):
                     arestas.append(Aresta(i, j))
         return arestas
+    
+    def arestas_saida(self, k):
+        arestas = []
+        for i in range(self.num_vertices):
+            if self.matriz_adj[k][i] != 0:
+                arestas.append(Aresta(k, i))
+        return arestas
+    
+    def arestas_entrada(self, k):
+        arestas = []
+        for i in range(self.num_vertices):
+            if self.matriz_adj[i][k] != 0:
+                arestas.append(Aresta(i, k))
+        return arestas
 
     def imprime(self, str):
         for i in range(self.num_vertices):

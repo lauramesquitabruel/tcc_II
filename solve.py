@@ -52,46 +52,149 @@ def main():
     
 
     #restrições
-    # m.addConstrs(gp.quicksum(x[t1]for t1 in E1) == gp.quicksum(y[t2] for t2 in E2) * y[t2],
-    #              name="fatoração em números iguais de blocos")
 
-    #para string S
+    #5.2
+    m.addConstr(gp.quicksum(x[t1]for t1 in E1) == gp.quicksum(y[t2] for t2 in E2),
+                name="fat_blocos_guais")
+
+    #para string S (5.3)
     for k in range(len(S)):
         e1 = g1.arestas_contem_k(k)
-        print(e1)
         ee1 = ge1.arestas_contem_k(k)
-        print(ee1)
 
         if(len(e1) > 0 and len(ee1) > 0):
             m.addConstr(
                 gp.quicksum(x[t1.v1, t1.v2] for t1 in e1) + 
                 gp.quicksum(xe[te1.v1, te1.v2] for te1 in ee1)  == 1,
-                name=f"n_sobrep[{k}]"
+                name=f"n_sobrep_s1[{k}]"
             )
         else:
             if (len(e1) > 0):
                 m.addConstr(
                     gp.quicksum(x[t1.v1, t1.v2] for t1 in e1) == 1,
-                    name=f"n_sobrep[{k}]"
+                    name=f"n_sobrep_s1[{k}]"
                 )
             elif (len(ee1) > 0):
                 m.addConstr(
                     gp.quicksum(xe[te1.v1, te1.v2] for te1 in ee1)  == 1,
-                    name=f"n_sobrep[{k}]"
+                    name=f"n_sobrep_s1[{k}]"
                 )
             else:
                 print("sem restrição de não sobreposição")
 
-    # #para astring T
-    # for k in range(len(T)):
-    #     e2 = g2.arestas_contem_k(k)
-    #     ee2 = ge2.arestas_contem_k(k)
+    #para string T (5.4)
+    for k in range(len(T)):
+        e2 = g2.arestas_contem_k(k)
+        ee2 = ge2.arestas_contem_k(k)
 
-    #     m.addConstrs(
-    #         gp.quicksum(y[t2] for t2 in e2) + 
-    #         gp.quicksum(y[te2] for te2 in ee2)  == 1,
-    #         name="fatoração em blocos que não se sobrepõem"
-    #     )
+        if(len(e2) > 0 and len(ee2) > 0):
+            m.addConstr(
+                gp.quicksum(y[t2.v1, t2.v2] for t2 in e2) + 
+                gp.quicksum(ye[te2.v1, te2.v2] for te2 in ee2) == 1,
+                name=f"n_sobrep_s2[{k}]"
+            )
+        else:
+            if (len(e2) > 0):
+                m.addConstr(
+                    gp.quicksum(y[t2.v1, t2.v2] for t2 in e2) == 1,
+                    name=f"n_sobrep_s2[{k}]"
+                )
+            elif (len(ee2) > 0):
+                m.addConstr(
+                    gp.quicksum(ye[te2.v1, te2.v2] for te2 in ee2)  == 1,
+                    name=f"n_sobrep_s2[{k}]"
+                )
+            else:
+                print("sem restrição de não sobreposição")
+
+    #para string S (5.5)
+    sig1 = g1.arestas_saida(0)
+    sige1 = ge1.arestas_saida(0)
+
+    if(len(sig1) > 0 and len(sige1) > 0):
+            m.addConstr(
+                gp.quicksum(x[t1.v1, t1.v2] for t1 in sig1) + 
+                gp.quicksum(xe[te1.v1, te1.v2] for te1 in sige1) == 1,
+                name=f"n_sobrep_saida_s1[{k}]"
+            )
+    else:
+        if (len(sig1) > 0):
+            m.addConstr(
+                gp.quicksum(x[t1.v1, t1.v2] for t1 in sig1) == 1,
+                name=f"n_sobrep_saida_s1[{k}]"
+            )
+        elif (len(sige1) > 0):
+            m.addConstr(
+                gp.quicksum(xe[te1.v1, te1.v2] for te1 in sige1)  == 1,
+                name=f"n_sobrep_saida_s1[{k}]"
+            )
+        else:
+            print("sem restrição de não sobreposição das arestas de saída de v0 em S1")
+
+    # para string S (5.6)
+    for v in range(len(S) - 1):
+        sig1_en = g1.arestas_entrada(v)
+        sige1_en = ge1.arestas_entrada(v)
+
+        sig1_en_prox = g1.arestas_entrada(v + 1)
+        sige1_en_prox = ge1.arestas_entrada(v + 1)
+
+        #verifica se tem pelo menos um conjunto não vazio e calcula o valor de cada lado antes de montar a equação
+        total_edges = len(sig1_en) + len(sige1_en) + len(sig1_en_prox) + len(sige1_en_prox)
+        if total_edges > 0:
+            lhs = gp.quicksum(x[t1.v1, t1.v2] for t1 in sig1_en) + gp.quicksum(xe[te1.v1, te1.v2] for te1 in sige1_en)
+            rhs = gp.quicksum(x[t1.v1, t1.v2] for t1 in sig1_en_prox) + gp.quicksum(xe[te1.v1, te1.v2] for te1 in sige1_en_prox)
+        
+            m.addConstr(lhs == rhs, name=f"n_sobrep_saida_s1[{v}]")
+       
+    #para string T (5.7)
+    sig2 = g2.arestas_saida(0)
+    sige2 = ge2.arestas_saida(0)
+
+    if(len(sig2) > 0 and len(sige2) > 0):
+            m.addConstr(
+                gp.quicksum(y[t2.v1, t2.v2] for t2 in sig2) + 
+                gp.quicksum(ye[te2.v1, te2.v2] for te2 in sige2) == 1,
+                name=f"n_sobrep_saida_s2[{k}]"
+            )
+    else:
+        if (len(sig2) > 0):
+            m.addConstr(
+                gp.quicksum(y[t2.v1, t2.v2] for t2 in sig2) == 1,
+                name=f"n_sobrep_saida_s2[{k}]"
+            )
+        elif (len(sige2) > 0):
+            m.addConstr(
+                gp.quicksum(ye[te2.v1, te2.v2] for te2 in sige2)  == 1,
+                name=f"n_sobrep_saida_s2[{k}]"
+            )
+        else:
+            print("sem restrição de não sobreposição das arestas de saída de v0 em S2")
+
+    # para string T (5.8)
+    for v in range(len(T) - 1):
+        sig2_en = g2.arestas_entrada(v)
+        sige2_en = ge2.arestas_entrada(v)
+
+        sig2_en_prox = g2.arestas_entrada(v + 1)
+        sige2_en_prox = ge2.arestas_entrada(v + 1)
+
+        #verifica se tem pelo menos um conjunto não vazio e calcula o valor de cada lado antes de montar a equação
+        total_edges = len(sig2_en) + len(sige2_en) + len(sig2_en_prox) + len(sige2_en_prox)
+        if total_edges > 0:
+            lhs = gp.quicksum(y[t2.v1, t2.v2] for t2 in sig2_en) + gp.quicksum(ye[te2.v1, te2.v2] for te2 in sige2_en)
+            rhs = gp.quicksum(y[t2.v1, t2.v2] for t2 in sig2_en_prox) + gp.quicksum(ye[te2.v1, te2.v2] for te2 in sige1_en_prox)
+        
+            m.addConstr(lhs == rhs, name=f"n_sobrep_saida_s1[{v}]")
+       
+    #5.9
+    for t1 in g1.arestas():
+        substring_s = S[t1.v1:t1.v2]
+        if substring_s in T:
+                    self.insere_aresta(Aresta(i, j))
+
+    
+
 
     m.write("problem.lp")
 
