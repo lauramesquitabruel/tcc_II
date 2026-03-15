@@ -1,6 +1,8 @@
 import gurobipy as gp
 from gurobipy import GRB
 from grafo import Grafo
+from aresta import Aresta
+from bloco import Bloco
 
 #https://github.com/FernandoFdeS/alocador_de_salas
 
@@ -33,6 +35,8 @@ def main():
     y = {}
     xe = {}
     ye = {}
+    xb = {}
+    yb = {}
 
     E1 = g1.arestas()
     E2 = g2.arestas()
@@ -40,6 +44,9 @@ def main():
     #arestas
     for t1 in E1:
         x[t1.v1, t1.v2] = m.addVar(vtype=GRB.BINARY, name=f"x[{t1.v1},{t1.v2}]")
+        #blocos para matchList
+        b1 = Bloco('S1', t1.v1, t1.v2)
+        xb[b1.id, b1.v1, b1.v2] = m.addVar(vtype=GRB.BINARY, name=f"xb[{b1.id},{b1.v1},{b1.v2}]")
 
     for t2 in E2:
         y[t2.v1, t2.v2] = m.addVar(vtype=GRB.BINARY, name=f"y[{t2.v1},{t2.v2}]")
@@ -50,11 +57,14 @@ def main():
     for te2 in ge2.arestas():
         ye[te2.v1, te2.v2] = m.addVar(vtype=GRB.BINARY, name=f"ye[{te2.v1},{te2.v2}]")
     
+    for t1 in E2:
+        b2 = Bloco('S2', t1.v1, t1.v2)
+        yb[b2.id, b2.v1, b2.v2] = m.addVar(vtype=GRB.BINARY, name=f"xb[{b2.id},{b2.v1},{b2.v2}]")
 
     #restrições
 
     #5.2
-    m.addConstr(gp.quicksum(x[t1]for t1 in E1) == gp.quicksum(y[t2] for t2 in E2),
+    m.addConstr(gp.quicksum(x[t1.v1, t1.v2]for t1 in E1) == gp.quicksum(y[t2.v1, t2.v2] for t2 in E2),
                 name="fat_blocos_guais")
 
     #para string S (5.3)
@@ -145,7 +155,7 @@ def main():
             lhs = gp.quicksum(x[t1.v1, t1.v2] for t1 in sig1_en) + gp.quicksum(xe[te1.v1, te1.v2] for te1 in sige1_en)
             rhs = gp.quicksum(x[t1.v1, t1.v2] for t1 in sig1_en_prox) + gp.quicksum(xe[te1.v1, te1.v2] for te1 in sige1_en_prox)
         
-            m.addConstr(lhs == rhs, name=f"n_sobrep_saida_s1[{v}]")
+            m.addConstr(lhs == rhs, name=f"n_sobrep_entrada_s1[{v}]")
        
     #para string T (5.7)
     sig2 = g2.arestas_saida(0)
@@ -185,16 +195,24 @@ def main():
             lhs = gp.quicksum(y[t2.v1, t2.v2] for t2 in sig2_en) + gp.quicksum(ye[te2.v1, te2.v2] for te2 in sige2_en)
             rhs = gp.quicksum(y[t2.v1, t2.v2] for t2 in sig2_en_prox) + gp.quicksum(ye[te2.v1, te2.v2] for te2 in sige1_en_prox)
         
-            m.addConstr(lhs == rhs, name=f"n_sobrep_saida_s1[{v}]")
+            m.addConstr(lhs == rhs, name=f"n_sobrep_entrada_s2[{v}]")
        
     #5.9
-    for t1 in g1.arestas():
-        substring_s = S[t1.v1:t1.v2]
-        if substring_s in T:
-                    self.insere_aresta(Aresta(i, j))
+    matchList_e1 = []
+    matchList_e2 = []
 
-    
-
+    for t1 in E1:
+        for b1 in xb.keys():
+            if S[t1.v1:t1.v2] == S[b1[1]:b1[2]]:
+                matchList_e1.append(b1)
+        for b2 in yb.keys():
+            if S[t1.v1:t1.v2] == T[b2[1]:b2[2]]:
+                matchList_e2.append(b2)
+        m.addConstr(gp.quicksum(xb[b1] for b1 in matchList_e1) == gp.quicksum(yb[b2] for b2 in matchList_e2),
+                    name=f"blocos_correspontes_{t1.v1},{t1.v2}")
+        
+    matchList_e1.clear()
+    matchList_e2.clear()
 
     m.write("problem.lp")
 
