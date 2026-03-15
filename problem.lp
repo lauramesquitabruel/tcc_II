@@ -1,6 +1,9 @@
 \ LP format - for model browsing. Use MPS format to capture full model detail.
 Minimize
-  0 xb[S2,0,1] + 0 xb[S2,3,5] + 0 xb[S2,5,6]
+  x[0,0] + x[0,1] + x[1,1] + x[3,3] + x[3,4] + x[3,5] + x[4,4] + x[4,5]
+   + x[5,5] + x[5,6] + x[6,6] + xe[2,2] + ye[0,0] + ye[0,1] + ye[1,1]
+   + ye[3,3] + ye[5,5] + ye[7,7] + ye[7,8] + ye[8,8] + 0 xb[S2,0,1]
+   + 0 xb[S2,3,5] + 0 xb[S2,5,6]
 Subject To
  fat_blocos_guais: x[0,0] + x[0,1] + x[1,1] + x[3,3] + x[3,4] + x[3,5]
    + x[4,4] + x[4,5] + x[5,5] + x[5,6] + x[6,6] - y[0,0] - y[0,1] - y[1,1]

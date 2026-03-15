@@ -40,6 +40,8 @@ def main():
 
     E1 = g1.arestas()
     E2 = g2.arestas()
+    Ee1 = ge1.arestas()
+    Ee2 = ge2.arestas()
 
     #arestas
     for t1 in E1:
@@ -51,15 +53,23 @@ def main():
     for t2 in E2:
         y[t2.v1, t2.v2] = m.addVar(vtype=GRB.BINARY, name=f"y[{t2.v1},{t2.v2}]")
 
-    for te1 in ge1.arestas():
+    for te1 in Ee1:
         xe[te1.v1, te1.v2] = m.addVar(vtype=GRB.BINARY, name=f"xe[{te1.v1},{te1.v2}]")
 
-    for te2 in ge2.arestas():
+    for te2 in Ee2:
         ye[te2.v1, te2.v2] = m.addVar(vtype=GRB.BINARY, name=f"ye[{te2.v1},{te2.v2}]")
     
     for t1 in E2:
         b2 = Bloco('S2', t1.v1, t1.v2)
         yb[b2.id, b2.v1, b2.v2] = m.addVar(vtype=GRB.BINARY, name=f"xb[{b2.id},{b2.v1},{b2.v2}]")
+
+    #função objetivo
+    m.setObjective(
+        gp.quicksum(x[t1.v1, t1.v2] for t1 in E1) +
+        gp.quicksum(xe[te1.v1, te1.v2] for te1 in Ee1) +
+        gp.quicksum(ye[te2.v1, te2.v2] for te2 in Ee2),
+        sense=gp.GRB.MINIMIZE
+    )
 
     #restrições
 
