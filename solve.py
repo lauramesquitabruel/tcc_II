@@ -15,7 +15,11 @@ def main():
     g2 = Grafo(len(T))
 
     g1.cria_grafo_substrings_comuns(S, T)
-    g2.cria_grafo_substrings_comuns(S, T)
+    print("grafo1 comum")
+    g1.imprime(S)
+    g2.cria_grafo_substrings_comuns(T, S)
+    print("grafo2 comum")
+    g2.imprime(T)
 
     ge1 = Grafo(len(S))
     ge2 = Grafo(len(T))
@@ -24,7 +28,11 @@ def main():
     a2 = ge2.rotulos_abundantes(T, S, alfabeto)
 
     ge1.cria_grafo_blocos_exclusivos(S, a1)
+    print("grafo1 exclusivo")
+    ge1.imprime(S)
     ge2.cria_grafo_blocos_exclusivos(T, a2)
+    print("grafo2 exclusivo")
+    ge2.imprime(T)
 
     print(ge2)    
     #modelo
@@ -75,7 +83,7 @@ def main():
 
     #5.2
     m.addConstr(gp.quicksum(x[t1.v1, t1.v2]for t1 in E1) == gp.quicksum(y[t2.v1, t2.v2] for t2 in E2),
-                name="fat_blocos_guais")
+                name="fat_blocos_iguais")
 
     #para string S (5.3)
     for k in range(len(S)):
@@ -152,12 +160,12 @@ def main():
             print("sem restrição de não sobreposição das arestas de saída de v0 em S1")
 
     # para string S (5.6)
-    for v in range(len(S) - 1):
+    for v in range(len(S)-1):
         sig1_en = g1.arestas_entrada(v)
         sige1_en = ge1.arestas_entrada(v)
 
-        sig1_en_prox = g1.arestas_entrada(v + 1)
-        sige1_en_prox = ge1.arestas_entrada(v + 1)
+        sig1_en_prox = g1.arestas_saida(v + 1)
+        sige1_en_prox = ge1.arestas_saida(v + 1)
 
         #verifica se tem pelo menos um conjunto não vazio e calcula o valor de cada lado antes de montar a equação
         total_edges = len(sig1_en) + len(sige1_en) + len(sig1_en_prox) + len(sige1_en_prox)
@@ -165,7 +173,7 @@ def main():
             lhs = gp.quicksum(x[t1.v1, t1.v2] for t1 in sig1_en) + gp.quicksum(xe[te1.v1, te1.v2] for te1 in sige1_en)
             rhs = gp.quicksum(x[t1.v1, t1.v2] for t1 in sig1_en_prox) + gp.quicksum(xe[te1.v1, te1.v2] for te1 in sige1_en_prox)
         
-            m.addConstr(lhs == rhs, name=f"n_sobrep_entrada_s1[{v}]")
+            m.addConstr(lhs == rhs, name=f"n_sobrep_entrada_s1[{v},{v+1}]")
        
     #para string T (5.7)
     sig2 = g2.arestas_saida(0)
@@ -196,8 +204,8 @@ def main():
         sig2_en = g2.arestas_entrada(v)
         sige2_en = ge2.arestas_entrada(v)
 
-        sig2_en_prox = g2.arestas_entrada(v + 1)
-        sige2_en_prox = ge2.arestas_entrada(v + 1)
+        sig2_en_prox = g2.arestas_saida(v + 1)
+        sige2_en_prox = ge2.arestas_saida(v + 1)
 
         #verifica se tem pelo menos um conjunto não vazio e calcula o valor de cada lado antes de montar a equação
         total_edges = len(sig2_en) + len(sige2_en) + len(sig2_en_prox) + len(sige2_en_prox)
@@ -205,7 +213,7 @@ def main():
             lhs = gp.quicksum(y[t2.v1, t2.v2] for t2 in sig2_en) + gp.quicksum(ye[te2.v1, te2.v2] for te2 in sige2_en)
             rhs = gp.quicksum(y[t2.v1, t2.v2] for t2 in sig2_en_prox) + gp.quicksum(ye[te2.v1, te2.v2] for te2 in sige1_en_prox)
         
-            m.addConstr(lhs == rhs, name=f"n_sobrep_entrada_s2[{v}]")
+            m.addConstr(lhs == rhs, name=f"n_sobrep_entrada_s2[{v},{v+1}]")
        
     #5.9
     matchList_e1 = []
@@ -213,16 +221,16 @@ def main():
 
     for t1 in E1:
         for b1 in xb.keys():
-            if S[t1.v1:t1.v2] == S[b1[1]:b1[2]]:
+            if S[t1.v1:(t1.v2)+1] == S[b1[1]:b1[2]+1]:
                 matchList_e1.append(b1)
         for b2 in yb.keys():
-            if S[t1.v1:t1.v2] == T[b2[1]:b2[2]]:
+            if S[t1.v1:(t1.v2)+1] == T[b2[1]:b2[2]+1]:
                 matchList_e2.append(b2)
         m.addConstr(gp.quicksum(xb[b1] for b1 in matchList_e1) == gp.quicksum(yb[b2] for b2 in matchList_e2),
                     name=f"blocos_correspontes_{t1.v1},{t1.v2}")
-        
-    matchList_e1.clear()
-    matchList_e2.clear()
+        matchList_e1.clear()
+        matchList_e2.clear()
+   
 
     m.write("problem.lp")
 
