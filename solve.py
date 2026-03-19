@@ -234,4 +234,14 @@ def main():
 
     m.write("problem.lp")
 
+    m.setParam(GRB.Param.TimeLimit, 25300) #7 horas
+    m.optimize()
+
+    m.write("solution.sol")
+
+    if m.status == gp.GRB.OPTIMAL:
+        print("Solução ótima encotrada.")
+    else:
+        print("Solução não ótima encotrada.")
+
 main()
