@@ -52,27 +52,36 @@ def imprime_saida(S, T, E1, E2, Ee1, Ee2):
 
     file_path = 'solution.sol'
     
-    t1_escolhida = r"^x\[\d+,\d+\] 1$"
-    t2_escolhida = r"^y\[\d+,\d+\] 1$"
-    t1_ex_escolhida = r"^xe\[\d+,\d+\] 1$"
-    t2_ex_escolhida = r"^ye\[\d+,\d+\] 1$"
+    grupos = {
+        "S1_p": [],
+        "S2_p": [],
+        "X": [],
+        "Y": []
+    }
 
-    sx = ""
-    sy = ""
+    formato = re.compile(r"([a-z]+)\[(?:[^,]+,)?(\d+),(\d+)\]\s+(1)\n")
 
     try:
         with open(file_path, 'r') as file:
-            next(file)
-            for index, line in enumerate(file, 1):
-                clear_line = line.rstrip()
-                if re.match(t1_ex_escolhida, clear_line):
-                    sx += f" {S[int(clear_line[2]):int(clear_line[4])+1].upper()}"
+            conteudo = file.read()
+            for match in formato.finditer(conteudo):
+                conjunto, i1, i2, val = match.groups()
+        
+                i1 = int(i1)
+                i2 = int(i2)
 
-                if re.match(t2_ex_escolhida, clear_line):
-                    sy += f" {T[int(clear_line[2]):int(clear_line[4])+1].upper()}"
-
-            print(f"X = ({sx} )")
-            print(f"Y = ({sy} )")
+                if conjunto == "x":
+                    grupos["S1_p"].append(S[i1:(i2+1)])
+                elif conjunto == "y":
+                    grupos["S2_p"].append(T[i1:(i2+1)])
+                elif conjunto == "xe":
+                    grupos["X"].append(S[i1:(i2+1)])
+                elif conjunto == "ye":
+                    grupos["Y"].append(T[i1:(i2+1)])
+            
+            for conjunto, items in grupos.items():
+                saida_formada = ", ".join(items)
+                print(f"{conjunto} = ( {saida_formada} )")
 
     except FileNotFoundError:
         print(f"Error: The file '{file_path}' was not found.")
