@@ -3,7 +3,7 @@ from gurobipy import GRB
 from grafo import Grafo
 from aresta import Aresta
 from bloco import Bloco
-
+from saida import imprime_saida
 #https://github.com/FernandoFdeS/alocador_de_salas
 
 def main():
@@ -79,6 +79,9 @@ def main():
         sense=gp.GRB.MINIMIZE
     )
 
+    imprime_saida(S, T, E1, E2, Ee1, Ee2)
+
+    
     #restrições
 
     #5.2
