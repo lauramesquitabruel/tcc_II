@@ -78,10 +78,7 @@ def main():
         gp.quicksum(ye[te2.v1, te2.v2] for te2 in Ee2),
         sense=gp.GRB.MINIMIZE
     )
-
-    imprime_saida(S, T, E1, E2, Ee1, Ee2)
-
-    
+  
     #restrições
 
     #5.2
@@ -241,6 +238,8 @@ def main():
     m.optimize()
 
     m.write("solution.sol")
+
+    imprime_saida(S, T, E1, E2, Ee1, Ee2)
 
     if m.status == gp.GRB.OPTIMAL:
         print("Solução ótima encotrada.")
