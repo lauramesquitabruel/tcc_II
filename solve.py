@@ -7,9 +7,13 @@ from saida import imprime_saida
 #https://github.com/FernandoFdeS/alocador_de_salas
 
 def main():
-    S = "ebacded"
-    T = "bdcdebedd"
-    alfabeto = "abcde"
+    S = "atagct"
+    T = "ctaggcta"
+    alfabeto = "atgc"
+
+    # S = "ebacded"
+    # T = "bdcdebedd"
+    # alfabeto = "abcde"
 
     g1 = Grafo(len(S))
     g2 = Grafo(len(T))
@@ -81,9 +85,11 @@ def main():
   
     #restrições
 
+    #tirei essa restrição porque não tenho como garantir, no caso de entradas não balanceadas,
+    #elas vão ser fatoradas no mesmo número de blocos
     #5.2
-    m.addConstr(gp.quicksum(x[t1.v1, t1.v2]for t1 in E1) == gp.quicksum(y[t2.v1, t2.v2] for t2 in E2),
-                name="fat_blocos_iguais")
+    # m.addConstr(gp.quicksum(x[t1.v1, t1.v2]for t1 in E1) == gp.quicksum(y[t2.v1, t2.v2] for t2 in E2),
+    #             name="fat_blocos_iguais")
 
     #para string S (5.3)
     for k in range(len(S)):

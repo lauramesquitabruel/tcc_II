@@ -2,9 +2,12 @@ import re
 from grafo import Grafo
 from aresta import Aresta
 
-S = "ebacded"
-T = "bdcdebedd"
-alfabeto = "abcde"
+# S = "ebacded"
+# T = "bdcdebedd"
+# alfabeto = "abcde"
+S = "atagct"
+T = "ctaggcta"
+alfabeto = "atgc"
 
 g1 = Grafo(len(S))
 g2 = Grafo(len(T))
@@ -79,14 +82,21 @@ def imprime_saida(S, T, E1, E2, Ee1, Ee2):
                 elif conjunto == "ye":
                     grupos["Y"].append(T[i1:(i2+1)])
             
+            part_selecionadas = ""
             for conjunto, items in grupos.items():
                 saida_formada = ", ".join(items)
+                if conjunto == "S1_p" or conjunto == "Y" or conjunto == "X":
+                    if len(items) > 0:
+                        if len(part_selecionadas) > 0:
+                            part_selecionadas += f", {saida_formada}"
+                        else:
+                            part_selecionadas += saida_formada
                 print(f"{conjunto} = ( {saida_formada} )")
+                
+
+            print(f'Partições Selecionadas = ( {part_selecionadas} )')
 
     except FileNotFoundError:
         print(f"Error: The file '{file_path}' was not found.")
     except Exception as e:
         print(f"An error occurred: {e}")
-
-
-imprime_saida(S, T, E1, E2, Ee1, Ee2)
