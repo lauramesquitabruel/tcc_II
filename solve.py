@@ -236,8 +236,13 @@ def main():
                     name=f"blocos_correspontes_{t1.v1},{t1.v2}")
         matchList_e1.clear()
         matchList_e2.clear()
-   
 
+    #5.10
+    m.addConstrs(xe[te1.v1, te1.v2] in E2 for te1 in Ee1)
+
+    #5.11
+    m.addConstrs(ye[te2.v1, te2.v2] in E1 for te2 in Ee2)
+   
     m.write("problem.lp")
 
     m.setParam(GRB.Param.TimeLimit, 25300) #7 horas
