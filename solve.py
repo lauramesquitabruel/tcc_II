@@ -11,9 +11,13 @@ def main():
     # T = "ctaggcta"
     # alfabeto = "atgc"
 
-    S = "ebacded"
-    T = "bdcdebedd"
-    alfabeto = "abcde"
+    # S = "ebacded"
+    # T = "bdcdebedd"
+    # alfabeto = "abcde"
+
+    S = "abcd"
+    T = "abc"
+    alfabeto = "abcd"
 
     g1 = Grafo(len(S))
     g2 = Grafo(len(T))
@@ -58,9 +62,9 @@ def main():
     #arestas
     for t1 in E1:
         x[t1.v1, t1.v2] = m.addVar(vtype=GRB.BINARY, name=f"x[{t1.v1},{t1.v2}]")
-        #blocos para matchList
-        b1 = Bloco('S1', t1.v1, t1.v2)
-        xb[b1.id, b1.v1, b1.v2] = m.addVar(vtype=GRB.BINARY, name=f"xb[{b1.id},{b1.v1},{b1.v2}]")
+        # #blocos para matchList
+        # b1 = Bloco('S1', t1.v1, t1.v2)
+        # xb[b1.id, b1.v1, b1.v2] = m.addVar(vtype=GRB.BINARY, name=f"xb[{b1.id},{b1.v1},{b1.v2}]")
 
     for t2 in E2:
         y[t2.v1, t2.v2] = m.addVar(vtype=GRB.BINARY, name=f"y[{t2.v1},{t2.v2}]")
@@ -71,9 +75,9 @@ def main():
     for te2 in Ee2:
         ye[te2.v1, te2.v2] = m.addVar(vtype=GRB.BINARY, name=f"ye[{te2.v1},{te2.v2}]")
     
-    for t1 in E2:
-        b2 = Bloco('S2', t1.v1, t1.v2)
-        yb[b2.id, b2.v1, b2.v2] = m.addVar(vtype=GRB.BINARY, name=f"xb[{b2.id},{b2.v1},{b2.v2}]")
+    # for t1 in E2:
+    #     b2 = Bloco('S2', t1.v1, t1.v2)
+    #     yb[b2.id, b2.v1, b2.v2] = m.addVar(vtype=GRB.BINARY, name=f"yb[{b2.id},{b2.v1},{b2.v2}]")
 
     #função objetivo
     m.setObjective(
@@ -88,8 +92,8 @@ def main():
     #tirei essa restrição porque não tenho como garantir, no caso de entradas não balanceadas,
     #elas vão ser fatoradas no mesmo número de blocos
     #5.2
-    # m.addConstr(gp.quicksum(x[t1.v1, t1.v2]for t1 in E1) == gp.quicksum(y[t2.v1, t2.v2] for t2 in E2),
-    #             name="fat_blocos_iguais")
+    m.addConstr(gp.quicksum(x[t1.v1, t1.v2]for t1 in E1) == gp.quicksum(y[t2.v1, t2.v2] for t2 in E2),
+                name="fat_blocos_iguais")
 
     #para string S (5.3)
     for k in range(len(S)):
@@ -226,21 +230,29 @@ def main():
     matchList_e2 = []
 
     for t1 in E1:
-        for b1 in xb.keys():
-            if S[t1.v1:(t1.v2)+1] == S[b1[1]:b1[2]+1]:
-                matchList_e1.append(b1)
-        for b2 in yb.keys():
-            if S[t1.v1:(t1.v2)+1] == T[b2[1]:b2[2]+1]:
-                matchList_e2.append(b2)
-        m.addConstr(gp.quicksum(xb[b1] for b1 in matchList_e1) == gp.quicksum(yb[b2] for b2 in matchList_e2),
+        print(S[t1.v1:(t1.v2)+1])
+        for t1_ in E1:
+            if S[t1.v1:(t1.v2)+1] == S[t1_.v1:(t1_.v2)+1]:
+                matchList_e1.append(t1_)
+        for t2_ in E2:
+            if S[t1.v1:(t1.v2)+1] == T[t2_.v1:(t2_.v2)+1]:
+                matchList_e2.append(t2_)
+        print(matchList_e1)
+        print(matchList_e2)
+        m.addConstr(gp.quicksum(x[t1_.v1, t1_.v2] for t1_ in matchList_e1) == gp.quicksum(y[t2_.v1, t2_.v2] for t2_ in matchList_e2),
                     name=f"blocos_correspontes_{t1.v1},{t1.v2}")
         matchList_e1.clear()
         matchList_e2.clear()
-   
+
     m.write("problem.lp")
 
     m.setParam(GRB.Param.TimeLimit, 25300) #7 horas
+
     m.optimize()
+
+    if m.Status == gp.GRB.INFEASIBLE:
+        m.computeIIS()
+        m.write('iismodel.ilp')
 
     m.write("solution.sol")
 
