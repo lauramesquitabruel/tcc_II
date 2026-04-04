@@ -80,10 +80,11 @@ def imprime_saida(S, T, E1, E2, Ee1, Ee2):
                             part_selecionadas += saida_formatada
                 print(f"{conjunto} = ( {saida_formatada} )")
                 
-            for i in range(len(grupos["S1'"])):
-                for j in range(len(grupos["S2'"])):
-                    if grupos["S1'"].index(i) == grupos["S2'"].index(j):
-                        print(f"σ(S1'{i}) = S2'{j}")
+            aux1 = grupos["S1'"]
+            aux2 = grupos["S2'"]
+            for part in aux1:
+                if part in aux2:
+                    print(f"σ(S1'{aux1.index(part)}) = S2'{aux2.index(part)}")
                 
 
             print(f'Partições Selecionadas = ( {part_selecionadas} )')
