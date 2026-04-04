@@ -11,13 +11,13 @@ def main():
     # T = "ctaggcta"
     # alfabeto = "atgc"
 
-    # S = "ebacded"
-    # T = "bdcdebedd"
-    # alfabeto = "abcde"
+    S = "ebacded"
+    T = "bdcdebedd"
+    alfabeto = "abcde"
 
-    S = "abcd"
-    T = "abc"
-    alfabeto = "abcd"
+    # S = "abcd"
+    # T = "abc"
+    # alfabeto = "abcd"
 
     g1 = Grafo(len(S))
     g2 = Grafo(len(T))
@@ -89,8 +89,6 @@ def main():
   
     #restrições
 
-    #tirei essa restrição porque não tenho como garantir, no caso de entradas não balanceadas,
-    #elas vão ser fatoradas no mesmo número de blocos
     #5.2
     m.addConstr(gp.quicksum(x[t1.v1, t1.v2]for t1 in E1) == gp.quicksum(y[t2.v1, t2.v2] for t2 in E2),
                 name="fat_blocos_iguais")
@@ -178,12 +176,24 @@ def main():
         sige1_en_prox = ge1.arestas_saida(v + 1)
 
         #verifica se tem pelo menos um conjunto não vazio e calcula o valor de cada lado antes de montar a equação
-        total_edges = len(sig1_en) + len(sige1_en) + len(sig1_en_prox) + len(sige1_en_prox)
-        if total_edges > 0:
-            lhs = gp.quicksum(x[t1.v1, t1.v2] for t1 in sig1_en) + gp.quicksum(xe[te1.v1, te1.v2] for te1 in sige1_en)
-            rhs = gp.quicksum(x[t1.v1, t1.v2] for t1 in sig1_en_prox) + gp.quicksum(xe[te1.v1, te1.v2] for te1 in sige1_en_prox)
+        # total_edges = len(sig1_en) + len(sige1_en) + len(sig1_en_prox) + len(sige1_en_prox)
+        # if total_edges > 0:
+        #     lhs = gp.quicksum(x[t1.v1, t1.v2] for t1 in sig1_en) + gp.quicksum(xe[te1.v1, te1.v2] for te1 in sige1_en)
+        #     rhs = gp.quicksum(x[t1.v1, t1.v2] for t1 in sig1_en_prox) + gp.quicksum(xe[te1.v1, te1.v2] for te1 in sige1_en_prox)
         
-            m.addConstr(lhs == rhs, name=f"n_sobrep_entrada_s1[{v},{v+1}]")
+        #     m.addConstr(lhs == rhs, name=f"n_sobrep_entrada_s1[{v},{v+1}]")
+        l = len(sig1_en) + len(sige1_en)
+        r = len(sig1_en_prox) + len(sige1_en_prox)
+
+        if l > 0:
+            lhs = gp.quicksum(x[t1.v1, t1.v2] for t1 in sig1_en) + gp.quicksum(xe[te1.v1, te1.v2] for te1 in sige1_en)
+        if r > 0:
+            rhs = gp.quicksum(x[t1.v1, t1.v2] for t1 in sig1_en_prox) + gp.quicksum(xe[te1.v1, te1.v2] for te1 in sige1_en_prox)
+
+        m.addConstr(lhs == rhs, name=f"n_sobrep_entrada_s1[{v},{v+1}]")
+
+
+
        
     #para string T (5.7)
     sig2 = g2.arestas_saida(0)
@@ -217,13 +227,15 @@ def main():
         sig2_en_prox = g2.arestas_saida(v + 1)
         sige2_en_prox = ge2.arestas_saida(v + 1)
 
-        #verifica se tem pelo menos um conjunto não vazio e calcula o valor de cada lado antes de montar a equação
-        total_edges = len(sig2_en) + len(sige2_en) + len(sig2_en_prox) + len(sige2_en_prox)
-        if total_edges > 0:
+        l = len(sig2_en) + len(sige2_en)
+        r = len(sig2_en_prox) + len(sige2_en_prox)
+
+        if l > 0:
             lhs = gp.quicksum(y[t2.v1, t2.v2] for t2 in sig2_en) + gp.quicksum(ye[te2.v1, te2.v2] for te2 in sige2_en)
-            rhs = gp.quicksum(y[t2.v1, t2.v2] for t2 in sig2_en_prox) + gp.quicksum(ye[te2.v1, te2.v2] for te2 in sige1_en_prox)
-        
-            m.addConstr(lhs == rhs, name=f"n_sobrep_entrada_s2[{v},{v+1}]")
+        if r > 0:
+            rhs = gp.quicksum(y[t2.v1, t2.v2] for t2 in sig2_en_prox) + gp.quicksum(ye[te2.v1, te2.v2] for te2 in sige2_en_prox)
+
+        m.addConstr(lhs == rhs, name=f"n_sobrep_entrada_s2[{v},{v+1}]")
        
     #5.9
     matchList_e1 = []
