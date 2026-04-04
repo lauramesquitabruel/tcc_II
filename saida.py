@@ -28,17 +28,6 @@ E2 = g2.arestas()
 Ee1 = ge1.arestas()
 Ee2 = ge2.arestas()
 
-def imprime_particao(E, Ee, str, nome):
-    p = []
-    for t in E:
-        p.append(str[t.v1:(t.v2)+1])
-    for t in Ee:
-        p.append(str[t.v1:(t.v2)+1])
-    p = set(p)
-
-    print(f"{nome} = ({p})")
-
-
 def imprime_saida(S, T, E1, E2, Ee1, Ee2):
     s1_formatada = ""
     for char in S:
@@ -50,14 +39,11 @@ def imprime_saida(S, T, E1, E2, Ee1, Ee2):
         s2_formatada += f" {char.upper()}"
     print(f'S2 = ({s2_formatada} )')
 
-    imprime_particao(E1, Ee1, S, "S'1")
-    imprime_particao(E2, Ee2, T, "S'2")
-
     file_path = 'solution.sol'
     
     grupos = {
-        "S1_p": [],
-        "S2_p": [],
+        "S1'": [],
+        "S2'": [],
         "X": [],
         "Y": []
     }
@@ -74,24 +60,30 @@ def imprime_saida(S, T, E1, E2, Ee1, Ee2):
                 i2 = int(i2)
 
                 if conjunto == "x":
-                    grupos["S1_p"].append(S[i1:(i2+1)])
+                    grupos["S1'"].append(S[i1:(i2+1)])
                 elif conjunto == "y":
-                    grupos["S2_p"].append(T[i1:(i2+1)])
+                    grupos["S2'"].append(T[i1:(i2+1)])
                 elif conjunto == "xe":
                     grupos["X"].append(S[i1:(i2+1)])
                 elif conjunto == "ye":
                     grupos["Y"].append(T[i1:(i2+1)])
             
+
             part_selecionadas = ""
             for conjunto, items in grupos.items():
-                saida_formada = ", ".join(items)
-                if conjunto == "S1_p" or conjunto == "Y" or conjunto == "X":
+                saida_formatada = ", ".join(items)
+                if conjunto == "S1'" or conjunto == "Y" or conjunto == "X":
                     if len(items) > 0:
                         if len(part_selecionadas) > 0:
-                            part_selecionadas += f", {saida_formada}"
+                            part_selecionadas += f", {saida_formatada}"
                         else:
-                            part_selecionadas += saida_formada
-                print(f"{conjunto} = ( {saida_formada} )")
+                            part_selecionadas += saida_formatada
+                print(f"{conjunto} = ( {saida_formatada} )")
+                
+            for i in range(len(grupos["S1'"])):
+                for j in range(len(grupos["S2'"])):
+                    if grupos["S1'"].index(i) == grupos["S2'"].index(j):
+                        print(f"σ(S1'{i}) = S2'{j}")
                 
 
             print(f'Partições Selecionadas = ( {part_selecionadas} )')

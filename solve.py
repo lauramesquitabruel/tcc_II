@@ -11,9 +11,14 @@ def main():
     # T = "ctaggcta"
     # alfabeto = "atgc"
 
-    S = "ebacded"
-    T = "bdcdebedd"
-    alfabeto = "abcde"
+    # S = "ebacded"
+    # T = "bdcdebedd"
+    # alfabeto = "abcde"
+
+    S = "atgctadbe"
+    T = "atgcatpbq"
+    alfabeto = "atgcdbepq"
+
 
     # S = "abcd"
     # T = "abc"
