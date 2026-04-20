@@ -3,23 +3,10 @@
 Minimize
  
 Subject To
- n_sobrep_s1[0]: x[0,0] + x[0,1] = 1
- n_sobrep_s1[4]: x[3,4] + x[3,5] + x[4,4] + x[4,5] = 1
- n_sobrep_s2[2]: y[2,2] + y[2,3] + y[2,4] = 1
- n_sobrep_s2[4]: y[2,4] + y[3,4] + y[4,4] + y[4,5] = 1
- n_sobrep_s2[6]: y[6,6] + y[6,7] = 1
- n_sobrep_entrada_s1[5,6]: x[3,5] + x[4,5] + x[5,5] - x[6,6] = 0
- n_sobrep_entrada_s2[2,3]: y[2,2] - y[3,3] - y[3,4] = 0
- n_sobrep_entrada_s2[6,7]: y[6,6] - y[7,7] = 0
- n_sobrep_entrada_s2[7,8]: y[6,7] + y[7,7] - y[8,8] + ye[7,7] = 0
- blocos_correspontes_0,0: x[0,0] + x[5,5] - y[4,4] - y[6,6] = 0
- blocos_correspontes_0,1: x[0,1] - y[4,5] = 0
- blocos_correspontes_3,4: x[3,4] - y[2,3] = 0
- blocos_correspontes_4,4: x[4,4] + x[6,6] - y[1,1] - y[3,3] - y[7,7]
-   - y[8,8] = 0
+ n_sobrep_s2[7]: y[7,7] = 1
+ n_sobrep_s2[8]: ye[8,8] = 1
+ n_sobrep_entrada_s2[6,7]: - y[7,7] + ye[6,6] - ye[8,8] = 0
 Bounds
 Binaries
- x[0,0] x[0,1] x[3,4] x[3,5] x[4,4] x[4,5] x[5,5] x[6,6] y[1,1] y[2,2]
- y[2,3] y[2,4] y[3,3] y[3,4] y[4,4] y[4,5] y[6,6] y[6,7] y[7,7] y[8,8]
- ye[7,7]
+ y[7,7] ye[6,6] ye[8,8]
 End

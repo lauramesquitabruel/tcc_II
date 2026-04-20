@@ -19,7 +19,6 @@ def main():
     T = "atgcatpbq"
     alfabeto = "atgcdbepq"
 
-
     # S = "abcd"
     # T = "abc"
     # alfabeto = "abcd"
