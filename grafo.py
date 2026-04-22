@@ -43,12 +43,12 @@ class Grafo:
 
     def rotulos_abundantes(self, S1, S2, alfabeto):
         abuntantes = []
-        for i in range (0, len(alfabeto)):
-            occ_s1 = S1.count(alfabeto[i])
-            occ_s2 = S2.count(alfabeto[i])
+        for i in range (1, alfabeto):
+            occ_s1 = S1.count(i)
+            occ_s2 = S2.count(i)
         
             if occ_s1 > occ_s2:
-                abuntantes.append(alfabeto[i])
+                abuntantes.append(i)
         return abuntantes
     
     def cria_grafo_blocos_exclusivos(self, str, a):
