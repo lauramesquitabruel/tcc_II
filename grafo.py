@@ -40,6 +40,7 @@ class Grafo:
                 bloco = S1[i:j+1]
                 print("bloco: ", bloco)
                 if bloco in S2:
+                    print
                     self.insere_aresta(Aresta(i, j))
 
     def rotulos_abundantes(self, S1, S2, alfabeto):
