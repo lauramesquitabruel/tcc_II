@@ -1,8 +1,9 @@
-from solve import solve
+#from solve import solve
 import argparse
 import os
 import re
 from pathlib import Path
+from teste import teste_saida
 
 def _parse_args():
     parser = argparse.ArgumentParser(
@@ -30,6 +31,6 @@ def main():
             s2 = list(map(int, f.readline().split()))
 
             print(s1, s2, alfabeto)
-            solve(s1, s2, alfabeto)
+            teste_saida(s1, s2, alfabeto)
 
 main()
