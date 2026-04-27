@@ -37,8 +37,9 @@ class Grafo:
     def cria_grafo_substrings_comuns(self, S1, S2):
         for i in range(len(S1)):
             for j in range(i, len(S1)):
-                substring_s = S1[i:j+1]
-                if substring_s in S2:
+                bloco = S1[i:j+1]
+                print("bloco: ", bloco)
+                if bloco in S2:
                     self.insere_aresta(Aresta(i, j))
 
     def rotulos_abundantes(self, S1, S2, alfabeto):

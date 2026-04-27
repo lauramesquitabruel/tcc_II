@@ -3,10 +3,6 @@
 Minimize
  
 Subject To
- n_sobrep_s2[7]: y[7,7] = 1
- n_sobrep_s2[8]: ye[8,8] = 1
- n_sobrep_entrada_s2[6,7]: - y[7,7] + ye[6,6] - ye[8,8] = 0
+ n_sobrep_entrada_s2[0,1]: <= -1
 Bounds
-Binaries
- y[7,7] ye[6,6] ye[8,8]
 End

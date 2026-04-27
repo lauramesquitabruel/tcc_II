@@ -1,32 +1,4 @@
 import re
-from grafo import Grafo
-from aresta import Aresta
-
-# S = "ebacded"
-# T = "bdcdebedd"
-# alfabeto = "abcde"
-S = "atagct"
-T = "ctaggcta"
-alfabeto = "atgc"
-
-g1 = Grafo(len(S))
-g2 = Grafo(len(T))
-
-g1.cria_grafo_substrings_comuns(S, T)
-g2.cria_grafo_substrings_comuns(T, S)
-ge1 = Grafo(len(S))
-ge2 = Grafo(len(T))
-
-a1 = ge1.rotulos_abundantes(S, T, alfabeto)
-a2 = ge2.rotulos_abundantes(T, S, alfabeto)
-
-ge1.cria_grafo_blocos_exclusivos(S, a1)
-ge2.cria_grafo_blocos_exclusivos(T, a2)
-
-E1 = g1.arestas()
-E2 = g2.arestas()
-Ee1 = ge1.arestas()
-Ee2 = ge2.arestas()
 
 def imprime_saida(S, T, E1, E2, Ee1, Ee2):
     s1_formatada = ""

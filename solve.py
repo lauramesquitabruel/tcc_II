@@ -1,6 +1,4 @@
 import gurobipy as gp
-import argparse
-import os
 from gurobipy import GRB
 from grafo import Grafo
 from aresta import Aresta
@@ -8,51 +6,24 @@ from bloco import Bloco
 from saida import imprime_saida
 #https://github.com/FernandoFdeS/alocador_de_salas
 
-def _parse_args():
-    parser = argparse.ArgumentParser(
-        description='Runs ILP on selected UMCSP instances')
-    parser.add_argument('fst', type=int, choices=range(1,145), metavar='fst',
-                        help='first of the tests to be run [1-80]')
-    parser.add_argument('lst', type=int, choices=range(1,145), metavar='lst',
-                        help='last of the tests to be run [1-80]')
-    args = parser.parse_args()
-    return args
+# S = "atagct"
+# T = "ctaggcta"
+# alfabeto = "atgc"
 
-def main():
-    args = _parse_args()
-    if args.lst < args.fst:
-        raise Exception('fst and lst must indicate a valid test range')
-    
-    # S = "atagct"
-    # T = "ctaggcta"
-    # alfabeto = "atgc"
-
-    #S = "atgctadbe"
-   # T = "atgcatpbq"
-    #alfabeto = "atgcdbepq"
+# S = "atgctadbe"
+# T = "atgcatpbq"
+#alfabeto = "atgcdbepq"
 
 
-    # S = "ebacded"
-    # T = "bdcdebedd"
-    # alfabeto = "abcde"
+# S = "ebacded"
+# T = "bdcdebedd"
+# alfabeto = "abcde"
 
-    # S = "abcd"
-    # T = "abc"
-    # alfabeto = "abcd"
+# S = "abcd"
+# T = "abc"
+# alfabeto = "abcd"
 
-    for i in range(args.fst, args.lst + 1):
-        filename = next(f
-                    for f in os.listdir('instances')
-                    if re.match(rf'rmcsp_0*{i}-', f))
-        filename = Path(filename).stem
-        with open(f'instances/{filename}.in') as f:
-            alfabeto = f.readline().split()[0]
-            s1 = f.readline().split()
-            s2 = f.readline().split()
-
-            S = " ".join(s1)
-            T = " ".join(s2)
-
+def solve(S, T, alfabeto):
     
     g1 = Grafo(len(S))
     g2 = Grafo(len(T))
@@ -208,13 +179,6 @@ def main():
         sig1_en_prox = g1.arestas_saida(v + 1)
         sige1_en_prox = ge1.arestas_saida(v + 1)
 
-        #verifica se tem pelo menos um conjunto não vazio e calcula o valor de cada lado antes de montar a equação
-        # total_edges = len(sig1_en) + len(sige1_en) + len(sig1_en_prox) + len(sige1_en_prox)
-        # if total_edges > 0:
-        #     lhs = gp.quicksum(x[t1.v1, t1.v2] for t1 in sig1_en) + gp.quicksum(xe[te1.v1, te1.v2] for te1 in sige1_en)
-        #     rhs = gp.quicksum(x[t1.v1, t1.v2] for t1 in sig1_en_prox) + gp.quicksum(xe[te1.v1, te1.v2] for te1 in sige1_en_prox)
-        
-        #     m.addConstr(lhs == rhs, name=f"n_sobrep_entrada_s1[{v},{v+1}]")
         l = len(sig1_en) + len(sige1_en)
         r = len(sig1_en_prox) + len(sige1_en_prox)
 
@@ -307,5 +271,3 @@ def main():
         print("Solução ótima encotrada.")
     else:
         print("Solução não ótima encotrada.")
-
-main()
