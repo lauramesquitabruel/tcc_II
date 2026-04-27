@@ -1,14 +1,14 @@
 import re
 
-def imprime_saida(S, T, E1, E2, Ee1, Ee2):
+def imprime_saida(S, T):
     s1_formatada = ""
     for char in S:
-        s1_formatada += f" {char.upper()}"
+        s1_formatada += f" {char}"
     print(f'S1 = ({s1_formatada} )')
 
     s2_formatada = ""
     for char in T:
-        s2_formatada += f" {char.upper()}"
+        s2_formatada += f" {char}"
     print(f'S2 = ({s2_formatada} )')
 
     file_path = 'solution.sol'
@@ -32,13 +32,13 @@ def imprime_saida(S, T, E1, E2, Ee1, Ee2):
                 i2 = int(i2)
 
                 if conjunto == "x":
-                    grupos["S1'"].append(S[i1:(i2+1)])
+                    grupos["S1'"].append(" ".join(S[i1:(i2+1)]))
                 elif conjunto == "y":
-                    grupos["S2'"].append(T[i1:(i2+1)])
+                    grupos["S2'"].append(" ".join(T[i1:(i2+1)]))
                 elif conjunto == "xe":
-                    grupos["X"].append(S[i1:(i2+1)])
+                    grupos["X"].append(" ".join(S[i1:(i2+1)]))
                 elif conjunto == "ye":
-                    grupos["Y"].append(T[i1:(i2+1)])
+                    grupos["Y"].append(" ".join(T[i1:(i2+1)]))
             
 
             part_selecionadas = ""
