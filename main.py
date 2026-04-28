@@ -1,7 +1,7 @@
 import numpy as np
 import pandas as pd
-from grafo import Grafo
-from aresta import Aresta
+from utils.grafo import Grafo
+from utils.aresta import Aresta
 
 #S = "atagct"
 S = "ebacded"

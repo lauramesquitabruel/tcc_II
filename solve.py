@@ -1,9 +1,9 @@
 import gurobipy as gp
 from gurobipy import GRB
-from grafo import Grafo
-from aresta import Aresta
+from utils.grafo import Grafo
+from utils.aresta import Aresta
 from bloco import Bloco
-from saida import imprime_saida
+from utils.saida import imprime_saida
 #https://github.com/FernandoFdeS/alocador_de_salas
 
 def solve(S, T, alfabeto):
@@ -272,11 +272,9 @@ def solve(S, T, alfabeto):
 
     m.write("solution.sol")
 
-    imprime_saida(S, T, E1, E2, Ee1, Ee2)
+    imprime_saida(S, T)
 
     if m.status == gp.GRB.OPTIMAL:
         print("Solução ótima encotrada.")
     else:
         print("Solução não ótima encotrada.")
-
-main()
