@@ -2,7 +2,6 @@ import gurobipy as gp
 from gurobipy import GRB
 from utils.grafo import Grafo
 from utils.aresta import Aresta
-from bloco import Bloco
 from utils.saida import imprime_saida
 #https://github.com/FernandoFdeS/alocador_de_salas
 
