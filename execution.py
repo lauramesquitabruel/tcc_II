@@ -3,7 +3,7 @@ import os
 import re
 from pathlib import Path
 from teste import teste
-#from solve import solve
+from solve import solve
 
 def _parse_args():
     parser = argparse.ArgumentParser(
@@ -31,7 +31,7 @@ def main():
             s2 = list(map(int, f.readline().split()))
 
             #print(S, T, alfabeto)
-            #solve(s1, s2, alfabeto)
-            teste(s1, s2, alfabeto)
+            solve(s1, s2, alfabeto)
+            #teste(s1, s2, alfabeto)
 
 main()
