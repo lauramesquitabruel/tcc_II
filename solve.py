@@ -1,30 +1,28 @@
 import gurobipy as gp
 from gurobipy import GRB
-from grafo import Grafo
-from aresta import Aresta
+from utils.grafo import Grafo
+from utils.aresta import Aresta
 from bloco import Bloco
-from saida import imprime_saida
+from utils.saida import imprime_saida
 #https://github.com/FernandoFdeS/alocador_de_salas
 
-# S = "atagct"
-# T = "ctaggcta"
-# alfabeto = "atgc"
-
-# S = "atgctadbe"
-# T = "atgcatpbq"
-#alfabeto = "atgcdbepq"
-
-
-# S = "ebacded"
-# T = "bdcdebedd"
-# alfabeto = "abcde"
-
-# S = "abcd"
-# T = "abc"
-# alfabeto = "abcd"
-
 def solve(S, T, alfabeto):
-    
+    # S = "atagct"
+    # T = "ctaggcta"
+    # alfabeto = "atgc"
+
+    # S = "ebacded"
+    # T = "bdcdebedd"
+    # alfabeto = "abcde"
+
+    # S = "atgctadbe"
+    # T = "atgcatpbq"
+    # alfabeto = "atgcdbepq"
+
+    # S = "abcd"
+    # T = "abc"
+    # alfabeto = "abcd"
+
     g1 = Grafo(len(S))
     g2 = Grafo(len(T))
 
@@ -179,6 +177,13 @@ def solve(S, T, alfabeto):
         sig1_en_prox = g1.arestas_saida(v + 1)
         sige1_en_prox = ge1.arestas_saida(v + 1)
 
+        #verifica se tem pelo menos um conjunto não vazio e calcula o valor de cada lado antes de montar a equação
+        # total_edges = len(sig1_en) + len(sige1_en) + len(sig1_en_prox) + len(sige1_en_prox)
+        # if total_edges > 0:
+        #     lhs = gp.quicksum(x[t1.v1, t1.v2] for t1 in sig1_en) + gp.quicksum(xe[te1.v1, te1.v2] for te1 in sige1_en)
+        #     rhs = gp.quicksum(x[t1.v1, t1.v2] for t1 in sig1_en_prox) + gp.quicksum(xe[te1.v1, te1.v2] for te1 in sige1_en_prox)
+        
+        #     m.addConstr(lhs == rhs, name=f"n_sobrep_entrada_s1[{v},{v+1}]")
         l = len(sig1_en) + len(sige1_en)
         r = len(sig1_en_prox) + len(sige1_en_prox)
 
@@ -265,7 +270,7 @@ def solve(S, T, alfabeto):
 
     m.write("solution.sol")
 
-    imprime_saida(S, T, E1, E2, Ee1, Ee2)
+    imprime_saida(S, T)
 
     if m.status == gp.GRB.OPTIMAL:
         print("Solução ótima encotrada.")

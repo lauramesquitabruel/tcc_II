@@ -1,26 +1,31 @@
 \ LP format - for model browsing. Use MPS format to capture full model detail.
 Minimize
-  ye[0,0] + ye[3,3] + ye[3,4] + ye[3,5] + ye[4,4] + ye[4,5] + ye[5,5]
+  x[0,0] + x[0,1] + x[0,2] + x[1,1] + x[1,2] + x[2,2] + xe[3,3]
 Subject To
- fat_blocos_iguais: = 0
- n_sobrep_s2[0]: ye[0,0] = 1
- n_sobrep_s2[3]: ye[3,3] + ye[3,4] + ye[3,5] = 1
- n_sobrep_s2[4]: ye[3,4] + ye[3,5] + ye[4,4] + ye[4,5] = 1
- n_sobrep_s2[5]: ye[3,5] + ye[4,5] + ye[5,5] = 1
- n_sobrep_entrada_s1[0,1]: <= 0
- n_sobrep_entrada_s1[1,2]: <= 0
- n_sobrep_entrada_s1[2,3]: <= 0
- n_sobrep_entrada_s1[3,4]: <= 0
- n_sobrep_entrada_s1[4,5]: <= 0
- n_sobrep_saida_s2[7]: ye[0,0] = 1
- n_sobrep_entrada_s2[0,1]: <= -1
- n_sobrep_entrada_s2[1,2]: <= -1
- n_sobrep_entrada_s2[2,3]: ye[0,0] - ye[3,3] - ye[3,4] - ye[3,5] = 0
- n_sobrep_entrada_s2[3,4]: ye[3,3] - ye[4,4] - ye[4,5] = 0
- n_sobrep_entrada_s2[4,5]: ye[3,4] + ye[4,4] - ye[5,5] = 0
- n_sobrep_entrada_s2[5,6]: ye[3,5] + ye[4,5] = 0
- n_sobrep_entrada_s2[6,7]: ye[3,5] + ye[4,5] = 0
+ fat_blocos_iguais: x[0,0] + x[0,1] + x[0,2] + x[1,1] + x[1,2] + x[2,2]
+   - y[0,0] - y[0,1] - y[0,2] - y[1,1] - y[1,2] - y[2,2] = 0
+ n_sobrep_s1[0]: x[0,0] + x[0,1] + x[0,2] = 1
+ n_sobrep_s1[1]: x[0,1] + x[0,2] + x[1,1] + x[1,2] = 1
+ n_sobrep_s1[2]: x[0,2] + x[1,2] + x[2,2] = 1
+ n_sobrep_s1[3]: xe[3,3] = 1
+ n_sobrep_s2[0]: y[0,0] + y[0,1] + y[0,2] = 1
+ n_sobrep_s2[1]: y[0,1] + y[0,2] + y[1,1] + y[1,2] = 1
+ n_sobrep_s2[2]: y[0,2] + y[1,2] + y[2,2] = 1
+ n_sobrep_saida_s1[2]: x[0,0] + x[0,1] + x[0,2] = 1
+ n_sobrep_entrada_s1[0,1]: x[0,0] - x[1,1] - x[1,2] = 0
+ n_sobrep_entrada_s1[1,2]: x[0,1] + x[1,1] - x[2,2] = 0
+ n_sobrep_entrada_s1[2,3]: x[0,2] + x[1,2] + x[2,2] - xe[3,3] = 0
+ n_sobrep_saida_s2[2]: y[0,0] + y[0,1] + y[0,2] = 1
+ n_sobrep_entrada_s2[0,1]: y[0,0] - y[1,1] - y[1,2] = 0
+ n_sobrep_entrada_s2[1,2]: y[0,1] + y[1,1] - y[2,2] = 0
+ blocos_correspontes_0,0: x[0,0] - y[0,0] = 0
+ blocos_correspontes_0,1: x[0,1] - y[0,1] = 0
+ blocos_correspontes_0,2: x[0,2] - y[0,2] = 0
+ blocos_correspontes_1,1: x[1,1] - y[1,1] = 0
+ blocos_correspontes_1,2: x[1,2] - y[1,2] = 0
+ blocos_correspontes_2,2: x[2,2] - y[2,2] = 0
 Bounds
 Binaries
- ye[0,0] ye[3,3] ye[3,4] ye[3,5] ye[4,4] ye[4,5] ye[5,5]
+ x[0,0] x[0,1] x[0,2] x[1,1] x[1,2] x[2,2] y[0,0] y[0,1] y[0,2] y[1,1]
+ y[1,2] y[2,2] xe[3,3]
 End

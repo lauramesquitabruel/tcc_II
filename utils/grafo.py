@@ -1,6 +1,6 @@
 import numpy as np
-from aresta import Aresta
-from utils import contem_bloco
+from utils.aresta import Aresta
+from utils.utils import contem_bloco
 
 class Grafo:
     def __init__(self, vertices):
@@ -44,7 +44,7 @@ class Grafo:
 
     def rotulos_abundantes(self, S1, S2, alfabeto):
         abuntantes = []
-        for i in range (1, alfabeto):
+        for i in range (1, alfabeto+1):
             occ_s1 = S1.count(i)
             occ_s2 = S2.count(i)
         
@@ -56,9 +56,8 @@ class Grafo:
         abudantes = set(a)
         for i in range(len(str)):
             for j in range(i, len(str)):
-                substring_s = str[i:j+1]
-                validacao = set(substring_s)
-                if validacao.issubset(abudantes):
+                bloco = str[i:j+1]
+                if set(bloco).issubset(abudantes):
                     self.insere_aresta(Aresta(i, j))
 
     def arestas(self):
