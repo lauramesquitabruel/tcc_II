@@ -6,7 +6,7 @@ from bloco import Bloco
 from saida import imprime_saida
 #https://github.com/FernandoFdeS/alocador_de_salas
 
-def main():
+def solve(S, T, alfabeto):
     # S = "atagct"
     # T = "ctaggcta"
     # alfabeto = "atgc"
@@ -15,9 +15,9 @@ def main():
     # T = "bdcdebedd"
     # alfabeto = "abcde"
 
-    S = "atgctadbe"
-    T = "atgcatpbq"
-    alfabeto = "atgcdbepq"
+    # S = "atgctadbe"
+    # T = "atgcatpbq"
+    # alfabeto = "atgcdbepq"
 
     # S = "abcd"
     # T = "abc"
