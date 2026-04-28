@@ -3,6 +3,7 @@ from gurobipy import GRB
 from utils.grafo import Grafo
 from utils.aresta import Aresta
 from utils.saida import imprime_saida
+import time
 #https://github.com/FernandoFdeS/alocador_de_salas
 
 def solve(S, T, alfabeto):
@@ -21,6 +22,7 @@ def solve(S, T, alfabeto):
     # S = "abcd"
     # T = "abc"
     # alfabeto = "abcd"
+    inicio = time.perf_counter()
 
     g1 = Grafo(len(S))
     g2 = Grafo(len(T))
@@ -44,8 +46,7 @@ def solve(S, T, alfabeto):
     ge2.cria_grafo_blocos_exclusivos(T, a2)
     print("grafo2 exclusivo")
     ge2.imprime(T)
-
-    print(ge2)    
+    
     #modelo
     m = gp.Model()
 
@@ -261,7 +262,13 @@ def solve(S, T, alfabeto):
 
     m.setParam(GRB.Param.TimeLimit, 25300) #7 horas
 
+    fim_estruturas = time.perf_counter()
+    print(f"Tempo de execução para criação das estruturas: {fim_estruturas - inicio:.6f} segundos")
+
     m.optimize()
+
+    fim_modelo = time.perf_counter()
+    print(f"Tempo de execução do modelo: {fim_modelo - inicio:.6f} segundos")
 
     if m.Status == gp.GRB.INFEASIBLE:
         m.computeIIS()
@@ -275,3 +282,5 @@ def solve(S, T, alfabeto):
         print("Solução ótima encotrada.")
     else:
         print("Solução não ótima encotrada.")
+
+    
