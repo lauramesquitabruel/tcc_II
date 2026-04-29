@@ -4,9 +4,10 @@ from utils.grafo import Grafo
 from utils.aresta import Aresta
 from utils.saida import imprime_saida
 import time
+from pathlib import Path
 #https://github.com/FernandoFdeS/alocador_de_salas
 
-def solve(S, T, alfabeto):
+def solve(S, T, alfabeto, file_path):
     # S = "atagct"
     # T = "ctaggcta"
     # alfabeto = "atgc"
@@ -28,11 +29,11 @@ def solve(S, T, alfabeto):
     g2 = Grafo(len(T))
 
     g1.cria_grafo_substrings_comuns(S, T)
-    print("grafo1 comum")
-    g1.imprime(S)
+    # print("grafo1 comum")
+    # g1.imprime(S)
     g2.cria_grafo_substrings_comuns(T, S)
-    print("grafo2 comum")
-    g2.imprime(T)
+    # print("grafo2 comum")
+    # g2.imprime(T)
 
     ge1 = Grafo(len(S))
     ge2 = Grafo(len(T))
@@ -41,11 +42,11 @@ def solve(S, T, alfabeto):
     a2 = ge2.rotulos_abundantes(T, S, alfabeto)
 
     ge1.cria_grafo_blocos_exclusivos(S, a1)
-    print("grafo1 exclusivo")
-    ge1.imprime(S)
+    # print("grafo1 exclusivo")
+    # ge1.imprime(S)
     ge2.cria_grafo_blocos_exclusivos(T, a2)
-    print("grafo2 exclusivo")
-    ge2.imprime(T)
+    # print("grafo2 exclusivo")
+    # ge2.imprime(T)
     
     #modelo
     m = gp.Model()
@@ -244,15 +245,12 @@ def solve(S, T, alfabeto):
     matchList_e2 = []
 
     for t1 in E1:
-        print(S[t1.v1:(t1.v2)+1])
         for t1_ in E1:
             if S[t1.v1:(t1.v2)+1] == S[t1_.v1:(t1_.v2)+1]:
                 matchList_e1.append(t1_)
         for t2_ in E2:
             if S[t1.v1:(t1.v2)+1] == T[t2_.v1:(t2_.v2)+1]:
                 matchList_e2.append(t2_)
-        print(matchList_e1)
-        print(matchList_e2)
         m.addConstr(gp.quicksum(x[t1_.v1, t1_.v2] for t1_ in matchList_e1) == gp.quicksum(y[t2_.v1, t2_.v2] for t2_ in matchList_e2),
                     name=f"blocos_correspontes_{t1.v1},{t1.v2}")
         matchList_e1.clear()
@@ -263,12 +261,13 @@ def solve(S, T, alfabeto):
     m.setParam(GRB.Param.TimeLimit, 25300) #7 horas
 
     fim_estruturas = time.perf_counter()
-    print(f"Tempo de execução para criação das estruturas: {fim_estruturas - inicio:.6f} segundos")
+    #file_path.write_text(f"Tempo de execução para criação das estruturas: {fim_estruturas - inicio:.6f} segundos")
 
+    m.setParam(GRB.Param.LogFile, str(file_path))
     m.optimize()
 
     fim_modelo = time.perf_counter()
-    print(f"Tempo de execução do modelo: {fim_modelo - inicio:.6f} segundos")
+    #file_path.write_text(f"Tempo de execução do modelo: {fim_modelo - inicio:.6f} segundos")
 
     if m.Status == gp.GRB.INFEASIBLE:
         m.computeIIS()
@@ -276,7 +275,7 @@ def solve(S, T, alfabeto):
 
     m.write("solution.sol")
 
-    imprime_saida(S, T)
+    imprime_saida(S, T, file_path, inicio, fim_estruturas, fim_modelo)
 
     if m.status == gp.GRB.OPTIMAL:
         print("Solução ótima encotrada.")

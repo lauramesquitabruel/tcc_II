@@ -30,8 +30,11 @@ def main():
             s1 = list(map(int, f.readline().split()))
             s2 = list(map(int, f.readline().split()))
 
+            file_path = Path(f"logs/{filename}.txt")
+            file_path.parent.mkdir(parents=True, exist_ok=True)
+
             #print(S, T, alfabeto)
-            solve(s1, s2, alfabeto)
+            solve(s1, s2, alfabeto, file_path)
             #teste(s1, s2, alfabeto)
 
 main()
