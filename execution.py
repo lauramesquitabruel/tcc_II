@@ -58,7 +58,7 @@ def main():
                     log_path.parent.mkdir(parents=True, exist_ok=True)
 
                     #print(filename_stem)
-                    solve(s1, s2, alfabeto, filename_stem)
+                    solve(s1, s2, alfabeto, log_path)
                
 
 main()
