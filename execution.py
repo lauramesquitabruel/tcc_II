@@ -32,7 +32,7 @@ def main():
                 s1 = list(map(int, f.readline().split()))
                 s2 = list(map(int, f.readline().split()))
 
-                file_path = Path(f"logs/{filename}.txt")
+                file_path = Path(f"logs/cg/{filename}.txt")
                 file_path.parent.mkdir(parents=True, exist_ok=True)
 
                 #print(filename)
@@ -42,7 +42,7 @@ def main():
     else:
         pattern = re.compile(rf"rmcsp_{args.fst}_\d+_(\d+)_([-+]?\d*\.?\d*)-")
         input_dir = Path('instances_new')
-        log_dir = Path('logs')
+        log_dir = Path('logs/cg')
 
         for file_path in input_dir.glob("rmcsp_*.in"):
             match = pattern.search(file_path.name)

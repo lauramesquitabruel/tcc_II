@@ -76,7 +76,7 @@ def imprime_saida(S, T, log_file, t1, t2, t3):
                     log.write(f'Partições Selecionadas = ( {final_part_selecionadas} )\n')
 
                     log.write(f"Tempo de execução para criação das estruturas: {t2 - t1:.6f} segundos\n")
-                    log.write(f"Tempo de execução do modelo: {t3 - t2:.6f} segundos")
+                    log.write(f"Tempo de execução do modelo: {t3 - t2:.6f} segundos\n")
                     log.write(f"Tempo de execução total: {t3 - t1:.6f} segundos")
 
             except FileNotFoundError:
