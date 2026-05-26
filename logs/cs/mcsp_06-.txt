@@ -1,0 +1,403 @@
+Set parameter TimeLimit to value 3600
+Set parameter Threads to value 1
+Warning: constraint name "unicidade de char 0 na str 1" has a space
+Gurobi Optimizer version 10.0.2 build v10.0.2rc0 (linux64)
+
+CPU model: Intel(R) Xeon(R) CPU E7- 4850  @ 2.00GHz, instruction set [SSE2]
+Thread count: 40 physical cores, 80 logical processors, using up to 1 threads
+
+Optimize a model with 2502 rows, 507442 columns and 167191340 nonzeros
+Model fingerprint: 0x1be5bb70
+Variable types: 0 continuous, 507442 integer (507442 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Presolve removed 0 rows and 0 columns (presolve time = 9s) ...
+Presolve removed 0 rows and 0 columns (presolve time = 12s) ...
+Presolve removed 174 rows and 220 columns (presolve time = 19s) ...
+Presolve removed 174 rows and 220 columns (presolve time = 21s) ...
+Presolve removed 174 rows and 220 columns (presolve time = 26s) ...
+Presolve removed 396 rows and 442 columns (presolve time = 45s) ...
+Presolve removed 396 rows and 442 columns (presolve time = 51s) ...
+Presolve removed 396 rows and 442 columns (presolve time = 56s) ...
+Presolve removed 396 rows and 457 columns (presolve time = 60s) ...
+Presolve removed 396 rows and 457 columns (presolve time = 65s) ...
+Presolve removed 396 rows and 457 columns (presolve time = 71s) ...
+Presolve removed 396 rows and 457 columns (presolve time = 87s) ...
+Presolve removed 396 rows and 457 columns (presolve time = 92s) ...
+Presolve removed 396 rows and 457 columns (presolve time = 95s) ...
+Presolve removed 396 rows and 457 columns (presolve time = 100s) ...
+Presolve removed 396 rows and 457 columns (presolve time = 105s) ...
+Presolve removed 396 rows and 457 columns (presolve time = 126s) ...
+Presolve removed 396 rows and 457 columns (presolve time = 135s) ...
+Presolve removed 396 rows and 457 columns (presolve time = 137s) ...
+Presolve removed 396 rows and 457 columns (presolve time = 148s) ...
+Presolve removed 410 rows and 457 columns (presolve time = 164s) ...
+Presolve removed 410 rows and 457 columns (presolve time = 165s) ...
+Presolve removed 410 rows and 457 columns (presolve time = 170s) ...
+Presolve removed 410 rows and 457 columns (presolve time = 175s) ...
+Presolve removed 412 rows and 457 columns (presolve time = 180s) ...
+Presolve removed 412 rows and 457 columns (presolve time = 185s) ...
+Presolve removed 412 rows and 457 columns (presolve time = 220s) ...
+Presolve removed 412 rows and 458 columns (presolve time = 231s) ...
+Presolve removed 412 rows and 458 columns (presolve time = 236s) ...
+Presolve removed 412 rows and 458 columns (presolve time = 242s) ...
+Presolve removed 412 rows and 458 columns (presolve time = 246s) ...
+Presolve removed 412 rows and 458 columns (presolve time = 252s) ...
+Presolve removed 412 rows and 477 columns (presolve time = 258s) ...
+Presolve removed 412 rows and 477 columns (presolve time = 263s) ...
+Presolve removed 412 rows and 477 columns (presolve time = 281s) ...
+Presolve removed 412 rows and 477 columns (presolve time = 287s) ...
+Presolve removed 412 rows and 477 columns (presolve time = 290s) ...
+Presolve removed 412 rows and 477 columns (presolve time = 295s) ...
+Presolve removed 412 rows and 477 columns (presolve time = 300s) ...
+Presolve removed 412 rows and 477 columns (presolve time = 324s) ...
+Presolve removed 412 rows and 477 columns (presolve time = 329s) ...
+Presolve removed 412 rows and 477 columns (presolve time = 332s) ...
+Presolve removed 412 rows and 477 columns (presolve time = 343s) ...
+Presolve removed 412 rows and 477 columns (presolve time = 361s) ...
+Presolve removed 412 rows and 477 columns (presolve time = 365s) ...
+Presolve removed 412 rows and 477 columns (presolve time = 370s) ...
+Presolve removed 412 rows and 477 columns (presolve time = 375s) ...
+Presolve removed 412 rows and 477 columns (presolve time = 380s) ...
+Presolve removed 412 rows and 477 columns (presolve time = 385s) ...
+Presolve removed 412 rows and 477 columns (presolve time = 419s) ...
+Presolve removed 412 rows and 477 columns (presolve time = 420s) ...
+Presolve removed 419 rows and 486 columns (presolve time = 443s) ...
+Presolve removed 419 rows and 486 columns (presolve time = 445s) ...
+Presolve removed 421 rows and 486 columns (presolve time = 460s) ...
+Presolve removed 421 rows and 486 columns (presolve time = 467s) ...
+Presolve removed 421 rows and 486 columns (presolve time = 472s) ...
+Presolve removed 421 rows and 486 columns (presolve time = 475s) ...
+Presolve removed 421 rows and 486 columns (presolve time = 491s) ...
+Presolve removed 421 rows and 486 columns (presolve time = 501s) ...
+Presolve removed 421 rows and 486 columns (presolve time = 511s) ...
+Presolve removed 421 rows and 486 columns (presolve time = 515s) ...
+Presolve removed 421 rows and 486 columns (presolve time = 520s) ...
+Presolve removed 421 rows and 486 columns (presolve time = 525s) ...
+Presolve removed 421 rows and 486 columns (presolve time = 530s) ...
+Presolve removed 421 rows and 486 columns (presolve time = 535s) ...
+Presolve removed 421 rows and 486 columns (presolve time = 540s) ...
+Presolve removed 421 rows and 486 columns (presolve time = 545s) ...
+Presolve removed 421 rows and 486 columns (presolve time = 550s) ...
+Presolve removed 421 rows and 486 columns (presolve time = 555s) ...
+Presolve removed 421 rows and 486 columns (presolve time = 560s) ...
+Presolve removed 421 rows and 486 columns (presolve time = 565s) ...
+Presolve removed 421 rows and 486 columns (presolve time = 570s) ...
+Presolve removed 421 rows and 486 columns (presolve time = 575s) ...
+Presolve removed 421 rows and 486 columns (presolve time = 580s) ...
+Presolve removed 421 rows and 486 columns (presolve time = 585s) ...
+Presolve removed 421 rows and 486 columns (presolve time = 590s) ...
+Presolve removed 421 rows and 486 columns (presolve time = 595s) ...
+Presolve removed 421 rows and 486 columns (presolve time = 606s) ...
+Presolve removed 421 rows and 486 columns (presolve time = 617s) ...
+Presolve removed 421 rows and 486 columns (presolve time = 627s) ...
+Presolve removed 421 rows and 486 columns (presolve time = 632s) ...
+Presolve removed 421 rows and 486 columns (presolve time = 636s) ...
+Presolve removed 421 rows and 486 columns (presolve time = 665s) ...
+Presolve removed 421 rows and 486 columns (presolve time = 668s) ...
+Presolve removed 422 rows and 489 columns (presolve time = 706s) ...
+Presolve removed 422 rows and 489 columns (presolve time = 730s) ...
+Presolve removed 422 rows and 489 columns
+Presolve time: 730.00s
+Presolved: 2080 rows, 506953 columns, 167190527 nonzeros
+Variable types: 0 continuous, 506953 integer (506946 binary)
+Found heuristic solution: objective 1162.0000000
+Found heuristic solution: objective 1158.0000000
+
+Root simplex log...
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    1.6300000e+02   1.756000e+03   0.000000e+00    995s
+
+Starting sifting (using dual simplex for sub-problems)...
+
+    Iter     Pivots    Primal Obj      Dual Obj        Time
+       0          0     infinity      1.6300000e+02    995s
+       1      12256   9.3096451e+05   1.6315004e+02   1075s
+       2      20990   4.1548203e+02   2.1849748e+02   1099s
+       3      30233   4.1532823e+02   2.7106392e+02   1130s
+       4      40507   4.1445041e+02   3.1476834e+02   1162s
+       5      50422   4.1254687e+02   3.4247041e+02   1185s
+       6      60689   4.1244796e+02   4.0110169e+02   1203s
+
+Sifting complete
+
+   65374    4.1244796e+02   0.000000e+00   0.000000e+00   1230s
+
+Root relaxation: objective 4.124480e+02, 65374 iterations, 377.30 seconds (240.99 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0  412.44796    0  824 1158.00000  412.44796  64.4%     - 1333s
+H    0     0                     431.0000000  412.44796  4.30%     - 1420s
+H    0     0                     424.0000000  412.44796  2.72%     - 1677s
+H    0     0                     418.9999999  412.44796  1.56%     - 2432s
+     0     0  412.44796    0  824  419.00000  412.44796  1.56%     - 3460s
+
+Explored 1 nodes (65693 simplex iterations) in 3605.96 seconds (1935.16 work units)
+Thread count was 1 (of 80 available processors)
+
+Solution count 5: 419 424 431 ... 1162
+
+Time limit reached
+Best objective 4.189999998974e+02, best bound 4.130000000000e+02, gap 1.4320%
+Block ((1,), ()) at 58
+Block ((1,), ()) at 446
+Block ((1,), ()) at 647
+Block ((1,), ()) at 676
+Block ((1,), ()) at 836
+Block ((1,), ()) at 898
+Block ((1,), ()) at 979
+Block ((1, 2), (0,)) at 0
+Block ((1, 2), (0,)) at 144
+Block ((1, 2), (0,)) at 391
+Block ((1, 2), (0,)) at 960
+Block ((1, 2, 1), (0, 0)) at 409
+Block ((2,), ()) at 28
+Block ((2,), ()) at 68
+Block ((2,), ()) at 150
+Block ((2,), ()) at 365
+Block ((2,), ()) at 450
+Block ((2,), ()) at 538
+Block ((2,), ()) at 544
+Block ((2,), ()) at 633
+Block ((2,), ()) at 660
+Block ((2,), ()) at 671
+Block ((2, 1), (0,)) at 47
+Block ((2, 1), (0,)) at 437
+Block ((2, 1), (0,)) at 454
+Block ((2, 1), (0,)) at 561
+Block ((2, 1), (0,)) at 661
+Block ((2, 1), (0,)) at 909
+Block ((2, 1, 4), (0, 0)) at 107
+Block ((1, 4), (0,)) at 435
+Block ((1, 4, 3), (0, 0)) at 2
+Block ((4,), ()) at 23
+Block ((4,), ()) at 38
+Block ((4,), ()) at 52
+Block ((4,), ()) at 146
+Block ((4,), ()) at 195
+Block ((4,), ()) at 337
+Block ((4,), ()) at 808
+Block ((4,), ()) at 987
+Block ((4, 3), (0,)) at 89
+Block ((4, 3), (0,)) at 103
+Block ((4, 3), (0,)) at 129
+Block ((4, 3), (0,)) at 193
+Block ((4, 3), (0,)) at 623
+Block ((4, 3), (0,)) at 778
+Block ((4, 3, 2), (0, 0)) at 147
+Block ((4, 3, 2), (0, 0)) at 794
+Block ((3,), ()) at 11
+Block ((3,), ()) at 157
+Block ((3,), ()) at 183
+Block ((3,), ()) at 505
+Block ((3,), ()) at 517
+Block ((3,), ()) at 572
+Block ((3,), ()) at 604
+Block ((3,), ()) at 695
+Block ((3,), ()) at 700
+Block ((3,), ()) at 803
+Block ((3,), ()) at 947
+Block ((3,), ()) at 966
+Block ((3, 2), (0,)) at 407
+Block ((3, 2), (0,)) at 536
+Block ((2, 4), (0,)) at 5
+Block ((2, 4), (0,)) at 936
+Block ((2, 4, 4), (0, 0)) at 208
+Block ((2, 4, 4), (0, 0)) at 853
+Block ((4, 4), (0,)) at 654
+Block ((4, 4), (0,)) at 958
+Block ((4, 1), (0,)) at 998
+Block ((4, 1, 1), (0, 0)) at 353
+Block ((4, 1, 1, 3), (0, 0, 0)) at 7
+Block ((1, 1), (0,)) at 689
+Block ((1, 1, 3), (0, 0)) at 393
+Block ((1, 3), (0,)) at 105
+Block ((1, 3), (0,)) at 598
+Block ((1, 3), (0,)) at 771
+Block ((1, 3), (0,)) at 892
+Block ((1, 3, 3), (0, 0)) at 677
+Block ((3, 3), (0,)) at 799
+Block ((3, 3), (0,)) at 813
+Block ((3, 3, 3, 4), (0, 0, 0)) at 12
+Block ((3, 3, 4), (0, 0)) at 577
+Block ((3, 3, 4, 3), (0, 0, 0)) at 656
+Block ((3, 4), (0,)) at 142
+Block ((3, 4), (0,)) at 570
+Block ((3, 4), (0,)) at 589
+Block ((3, 4, 3), (0, 0)) at 342
+Block ((3, 4, 3, 2), (0, 0, 0)) at 975
+Block ((4, 3, 2, 1, 1), (0, 0, 0, 0)) at 188
+Block ((3, 2, 1, 1), (0, 0, 0)) at 513
+Block ((3, 2, 1, 1, 1), (0, 0, 0, 0)) at 16
+Block ((2, 1, 1), (0, 0)) at 482
+Block ((2, 1, 1, 1), (0, 0, 0)) at 114
+Block ((1, 1, 1), (0, 0)) at 933
+Block ((1, 1, 2), (0, 0)) at 827
+Block ((1, 2, 2), (0, 0)) at 479
+Block ((1, 2, 2, 4), (0, 0, 0)) at 967
+Block ((2, 2), (0,)) at 21
+Block ((2, 2), (0,)) at 464
+Block ((2, 2), (0,)) at 511
+Block ((2, 2), (0,)) at 580
+Block ((2, 4, 2), (0, 0)) at 485
+Block ((2, 4, 2), (0, 0)) at 944
+Block ((2, 4, 2, 3, 2), (0, 0, 0, 0)) at 29
+Block ((4, 2), (0,)) at 556
+Block ((4, 2), (0,)) at 942
+Block ((2, 3), (0,)) at 24
+Block ((2, 3), (0,)) at 26
+Block ((2, 3), (0,)) at 797
+Block ((2, 3), (0,)) at 801
+Block ((2, 3, 2), (0, 0)) at 833
+Block ((3, 2, 3), (0, 0)) at 497
+Block ((3, 2, 3), (0, 0)) at 780
+Block ((3, 2, 3, 2), (0, 0, 0)) at 99
+Block ((4, 3, 4, 1), (0, 0, 0)) at 34
+Block ((4, 1, 4), (0, 0)) at 879
+Block ((1, 4, 4), (0, 0)) at 591
+Block ((4, 4, 1, 3), (0, 0, 0)) at 39
+Block ((4, 1, 3), (0, 0)) at 425
+Block ((1, 3, 1), (0, 0)) at 118
+Block ((1, 3, 1), (0, 0)) at 400
+Block ((3, 1), (0,)) at 469
+Block ((3, 1), (0,)) at 563
+Block ((3, 1), (0,)) at 842
+Block ((3, 1, 1), (0, 0)) at 49
+Block ((1, 1, 1, 3), (0, 0, 0)) at 43
+Block ((1, 3, 2, 1), (0, 0, 0)) at 882
+Block ((4, 3, 3), (0, 0)) at 641
+Block ((3, 3, 2), (0, 0)) at 439
+Block ((3, 3, 2, 3, 4), (0, 0, 0, 0)) at 53
+Block ((3, 2, 3, 4), (0, 0, 0)) at 691
+Block ((2, 3, 4), (0, 0)) at 131
+Block ((2, 3, 4), (0, 0)) at 876
+Block ((2, 3, 4, 1), (0, 0, 0)) at 356
+Block ((4, 1, 3, 4), (0, 0, 0)) at 138
+Block ((1, 3, 4), (0, 0)) at 644
+Block ((3, 4, 2), (0, 0)) at 428
+Block ((3, 4, 2, 4), (0, 0, 0)) at 59
+Block ((4, 2, 4), (0, 0)) at 200
+Block ((2, 4, 1, 3), (0, 0, 0)) at 672
+Block ((1, 3, 2, 2, 3), (0, 0, 0, 0)) at 63
+Block ((2, 2, 3), (0, 0)) at 980
+Block ((3, 4, 4, 1, 2), (0, 0, 0, 0)) at 69
+Block ((4, 1, 2), (0, 0)) at 350
+Block ((4, 3, 1), (0, 0)) at 74
+Block ((4, 3, 1), (0, 0)) at 866
+Block ((4, 3, 1, 4), (0, 0, 0)) at 610
+Block ((3, 1, 4), (0, 0)) at 416
+Block ((3, 1, 4), (0, 0)) at 419
+Block ((3, 1, 4), (0, 0)) at 456
+Block ((3, 1, 4, 4), (0, 0, 0)) at 171
+Block ((4, 4, 1, 4, 2, 2), (0, 0, 0, 0, 0)) at 77
+Block ((4, 1, 4, 2), (0, 0, 0)) at 488
+Block ((1, 4, 2), (0, 0)) at 830
+Block ((4, 2, 2), (0, 0)) at 638
+Block ((4, 2, 2, 2), (0, 0, 0)) at 862
+Block ((2, 2, 1), (0, 0)) at 906
+Block ((2, 1, 1, 1, 2, 1), (0, 0, 0, 0, 0)) at 83
+Block ((1, 1, 2, 1), (0, 0, 0)) at 902
+Block ((4, 3, 3, 4), (0, 0, 0)) at 387
+Block ((3, 4, 4, 4), (0, 0, 0)) at 91
+Block ((1, 2, 1, 1), (0, 0, 0)) at 95
+Block ((1, 4, 3, 1, 2), (0, 0, 0, 0)) at 345
+Block ((3, 1, 2, 4), (0, 0, 0)) at 110
+Block ((3, 1, 2, 4), (0, 0, 0)) at 412
+Block ((4, 2, 1), (0, 0)) at 466
+Block ((4, 2, 1), (0, 0)) at 791
+Block ((1, 1, 1, 1), (0, 0, 0)) at 787
+Block ((1, 3, 1, 2), (0, 0, 0)) at 338
+Block ((2, 4, 1, 2), (0, 0, 0)) at 121
+Block ((1, 2, 1, 3), (0, 0, 0)) at 894
+Block ((1, 3, 3, 2), (0, 0, 0)) at 125
+Block ((2, 4, 3, 2), (0, 0, 0)) at 594
+Block ((3, 4, 4, 2), (0, 0, 0)) at 383
+Block ((4, 4, 2), (0, 0)) at 447
+Block ((4, 2, 1, 4), (0, 0, 0)) at 134
+Block ((1, 2, 4, 4), (0, 0, 0)) at 179
+Block ((1, 2, 4, 4, 3), (0, 0, 0, 0)) at 531
+Block ((4, 4, 3, 2), (0, 0, 0)) at 767
+Block ((4, 1, 2, 2), (0, 0, 0)) at 971
+Block ((4, 1, 2, 2, 4, 4), (0, 0, 0, 0, 0)) at 151
+Block ((4, 1, 1, 2), (0, 0, 0)) at 158
+Block ((2, 2, 1, 2, 4), (0, 0, 0, 0)) at 162
+Block ((2, 1, 2), (0, 0)) at 625
+Block ((2, 1, 2, 4, 3), (0, 0, 0, 0)) at 492
+Block ((3, 1, 3, 3), (0, 0, 0)) at 167
+Block ((3, 3, 1), (0, 0)) at 451
+Block ((3, 3, 1), (0, 0)) at 549
+Block ((4, 4, 4, 2), (0, 0, 0)) at 431
+Block ((4, 2, 3, 4), (0, 0, 0)) at 175
+Block ((3, 3, 1, 3), (0, 0, 0)) at 184
+Block ((1, 4, 3, 4), (0, 0, 0)) at 527
+Block ((2, 3, 2, 1), (0, 0, 0)) at 196
+Block ((1, 1, 3, 4), (0, 0, 0)) at 815
+Block ((1, 1, 3, 4, 2), (0, 0, 0, 0)) at 203
+Block ((1, 2, 2, 4, 1), (0, 0, 0, 0)) at 211
+Block ((4, 1, 3, 2, 3), (0, 0, 0, 0)) at 459
+Block ((2, 1, 4, 1), (0, 0, 0)) at 819
+Block ((4, 4, 4, 4, 3), (0, 0, 0, 0)) at 565
+Block ((3, 2, 4, 1), (0, 0, 0)) at 983
+Block ((4, 4, 2, 4), (0, 0, 0)) at 366
+Block ((1, 4, 1, 1), (0, 0, 0)) at 696
+Block ((1, 1, 4, 4), (0, 0, 0)) at 929
+Block ((2, 3, 1), (0, 0)) at 422
+Block ((2, 3, 1), (0, 0)) at 558
+Block ((2, 3, 1), (0, 0)) at 899
+Block ((4, 4, 3, 1, 1), (0, 0, 0, 0)) at 628
+Block ((1, 2, 3), (0, 0)) at 476
+Block ((3, 4, 1, 1, 4, 4, 3), (0, 0, 0, 0, 0, 0)) at 326
+Block ((4, 1, 1, 4), (0, 0, 0)) at 403
+Block ((4, 1, 1, 4, 4), (0, 0, 0, 0)) at 539
+Block ((1, 4, 4, 3), (0, 0, 0)) at 938
+Block ((1, 4, 4, 3), (0, 0, 0)) at 994
+Block ((4, 3, 4, 3), (0, 0, 0)) at 634
+Block ((4, 3, 3, 1), (0, 0, 0)) at 333
+Block ((3, 1, 4, 3, 1), (0, 0, 0, 0)) at 773
+Block ((2, 3, 4, 3, 2), (0, 0, 0, 0)) at 360
+Block ((3, 4, 2, 4, 4), (0, 0, 0, 0)) at 370
+Block ((2, 4, 2, 2), (0, 0, 0)) at 545
+Block ((3, 3, 4, 1), (0, 0, 0)) at 844
+Block ((2, 1, 1, 3, 3), (0, 0, 0, 0)) at 500
+Block ((3, 3, 1, 1), (0, 0, 0)) at 396
+Block ((3, 1, 4, 2), (0, 0, 0)) at 823
+Block ((1, 4, 2, 3), (0, 0, 0)) at 680
+Block ((4, 3, 4, 4), (0, 0, 0)) at 442
+Block ((3, 3, 1, 2), (0, 0, 0)) at 552
+Block ((1, 4, 1, 2), (0, 0, 0)) at 763
+Block ((1, 4, 1, 2, 2), (0, 0, 0, 0)) at 471
+Block ((1, 4, 3, 2, 3), (0, 0, 0, 0)) at 506
+Block ((2, 2, 1, 3), (0, 0, 0)) at 518
+Block ((3, 4, 2, 1), (0, 0, 0)) at 600
+Block ((4, 2, 1, 1, 4), (0, 0, 0, 0)) at 522
+Block ((3, 3, 1, 3, 3, 1), (0, 0, 0, 0, 0)) at 952
+Block ((1, 3, 4, 4), (0, 0, 0)) at 573
+Block ((3, 4, 4, 3), (0, 0, 0)) at 962
+Block ((1, 1, 1, 4, 4, 3, 1), (0, 0, 0, 0, 0, 0)) at 582
+Block ((3, 3, 3, 3, 2), (0, 0, 0, 0)) at 605
+Block ((1, 1, 3, 1, 1), (0, 0, 0, 0)) at 614
+Block ((3, 3, 2, 1), (0, 0, 0)) at 619
+Block ((4, 2, 4, 3, 2, 3), (0, 0, 0, 0, 0)) at 648
+Block ((3, 2, 2, 2), (0, 0, 0)) at 804
+Block ((2, 2, 2, 4), (0, 0, 0)) at 783
+Block ((3, 4, 3, 2, 4), (0, 0, 0, 0)) at 684
+Block ((1, 2, 3, 3), (0, 0, 0)) at 809
+Block ((2, 2, 2, 4, 3), (0, 0, 0, 0)) at 837
+Block ((2, 2, 1, 4, 4), (0, 0, 0, 0)) at 848
+Block ((3, 2, 4, 4, 4, 2), (0, 0, 0, 0, 0)) at 856
+Block ((3, 2, 1, 1, 2, 3, 3), (0, 0, 0, 0, 0, 0)) at 869
+Block ((2, 3, 3, 2, 3, 4), (0, 0, 0, 0, 0)) at 988
+Block ((2, 1, 4, 1, 1, 2), (0, 0, 0, 0, 0)) at 886
+Block ((2, 2, 2, 1, 1, 4), (0, 0, 0, 0, 0)) at 911
+Block ((2, 2, 2, 3), (0, 0, 0)) at 948
+### ESTATISTICAS
+runtime: 3606.6514801979065
+Tempo de execução para criação das estruturas: 1382.054881 segundos
+
+Tempo de execução do modelo: 4988.987733 segundos

@@ -1,0 +1,124 @@
+Set parameter TimeLimit to value 3600
+Set parameter Threads to value 1
+Warning: constraint name "unicidade de char 0 na str 1" has a space
+Gurobi Optimizer version 10.0.2 build v10.0.2rc0 (linux64)
+
+CPU model: Intel(R) Xeon(R) CPU E7- 4850  @ 2.00GHz, instruction set [SSE2]
+Thread count: 40 physical cores, 80 logical processors, using up to 1 threads
+
+Optimize a model with 248 rows, 264 columns and 598 nonzeros
+Model fingerprint: 0xb876480f
+Variable types: 0 continuous, 264 integer (264 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 82.0000000
+Presolve removed 228 rows and 233 columns
+Presolve time: 0.00s
+Presolved: 20 rows, 31 columns, 78 nonzeros
+Variable types: 0 continuous, 31 integer (31 binary)
+
+Root relaxation: cutoff, 9 iterations, 0.00 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0     cutoff    0        82.00000   82.00000  0.00%     -    0s
+
+Explored 1 nodes (9 simplex iterations) in 0.00 seconds (0.00 work units)
+Thread count was 1 (of 80 available processors)
+
+Solution count 1: 82 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 8.200000000000e+01, best bound 8.200000000000e+01, gap 0.0000%
+Block ((9,), ()) at 0
+Block ((9,), ()) at 27
+Block ((9,), ()) at 30
+Block ((9,), ()) at 88
+Block ((9,), ()) at 90
+Block ((9,), ()) at 98
+Block ((6,), ()) at 1
+Block ((6,), ()) at 77
+Block ((14,), ()) at 2
+Block ((14,), ()) at 97
+Block ((17,), ()) at 14
+Block ((17,), ()) at 81
+Block ((17,), ()) at 91
+Block ((17, 1), (0,)) at 3
+Block ((1,), ()) at 57
+Block ((1,), ()) at 65
+Block ((1,), ()) at 74
+Block ((1,), ()) at 84
+Block ((1,), ()) at 95
+Block ((12,), ()) at 5
+Block ((12,), ()) at 56
+Block ((12, 16), (0,)) at 20
+Block ((16,), ()) at 6
+Block ((16,), ()) at 36
+Block ((16,), ()) at 64
+Block ((9, 5), (0,)) at 7
+Block ((5,), ()) at 11
+Block ((5,), ()) at 25
+Block ((5,), ()) at 46
+Block ((5,), ()) at 69
+Block ((5,), ()) at 85
+Block ((5,), ()) at 92
+Block ((15,), ()) at 9
+Block ((15,), ()) at 55
+Block ((15,), ()) at 58
+Block ((15,), ()) at 70
+Block ((15,), ()) at 82
+Block ((11,), ()) at 10
+Block ((11,), ()) at 72
+Block ((11,), ()) at 99
+Block ((20,), ()) at 12
+Block ((20,), ()) at 44
+Block ((20,), ()) at 71
+Block ((7,), ()) at 13
+Block ((7,), ()) at 17
+Block ((7,), ()) at 96
+Block ((13,), ()) at 15
+Block ((13,), ()) at 89
+Block ((10,), ()) at 16
+Block ((10,), ()) at 24
+Block ((10,), ()) at 83
+Block ((4,), ()) at 45
+Block ((4,), ()) at 51
+Block ((4, 16), (0,)) at 18
+Block ((9, 8), (0,)) at 22
+Block ((8,), ()) at 47
+Block ((8,), ()) at 76
+Block ((8,), ()) at 86
+Block ((8,), ()) at 87
+Block ((3,), ()) at 26
+Block ((3,), ()) at 48
+Block ((3,), ()) at 68
+Block ((17, 9), (0,)) at 28
+Block ((14, 1), (0,)) at 31
+Block ((11, 11), (0,)) at 33
+Block ((19,), ()) at 35
+Block ((19,), ()) at 54
+Block ((19,), ()) at 63
+Block ((19,), ()) at 80
+Block ((4, 1), (0,)) at 37
+Block ((11, 16), (0,)) at 39
+Block ((18,), ()) at 41
+Block ((18,), ()) at 73
+Block ((18,), ()) at 75
+Block ((1, 2), (0,)) at 42
+Block ((11, 1), (0,)) at 49
+Block ((6, 17), (0,)) at 52
+Block ((20, 2), (0,)) at 59
+Block ((19, 12), (0,)) at 61
+Block ((10, 10), (0,)) at 66
+Block ((14, 12), (0,)) at 78
+Block ((15, 5), (0,)) at 93
+### ESTATISTICAS
+runtime: 0.0027379989624023438
+Tempo de execução para criação das estruturas: 0.088207 segundos
+
+Tempo de execução do modelo: 0.010580 segundos
+Tempo de execução total: 0.098787 segundos

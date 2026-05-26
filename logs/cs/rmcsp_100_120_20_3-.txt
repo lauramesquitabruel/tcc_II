@@ -1,0 +1,128 @@
+Set parameter Username
+Academic license - for non-commercial use only - expires 2026-08-06
+Set parameter TimeLimit to value 3600
+Set parameter Threads to value 1
+Warning: constraint name "unicidade de char 0 na str 1" has a space
+Gurobi Optimizer version 10.0.2 build v10.0.2rc0 (linux64)
+
+CPU model: Intel(R) Xeon(R) CPU E7- 4850  @ 2.00GHz, instruction set [SSE2]
+Thread count: 40 physical cores, 80 logical processors, using up to 1 threads
+
+Optimize a model with 268 rows, 519 columns and 1271 nonzeros
+Model fingerprint: 0xabc3b0ee
+Variable types: 0 continuous, 519 integer (519 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 103.0000000
+Presolve removed 159 rows and 213 columns
+Presolve time: 0.01s
+Presolved: 109 rows, 306 columns, 879 nonzeros
+Variable types: 0 continuous, 306 integer (305 binary)
+Found heuristic solution: objective 102.0000000
+
+Root relaxation: objective 8.550000e+01, 115 iterations, 0.00 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0   85.50000    0   11  102.00000   85.50000  16.2%     -    0s
+H    0     0                      88.0000000   85.50000  2.84%     -    0s
+H    0     0                      86.0000000   85.50000  0.58%     -    0s
+     0     0   85.50000    0   11   86.00000   85.50000  0.58%     -    0s
+
+Explored 1 nodes (168 simplex iterations) in 0.02 seconds (0.00 work units)
+Thread count was 1 (of 80 available processors)
+
+Solution count 4: 86 88 102 103 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 8.600000000000e+01, best bound 8.600000000000e+01, gap 0.0000%
+Block ((16,), ()) at 0
+Block ((16,), ()) at 20
+Block ((13,), ()) at 34
+Block ((13,), ()) at 54
+Block ((13, 15), (0,)) at 1
+Block ((15,), ()) at 59
+Block ((15,), ()) at 70
+Block ((15,), ()) at 95
+Block ((19,), ()) at 3
+Block ((19,), ()) at 30
+Block ((19,), ()) at 72
+Block ((10,), ()) at 4
+Block ((10,), ()) at 39
+Block ((10,), ()) at 93
+Block ((8,), ()) at 38
+Block ((8,), ()) at 87
+Block ((8, 16), (0,)) at 5
+Block ((7,), ()) at 7
+Block ((7,), ()) at 41
+Block ((7,), ()) at 42
+Block ((3,), ()) at 8
+Block ((3,), ()) at 75
+Block ((2,), ()) at 35
+Block ((2,), ()) at 40
+Block ((2,), ()) at 52
+Block ((2,), ()) at 55
+Block ((2, 18), (0,)) at 9
+Block ((18,), ()) at 15
+Block ((18,), ()) at 57
+Block ((18,), ()) at 79
+Block ((18,), ()) at 91
+Block ((14,), ()) at 11
+Block ((14,), ()) at 80
+Block ((14,), ()) at 92
+Block ((9,), ()) at 12
+Block ((9,), ()) at 65
+Block ((12,), ()) at 13
+Block ((12,), ()) at 14
+Block ((12,), ()) at 26
+Block ((12,), ()) at 81
+Block ((12,), ()) at 90
+Block ((17,), ()) at 22
+Block ((17,), ()) at 25
+Block ((17,), ()) at 27
+Block ((17,), ()) at 29
+Block ((17,), ()) at 33
+Block ((17, 20), (0,)) at 16
+Block ((20,), ()) at 36
+Block ((20,), ()) at 37
+Block ((20,), ()) at 76
+Block ((20,), ()) at 83
+Block ((13, 13), (0,)) at 18
+Block ((5,), ()) at 21
+Block ((5,), ()) at 45
+Block ((5,), ()) at 56
+Block ((5,), ()) at 96
+Block ((4,), ()) at 23
+Block ((4,), ()) at 99
+Block ((6,), ()) at 24
+Block ((6,), ()) at 64
+Block ((6,), ()) at 71
+Block ((6,), ()) at 82
+Block ((11,), ()) at 28
+Block ((12, 1), (0,)) at 31
+Block ((1,), ()) at 53
+Block ((1,), ()) at 58
+Block ((1,), ()) at 94
+Block ((5, 8), (0,)) at 43
+Block ((9, 4), (0,)) at 46
+Block ((19, 4), (0,)) at 48
+Block ((9, 15), (0,)) at 50
+Block ((15, 18), (0,)) at 77
+Block ((18, 11), (0,)) at 60
+Block ((7, 14), (0,)) at 62
+Block ((11, 1), (0,)) at 66
+Block ((19, 13), (0,)) at 68
+Block ((18, 8), (0,)) at 73
+Block ((10, 19, 18), (0, 0)) at 84
+Block ((2, 13), (0,)) at 88
+Block ((20, 11), (0,)) at 97
+### ESTATISTICAS
+runtime: 0.017384052276611328
+Tempo de execução para criação das estruturas: 0.159623 segundos
+
+Tempo de execução do modelo: 0.025456 segundos
+Tempo de execução total: 0.185078 segundos

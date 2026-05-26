@@ -1,0 +1,1808 @@
+Set parameter TimeLimit to value 3600
+Set parameter Threads to value 1
+Warning: constraint name "unicidade de char 0 na str 1" has a space
+Gurobi Optimizer version 10.0.2 build v10.0.2rc0 (linux64)
+
+CPU model: Intel(R) Xeon(R) CPU E7- 4850  @ 2.00GHz, instruction set [SSE2]
+Thread count: 40 physical cores, 80 logical processors, using up to 1 threads
+
+Optimize a model with 2000 rows, 543142 columns and 167255877 nonzeros
+Model fingerprint: 0x3cf670e3
+Variable types: 0 continuous, 543142 integer (543142 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 1180.0000000
+Presolve removed 0 rows and 0 columns (presolve time = 10s) ...
+Presolve removed 0 rows and 0 columns (presolve time = 13s) ...
+Presolve removed 0 rows and 0 columns (presolve time = 16s) ...
+Presolve removed 182 rows and 229 columns (presolve time = 21s) ...
+Presolve removed 182 rows and 229 columns (presolve time = 28s) ...
+Presolve removed 182 rows and 229 columns (presolve time = 48s) ...
+Presolve removed 182 rows and 229 columns (presolve time = 53s) ...
+Presolve removed 182 rows and 229 columns (presolve time = 58s) ...
+Presolve removed 182 rows and 229 columns (presolve time = 64s) ...
+Presolve removed 182 rows and 229 columns (presolve time = 69s) ...
+Presolve removed 182 rows and 229 columns (presolve time = 86s) ...
+Presolve removed 182 rows and 229 columns (presolve time = 92s) ...
+Presolve removed 182 rows and 229 columns (presolve time = 95s) ...
+Presolve removed 182 rows and 229 columns (presolve time = 100s) ...
+Presolve removed 182 rows and 229 columns (presolve time = 105s) ...
+Presolve removed 182 rows and 229 columns (presolve time = 128s) ...
+Presolve removed 182 rows and 229 columns (presolve time = 140s) ...
+Presolve removed 182 rows and 229 columns (presolve time = 152s) ...
+Presolve removed 182 rows and 229 columns (presolve time = 163s) ...
+Presolve removed 192 rows and 229 columns (presolve time = 165s) ...
+Presolve removed 192 rows and 229 columns (presolve time = 201s) ...
+Presolve removed 192 rows and 230 columns (presolve time = 206s) ...
+Presolve removed 192 rows and 230 columns (presolve time = 211s) ...
+Presolve removed 192 rows and 230 columns (presolve time = 218s) ...
+Presolve removed 192 rows and 230 columns (presolve time = 224s) ...
+Presolve removed 192 rows and 244 columns (presolve time = 229s) ...
+Presolve removed 192 rows and 244 columns (presolve time = 235s) ...
+Presolve removed 193 rows and 245 columns (presolve time = 252s) ...
+Presolve removed 193 rows and 245 columns (presolve time = 259s) ...
+Presolve removed 193 rows and 246 columns (presolve time = 260s) ...
+Presolve removed 193 rows and 246 columns (presolve time = 265s) ...
+Presolve removed 193 rows and 246 columns (presolve time = 270s) ...
+Presolve removed 193 rows and 246 columns (presolve time = 295s) ...
+Presolve removed 193 rows and 246 columns (presolve time = 301s) ...
+Presolve removed 193 rows and 246 columns (presolve time = 315s) ...
+Presolve removed 193 rows and 246 columns (presolve time = 315s) ...
+Presolve removed 193 rows and 246 columns (presolve time = 320s) ...
+Presolve removed 193 rows and 246 columns (presolve time = 353s) ...
+Presolve removed 193 rows and 246 columns (presolve time = 355s) ...
+Presolve removed 197 rows and 252 columns (presolve time = 376s) ...
+Presolve removed 199 rows and 254 columns (presolve time = 399s) ...
+Presolve removed 199 rows and 254 columns (presolve time = 401s) ...
+Presolve removed 199 rows and 254 columns (presolve time = 416s) ...
+Presolve removed 199 rows and 254 columns (presolve time = 423s) ...
+Presolve removed 199 rows and 254 columns (presolve time = 427s) ...
+Presolve removed 199 rows and 254 columns (presolve time = 431s) ...
+Presolve removed 199 rows and 254 columns (presolve time = 447s) ...
+Presolve removed 199 rows and 254 columns (presolve time = 459s) ...
+Presolve removed 199 rows and 254 columns (presolve time = 469s) ...
+Presolve removed 199 rows and 254 columns (presolve time = 470s) ...
+Presolve removed 199 rows and 254 columns (presolve time = 475s) ...
+Presolve removed 199 rows and 254 columns (presolve time = 480s) ...
+Presolve removed 199 rows and 254 columns (presolve time = 485s) ...
+Presolve removed 199 rows and 254 columns (presolve time = 490s) ...
+Presolve removed 199 rows and 254 columns (presolve time = 495s) ...
+Presolve removed 199 rows and 254 columns (presolve time = 500s) ...
+Presolve removed 199 rows and 254 columns (presolve time = 505s) ...
+Presolve removed 199 rows and 254 columns (presolve time = 510s) ...
+Presolve removed 199 rows and 254 columns (presolve time = 515s) ...
+Presolve removed 199 rows and 254 columns (presolve time = 520s) ...
+Presolve removed 199 rows and 254 columns (presolve time = 525s) ...
+Presolve removed 199 rows and 254 columns (presolve time = 530s) ...
+Presolve removed 199 rows and 254 columns (presolve time = 535s) ...
+Presolve removed 199 rows and 254 columns (presolve time = 540s) ...
+Presolve removed 199 rows and 254 columns (presolve time = 545s) ...
+Presolve removed 199 rows and 254 columns (presolve time = 550s) ...
+Presolve removed 199 rows and 254 columns (presolve time = 555s) ...
+Presolve removed 199 rows and 254 columns (presolve time = 565s) ...
+Presolve removed 199 rows and 254 columns (presolve time = 574s) ...
+Presolve removed 199 rows and 254 columns (presolve time = 584s) ...
+Presolve removed 199 rows and 254 columns (presolve time = 586s) ...
+Presolve removed 199 rows and 254 columns (presolve time = 591s) ...
+Presolve removed 199 rows and 254 columns (presolve time = 622s) ...
+Presolve removed 199 rows and 254 columns (presolve time = 678s) ...
+Presolve removed 199 rows and 254 columns (presolve time = 680s) ...
+Presolve removed 199 rows and 254 columns (presolve time = 685s) ...
+Presolve removed 199 rows and 254 columns (presolve time = 691s) ...
+Presolve removed 199 rows and 254 columns (presolve time = 695s) ...
+Presolve removed 199 rows and 254 columns (presolve time = 700s) ...
+Presolve removed 199 rows and 254 columns (presolve time = 705s) ...
+Presolve removed 199 rows and 254 columns (presolve time = 710s) ...
+Presolve removed 199 rows and 254 columns (presolve time = 715s) ...
+Presolve removed 199 rows and 254 columns (presolve time = 720s) ...
+Presolve removed 199 rows and 254 columns (presolve time = 725s) ...
+Presolve removed 199 rows and 254 columns (presolve time = 730s) ...
+Presolve removed 199 rows and 254 columns (presolve time = 736s) ...
+Presolve removed 199 rows and 254 columns (presolve time = 740s) ...
+Presolve removed 199 rows and 254 columns (presolve time = 745s) ...
+Presolve removed 199 rows and 254 columns (presolve time = 750s) ...
+Presolve removed 199 rows and 254 columns (presolve time = 755s) ...
+Presolve removed 199 rows and 254 columns (presolve time = 760s) ...
+Presolve removed 199 rows and 254 columns (presolve time = 765s) ...
+Presolve removed 199 rows and 254 columns (presolve time = 770s) ...
+Presolve removed 199 rows and 254 columns (presolve time = 775s) ...
+Presolve removed 199 rows and 254 columns (presolve time = 788s) ...
+Presolve removed 199 rows and 254 columns (presolve time = 791s) ...
+Presolve removed 199 rows and 254 columns (presolve time = 796s) ...
+Presolve removed 199 rows and 254 columns (presolve time = 801s) ...
+Presolve removed 199 rows and 254 columns (presolve time = 806s) ...
+Presolve removed 199 rows and 254 columns (presolve time = 811s) ...
+Presolve removed 199 rows and 254 columns (presolve time = 816s) ...
+Presolve removed 199 rows and 254 columns (presolve time = 821s) ...
+Presolve removed 199 rows and 254 columns (presolve time = 825s) ...
+Presolve removed 199 rows and 254 columns (presolve time = 831s) ...
+Presolve removed 199 rows and 254 columns (presolve time = 836s) ...
+Presolve removed 199 rows and 254 columns (presolve time = 840s) ...
+Presolve removed 199 rows and 254 columns (presolve time = 846s) ...
+Presolve removed 199 rows and 254 columns (presolve time = 850s) ...
+Presolve removed 199 rows and 254 columns (presolve time = 855s) ...
+Presolve removed 199 rows and 254 columns (presolve time = 861s) ...
+Presolve removed 199 rows and 254 columns (presolve time = 866s) ...
+Presolve removed 199 rows and 254 columns (presolve time = 871s) ...
+Presolve removed 199 rows and 254 columns (presolve time = 875s) ...
+Presolve removed 199 rows and 254 columns (presolve time = 880s) ...
+Presolve removed 199 rows and 254 columns (presolve time = 886s) ...
+Presolve removed 199 rows and 254 columns (presolve time = 890s) ...
+Presolve removed 199 rows and 254 columns (presolve time = 895s) ...
+Presolve removed 199 rows and 254 columns (presolve time = 900s) ...
+Presolve removed 199 rows and 254 columns (presolve time = 905s) ...
+Presolve removed 199 rows and 254 columns (presolve time = 911s) ...
+Presolve removed 199 rows and 254 columns (presolve time = 915s) ...
+Presolve removed 199 rows and 254 columns (presolve time = 920s) ...
+Presolve removed 199 rows and 254 columns (presolve time = 925s) ...
+Presolve removed 199 rows and 254 columns (presolve time = 930s) ...
+Presolve removed 199 rows and 254 columns (presolve time = 936s) ...
+Presolve removed 199 rows and 254 columns (presolve time = 940s) ...
+Presolve removed 199 rows and 254 columns (presolve time = 959s) ...
+Presolve removed 199 rows and 254 columns (presolve time = 960s) ...
+Presolve removed 199 rows and 254 columns (presolve time = 965s) ...
+Presolve removed 199 rows and 254 columns (presolve time = 970s) ...
+Presolve removed 199 rows and 254 columns (presolve time = 976s) ...
+Presolve removed 199 rows and 254 columns (presolve time = 981s) ...
+Presolve removed 199 rows and 254 columns (presolve time = 986s) ...
+Presolve removed 199 rows and 254 columns (presolve time = 990s) ...
+Presolve removed 199 rows and 254 columns (presolve time = 996s) ...
+Presolve removed 199 rows and 254 columns (presolve time = 1001s) ...
+Presolve removed 199 rows and 254 columns (presolve time = 1005s) ...
+Presolve removed 199 rows and 254 columns (presolve time = 1010s) ...
+Presolve removed 199 rows and 254 columns (presolve time = 1015s) ...
+Presolve removed 199 rows and 254 columns (presolve time = 1021s) ...
+Presolve removed 199 rows and 254 columns (presolve time = 1025s) ...
+Presolve removed 199 rows and 254 columns (presolve time = 1030s) ...
+Presolve removed 199 rows and 254 columns (presolve time = 1035s) ...
+Presolve removed 199 rows and 254 columns (presolve time = 1041s) ...
+Presolve removed 199 rows and 254 columns (presolve time = 1046s) ...
+Presolve removed 199 rows and 254 columns (presolve time = 1050s) ...
+Presolve removed 199 rows and 254 columns (presolve time = 1055s) ...
+Presolve removed 199 rows and 254 columns (presolve time = 1060s) ...
+Presolve removed 199 rows and 254 columns (presolve time = 1065s) ...
+Presolve removed 199 rows and 254 columns (presolve time = 1089s) ...
+Presolve removed 199 rows and 254 columns (presolve time = 1091s) ...
+Presolve removed 199 rows and 254 columns (presolve time = 1095s) ...
+Presolve removed 199 rows and 254 columns (presolve time = 1101s) ...
+Presolve removed 199 rows and 254 columns (presolve time = 1105s) ...
+Presolve removed 199 rows and 254 columns (presolve time = 1111s) ...
+Presolve removed 199 rows and 254 columns (presolve time = 1115s) ...
+Presolve removed 199 rows and 254 columns (presolve time = 1121s) ...
+Presolve removed 199 rows and 254 columns (presolve time = 1125s) ...
+Presolve removed 199 rows and 254 columns (presolve time = 1130s) ...
+Presolve removed 199 rows and 254 columns (presolve time = 1135s) ...
+Presolve removed 199 rows and 254 columns (presolve time = 1140s) ...
+Presolve removed 199 rows and 254 columns (presolve time = 1145s) ...
+Presolve removed 199 rows and 254 columns (presolve time = 1150s) ...
+Presolve removed 199 rows and 254 columns (presolve time = 1170s) ...
+Presolve removed 199 rows and 254 columns (presolve time = 1170s) ...
+Presolve removed 199 rows and 254 columns (presolve time = 1175s) ...
+Presolve removed 199 rows and 254 columns (presolve time = 1180s) ...
+Presolve removed 199 rows and 254 columns (presolve time = 1185s) ...
+Presolve removed 199 rows and 254 columns (presolve time = 1190s) ...
+Presolve removed 199 rows and 254 columns (presolve time = 1195s) ...
+Presolve removed 199 rows and 254 columns (presolve time = 1200s) ...
+Presolve removed 199 rows and 254 columns (presolve time = 1220s) ...
+Presolve removed 199 rows and 254 columns (presolve time = 1220s) ...
+Presolve removed 199 rows and 254 columns (presolve time = 1225s) ...
+Presolve removed 199 rows and 254 columns (presolve time = 1230s) ...
+Presolve removed 199 rows and 254 columns (presolve time = 1236s) ...
+Presolve removed 199 rows and 254 columns (presolve time = 1254s) ...
+Presolve removed 199 rows and 254 columns (presolve time = 1255s) ...
+Presolve removed 199 rows and 254 columns (presolve time = 1260s) ...
+Presolve removed 199 rows and 254 columns (presolve time = 1265s) ...
+Presolve removed 199 rows and 254 columns (presolve time = 1271s) ...
+Presolve removed 199 rows and 254 columns (presolve time = 1285s) ...
+Presolve removed 199 rows and 254 columns (presolve time = 1285s) ...
+Presolve removed 199 rows and 254 columns (presolve time = 1290s) ...
+Presolve removed 199 rows and 254 columns (presolve time = 1303s) ...
+Presolve removed 199 rows and 254 columns (presolve time = 1305s) ...
+Presolve removed 199 rows and 254 columns (presolve time = 1317s) ...
+Presolve removed 199 rows and 254 columns (presolve time = 1320s) ...
+Presolve removed 199 rows and 254 columns (presolve time = 1327s) ...
+Presolve removed 199 rows and 254 columns (presolve time = 1330s) ...
+Presolve removed 199 rows and 254 columns (presolve time = 1335s) ...
+Presolve removed 199 rows and 254 columns (presolve time = 1341s) ...
+Presolve removed 199 rows and 254 columns (presolve time = 1345s) ...
+Presolve removed 199 rows and 254 columns (presolve time = 1350s) ...
+Presolve removed 199 rows and 254 columns (presolve time = 1358s) ...
+Presolve removed 199 rows and 254 columns (presolve time = 1360s) ...
+Presolve removed 199 rows and 254 columns (presolve time = 1365s) ...
+Presolve removed 199 rows and 254 columns (presolve time = 1370s) ...
+Presolve removed 199 rows and 254 columns (presolve time = 1375s) ...
+Presolve removed 199 rows and 254 columns (presolve time = 1380s) ...
+Presolve removed 199 rows and 254 columns (presolve time = 1385s) ...
+Presolve removed 199 rows and 254 columns (presolve time = 1391s) ...
+Presolve removed 199 rows and 254 columns (presolve time = 1396s) ...
+Presolve removed 199 rows and 254 columns (presolve time = 1401s) ...
+Presolve removed 199 rows and 254 columns (presolve time = 1405s) ...
+Presolve removed 199 rows and 254 columns (presolve time = 1410s) ...
+Presolve removed 199 rows and 254 columns (presolve time = 1415s) ...
+Presolve removed 199 rows and 254 columns (presolve time = 1420s) ...
+Presolve removed 199 rows and 254 columns (presolve time = 1425s) ...
+Presolve removed 199 rows and 254 columns (presolve time = 1430s) ...
+Presolve removed 199 rows and 254 columns (presolve time = 1435s) ...
+Presolve removed 199 rows and 254 columns (presolve time = 1440s) ...
+Presolve removed 199 rows and 254 columns (presolve time = 1445s) ...
+Presolve removed 199 rows and 254 columns (presolve time = 1450s) ...
+Presolve removed 199 rows and 254 columns (presolve time = 1455s) ...
+Presolve removed 199 rows and 254 columns (presolve time = 1460s) ...
+Presolve removed 199 rows and 254 columns (presolve time = 1465s) ...
+Presolve removed 199 rows and 254 columns (presolve time = 1470s) ...
+Presolve removed 199 rows and 254 columns (presolve time = 1475s) ...
+Presolve removed 199 rows and 254 columns (presolve time = 1480s) ...
+Presolve removed 199 rows and 254 columns (presolve time = 1485s) ...
+Presolve removed 199 rows and 254 columns (presolve time = 1490s) ...
+Presolve removed 199 rows and 254 columns (presolve time = 1507s) ...
+Presolve removed 199 rows and 254 columns (presolve time = 1511s) ...
+Presolve removed 199 rows and 254 columns (presolve time = 1516s) ...
+Presolve removed 199 rows and 254 columns (presolve time = 1520s) ...
+Presolve removed 199 rows and 254 columns (presolve time = 1525s) ...
+Presolve removed 199 rows and 254 columns (presolve time = 1531s) ...
+Presolve removed 199 rows and 254 columns (presolve time = 1536s) ...
+Presolve removed 199 rows and 254 columns (presolve time = 1540s) ...
+Presolve removed 199 rows and 254 columns (presolve time = 1546s) ...
+Presolve removed 199 rows and 254 columns (presolve time = 1551s) ...
+Presolve removed 199 rows and 254 columns (presolve time = 1555s) ...
+Presolve removed 199 rows and 254 columns (presolve time = 1561s) ...
+Presolve removed 199 rows and 254 columns (presolve time = 1566s) ...
+Presolve removed 199 rows and 254 columns (presolve time = 1571s) ...
+Presolve removed 199 rows and 254 columns (presolve time = 1576s) ...
+Presolve removed 199 rows and 254 columns (presolve time = 1581s) ...
+Presolve removed 199 rows and 254 columns (presolve time = 1585s) ...
+Presolve removed 199 rows and 254 columns (presolve time = 1590s) ...
+Presolve removed 199 rows and 254 columns (presolve time = 1595s) ...
+Presolve removed 199 rows and 254 columns (presolve time = 1600s) ...
+Presolve removed 199 rows and 254 columns (presolve time = 1606s) ...
+Presolve removed 199 rows and 254 columns (presolve time = 1611s) ...
+Presolve removed 199 rows and 254 columns (presolve time = 1615s) ...
+Presolve removed 199 rows and 254 columns (presolve time = 1621s) ...
+Presolve removed 199 rows and 254 columns (presolve time = 1626s) ...
+Presolve removed 199 rows and 254 columns (presolve time = 1630s) ...
+Sparsify removed 59161477 nonzeros (35%)
+Presolve removed 199 rows and 254 columns (presolve time = 1636s) ...
+Presolve removed 200 rows and 255 columns (presolve time = 1641s) ...
+Presolve removed 200 rows and 255 columns (presolve time = 1663s) ...
+Presolve removed 200 rows and 255 columns
+Presolve time: 1663.20s
+Presolved: 1800 rows, 542887 columns, 108094074 nonzeros
+Found heuristic solution: objective 1138.0000000
+Variable types: 0 continuous, 542887 integer (542887 binary)
+
+Root simplex log...
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    5.8500000e+02   1.381000e+03   0.000000e+00   1793s
+
+Starting sifting (using dual simplex for sub-problems)...
+
+    Iter     Pivots    Primal Obj      Dual Obj        Time
+       0          0     infinity      5.8500000e+02   1793s
+       1      34142   1.5200058e+08   5.8525397e+02   1810s
+       2      45333   1.5200058e+08   5.8521411e+02   1814s
+       3      47476   1.5200058e+08   5.8544041e+02   1815s
+       4      51171   1.5200058e+08   5.8568969e+02   1817s
+       5      54202   1.5200058e+08   5.8566371e+02   1819s
+       6      55194   1.5200058e+08   5.8574013e+02   1819s
+       7      55844   1.5200058e+08   5.8603201e+02   1820s
+
+Sifting complete
+
+   56903    5.8500631e+02   1.519871e+02   1.731746e+12   1830s
+   57023    5.8503337e+02   1.519642e+02   3.107837e+13   1831s
+   57263    5.9252783e+02   1.503447e+02   1.084986e+13   1836s
+   57743    6.0904273e+02   1.408490e+02   5.854615e+12   1840s
+   58223    6.2303878e+02   1.337108e+02   2.270388e+12   1845s
+   58583    6.3250769e+02   1.295426e+02   6.587410e+11   1850s
+   58943    6.5318489e+02   1.242024e+02   1.990989e+11   1855s
+   59303    6.7312535e+02   1.191192e+02   1.337266e+11   1861s
+   59663    6.9659283e+02   1.148593e+02   6.294781e+10   1866s
+   60023    7.2236768e+02   1.053075e+02   1.618589e+12   1870s
+   60383    7.3712873e+02   9.632275e+01   5.559365e+11   1875s
+   60863    7.5926964e+02   8.648223e+01   1.240808e+11   1882s
+   61103    7.7381181e+02   8.215327e+01   2.343461e+11   1885s
+   61583    7.9962764e+02   7.180642e+01   2.685593e+11   1891s
+   61946    8.2970045e+02   6.360844e+01   2.852945e+10   1896s
+   62426    8.3468116e+02   5.901201e+01   7.890294e+10   1902s
+   62666    8.4370651e+02   5.519026e+01   8.775698e+10   1906s
+   63146    8.7100493e+02   4.276189e+01   1.683864e+11   1910s
+   63746    8.8290766e+02   3.407281e+01   9.791758e+10   1917s
+   64226    9.0411728e+02   2.902297e+01   1.030155e+11   1921s
+   64466    9.1053995e+02   2.753296e+01   3.107563e+11   1925s
+   64827    9.0915578e+02   2.639833e+01   1.029172e+11   1931s
+   65067    9.1131767e+02   2.567224e+01   7.367697e+10   1935s
+   65547    9.1560115e+02   2.050631e+01   5.605662e+10   1940s
+   65907    9.2289115e+02   1.724462e+01   9.186059e+09   1945s
+   66487    9.3877696e+02   7.186541e+00   7.832428e+10   1951s
+   66847    9.2192934e+02   6.510270e+00   3.913941e+10   1955s
+   67307    9.1247296e+02   5.519519e+00   6.566455e+10   1960s
+   67787    9.1412670e+02   5.003510e+00   4.731212e+11   1967s
+   68027    9.1410827e+02   4.998692e+00   4.136705e+10   1970s
+   68387    9.1407644e+02   4.993952e+00   1.955597e+11   1976s
+   68747    9.1405461e+02   4.990218e+00   5.692935e+10   1981s
+   69107    9.0908656e+02   4.001316e+00   1.649118e+11   1986s
+   69467    9.0906754e+02   3.996535e+00   4.937463e+10   1990s
+   69827    9.0907526e+02   3.992859e+00   6.995930e+11   1996s
+   70187    9.0905702e+02   3.987826e+00   4.670509e+10   2000s
+   70667    9.0743232e+02   3.291894e+00   5.646580e+11   2005s
+   71147    9.0370897e+02   3.009031e+00   1.185550e+11   2011s
+   71507    9.0362950e+02   2.998517e+00   4.312160e+10   2016s
+   71867    9.0360749e+02   2.995643e+00   1.106654e+10   2020s
+   72347    9.0360135e+02   2.993935e+00   7.907751e+10   2027s
+   72707    9.0359258e+02   2.992338e+00   9.922326e+09   2032s
+   73067    9.0357482e+02   2.990709e+00   1.140866e+11   2037s
+   73427    9.0358292e+02   2.987689e+00   5.898620e+11   2041s
+   73787    9.0365407e+02   2.981916e+00   1.207833e+11   2047s
+   74027    9.0874583e+02   2.776094e+00   4.336861e+11   2050s
+   74387    9.1388796e+02   2.199542e+00   1.091586e+12   2056s
+   74747    9.1186450e+02   1.980329e+00   7.479810e+09   2061s
+   75107    9.1165164e+02   1.765618e+00   1.689370e+10   2067s
+   75467    9.0931756e+02   1.608372e+00   1.341077e+11   2071s
+   75947    9.0651057e+02   1.540000e+00   1.100707e+11   2076s
+   76187    9.0501060e+02   1.497142e+00   2.064736e+10   2080s
+   76667    9.0496924e+02   1.492418e+00   8.775915e+09   2087s
+   76907    9.0485005e+02   1.445762e+00   8.069283e+10   2090s
+   77267    9.0438579e+02   1.400885e+00   2.390555e+10   2096s
+   77627    9.0442265e+02   1.329684e+00   4.902933e+09   2100s
+   77987    9.0432069e+02   1.313995e+00   5.496975e+10   2105s
+   78347    9.0433764e+02   1.253365e+00   5.068108e+10   2110s
+   78827    9.0587861e+02   1.165705e+00   7.035499e+10   2115s
+   79187    9.0667722e+02   1.069277e+00   6.918822e+10   2121s
+   79547    9.0610752e+02   1.016007e+00   9.535664e+11   2126s
+   79907    9.0548759e+02   9.968498e-01   1.956808e+10   2132s
+   80147    9.0519382e+02   9.953986e-01   1.635343e+11   2135s
+   80507    9.0516599e+02   9.927006e-01   2.472202e+11   2141s
+   80867    9.0496297e+02   9.755160e-01   3.290568e+10   2147s
+   81227    9.0098769e+02   8.967933e-01   3.315423e+10   2152s
+   81587    8.9664354e+02   7.699361e-01   3.682676e+11   2157s
+   81827    8.9504292e+02   7.081820e-01   1.377666e+10   2160s
+   82187    8.9313955e+02   6.210047e-01   6.727940e+10   2166s
+   82547    8.8946019e+02   4.884420e-01   3.069425e+10   2171s
+   82907    8.8688772e+02   4.075003e-01   7.996784e+10   2175s
+   83267    8.8052860e+02   2.855340e-01   2.125558e+10   2181s
+   83627    8.7665612e+02   2.311676e-01   7.600803e+10   2186s
+   83987    8.7533439e+02   1.875080e-01   5.852819e+10   2190s
+   84347    8.7298355e+02   1.285961e-01   9.634167e+10   2196s
+   84707    8.7256550e+02   8.578252e-02   5.724066e+09   2200s
+   85067    8.7185353e+02   6.906594e-02   5.344623e+10   2205s
+   85547    8.7142507e+02   4.605718e-02   2.940091e+10   2211s
+   85907    8.7099903e+02   1.774209e-03   5.265925e+10   2216s
+   86147    8.7086681e+02   7.888889e-05   9.306236e+07   2221s
+   86507    8.7070641e+02   0.000000e+00   1.891749e+06   2226s
+   86867    8.7057071e+02   0.000000e+00   1.751741e+08   2230s
+   87227    8.7046515e+02   0.000000e+00   3.888051e+06   2236s
+   87587    8.6865848e+02   0.000000e+00   8.058648e+07   2240s
+   88067    8.6845127e+02   0.000000e+00   4.381972e+06   2246s
+   88648    8.6254564e+02   0.000000e+00   8.132497e+06   2251s
+   89015    8.5715490e+02   0.000000e+00   1.503779e+07   2255s
+   89490    8.5362516e+02   0.000000e+00   2.680060e+07   2260s
+   89970    8.4982460e+02   0.000000e+00   1.017705e+07   2267s
+   90210    8.4978826e+02   0.000000e+00   3.572478e+07   2270s
+   90570    8.4977116e+02   0.000000e+00   4.178271e+06   2276s
+   90930    8.4838370e+02   0.000000e+00   1.089493e+06   2281s
+   91503    8.2808845e+02   0.000000e+00   3.109841e+06   2285s
+   91983    8.2799824e+02   0.000000e+00   3.962970e+06   2292s
+   92343    8.2625222e+02   0.000000e+00   1.821034e+06   2297s
+   92583    8.2454922e+02   0.000000e+00   1.017660e+08   2301s
+   93063    8.2451257e+02   0.000000e+00   2.985289e+06   2307s
+   93303    8.2450606e+02   0.000000e+00   2.195799e+07   2312s
+   93543    8.2449747e+02   0.000000e+00   8.634003e+06   2315s
+   94023    8.2448286e+02   0.000000e+00   1.284157e+07   2321s
+   94383    8.2446781e+02   0.000000e+00   1.791811e+07   2327s
+   94743    8.2346309e+02   0.000000e+00   1.849026e+06   2331s
+   94983    8.2345676e+02   0.000000e+00   1.005113e+07   2336s
+   95343    8.2344668e+02   0.000000e+00   8.319670e+06   2341s
+   95583    8.2046202e+02   0.000000e+00   3.035473e+06   2345s
+   95943    8.2045549e+02   0.000000e+00   6.507597e+06   2351s
+   96303    8.2044928e+02   0.000000e+00   1.258215e+06   2356s
+   96663    8.2044102e+02   0.000000e+00   6.131018e+05   2361s
+   97023    8.2042590e+02   0.000000e+00   1.702592e+07   2366s
+   97383    8.2040827e+02   0.000000e+00   5.975710e+05   2371s
+   97743    8.1943730e+02   0.000000e+00   7.259410e+06   2376s
+   98103    8.1942655e+02   0.000000e+00   4.764851e+06   2382s
+   98343    8.1941709e+02   0.000000e+00   2.857051e+06   2386s
+   98703    8.1939848e+02   0.000000e+00   8.043179e+06   2391s
+   98943    8.1938156e+02   0.000000e+00   1.796447e+07   2395s
+   99548    8.1003891e+02   0.000000e+00   4.000213e+07   2402s
+   99908    8.0997113e+02   0.000000e+00   5.411966e+06   2407s
+  100148    8.0832847e+02   0.000000e+00   5.546175e+06   2411s
+  100388    8.0832025e+02   0.000000e+00   1.360746e+07   2415s
+  100748    8.0831060e+02   0.000000e+00   1.427563e+06   2420s
+  101108    8.0830156e+02   0.000000e+00   4.018826e+06   2426s
+  101348    8.0829475e+02   0.000000e+00   1.822031e+07   2431s
+  101708    8.0680481e+02   0.000000e+00   5.627124e+05   2437s
+  101948    8.0679789e+02   0.000000e+00   6.051339e+05   2440s
+  102423    8.0589191e+02   0.000000e+00   6.572182e+06   2447s
+  102806    8.0244690e+02   0.000000e+00   3.985270e+06   2452s
+  103046    8.0243591e+02   0.000000e+00   1.722889e+07   2456s
+  103422    8.0040496e+02   0.000000e+00   4.289983e+06   2461s
+  103662    8.0005052e+02   0.000000e+00   1.345913e+06   2465s
+  104022    8.0003677e+02   0.000000e+00   5.842782e+05   2470s
+  104502    7.9855321e+02   0.000000e+00   3.199868e+07   2477s
+  104742    7.9854553e+02   0.000000e+00   7.773579e+06   2482s
+  105102    7.9815840e+02   0.000000e+00   4.646708e+06   2486s
+  105462    7.9813555e+02   0.000000e+00   3.074034e+06   2491s
+  105824    7.9777881e+02   0.000000e+00   3.847960e+06   2497s
+  106068    7.9601403e+02   0.000000e+00   1.100265e+06   2501s
+  106428    7.9592034e+02   0.000000e+00   2.033032e+06   2505s
+  106788    7.9590566e+02   0.000000e+00   7.649386e+05   2512s
+  107028    7.9589094e+02   0.000000e+00   4.066574e+06   2516s
+  107268    7.9588468e+02   0.000000e+00   4.824983e+06   2520s
+  107628    7.9444722e+02   0.000000e+00   1.513639e+06   2526s
+  107988    7.9443087e+02   0.000000e+00   2.396624e+06   2532s
+  108228    7.9386487e+02   0.000000e+00   4.957412e+07   2535s
+  108588    7.9294059e+02   0.000000e+00   2.291121e+07   2541s
+  108948    7.9291841e+02   0.000000e+00   9.722772e+05   2546s
+  109188    7.9290402e+02   0.000000e+00   1.280259e+07   2550s
+  109669    7.9186167e+02   0.000000e+00   3.642533e+06   2557s
+  109909    7.9185299e+02   0.000000e+00   1.165940e+07   2560s
+  110269    7.9183158e+02   0.000000e+00   1.040852e+07   2566s
+  110629    7.9180320e+02   0.000000e+00   3.801022e+06   2571s
+  110989    7.9177318e+02   0.000000e+00   3.335102e+07   2577s
+  111229    7.9175045e+02   0.000000e+00   4.334690e+06   2581s
+  111469    7.9172297e+02   0.000000e+00   1.359790e+06   2586s
+  111829    7.9165812e+02   0.000000e+00   5.154604e+06   2592s
+  112069    7.9159830e+02   0.000000e+00   1.585436e+07   2595s
+  112429    7.9149455e+02   0.000000e+00   4.203996e+06   2600s
+  112909    7.9120118e+02   0.000000e+00   2.379619e+07   2606s
+  113149    7.9093042e+02   0.000000e+00   4.539452e+07   2611s
+  113509    7.9087036e+02   0.000000e+00   2.610186e+06   2617s
+  113749    7.9071989e+02   0.000000e+00   2.741110e+07   2620s
+  114109    7.9006214e+02   0.000000e+00   6.671126e+06   2625s
+  114589    7.8984026e+02   0.000000e+00   8.748676e+06   2631s
+  114949    7.8978212e+02   0.000000e+00   1.843228e+07   2636s
+  115324    7.8768282e+02   0.000000e+00   7.318202e+07   2640s
+  115684    7.8758379e+02   0.000000e+00   4.312944e+07   2645s
+  116044    7.8743332e+02   0.000000e+00   1.824934e+07   2650s
+  116404    7.8721238e+02   0.000000e+00   5.391334e+07   2656s
+  116644    7.8713010e+02   0.000000e+00   6.799032e+07   2660s
+  117124    7.8661976e+02   0.000000e+00   5.915459e+07   2665s
+  117484    7.8639521e+02   0.000000e+00   4.168273e+07   2670s
+  117844    7.8620954e+02   0.000000e+00   1.195873e+08   2675s
+  118324    7.8594833e+02   0.000000e+00   2.137413e+07   2682s
+  118564    7.8583464e+02   0.000000e+00   2.469073e+07   2685s
+  118924    7.8572442e+02   0.000000e+00   2.617124e+06   2691s
+  119284    7.8569204e+02   0.000000e+00   4.687170e+06   2695s
+  119764    7.8559039e+02   0.000000e+00   8.475945e+06   2701s
+  120124    7.8536978e+02   0.000000e+00   8.375062e+06   2705s
+  120604    7.8524931e+02   0.000000e+00   2.285995e+07   2711s
+  120964    7.8516359e+02   0.000000e+00   2.407036e+05   2716s
+  121324    7.8501895e+02   0.000000e+00   7.029921e+06   2721s
+  121684    7.8484853e+02   0.000000e+00   1.316233e+06   2726s
+  122044    7.8446185e+02   0.000000e+00   1.582366e+07   2731s
+  122284    7.8437697e+02   0.000000e+00   5.799901e+07   2736s
+  122644    7.8432568e+02   0.000000e+00   1.482160e+07   2741s
+  122884    7.8426776e+02   0.000000e+00   3.200877e+07   2745s
+  123244    7.8409285e+02   0.000000e+00   1.335434e+07   2752s
+  123604    7.8381666e+02   0.000000e+00   1.227125e+07   2757s
+  123844    7.8379059e+02   0.000000e+00   3.937648e+07   2761s
+  124204    7.8371009e+02   0.000000e+00   2.180521e+06   2767s
+  124684    7.8260172e+02   0.000000e+00   1.955658e+07   2773s
+  124924    7.8238774e+02   0.000000e+00   2.750773e+07   2776s
+  125164    7.8228091e+02   0.000000e+00   4.056425e+07   2780s
+  125524    7.8165976e+02   0.000000e+00   1.373779e+06   2785s
+  126004    7.8113845e+02   0.000000e+00   8.943535e+06   2790s
+  126364    7.8077502e+02   0.000000e+00   4.210960e+06   2795s
+  126844    7.7972151e+02   0.000000e+00   5.513523e+05   2802s
+  127204    7.7815543e+02   0.000000e+00   1.193683e+07   2805s
+  127684    7.7762659e+02   0.000000e+00   2.180173e+06   2810s
+  128164    7.7710795e+02   0.000000e+00   8.117446e+04   2816s
+  128524    7.7704624e+02   0.000000e+00   7.320306e+06   2821s
+  128884    7.7702122e+02   0.000000e+00   4.560887e+05   2826s
+  129244    7.7699946e+02   0.000000e+00   6.565359e+05   2831s
+  129604    7.7697334e+02   0.000000e+00   1.148156e+07   2836s
+  129844    7.7693358e+02   0.000000e+00   7.934363e+07   2840s
+  130204    7.7687542e+02   0.000000e+00   6.860677e+07   2846s
+  130564    7.7677748e+02   0.000000e+00   4.676767e+06   2853s
+  130804    7.7661639e+02   0.000000e+00   4.925652e+07   2856s
+  131164    7.7644136e+02   0.000000e+00   2.225703e+07   2860s
+  131524    7.7633203e+02   0.000000e+00   9.225605e+06   2866s
+  131884    7.7598509e+02   0.000000e+00   1.996333e+06   2870s
+  132364    7.7587756e+02   0.000000e+00   3.547876e+07   2877s
+  132724    7.7556436e+02   0.000000e+00   3.450300e+07   2881s
+  133084    7.7539329e+02   0.000000e+00   2.492992e+06   2887s
+  133324    7.7533065e+02   0.000000e+00   2.066427e+06   2890s
+  133804    7.7492640e+02   0.000000e+00   6.628020e+07   2897s
+  134164    7.7465586e+02   0.000000e+00   2.641371e+07   2902s
+  134524    7.7456133e+02   0.000000e+00   1.505991e+08   2906s
+  134764    7.7451202e+02   0.000000e+00   7.739028e+06   2910s
+  135124    7.7445579e+02   0.000000e+00   1.401223e+08   2916s
+  135484    7.7421403e+02   0.000000e+00   2.735069e+06   2920s
+  135844    7.7418873e+02   0.000000e+00   5.284556e+05   2925s
+  136324    7.7368644e+02   0.000000e+00   8.378836e+07   2932s
+  136564    7.7360263e+02   0.000000e+00   2.464932e+07   2937s
+  136804    7.7349970e+02   0.000000e+00   1.786952e+07   2941s
+  137044    7.7347451e+02   0.000000e+00   4.597291e+07   2945s
+  137404    7.7317622e+02   0.000000e+00   1.950373e+06   2951s
+  137644    7.7311343e+02   0.000000e+00   1.846387e+06   2955s
+  138124    7.7296513e+02   0.000000e+00   6.306496e+07   2960s
+  138484    7.7235700e+02   0.000000e+00   5.029446e+08   2965s
+  138964    7.7184727e+02   0.000000e+00   7.989711e+06   2971s
+  139324    7.7138600e+02   0.000000e+00   2.004396e+07   2976s
+  139804    7.7073493e+02   0.000000e+00   2.308946e+07   2982s
+  140164    7.7051043e+02   0.000000e+00   2.330851e+07   2985s
+  140524    7.7031907e+02   0.000000e+00   3.990707e+07   2990s
+  140884    7.6984576e+02   0.000000e+00   3.574758e+07   2996s
+  141244    7.6971808e+02   0.000000e+00   5.301018e+07   3000s
+  141604    7.6969808e+02   0.000000e+00   4.799350e+06   3005s
+  141965    7.6956343e+02   0.000000e+00   4.321171e+06   3011s
+  142325    7.6951668e+02   0.000000e+00   1.808026e+06   3015s
+  142685    7.6946882e+02   0.000000e+00   1.891361e+07   3021s
+  143045    7.6945319e+02   0.000000e+00   5.402521e+06   3026s
+  143405    7.6943824e+02   0.000000e+00   1.012266e+08   3031s
+  143765    7.6937689e+02   0.000000e+00   1.928671e+07   3035s
+  144125    7.6932668e+02   0.000000e+00   3.145566e+07   3041s
+  144605    7.6909044e+02   0.000000e+00   5.993828e+07   3046s
+  144965    7.6886699e+02   0.000000e+00   6.058157e+07   3051s
+  145325    7.6847757e+02   0.000000e+00   2.488395e+05   3056s
+  145565    7.6839494e+02   0.000000e+00   1.378515e+08   3060s
+  145925    7.6831374e+02   0.000000e+00   1.769462e+07   3066s
+  146285    7.6826969e+02   0.000000e+00   2.052143e+07   3071s
+  146645    7.6820594e+02   0.000000e+00   1.808712e+07   3077s
+  146885    7.6809814e+02   0.000000e+00   4.606827e+05   3081s
+  147245    7.6797635e+02   0.000000e+00   5.569208e+06   3085s
+  147725    7.6789694e+02   0.000000e+00   3.816677e+07   3092s
+  147965    7.6778882e+02   0.000000e+00   3.773291e+06   3095s
+  148445    7.6760116e+02   0.000000e+00   1.696229e+07   3101s
+  148805    7.6753007e+02   0.000000e+00   5.279639e+06   3106s
+  149285    7.6721454e+02   0.000000e+00   9.966443e+06   3112s
+  149645    7.6718522e+02   0.000000e+00   5.813241e+06   3115s
+  150005    7.6707265e+02   0.000000e+00   1.239114e+07   3120s
+  150365    7.6688543e+02   0.000000e+00   1.067601e+08   3125s
+  150725    7.6667931e+02   0.000000e+00   2.868611e+07   3130s
+  151205    7.6651786e+02   0.000000e+00   4.231932e+06   3136s
+  151565    7.6644405e+02   0.000000e+00   5.518311e+07   3142s
+  151805    7.6634707e+02   0.000000e+00   6.054467e+07   3145s
+  152165    7.6627163e+02   0.000000e+00   9.633511e+06   3151s
+  152525    7.6624038e+02   0.000000e+00   5.883905e+07   3157s
+  152885    7.6610121e+02   0.000000e+00   6.534726e+06   3160s
+  153245    7.6597647e+02   0.000000e+00   7.173863e+06   3166s
+  153605    7.6587318e+02   0.000000e+00   9.730040e+06   3171s
+  153965    7.6584545e+02   0.000000e+00   3.940808e+06   3176s
+  154325    7.6576908e+02   0.000000e+00   2.025429e+07   3181s
+  154685    7.6562242e+02   0.000000e+00   1.243467e+07   3185s
+  155045    7.6528608e+02   0.000000e+00   8.498670e+07   3190s
+  155405    7.6523981e+02   0.000000e+00   1.777241e+07   3195s
+  155765    7.6511577e+02   0.000000e+00   1.233360e+08   3201s
+  156125    7.6483313e+02   0.000000e+00   4.557621e+07   3205s
+  156485    7.6465505e+02   0.000000e+00   2.986084e+07   3210s
+  156965    7.6450597e+02   0.000000e+00   7.274006e+06   3216s
+  157325    7.6445785e+02   0.000000e+00   2.351128e+07   3221s
+  157685    7.6437066e+02   0.000000e+00   4.900535e+06   3226s
+  158165    7.6408327e+02   0.000000e+00   1.271970e+08   3231s
+  158525    7.6394465e+02   0.000000e+00   4.155727e+07   3236s
+  158765    7.6390626e+02   0.000000e+00   1.351802e+08   3241s
+  159005    7.6388444e+02   0.000000e+00   1.211165e+07   3245s
+  159365    7.6382712e+02   0.000000e+00   1.440483e+07   3250s
+  159725    7.6345458e+02   0.000000e+00   3.154536e+07   3256s
+  160085    7.6313526e+02   0.000000e+00   2.004952e+07   3260s
+  160445    7.6283943e+02   0.000000e+00   1.108957e+07   3266s
+  160925    7.6192771e+02   0.000000e+00   5.333127e+06   3270s
+  161405    7.6117183e+02   0.000000e+00   1.704243e+07   3277s
+  161765    7.6077436e+02   0.000000e+00   6.174403e+06   3281s
+  162125    7.6064855e+02   0.000000e+00   1.298394e+07   3286s
+  162485    7.6059673e+02   0.000000e+00   2.396734e+06   3291s
+  162965    7.5920581e+02   0.000000e+00   2.705794e+07   3296s
+  163445    7.5761672e+02   0.000000e+00   5.509705e+06   3302s
+  163805    7.5736176e+02   0.000000e+00   5.633161e+06   3306s
+  164285    7.5698889e+02   0.000000e+00   7.759056e+06   3312s
+  164525    7.5696690e+02   0.000000e+00   2.343961e+06   3315s
+  164885    7.5684340e+02   0.000000e+00   6.380064e+06   3320s
+  165245    7.5681291e+02   0.000000e+00   2.116550e+07   3325s
+  165725    7.5675566e+02   0.000000e+00   2.654081e+07   3331s
+  166205    7.5648125e+02   0.000000e+00   9.515784e+08   3336s
+  166565    7.5637441e+02   0.000000e+00   1.149887e+08   3342s
+  166925    7.5489925e+02   0.000000e+00   2.891572e+07   3346s
+  167165    7.5489058e+02   0.000000e+00   9.889291e+06   3350s
+  167525    7.5487388e+02   0.000000e+00   1.184444e+07   3355s
+  167885    7.5481976e+02   0.000000e+00   1.813277e+08   3360s
+  168245    7.5477882e+02   0.000000e+00   3.483232e+06   3366s
+  168605    7.5462068e+02   0.000000e+00   2.074581e+05   3371s
+  168965    7.5458097e+02   0.000000e+00   2.088211e+07   3375s
+  169325    7.5455166e+02   0.000000e+00   3.700888e+08   3380s
+  169685    7.5452046e+02   0.000000e+00   3.638819e+07   3386s
+  170045    7.5449778e+02   0.000000e+00   3.028853e+06   3391s
+  170525    7.5365842e+02   0.000000e+00   2.491661e+07   3396s
+  170885    7.5348400e+02   0.000000e+00   2.106916e+07   3400s
+  171245    7.5344291e+02   0.000000e+00   3.343120e+07   3406s
+  171605    7.5341038e+02   0.000000e+00   5.546554e+05   3411s
+  171965    7.5338622e+02   0.000000e+00   7.080435e+06   3416s
+  172325    7.5299329e+02   0.000000e+00   4.963949e+07   3421s
+  172805    7.5237278e+02   0.000000e+00   1.750839e+06   3425s
+  173285    7.5211645e+02   0.000000e+00   1.415223e+07   3431s
+  173648    7.5094116e+02   0.000000e+00   7.619469e+06   3436s
+  174008    7.5089614e+02   0.000000e+00   1.567540e+07   3442s
+  174368    7.5064780e+02   0.000000e+00   8.239295e+06   3447s
+  174728    7.5036940e+02   0.000000e+00   9.112683e+07   3451s
+  175088    7.5013075e+02   0.000000e+00   2.974520e+06   3455s
+  175448    7.4988163e+02   0.000000e+00   1.850965e+06   3460s
+  175928    7.4962676e+02   0.000000e+00   2.217134e+07   3466s
+  176288    7.4953211e+02   0.000000e+00   7.973499e+06   3471s
+  176648    7.4947151e+02   0.000000e+00   5.347566e+07   3475s
+  177008    7.4916415e+02   0.000000e+00   1.214234e+07   3481s
+  177248    7.4868689e+02   0.000000e+00   3.443294e+08   3486s
+  177608    7.4863128e+02   0.000000e+00   2.068701e+08   3491s
+  177968    7.4849274e+02   0.000000e+00   6.091319e+06   3496s
+  178328    7.4838577e+02   0.000000e+00   9.191578e+07   3500s
+  178688    7.4832163e+02   0.000000e+00   5.494485e+07   3505s
+  179168    7.4822151e+02   0.000000e+00   9.027468e+06   3512s
+  179408    7.4814201e+02   0.000000e+00   1.647217e+06   3516s
+  179768    7.4808889e+02   0.000000e+00   2.026370e+07   3521s
+  180128    7.4801730e+02   0.000000e+00   5.346865e+06   3525s
+  180608    7.4797033e+02   0.000000e+00   2.649034e+07   3531s
+  180968    7.4792718e+02   0.000000e+00   8.924997e+05   3535s
+  181328    7.4784200e+02   0.000000e+00   2.495889e+07   3541s
+  181688    7.4780460e+02   0.000000e+00   1.067446e+07   3546s
+  182048    7.4773975e+02   0.000000e+00   7.344463e+06   3550s
+  182408    7.4764743e+02   0.000000e+00   9.665506e+06   3555s
+  182768    7.4757048e+02   0.000000e+00   7.168008e+06   3561s
+  183008    7.4756044e+02   0.000000e+00   6.396148e+06   3565s
+  183488    7.4744213e+02   0.000000e+00   2.506965e+07   3571s
+  183728    7.4741137e+02   0.000000e+00   1.745235e+07   3576s
+  184088    7.4735801e+02   0.000000e+00   1.927065e+07   3581s
+  184448    7.4720904e+02   0.000000e+00   2.261642e+07   3587s
+  184688    7.4713663e+02   0.000000e+00   1.545476e+07   3590s
+  185168    7.4702706e+02   0.000000e+00   6.285852e+06   3596s
+  185528    7.4689832e+02   0.000000e+00   4.483465e+06   3600s
+
+Root relaxation: time limit, 185528 iterations, 1901.54 seconds (3171.04 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0          -    0      1138.00000  585.00000  48.6%     - 3600s
+
+Explored 1 nodes (185528 simplex iterations) in 3605.85 seconds (3714.68 work units)
+Thread count was 1 (of 80 available processors)
+
+Solution count 2: 1138 1180 
+
+Time limit reached
+Best objective 1.138000000000e+03, best bound 5.850000000000e+02, gap 48.5940%
+Block ((2,), ()) at (0, 199)
+Block ((2,), ()) at (49, 444)
+Block ((2,), ()) at (72, 1)
+Block ((2,), ()) at (143, 559)
+Block ((2,), ()) at (189, 432)
+Block ((2,), ()) at (209, 357)
+Block ((2,), ()) at (212, 422)
+Block ((2,), ()) at (256, 10)
+Block ((2,), ()) at (277, 814)
+Block ((2,), ()) at (284, 691)
+Block ((2,), ()) at (296, 991)
+Block ((2,), ()) at (353, 647)
+Block ((2,), ()) at (355, 133)
+Block ((2,), ()) at (358, 586)
+Block ((2,), ()) at (401, 516)
+Block ((2,), ()) at (484, 917)
+Block ((2,), ()) at (512, 97)
+Block ((2,), ()) at (575, 925)
+Block ((2,), ()) at (639, 621)
+Block ((2,), ()) at (646, 642)
+Block ((2,), ()) at (657, 383)
+Block ((2,), ()) at (782, 460)
+Block ((2,), ()) at (819, 19)
+Block ((2,), ()) at (839, 50)
+Block ((2,), ()) at (906, 496)
+Block ((2,), ()) at (922, 591)
+Block ((2,), ()) at (966, 786)
+Block ((4,), ()) at (1, 723)
+Block ((4,), ()) at (3, 134)
+Block ((4,), ()) at (8, 71)
+Block ((4,), ()) at (11, 409)
+Block ((4,), ()) at (142, 437)
+Block ((4,), ()) at (159, 132)
+Block ((4,), ()) at (211, 307)
+Block ((4,), ()) at (228, 663)
+Block ((4,), ()) at (255, 375)
+Block ((4,), ()) at (299, 99)
+Block ((4,), ()) at (303, 696)
+Block ((4,), ()) at (316, 969)
+Block ((4,), ()) at (321, 500)
+Block ((4,), ()) at (402, 178)
+Block ((4,), ()) at (433, 261)
+Block ((4,), ()) at (438, 479)
+Block ((4,), ()) at (443, 548)
+Block ((4,), ()) at (450, 326)
+Block ((4,), ()) at (517, 818)
+Block ((4,), ()) at (602, 298)
+Block ((4,), ()) at (604, 909)
+Block ((4,), ()) at (621, 268)
+Block ((4,), ()) at (705, 116)
+Block ((4,), ()) at (771, 191)
+Block ((4,), ()) at (797, 907)
+Block ((4,), ()) at (828, 210)
+Block ((4,), ()) at (832, 339)
+Block ((4,), ()) at (834, 271)
+Block ((4,), ()) at (842, 312)
+Block ((4,), ()) at (856, 671)
+Block ((4,), ()) at (870, 924)
+Block ((4,), ()) at (934, 602)
+Block ((4,), ()) at (958, 247)
+Block ((4,), ()) at (968, 524)
+Block ((4,), ()) at (969, 365)
+Block ((4,), ()) at (994, 705)
+Block ((4,), ()) at (999, 438)
+Block ((18,), ()) at (6, 289)
+Block ((18,), ()) at (31, 709)
+Block ((18,), ()) at (32, 797)
+Block ((18,), ()) at (76, 517)
+Block ((18,), ()) at (111, 707)
+Block ((18,), ()) at (133, 284)
+Block ((18,), ()) at (135, 687)
+Block ((18,), ()) at (160, 736)
+Block ((18,), ()) at (190, 419)
+Block ((18,), ()) at (191, 820)
+Block ((18,), ()) at (202, 149)
+Block ((18,), ()) at (214, 596)
+Block ((18,), ()) at (225, 629)
+Block ((18,), ()) at (233, 861)
+Block ((18,), ()) at (274, 115)
+Block ((18,), ()) at (302, 938)
+Block ((18,), ()) at (323, 930)
+Block ((18,), ()) at (335, 90)
+Block ((18,), ()) at (372, 630)
+Block ((18,), ()) at (385, 332)
+Block ((18,), ()) at (455, 251)
+Block ((18,), ()) at (457, 870)
+Block ((18,), ()) at (519, 26)
+Block ((18,), ()) at (590, 124)
+Block ((18,), ()) at (610, 514)
+Block ((18,), ()) at (647, 123)
+Block ((18,), ()) at (651, 979)
+Block ((18,), ()) at (658, 860)
+Block ((18,), ()) at (669, 520)
+Block ((18,), ()) at (709, 762)
+Block ((18,), ()) at (716, 874)
+Block ((18,), ()) at (738, 248)
+Block ((18,), ()) at (754, 835)
+Block ((18,), ()) at (775, 588)
+Block ((18,), ()) at (783, 627)
+Block ((18,), ()) at (854, 20)
+Block ((18,), ()) at (860, 685)
+Block ((18,), ()) at (888, 730)
+Block ((18,), ()) at (926, 196)
+Block ((18,), ()) at (949, 821)
+Block ((18,), ()) at (990, 949)
+Block ((10,), ()) at (4, 728)
+Block ((10,), ()) at (10, 371)
+Block ((10,), ()) at (14, 563)
+Block ((10,), ()) at (15, 764)
+Block ((10,), ()) at (21, 878)
+Block ((10,), ()) at (24, 582)
+Block ((10,), ()) at (34, 408)
+Block ((10,), ()) at (38, 108)
+Block ((10,), ()) at (44, 796)
+Block ((10,), ()) at (46, 59)
+Block ((10,), ()) at (196, 519)
+Block ((10,), ()) at (208, 836)
+Block ((10,), ()) at (241, 495)
+Block ((10,), ()) at (244, 849)
+Block ((10,), ()) at (279, 573)
+Block ((10,), ()) at (288, 599)
+Block ((10,), ()) at (306, 29)
+Block ((10,), ()) at (329, 537)
+Block ((10,), ()) at (337, 246)
+Block ((10,), ()) at (342, 739)
+Block ((10,), ()) at (432, 886)
+Block ((10,), ()) at (447, 125)
+Block ((10,), ()) at (448, 142)
+Block ((10,), ()) at (475, 490)
+Block ((10,), ()) at (515, 898)
+Block ((10,), ()) at (526, 478)
+Block ((10,), ()) at (535, 283)
+Block ((10,), ()) at (560, 889)
+Block ((10,), ()) at (570, 57)
+Block ((10,), ()) at (573, 776)
+Block ((10,), ()) at (605, 750)
+Block ((10,), ()) at (611, 502)
+Block ((10,), ()) at (620, 577)
+Block ((10,), ()) at (636, 493)
+Block ((10,), ()) at (702, 450)
+Block ((10,), ()) at (713, 36)
+Block ((10,), ()) at (741, 507)
+Block ((10,), ()) at (756, 712)
+Block ((10,), ()) at (794, 470)
+Block ((10,), ()) at (861, 963)
+Block ((10,), ()) at (875, 875)
+Block ((10,), ()) at (916, 367)
+Block ((1,), ()) at (5, 40)
+Block ((1,), ()) at (17, 322)
+Block ((1,), ()) at (19, 962)
+Block ((1,), ()) at (33, 244)
+Block ((1,), ()) at (66, 221)
+Block ((1,), ()) at (78, 912)
+Block ((1,), ()) at (83, 718)
+Block ((1,), ()) at (120, 171)
+Block ((1,), ()) at (121, 997)
+Block ((1,), ()) at (168, 445)
+Block ((1,), ()) at (227, 657)
+Block ((1,), ()) at (243, 544)
+Block ((1,), ()) at (269, 863)
+Block ((1,), ()) at (364, 722)
+Block ((1,), ()) at (389, 645)
+Block ((1,), ()) at (390, 194)
+Block ((1,), ()) at (404, 287)
+Block ((1,), ()) at (408, 751)
+Block ((1,), ()) at (416, 348)
+Block ((1,), ()) at (429, 931)
+Block ((1,), ()) at (487, 617)
+Block ((1,), ()) at (503, 32)
+Block ((1,), ()) at (521, 908)
+Block ((1,), ()) at (525, 527)
+Block ((1,), ()) at (550, 738)
+Block ((1,), ()) at (622, 572)
+Block ((1,), ()) at (624, 832)
+Block ((1,), ()) at (638, 16)
+Block ((1,), ()) at (645, 846)
+Block ((1,), ()) at (648, 605)
+Block ((1,), ()) at (737, 278)
+Block ((1,), ()) at (751, 761)
+Block ((1,), ()) at (772, 554)
+Block ((1,), ()) at (784, 485)
+Block ((1,), ()) at (813, 3)
+Block ((1,), ()) at (850, 434)
+Block ((1,), ()) at (894, 129)
+Block ((1,), ()) at (908, 869)
+Block ((1,), ()) at (955, 417)
+Block ((1,), ()) at (965, 978)
+Block ((1,), ()) at (980, 947)
+Block ((16,), ()) at (7, 207)
+Block ((16,), ()) at (25, 515)
+Block ((16,), ()) at (57, 725)
+Block ((16,), ()) at (67, 759)
+Block ((16,), ()) at (79, 817)
+Block ((16,), ()) at (82, 224)
+Block ((16,), ()) at (95, 873)
+Block ((16,), ()) at (98, 923)
+Block ((16,), ()) at (129, 795)
+Block ((16,), ()) at (167, 545)
+Block ((16,), ()) at (195, 301)
+Block ((16,), ()) at (220, 442)
+Block ((16,), ()) at (267, 267)
+Block ((16,), ()) at (282, 986)
+Block ((16,), ()) at (290, 611)
+Block ((16,), ()) at (367, 613)
+Block ((16,), ()) at (392, 694)
+Block ((16,), ()) at (407, 782)
+Block ((16,), ()) at (411, 985)
+Block ((16,), ()) at (452, 711)
+Block ((16,), ()) at (454, 172)
+Block ((16,), ()) at (465, 204)
+Block ((16,), ()) at (489, 121)
+Block ((16,), ()) at (603, 150)
+Block ((16,), ()) at (608, 195)
+Block ((16,), ()) at (613, 686)
+Block ((16,), ()) at (619, 826)
+Block ((16,), ()) at (631, 892)
+Block ((16,), ()) at (640, 405)
+Block ((16,), ()) at (652, 154)
+Block ((16,), ()) at (680, 532)
+Block ((16,), ()) at (769, 111)
+Block ((16,), ()) at (816, 201)
+Block ((16,), ()) at (848, 265)
+Block ((16,), ()) at (904, 727)
+Block ((16,), ()) at (938, 665)
+Block ((16,), ()) at (939, 555)
+Block ((16,), ()) at (941, 648)
+Block ((16,), ()) at (945, 23)
+Block ((16,), ()) at (948, 114)
+Block ((16,), ()) at (976, 185)
+Block ((16,), ()) at (989, 640)
+Block ((16,), ()) at (992, 256)
+Block ((16, 4), (0,)) at (879, 957)
+Block ((20,), ()) at (9, 484)
+Block ((20,), ()) at (26, 518)
+Block ((20,), ()) at (39, 619)
+Block ((20,), ()) at (43, 396)
+Block ((20,), ()) at (92, 174)
+Block ((20,), ()) at (105, 341)
+Block ((20,), ()) at (140, 606)
+Block ((20,), ()) at (144, 352)
+Block ((20,), ()) at (174, 15)
+Block ((20,), ()) at (184, 372)
+Block ((20,), ()) at (204, 623)
+Block ((20,), ()) at (221, 858)
+Block ((20,), ()) at (235, 193)
+Block ((20,), ()) at (249, 291)
+Block ((20,), ()) at (266, 217)
+Block ((20,), ()) at (278, 416)
+Block ((20,), ()) at (324, 206)
+Block ((20,), ()) at (340, 639)
+Block ((20,), ()) at (347, 951)
+Block ((20,), ()) at (377, 373)
+Block ((20,), ()) at (427, 233)
+Block ((20,), ()) at (430, 598)
+Block ((20,), ()) at (431, 793)
+Block ((20,), ()) at (537, 896)
+Block ((20,), ()) at (564, 81)
+Block ((20,), ()) at (574, 880)
+Block ((20,), ()) at (576, 597)
+Block ((20,), ()) at (597, 816)
+Block ((20,), ()) at (606, 848)
+Block ((20,), ()) at (664, 56)
+Block ((20,), ()) at (686, 104)
+Block ((20,), ()) at (698, 443)
+Block ((20,), ()) at (722, 530)
+Block ((20,), ()) at (725, 777)
+Block ((20,), ()) at (793, 159)
+Block ((20,), ()) at (847, 637)
+Block ((20,), ()) at (866, 413)
+Block ((20,), ()) at (891, 644)
+Block ((20,), ()) at (892, 462)
+Block ((20,), ()) at (917, 411)
+Block ((20,), ()) at (920, 135)
+Block ((20,), ()) at (925, 262)
+Block ((20,), ()) at (963, 720)
+Block ((20,), ()) at (982, 327)
+Block ((11,), ()) at (12, 489)
+Block ((11,), ()) at (13, 144)
+Block ((11,), ()) at (37, 222)
+Block ((11,), ()) at (51, 513)
+Block ((11,), ()) at (69, 624)
+Block ((11,), ()) at (122, 491)
+Block ((11,), ()) at (154, 915)
+Block ((11,), ()) at (155, 391)
+Block ((11,), ()) at (239, 218)
+Block ((11,), ()) at (245, 481)
+Block ((11,), ()) at (251, 403)
+Block ((11,), ()) at (374, 998)
+Block ((11,), ()) at (382, 156)
+Block ((11,), ()) at (384, 70)
+Block ((11,), ()) at (442, 480)
+Block ((11,), ()) at (449, 539)
+Block ((11,), ()) at (453, 228)
+Block ((11,), ()) at (542, 651)
+Block ((11,), ()) at (643, 945)
+Block ((11,), ()) at (670, 884)
+Block ((11,), ()) at (747, 831)
+Block ((11,), ()) at (785, 928)
+Block ((11,), ()) at (790, 399)
+Block ((11,), ()) at (805, 182)
+Block ((11,), ()) at (814, 804)
+Block ((11,), ()) at (825, 61)
+Block ((11,), ()) at (852, 954)
+Block ((11,), ()) at (869, 568)
+Block ((11,), ()) at (928, 583)
+Block ((11,), ()) at (932, 569)
+Block ((11,), ()) at (960, 799)
+Block ((7,), ()) at (16, 773)
+Block ((7,), ()) at (22, 120)
+Block ((7,), ()) at (29, 423)
+Block ((7,), ()) at (108, 418)
+Block ((7,), ()) at (128, 126)
+Block ((7,), ()) at (169, 187)
+Block ((7,), ()) at (178, 735)
+Block ((7,), ()) at (186, 254)
+Block ((7,), ()) at (201, 828)
+Block ((7,), ()) at (305, 508)
+Block ((7,), ()) at (309, 593)
+Block ((7,), ()) at (328, 39)
+Block ((7,), ()) at (354, 404)
+Block ((7,), ()) at (360, 842)
+Block ((7,), ()) at (362, 294)
+Block ((7,), ()) at (363, 565)
+Block ((7,), ()) at (378, 792)
+Block ((7,), ()) at (391, 622)
+Block ((7,), ()) at (397, 658)
+Block ((7,), ()) at (399, 213)
+Block ((7,), ()) at (405, 692)
+Block ((7,), ()) at (423, 321)
+Block ((7,), ()) at (424, 364)
+Block ((7,), ()) at (460, 942)
+Block ((7,), ()) at (466, 708)
+Block ((7,), ()) at (480, 944)
+Block ((7,), ()) at (492, 813)
+Block ((7,), ()) at (495, 420)
+Block ((7,), ()) at (500, 183)
+Block ((7,), ()) at (507, 245)
+Block ((7,), ()) at (516, 164)
+Block ((7,), ()) at (531, 801)
+Block ((7,), ()) at (599, 73)
+Block ((7,), ()) at (628, 429)
+Block ((7,), ()) at (726, 17)
+Block ((7,), ()) at (742, 905)
+Block ((7,), ()) at (757, 594)
+Block ((7,), ()) at (792, 220)
+Block ((7,), ()) at (796, 966)
+Block ((7,), ()) at (801, 359)
+Block ((7,), ()) at (863, 633)
+Block ((7,), ()) at (905, 34)
+Block ((7,), ()) at (909, 843)
+Block ((7,), ()) at (935, 825)
+Block ((5,), ()) at (18, 319)
+Block ((5,), ()) at (47, 975)
+Block ((5,), ()) at (50, 464)
+Block ((5,), ()) at (97, 982)
+Block ((5,), ()) at (137, 664)
+Block ((5,), ()) at (139, 853)
+Block ((5,), ()) at (157, 96)
+Block ((5,), ()) at (205, 401)
+Block ((5,), ()) at (210, 384)
+Block ((5,), ()) at (222, 186)
+Block ((5,), ()) at (247, 540)
+Block ((5,), ()) at (265, 295)
+Block ((5,), ()) at (373, 299)
+Block ((5,), ()) at (379, 486)
+Block ((5,), ()) at (395, 347)
+Block ((5,), ()) at (409, 277)
+Block ((5,), ()) at (415, 616)
+Block ((5,), ()) at (470, 43)
+Block ((5,), ()) at (472, 179)
+Block ((5,), ()) at (543, 784)
+Block ((5,), ()) at (547, 972)
+Block ((5,), ()) at (563, 615)
+Block ((5,), ()) at (594, 203)
+Block ((5,), ()) at (615, 688)
+Block ((5,), ()) at (632, 802)
+Block ((5,), ()) at (668, 717)
+Block ((5,), ()) at (695, 845)
+Block ((5,), ()) at (729, 906)
+Block ((5,), ()) at (748, 211)
+Block ((5,), ()) at (765, 42)
+Block ((5,), ()) at (767, 612)
+Block ((5,), ()) at (788, 200)
+Block ((5,), ()) at (817, 257)
+Block ((5,), ()) at (893, 837)
+Block ((5,), ()) at (923, 427)
+Block ((5,), ()) at (936, 309)
+Block ((5,), ()) at (953, 683)
+Block ((5,), ()) at (971, 163)
+Block ((5,), ()) at (985, 153)
+Block ((5,), ()) at (993, 241)
+Block ((19,), ()) at (20, 325)
+Block ((19,), ()) at (56, 932)
+Block ((19,), ()) at (58, 879)
+Block ((19,), ()) at (171, 595)
+Block ((19,), ()) at (175, 145)
+Block ((19,), ()) at (229, 54)
+Block ((19,), ()) at (272, 789)
+Block ((19,), ()) at (291, 340)
+Block ((19,), ()) at (320, 273)
+Block ((19,), ()) at (327, 807)
+Block ((19,), ()) at (331, 482)
+Block ((19,), ()) at (359, 607)
+Block ((19,), ()) at (366, 334)
+Block ((19,), ()) at (413, 608)
+Block ((19,), ()) at (419, 542)
+Block ((19,), ()) at (428, 143)
+Block ((19,), ()) at (467, 21)
+Block ((19,), ()) at (509, 276)
+Block ((19,), ()) at (529, 682)
+Block ((19,), ()) at (538, 177)
+Block ((19,), ()) at (549, 948)
+Block ((19,), ()) at (553, 834)
+Block ((19,), ()) at (607, 570)
+Block ((19,), ()) at (667, 231)
+Block ((19,), ()) at (684, 349)
+Block ((19,), ()) at (696, 331)
+Block ((19,), ()) at (731, 452)
+Block ((19,), ()) at (732, 921)
+Block ((19,), ()) at (830, 6)
+Block ((19,), ()) at (840, 447)
+Block ((19,), ()) at (886, 421)
+Block ((19,), ()) at (897, 424)
+Block ((19,), ()) at (902, 587)
+Block ((19,), ()) at (951, 824)
+Block ((19,), ()) at (952, 461)
+Block ((19,), ()) at (981, 412)
+Block ((19,), ()) at (984, 483)
+Block ((17,), ()) at (54, 175)
+Block ((17,), ()) at (65, 877)
+Block ((17,), ()) at (81, 558)
+Block ((17,), ()) at (90, 356)
+Block ((17,), ()) at (91, 354)
+Block ((17,), ()) at (107, 11)
+Block ((17,), ()) at (126, 669)
+Block ((17,), ()) at (141, 55)
+Block ((17,), ()) at (151, 475)
+Block ((17,), ()) at (177, 724)
+Block ((17,), ()) at (185, 467)
+Block ((17,), ()) at (194, 253)
+Block ((17,), ()) at (200, 53)
+Block ((17,), ()) at (213, 344)
+Block ((17,), ()) at (285, 209)
+Block ((17,), ()) at (287, 729)
+Block ((17,), ()) at (322, 815)
+Block ((17,), ()) at (334, 318)
+Block ((17,), ()) at (336, 93)
+Block ((17,), ()) at (343, 504)
+Block ((17,), ()) at (369, 140)
+Block ((17,), ()) at (482, 666)
+Block ((17,), ()) at (508, 258)
+Block ((17,), ()) at (527, 851)
+Block ((17,), ()) at (544, 436)
+Block ((17,), ()) at (588, 2)
+Block ((17,), ()) at (591, 589)
+Block ((17,), ()) at (601, 360)
+Block ((17,), ()) at (677, 523)
+Block ((17,), ()) at (683, 494)
+Block ((17,), ()) at (689, 684)
+Block ((17,), ()) at (762, 302)
+Block ((17,), ()) at (815, 974)
+Block ((17,), ()) at (841, 996)
+Block ((17,), ()) at (901, 535)
+Block ((16, 20), (0,)) at (497, 733)
+Block ((13,), ()) at (27, 543)
+Block ((13,), ()) at (60, 680)
+Block ((13,), ()) at (89, 562)
+Block ((13,), ()) at (136, 45)
+Block ((13,), ()) at (148, 620)
+Block ((13,), ()) at (207, 69)
+Block ((13,), ()) at (226, 676)
+Block ((13,), ()) at (250, 103)
+Block ((13,), ()) at (261, 822)
+Block ((13,), ()) at (264, 779)
+Block ((13,), ()) at (271, 215)
+Block ((13,), ()) at (310, 977)
+Block ((13,), ()) at (312, 37)
+Block ((13,), ()) at (386, 827)
+Block ((13,), ()) at (426, 578)
+Block ((13,), ()) at (441, 649)
+Block ((13,), ()) at (456, 704)
+Block ((13,), ()) at (502, 747)
+Block ((13,), ()) at (524, 376)
+Block ((13,), ()) at (528, 937)
+Block ((13,), ()) at (598, 101)
+Block ((13,), ()) at (617, 745)
+Block ((13,), ()) at (644, 395)
+Block ((13,), ()) at (665, 865)
+Block ((13,), ()) at (691, 714)
+Block ((13,), ()) at (721, 100)
+Block ((13,), ()) at (746, 355)
+Block ((13,), ()) at (774, 102)
+Block ((13,), ()) at (789, 838)
+Block ((13,), ()) at (979, 141)
+Block ((12,), ()) at (28, 31)
+Block ((12,), ()) at (53, 477)
+Block ((12,), ()) at (115, 999)
+Block ((12,), ()) at (130, 435)
+Block ((12,), ()) at (131, 392)
+Block ((12,), ()) at (158, 18)
+Block ((12,), ()) at (181, 959)
+Block ((12,), ()) at (187, 883)
+Block ((12,), ()) at (216, 189)
+Block ((12,), ()) at (230, 85)
+Block ((12,), ()) at (236, 264)
+Block ((12,), ()) at (275, 775)
+Block ((12,), ()) at (314, 304)
+Block ((12,), ()) at (344, 567)
+Block ((12,), ()) at (380, 272)
+Block ((12,), ()) at (396, 335)
+Block ((12,), ()) at (451, 38)
+Block ((12,), ()) at (488, 600)
+Block ((12,), ()) at (558, 243)
+Block ((12,), ()) at (583, 551)
+Block ((12,), ()) at (618, 306)
+Block ((12,), ()) at (625, 668)
+Block ((12,), ()) at (627, 673)
+Block ((12,), ()) at (633, 654)
+Block ((12,), ()) at (635, 760)
+Block ((12,), ()) at (659, 791)
+Block ((12,), ()) at (666, 994)
+Block ((12,), ()) at (685, 77)
+Block ((12,), ()) at (707, 22)
+Block ((12,), ()) at (708, 328)
+Block ((12,), ()) at (799, 24)
+Block ((12,), ()) at (823, 242)
+Block ((12,), ()) at (845, 592)
+Block ((12,), ()) at (859, 7)
+Block ((12,), ()) at (871, 80)
+Block ((12,), ()) at (876, 216)
+Block ((12,), ()) at (885, 225)
+Block ((12,), ()) at (929, 769)
+Block ((12,), ()) at (946, 780)
+Block ((12,), ()) at (996, 749)
+Block ((12,), ()) at (998, 33)
+Block ((12, 7), (0,)) at (164, 130)
+Block ((3,), ()) at (30, 227)
+Block ((3,), ()) at (40, 854)
+Block ((3,), ()) at (71, 609)
+Block ((3,), ()) at (84, 338)
+Block ((3,), ()) at (93, 564)
+Block ((3,), ()) at (99, 308)
+Block ((3,), ()) at (101, 893)
+Block ((3,), ()) at (150, 236)
+Block ((3,), ()) at (170, 155)
+Block ((3,), ()) at (199, 914)
+Block ((3,), ()) at (361, 362)
+Block ((3,), ()) at (375, 431)
+Block ((3,), ()) at (381, 703)
+Block ((3,), ()) at (387, 693)
+Block ((3,), ()) at (403, 695)
+Block ((3,), ()) at (434, 180)
+Block ((3,), ()) at (459, 288)
+Block ((3,), ()) at (468, 358)
+Block ((3,), ()) at (485, 52)
+Block ((3,), ()) at (496, 538)
+Block ((3,), ()) at (506, 388)
+Block ((3,), ()) at (533, 205)
+Block ((3,), ()) at (546, 571)
+Block ((3,), ()) at (562, 521)
+Block ((3,), ()) at (566, 176)
+Block ((3,), ()) at (577, 386)
+Block ((3,), ()) at (579, 138)
+Block ((3,), ()) at (585, 534)
+Block ((3,), ()) at (586, 317)
+Block ((3,), ()) at (656, 956)
+Block ((3,), ()) at (712, 425)
+Block ((3,), ()) at (730, 234)
+Block ((3,), ()) at (735, 63)
+Block ((3,), ()) at (752, 590)
+Block ((3,), ()) at (764, 389)
+Block ((3,), ()) at (766, 911)
+Block ((3,), ()) at (810, 208)
+Block ((3,), ()) at (826, 575)
+Block ((3,), ()) at (827, 197)
+Block ((3,), ()) at (838, 604)
+Block ((3,), ()) at (858, 566)
+Block ((3,), ()) at (889, 127)
+Block ((3,), ()) at (895, 650)
+Block ((3,), ()) at (930, 46)
+Block ((3,), ()) at (954, 468)
+Block ((14,), ()) at (77, 459)
+Block ((14,), ()) at (86, 370)
+Block ((14,), ()) at (96, 891)
+Block ((14,), ()) at (110, 872)
+Block ((14,), ()) at (125, 731)
+Block ((14,), ()) at (147, 829)
+Block ((14,), ()) at (219, 635)
+Block ((14,), ()) at (238, 681)
+Block ((14,), ()) at (246, 888)
+Block ((14,), ()) at (268, 812)
+Block ((14,), ()) at (292, 345)
+Block ((14,), ()) at (318, 746)
+Block ((14,), ()) at (418, 296)
+Block ((14,), ()) at (510, 581)
+Block ((14,), ()) at (511, 811)
+Block ((14,), ()) at (520, 27)
+Block ((14,), ()) at (587, 41)
+Block ((14,), ()) at (595, 293)
+Block ((14,), ()) at (673, 506)
+Block ((14,), ()) at (706, 169)
+Block ((14,), ()) at (714, 819)
+Block ((14,), ()) at (717, 74)
+Block ((14,), ()) at (739, 67)
+Block ((14,), ()) at (755, 393)
+Block ((14,), ()) at (760, 28)
+Block ((14,), ()) at (770, 68)
+Block ((14,), ()) at (820, 188)
+Block ((14,), ()) at (865, 841)
+Block ((14,), ()) at (881, 82)
+Block ((14,), ()) at (903, 859)
+Block ((14,), ()) at (918, 415)
+Block ((14,), ()) at (970, 631)
+Block ((14,), ()) at (995, 748)
+Block ((14,), ()) at (997, 86)
+Block ((8,), ()) at (41, 449)
+Block ((8,), ()) at (52, 406)
+Block ((8,), ()) at (73, 702)
+Block ((8,), ()) at (146, 970)
+Block ((8,), ()) at (182, 512)
+Block ((8,), ()) at (193, 137)
+Block ((8,), ()) at (198, 151)
+Block ((8,), ()) at (258, 382)
+Block ((8,), ()) at (276, 525)
+Block ((8,), ()) at (330, 505)
+Block ((8,), ()) at (371, 214)
+Block ((8,), ()) at (393, 232)
+Block ((8,), ()) at (471, 757)
+Block ((8,), ()) at (479, 626)
+Block ((8,), ()) at (540, 168)
+Block ((8,), ()) at (545, 552)
+Block ((8,), ()) at (551, 410)
+Block ((8,), ()) at (571, 913)
+Block ((8,), ()) at (582, 926)
+Block ((8,), ()) at (589, 48)
+Block ((8,), ()) at (634, 0)
+Block ((8,), ()) at (642, 270)
+Block ((8,), ()) at (662, 850)
+Block ((8,), ()) at (693, 316)
+Block ((8,), ()) at (710, 667)
+Block ((8,), ()) at (763, 677)
+Block ((8,), ()) at (781, 561)
+Block ((8,), ()) at (800, 740)
+Block ((8,), ()) at (806, 466)
+Block ((8,), ()) at (811, 698)
+Block ((8,), ()) at (812, 385)
+Block ((8,), ()) at (822, 579)
+Block ((8,), ()) at (862, 361)
+Block ((8,), ()) at (900, 136)
+Block ((8,), ()) at (957, 894)
+Block ((15,), ()) at (42, 139)
+Block ((15,), ()) at (59, 112)
+Block ((15,), ()) at (63, 465)
+Block ((15,), ()) at (85, 531)
+Block ((15,), ()) at (102, 350)
+Block ((15,), ()) at (119, 499)
+Block ((15,), ()) at (156, 250)
+Block ((15,), ()) at (180, 239)
+Block ((15,), ()) at (270, 715)
+Block ((15,), ()) at (289, 83)
+Block ((15,), ()) at (293, 794)
+Block ((15,), ()) at (298, 440)
+Block ((15,), ()) at (308, 453)
+Block ((15,), ()) at (326, 285)
+Block ((15,), ()) at (481, 767)
+Block ((15,), ()) at (491, 976)
+Block ((15,), ()) at (499, 310)
+Block ((15,), ()) at (534, 679)
+Block ((15,), ()) at (561, 785)
+Block ((15,), ()) at (578, 887)
+Block ((15,), ()) at (593, 967)
+Block ((15,), ()) at (630, 368)
+Block ((15,), ()) at (637, 988)
+Block ((15,), ()) at (650, 897)
+Block ((15,), ()) at (653, 252)
+Block ((15,), ()) at (679, 904)
+Block ((15,), ()) at (687, 315)
+Block ((15,), ()) at (701, 790)
+Block ((15,), ()) at (727, 380)
+Block ((15,), ()) at (743, 526)
+Block ((15,), ()) at (745, 758)
+Block ((15,), ()) at (759, 885)
+Block ((15,), ()) at (776, 290)
+Block ((15,), ()) at (791, 394)
+Block ((15,), ()) at (818, 857)
+Block ((15,), ()) at (844, 235)
+Block ((15,), ()) at (849, 292)
+Block ((15,), ()) at (877, 732)
+Block ((15,), ()) at (910, 105)
+Block ((15,), ()) at (914, 660)
+Block ((15,), ()) at (956, 346)
+Block ((15,), ()) at (967, 60)
+Block ((15,), ()) at (977, 390)
+Block ((9,), ()) at (45, 830)
+Block ((9,), ()) at (68, 170)
+Block ((9,), ()) at (87, 458)
+Block ((9,), ()) at (127, 64)
+Block ((9,), ()) at (192, 961)
+Block ((9,), ()) at (234, 560)
+Block ((9,), ()) at (294, 240)
+Block ((9,), ()) at (295, 744)
+Block ((9,), ()) at (346, 678)
+Block ((9,), ()) at (376, 501)
+Block ((9,), ()) at (539, 5)
+Block ((9,), ()) at (557, 528)
+Block ((9,), ()) at (623, 58)
+Block ((9,), ()) at (626, 844)
+Block ((9,), ()) at (649, 162)
+Block ((9,), ()) at (681, 47)
+Block ((9,), ()) at (718, 556)
+Block ((9,), ()) at (720, 366)
+Block ((9,), ()) at (750, 88)
+Block ((9,), ()) at (777, 808)
+Block ((9,), ()) at (786, 876)
+Block ((9,), ()) at (809, 781)
+Block ((9,), ()) at (833, 263)
+Block ((9,), ()) at (836, 148)
+Block ((9,), ()) at (853, 439)
+Block ((9,), ()) at (883, 899)
+Block ((9,), ()) at (884, 84)
+Block ((9,), ()) at (896, 992)
+Block ((9,), ()) at (899, 472)
+Block ((9,), ()) at (927, 529)
+Block ((9,), ()) at (937, 766)
+Block ((9,), ()) at (950, 226)
+Block ((9,), ()) at (975, 363)
+Block ((6,), ()) at (70, 128)
+Block ((6,), ()) at (118, 492)
+Block ((6,), ()) at (132, 374)
+Block ((6,), ()) at (149, 303)
+Block ((6,), ()) at (162, 157)
+Block ((6,), ()) at (176, 402)
+Block ((6,), ()) at (183, 433)
+Block ((6,), ()) at (197, 867)
+Block ((6,), ()) at (242, 625)
+Block ((6,), ()) at (307, 868)
+Block ((6,), ()) at (311, 939)
+Block ((6,), ()) at (319, 783)
+Block ((6,), ()) at (333, 638)
+Block ((6,), ()) at (341, 190)
+Block ((6,), ()) at (368, 455)
+Block ((6,), ()) at (394, 941)
+Block ((6,), ()) at (400, 471)
+Block ((6,), ()) at (435, 900)
+Block ((6,), ()) at (469, 902)
+Block ((6,), ()) at (483, 407)
+Block ((6,), ()) at (494, 550)
+Block ((6,), ()) at (505, 656)
+Block ((6,), ()) at (552, 446)
+Block ((6,), ()) at (569, 553)
+Block ((6,), ()) at (629, 106)
+Block ((6,), ()) at (655, 30)
+Block ((6,), ()) at (744, 655)
+Block ((6,), ()) at (761, 430)
+Block ((6,), ()) at (780, 903)
+Block ((6,), ()) at (835, 713)
+Block ((6,), ()) at (851, 584)
+Block ((6,), ()) at (857, 646)
+Block ((6,), ()) at (873, 305)
+Block ((6,), ()) at (907, 943)
+Block ((6,), ()) at (912, 955)
+Block ((6,), ()) at (913, 122)
+Block ((6,), ()) at (983, 510)
+Block ((3, 2), (0,)) at (987, 919)
+Block ((2, 8), (0,)) at (462, 94)
+Block ((9, 20), (0,)) at (356, 805)
+Block ((5, 16), (0,)) at (807, 839)
+Block ((11, 13), (0,)) at (103, 342)
+Block ((12, 12), (0,)) at (723, 989)
+Block ((7, 7), (0,)) at (172, 771)
+Block ((18, 9), (0,)) at (253, 456)
+Block ((9, 15), (0,)) at (217, 166)
+Block ((6, 14), (0,)) at (259, 281)
+Block ((14, 20), (0,)) at (338, 146)
+Block ((20, 8), (0,)) at (436, 75)
+Block ((6, 7), (0,)) at (351, 487)
+Block ((11, 18), (0,)) at (476, 952)
+Block ((14, 3), (0,)) at (421, 117)
+Block ((20, 15), (0,)) at (473, 377)
+Block ((7, 15), (0,)) at (703, 313)
+Block <gurobi.Var C44387 (value 1.0)> at C44387
+Block <gurobi.Var C65135 (value 1.0)> at C65135
+Block <gurobi.Var C76793 (value 1.0)> at C76793
+Block <gurobi.Var C77758 (value 1.0)> at C77758
+Block <gurobi.Var C89260 (value 1.0)> at C89260
+Block <gurobi.Var C95903 (value 1.0)> at C95903
+Block <gurobi.Var C101558 (value 1.0)> at C101558
+Block <gurobi.Var C102497 (value 1.0)> at C102497
+Block <gurobi.Var C104372 (value 1.0)> at C104372
+Block <gurobi.Var C113687 (value 1.0)> at C113687
+Block <gurobi.Var C114613 (value 1.0)> at C114613
+Block <gurobi.Var C119228 (value 1.0)> at C119228
+Block <gurobi.Var C126560 (value 1.0)> at C126560
+Block <gurobi.Var C132017 (value 1.0)> at C132017
+Block <gurobi.Var C137438 (value 1.0)> at C137438
+Block <gurobi.Var C142823 (value 1.0)> at C142823
+Block <gurobi.Var C145502 (value 1.0)> at C145502
+Block <gurobi.Var C148172 (value 1.0)> at C148172
+Block <gurobi.Var C149060 (value 1.0)> at C149060
+Block <gurobi.Var C149947 (value 1.0)> at C149947
+Block <gurobi.Var C151718 (value 1.0)> at C151718
+Block <gurobi.Var C152602 (value 1.0)> at C152602
+Block <gurobi.Var C157885 (value 1.0)> at C157885
+Block <gurobi.Var C158762 (value 1.0)> at C158762
+Block <gurobi.Var C167477 (value 1.0)> at C167477
+Block <gurobi.Var C170935 (value 1.0)> at C170935
+Block <gurobi.Var C176948 (value 1.0)> at C176948
+Block <gurobi.Var C182912 (value 1.0)> at C182912
+Block <gurobi.Var C183760 (value 1.0)> at C183760
+Block <gurobi.Var C190508 (value 1.0)> at C190508
+Block <gurobi.Var C192185 (value 1.0)> at C192185
+Block <gurobi.Var C194693 (value 1.0)> at C194693
+Block <gurobi.Var C205457 (value 1.0)> at C205457
+Block <gurobi.Var C212810 (value 1.0)> at C212810
+Block <gurobi.Var C224885 (value 1.0)> at C224885
+Block <gurobi.Var C227273 (value 1.0)> at C227273
+Block <gurobi.Var C234383 (value 1.0)> at C234383
+Block <gurobi.Var C240635 (value 1.0)> at C240635
+Block <gurobi.Var C241412 (value 1.0)> at C241412
+Block <gurobi.Var C246823 (value 1.0)> at C246823
+Block <gurobi.Var C247592 (value 1.0)> at C247592
+Block <gurobi.Var C251422 (value 1.0)> at C251422
+Block <gurobi.Var C253708 (value 1.0)> at C253708
+Block <gurobi.Var C259760 (value 1.0)> at C259760
+Block <gurobi.Var C262762 (value 1.0)> at C262762
+Block <gurobi.Var C266492 (value 1.0)> at C266492
+Block <gurobi.Var C270197 (value 1.0)> at C270197
+Block <gurobi.Var C270935 (value 1.0)> at C270935
+Block <gurobi.Var C278260 (value 1.0)> at C278260
+Block <gurobi.Var C283328 (value 1.0)> at C283328
+Block <gurobi.Var C284048 (value 1.0)> at C284048
+Block <gurobi.Var C285485 (value 1.0)> at C285485
+Block <gurobi.Var C287633 (value 1.0)> at C287633
+Block <gurobi.Var C295432 (value 1.0)> at C295432
+Block <gurobi.Var C297538 (value 1.0)> at C297538
+Block <gurobi.Var C298238 (value 1.0)> at C298238
+Block <gurobi.Var C300332 (value 1.0)> at C300332
+Block <gurobi.Var C306560 (value 1.0)> at C306560
+Block <gurobi.Var C307933 (value 1.0)> at C307933
+Block <gurobi.Var C309302 (value 1.0)> at C309302
+Block <gurobi.Var C314738 (value 1.0)> at C314738
+Block <gurobi.Var C319442 (value 1.0)> at C319442
+Block <gurobi.Var C328048 (value 1.0)> at C328048
+Block <gurobi.Var C330010 (value 1.0)> at C330010
+Block <gurobi.Var C330662 (value 1.0)> at C330662
+Block <gurobi.Var C331313 (value 1.0)> at C331313
+Block <gurobi.Var C340958 (value 1.0)> at C340958
+Block <gurobi.Var C344123 (value 1.0)> at C344123
+Block <gurobi.Var C352235 (value 1.0)> at C352235
+Block <gurobi.Var C355310 (value 1.0)> at C355310
+Block <gurobi.Var C361385 (value 1.0)> at C361385
+Block <gurobi.Var C366173 (value 1.0)> at C366173
+Block <gurobi.Var C368543 (value 1.0)> at C368543
+Block <gurobi.Var C369722 (value 1.0)> at C369722
+Block <gurobi.Var C370897 (value 1.0)> at C370897
+Block <gurobi.Var C372652 (value 1.0)> at C372652
+Block <gurobi.Var C374398 (value 1.0)> at C374398
+Block <gurobi.Var C377288 (value 1.0)> at C377288
+Block <gurobi.Var C385247 (value 1.0)> at C385247
+Block <gurobi.Var C385808 (value 1.0)> at C385808
+Block <gurobi.Var C388042 (value 1.0)> at C388042
+Block <gurobi.Var C388598 (value 1.0)> at C388598
+Block <gurobi.Var C389153 (value 1.0)> at C389153
+Block <gurobi.Var C395735 (value 1.0)> at C395735
+Block <gurobi.Var C397358 (value 1.0)> at C397358
+Block <gurobi.Var C398972 (value 1.0)> at C398972
+Block <gurobi.Var C406385 (value 1.0)> at C406385
+Block <gurobi.Var C410533 (value 1.0)> at C410533
+Block <gurobi.Var C412583 (value 1.0)> at C412583
+Block <gurobi.Var C414110 (value 1.0)> at C414110
+Block <gurobi.Var C418138 (value 1.0)> at C418138
+Block <gurobi.Var C419632 (value 1.0)> at C419632
+Block <gurobi.Var C424060 (value 1.0)> at C424060
+Block <gurobi.Var C424547 (value 1.0)> at C424547
+Block <gurobi.Var C426485 (value 1.0)> at C426485
+Block <gurobi.Var C428407 (value 1.0)> at C428407
+Block <gurobi.Var C428885 (value 1.0)> at C428885
+Block <gurobi.Var C432203 (value 1.0)> at C432203
+Block <gurobi.Var C433142 (value 1.0)> at C433142
+Block <gurobi.Var C435008 (value 1.0)> at C435008
+Block <gurobi.Var C437318 (value 1.0)> at C437318
+Block <gurobi.Var C440510 (value 1.0)> at C440510
+Block <gurobi.Var C443207 (value 1.0)> at C443207
+Block <gurobi.Var C443653 (value 1.0)> at C443653
+Block <gurobi.Var C444098 (value 1.0)> at C444098
+Block <gurobi.Var C445427 (value 1.0)> at C445427
+Block <gurobi.Var C448058 (value 1.0)> at C448058
+Block <gurobi.Var C448927 (value 1.0)> at C448927
+Block <gurobi.Var C449360 (value 1.0)> at C449360
+Block <gurobi.Var C451082 (value 1.0)> at C451082
+Block <gurobi.Var C454478 (value 1.0)> at C454478
+Block <gurobi.Var C454898 (value 1.0)> at C454898
+Block <gurobi.Var C456152 (value 1.0)> at C456152
+Block <gurobi.Var C459452 (value 1.0)> at C459452
+Block <gurobi.Var C461078 (value 1.0)> at C461078
+Block <gurobi.Var C462688 (value 1.0)> at C462688
+Block <gurobi.Var C466252 (value 1.0)> at C466252
+Block <gurobi.Var C467422 (value 1.0)> at C467422
+Block <gurobi.Var C468197 (value 1.0)> at C468197
+Block <gurobi.Var C468968 (value 1.0)> at C468968
+Block <gurobi.Var C478268 (value 1.0)> at C478268
+Block <gurobi.Var C482857 (value 1.0)> at C482857
+Block <gurobi.Var C484918 (value 1.0)> at C484918
+Block <gurobi.Var C485258 (value 1.0)> at C485258
+Block <gurobi.Var C485935 (value 1.0)> at C485935
+Block <gurobi.Var C488603 (value 1.0)> at C488603
+Block <gurobi.Var C488932 (value 1.0)> at C488932
+Block <gurobi.Var C489587 (value 1.0)> at C489587
+Block <gurobi.Var C489913 (value 1.0)> at C489913
+Block <gurobi.Var C490238 (value 1.0)> at C490238
+Block <gurobi.Var C490885 (value 1.0)> at C490885
+Block <gurobi.Var C492167 (value 1.0)> at C492167
+Block <gurobi.Var C494060 (value 1.0)> at C494060
+Block <gurobi.Var C494683 (value 1.0)> at C494683
+Block <gurobi.Var C495302 (value 1.0)> at C495302
+Block <gurobi.Var C495917 (value 1.0)> at C495917
+Block <gurobi.Var C496832 (value 1.0)> at C496832
+Block <gurobi.Var C497437 (value 1.0)> at C497437
+Block <gurobi.Var C497738 (value 1.0)> at C497738
+Block <gurobi.Var C500983 (value 1.0)> at C500983
+Block <gurobi.Var C502133 (value 1.0)> at C502133
+Block <gurobi.Var C503267 (value 1.0)> at C503267
+Block <gurobi.Var C505760 (value 1.0)> at C505760
+Block <gurobi.Var C507110 (value 1.0)> at C507110
+Block <gurobi.Var C507377 (value 1.0)> at C507377
+Block <gurobi.Var C507908 (value 1.0)> at C507908
+Block <gurobi.Var C508958 (value 1.0)> at C508958
+Block <gurobi.Var C511262 (value 1.0)> at C511262
+Block <gurobi.Var C512260 (value 1.0)> at C512260
+Block <gurobi.Var C513485 (value 1.0)> at C513485
+Block <gurobi.Var C515860 (value 1.0)> at C515860
+Block <gurobi.Var C517010 (value 1.0)> at C517010
+Block <gurobi.Var C518135 (value 1.0)> at C518135
+Block <gurobi.Var C518357 (value 1.0)> at C518357
+Block <gurobi.Var C520097 (value 1.0)> at C520097
+Block <gurobi.Var C521773 (value 1.0)> at C521773
+Block <gurobi.Var C522385 (value 1.0)> at C522385
+Block <gurobi.Var C523187 (value 1.0)> at C523187
+Block <gurobi.Var C523385 (value 1.0)> at C523385
+Block <gurobi.Var C523582 (value 1.0)> at C523582
+Block <gurobi.Var C526778 (value 1.0)> at C526778
+Block <gurobi.Var C527312 (value 1.0)> at C527312
+Block <gurobi.Var C528182 (value 1.0)> at C528182
+Block <gurobi.Var C528523 (value 1.0)> at C528523
+Block <gurobi.Var C529522 (value 1.0)> at C529522
+Block <gurobi.Var C530485 (value 1.0)> at C530485
+Block <gurobi.Var C530953 (value 1.0)> at C530953
+Block <gurobi.Var C532303 (value 1.0)> at C532303
+Block <gurobi.Var C533572 (value 1.0)> at C533572
+Block <gurobi.Var C533977 (value 1.0)> at C533977
+Block <gurobi.Var C534110 (value 1.0)> at C534110
+Block <gurobi.Var C534632 (value 1.0)> at C534632
+Block <gurobi.Var C534887 (value 1.0)> at C534887
+Block <gurobi.Var C535385 (value 1.0)> at C535385
+Block <gurobi.Var C535867 (value 1.0)> at C535867
+Block <gurobi.Var C536447 (value 1.0)> at C536447
+Block <gurobi.Var C536783 (value 1.0)> at C536783
+Block <gurobi.Var C537635 (value 1.0)> at C537635
+Block <gurobi.Var C538883 (value 1.0)> at C538883
+Block <gurobi.Var C539233 (value 1.0)> at C539233
+Block <gurobi.Var C539567 (value 1.0)> at C539567
+Block <gurobi.Var C539728 (value 1.0)> at C539728
+Block <gurobi.Var C539962 (value 1.0)> at C539962
+Block <gurobi.Var C540473 (value 1.0)> at C540473
+Block <gurobi.Var C540610 (value 1.0)> at C540610
+Block <gurobi.Var C541058 (value 1.0)> at C541058
+Block <gurobi.Var C541177 (value 1.0)> at C541177
+Block <gurobi.Var C541235 (value 1.0)> at C541235
+Block <gurobi.Var C541292 (value 1.0)> at C541292
+Block <gurobi.Var C541457 (value 1.0)> at C541457
+Block <gurobi.Var C542027 (value 1.0)> at C542027
+Block <gurobi.Var C542108 (value 1.0)> at C542108
+Block <gurobi.Var C542147 (value 1.0)> at C542147
+Block <gurobi.Var C542222 (value 1.0)> at C542222
+Block <gurobi.Var C542482 (value 1.0)> at C542482
+Block <gurobi.Var C542510 (value 1.0)> at C542510
+Block <gurobi.Var C542537 (value 1.0)> at C542537
+Block <gurobi.Var C542635 (value 1.0)> at C542635
+Block <gurobi.Var C542783 (value 1.0)> at C542783
+Block <gurobi.Var C542843 (value 1.0)> at C542843
+Block <gurobi.Var C542888 (value 1.0)> at C542888
+Block <gurobi.Var C542890 (value 1.0)> at C542890
+Block <gurobi.Var C542894 (value 1.0)> at C542894
+Block <gurobi.Var C542898 (value 1.0)> at C542898
+Block <gurobi.Var C542899 (value 1.0)> at C542899
+Block <gurobi.Var C542900 (value 1.0)> at C542900
+Block <gurobi.Var C542901 (value 1.0)> at C542901
+Block <gurobi.Var C542902 (value 1.0)> at C542902
+Block <gurobi.Var C542903 (value 1.0)> at C542903
+Block <gurobi.Var C542905 (value 1.0)> at C542905
+Block <gurobi.Var C542907 (value 1.0)> at C542907
+Block <gurobi.Var C542909 (value 1.0)> at C542909
+Block <gurobi.Var C542911 (value 1.0)> at C542911
+Block <gurobi.Var C542912 (value 1.0)> at C542912
+Block <gurobi.Var C542914 (value 1.0)> at C542914
+Block <gurobi.Var C542916 (value 1.0)> at C542916
+Block <gurobi.Var C542917 (value 1.0)> at C542917
+Block <gurobi.Var C542919 (value 1.0)> at C542919
+Block <gurobi.Var C542921 (value 1.0)> at C542921
+Block <gurobi.Var C542922 (value 1.0)> at C542922
+Block <gurobi.Var C542923 (value 1.0)> at C542923
+Block <gurobi.Var C542924 (value 1.0)> at C542924
+Block <gurobi.Var C542926 (value 1.0)> at C542926
+Block <gurobi.Var C542928 (value 1.0)> at C542928
+Block <gurobi.Var C542929 (value 1.0)> at C542929
+Block <gurobi.Var C542930 (value 1.0)> at C542930
+Block <gurobi.Var C542931 (value 1.0)> at C542931
+Block <gurobi.Var C542932 (value 1.0)> at C542932
+Block <gurobi.Var C542933 (value 1.0)> at C542933
+Block <gurobi.Var C542934 (value 1.0)> at C542934
+Block <gurobi.Var C542935 (value 1.0)> at C542935
+Block <gurobi.Var C542936 (value 1.0)> at C542936
+Block <gurobi.Var C542937 (value 1.0)> at C542937
+Block <gurobi.Var C542939 (value 1.0)> at C542939
+Block <gurobi.Var C542942 (value 1.0)> at C542942
+Block <gurobi.Var C542944 (value 1.0)> at C542944
+Block <gurobi.Var C542945 (value 1.0)> at C542945
+Block <gurobi.Var C542947 (value 1.0)> at C542947
+Block <gurobi.Var C542949 (value 1.0)> at C542949
+Block <gurobi.Var C542950 (value 1.0)> at C542950
+Block <gurobi.Var C542952 (value 1.0)> at C542952
+Block <gurobi.Var C542955 (value 1.0)> at C542955
+Block <gurobi.Var C542957 (value 1.0)> at C542957
+Block <gurobi.Var C542958 (value 1.0)> at C542958
+Block <gurobi.Var C542959 (value 1.0)> at C542959
+Block <gurobi.Var C542960 (value 1.0)> at C542960
+Block <gurobi.Var C542961 (value 1.0)> at C542961
+Block <gurobi.Var C542963 (value 1.0)> at C542963
+Block <gurobi.Var C542966 (value 1.0)> at C542966
+Block <gurobi.Var C542968 (value 1.0)> at C542968
+Block <gurobi.Var C542970 (value 1.0)> at C542970
+Block <gurobi.Var C542972 (value 1.0)> at C542972
+Block <gurobi.Var C542973 (value 1.0)> at C542973
+Block <gurobi.Var C542974 (value 1.0)> at C542974
+Block <gurobi.Var C542975 (value 1.0)> at C542975
+Block <gurobi.Var C542976 (value 1.0)> at C542976
+Block <gurobi.Var C542977 (value 1.0)> at C542977
+Block <gurobi.Var C542979 (value 1.0)> at C542979
+Block <gurobi.Var C542981 (value 1.0)> at C542981
+Block <gurobi.Var C542982 (value 1.0)> at C542982
+Block <gurobi.Var C542983 (value 1.0)> at C542983
+Block <gurobi.Var C542984 (value 1.0)> at C542984
+Block <gurobi.Var C542985 (value 1.0)> at C542985
+Block <gurobi.Var C542986 (value 1.0)> at C542986
+Block <gurobi.Var C542987 (value 1.0)> at C542987
+Block <gurobi.Var C542988 (value 1.0)> at C542988
+Block <gurobi.Var C542989 (value 1.0)> at C542989
+Block <gurobi.Var C542990 (value 1.0)> at C542990
+Block <gurobi.Var C542992 (value 1.0)> at C542992
+Block <gurobi.Var C542994 (value 1.0)> at C542994
+Block <gurobi.Var C542996 (value 1.0)> at C542996
+Block <gurobi.Var C542998 (value 1.0)> at C542998
+Block <gurobi.Var C542999 (value 1.0)> at C542999
+Block <gurobi.Var C543000 (value 1.0)> at C543000
+Block <gurobi.Var C543001 (value 1.0)> at C543001
+Block <gurobi.Var C543002 (value 1.0)> at C543002
+Block <gurobi.Var C543003 (value 1.0)> at C543003
+Block <gurobi.Var C543004 (value 1.0)> at C543004
+Block <gurobi.Var C543006 (value 1.0)> at C543006
+Block <gurobi.Var C543008 (value 1.0)> at C543008
+Block <gurobi.Var C543009 (value 1.0)> at C543009
+Block <gurobi.Var C543010 (value 1.0)> at C543010
+Block <gurobi.Var C543011 (value 1.0)> at C543011
+Block <gurobi.Var C543012 (value 1.0)> at C543012
+Block <gurobi.Var C543013 (value 1.0)> at C543013
+Block <gurobi.Var C543014 (value 1.0)> at C543014
+Block <gurobi.Var C543015 (value 1.0)> at C543015
+Block <gurobi.Var C543016 (value 1.0)> at C543016
+Block <gurobi.Var C543017 (value 1.0)> at C543017
+Block <gurobi.Var C543018 (value 1.0)> at C543018
+Block <gurobi.Var C543019 (value 1.0)> at C543019
+Block <gurobi.Var C543020 (value 1.0)> at C543020
+Block <gurobi.Var C543021 (value 1.0)> at C543021
+Block <gurobi.Var C543022 (value 1.0)> at C543022
+Block <gurobi.Var C543023 (value 1.0)> at C543023
+Block <gurobi.Var C543024 (value 1.0)> at C543024
+Block <gurobi.Var C543026 (value 1.0)> at C543026
+Block <gurobi.Var C543028 (value 1.0)> at C543028
+Block <gurobi.Var C543030 (value 1.0)> at C543030
+Block <gurobi.Var C543032 (value 1.0)> at C543032
+Block <gurobi.Var C543033 (value 1.0)> at C543033
+Block <gurobi.Var C543035 (value 1.0)> at C543035
+Block <gurobi.Var C543038 (value 1.0)> at C543038
+Block <gurobi.Var C543040 (value 1.0)> at C543040
+Block <gurobi.Var C543043 (value 1.0)> at C543043
+Block <gurobi.Var C543047 (value 1.0)> at C543047
+Block <gurobi.Var C543048 (value 1.0)> at C543048
+Block <gurobi.Var C543049 (value 1.0)> at C543049
+Block <gurobi.Var C543050 (value 1.0)> at C543050
+Block <gurobi.Var C543051 (value 1.0)> at C543051
+Block <gurobi.Var C543052 (value 1.0)> at C543052
+Block <gurobi.Var C543053 (value 1.0)> at C543053
+Block <gurobi.Var C543056 (value 1.0)> at C543056
+Block <gurobi.Var C543064 (value 1.0)> at C543064
+Block <gurobi.Var C543075 (value 1.0)> at C543075
+Block <gurobi.Var C543076 (value 1.0)> at C543076
+Block <gurobi.Var C543077 (value 1.0)> at C543077
+Block <gurobi.Var C543078 (value 1.0)> at C543078
+Block <gurobi.Var C543079 (value 1.0)> at C543079
+Block <gurobi.Var C543080 (value 1.0)> at C543080
+Block <gurobi.Var C543082 (value 1.0)> at C543082
+Block <gurobi.Var C543084 (value 1.0)> at C543084
+Block <gurobi.Var C543085 (value 1.0)> at C543085
+Block <gurobi.Var C543086 (value 1.0)> at C543086
+Block <gurobi.Var C543088 (value 1.0)> at C543088
+Block <gurobi.Var C543090 (value 1.0)> at C543090
+Block <gurobi.Var C543091 (value 1.0)> at C543091
+Block <gurobi.Var C543092 (value 1.0)> at C543092
+Block <gurobi.Var C543093 (value 1.0)> at C543093
+Block <gurobi.Var C543095 (value 1.0)> at C543095
+Block <gurobi.Var C543097 (value 1.0)> at C543097
+Block <gurobi.Var C543098 (value 1.0)> at C543098
+Block <gurobi.Var C543099 (value 1.0)> at C543099
+Block <gurobi.Var C543100 (value 1.0)> at C543100
+Block <gurobi.Var C543102 (value 1.0)> at C543102
+Block <gurobi.Var C543104 (value 1.0)> at C543104
+Block <gurobi.Var C543105 (value 1.0)> at C543105
+Block <gurobi.Var C543106 (value 1.0)> at C543106
+Block <gurobi.Var C543107 (value 1.0)> at C543107
+Block <gurobi.Var C543108 (value 1.0)> at C543108
+Block <gurobi.Var C543109 (value 1.0)> at C543109
+Block <gurobi.Var C543110 (value 1.0)> at C543110
+Block <gurobi.Var C543111 (value 1.0)> at C543111
+Block <gurobi.Var C543112 (value 1.0)> at C543112
+Block <gurobi.Var C543116 (value 1.0)> at C543116
+Block <gurobi.Var C543123 (value 1.0)> at C543123
+Block <gurobi.Var C543124 (value 1.0)> at C543124
+Block <gurobi.Var C543125 (value 1.0)> at C543125
+Block <gurobi.Var C543126 (value 1.0)> at C543126
+Block <gurobi.Var C543128 (value 1.0)> at C543128
+Block <gurobi.Var C543130 (value 1.0)> at C543130
+Block <gurobi.Var C543131 (value 1.0)> at C543131
+Block <gurobi.Var C543132 (value 1.0)> at C543132
+Block <gurobi.Var C543134 (value 1.0)> at C543134
+Block <gurobi.Var C543137 (value 1.0)> at C543137
+Block <gurobi.Var C543139 (value 1.0)> at C543139
+Block <gurobi.Var C543140 (value 1.0)> at C543140
+Block <gurobi.Var C543141 (value 1.0)> at C543141
+### ESTATISTICAS
+runtime: 3606.731498003006
+Tempo de execução para criação das estruturas: 1668.184283 segundos
+
+Tempo de execução do modelo: 5277.555365 segundos

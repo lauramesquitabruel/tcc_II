@@ -1,0 +1,83 @@
+
+Gurobi 10.0.2 (linux64) logging started Thu May  7 20:39:36 2026
+
+Set parameter LogFile to value "logs/rmcsp_03-.txt"
+Gurobi Optimizer version 10.0.2 build v10.0.2rc0 (linux64)
+
+CPU model: Intel(R) Xeon(R) CPU E7- 4850  @ 2.00GHz, instruction set [SSE2]
+Thread count: 40 physical cores, 80 logical processors, using up to 32 threads
+
+Optimize a model with 50 rows, 31 columns and 174 nonzeros
+Model fingerprint: 0xd1339a02
+Variable types: 0 continuous, 31 integer (31 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 10.0000000
+Presolve removed 50 rows and 31 columns
+Presolve time: 0.00s
+Presolve: All rows and columns removed
+
+Explored 0 nodes (0 simplex iterations) in 0.00 seconds (0.00 work units)
+Thread count was 1 (of 80 available processors)
+
+Solution count 2: 8 10 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 8.000000000000e+00, best bound 8.000000000000e+00, gap 0.0000%
+S1 = ( 1 2 3 4 2 1 5 6 7 )
+S2 = ( 1 2 3 4 1 2 8 6 9 )
+S1' = ( 1 2 3 4, 2, 1, 6 )
+S2' = ( 1 2 3 4, 1, 2, 6 )
+X = ( 5, 7 )
+Y = ( 8, 9 )
+σ(S1'0) = S2'0
+σ(S1'1) = S2'2
+σ(S1'2) = S2'1
+σ(S1'3) = S2'3
+Partições Selecionadas = ( 1 2 3 4, 2, 1, 6 , 5, 7 , 8, 9 )
+Tempo de execução para criação das estruturas: 0.006092 segundos
+Tempo de execução do modelo: 0.014467 segundos
+Gurobi 10.0.2 (linux64) logging started Thu May  7 20:40:52 2026
+
+Set parameter LogFile to value "logs/rmcsp_03-.txt"
+Gurobi Optimizer version 10.0.2 build v10.0.2rc0 (linux64)
+
+CPU model: Intel(R) Xeon(R) CPU E7- 4850  @ 2.00GHz, instruction set [SSE2]
+Thread count: 40 physical cores, 80 logical processors, using up to 32 threads
+
+Optimize a model with 50 rows, 31 columns and 174 nonzeros
+Model fingerprint: 0xd1339a02
+Variable types: 0 continuous, 31 integer (31 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 10.0000000
+Presolve removed 50 rows and 31 columns
+Presolve time: 0.00s
+Presolve: All rows and columns removed
+
+Explored 0 nodes (0 simplex iterations) in 0.00 seconds (0.00 work units)
+Thread count was 1 (of 80 available processors)
+
+Solution count 2: 8 10 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 8.000000000000e+00, best bound 8.000000000000e+00, gap 0.0000%
+S1 = ( 1 2 3 4 2 1 5 6 7 )
+S2 = ( 1 2 3 4 1 2 8 6 9 )
+S1' = ( 1 2 3 4, 2, 1, 6 )
+S2' = ( 1 2 3 4, 1, 2, 6 )
+X = ( 5, 7 )
+Y = ( 8, 9 )
+σ(S1'0) = S2'0
+σ(S1'1) = S2'2
+σ(S1'2) = S2'1
+σ(S1'3) = S2'3
+Partições Selecionadas = ( 1 2 3 4, 2, 1, 6 , 5, 7 , 8, 9 )
+Tempo de execução para criação das estruturas: 0.007578 segundos
+Tempo de execução do modelo: 0.015862 segundos

@@ -1,0 +1,999 @@
+Set parameter TimeLimit to value 3600
+Set parameter Threads to value 1
+Warning: constraint name "unicidade de char 0 na str 1" has a space
+Gurobi Optimizer version 10.0.2 build v10.0.2rc0 (linux64)
+
+CPU model: Intel(R) Xeon(R) CPU E7- 4850  @ 2.00GHz, instruction set [SSE2]
+Thread count: 40 physical cores, 80 logical processors, using up to 1 threads
+
+Optimize a model with 2000 rows, 543143 columns and 167255782 nonzeros
+Model fingerprint: 0x3123c644
+Variable types: 0 continuous, 543143 integer (543143 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 1178.0000000
+Presolve removed 0 rows and 0 columns (presolve time = 10s) ...
+Presolve removed 0 rows and 0 columns (presolve time = 12s) ...
+Presolve removed 0 rows and 0 columns (presolve time = 16s) ...
+Presolve removed 178 rows and 220 columns (presolve time = 21s) ...
+Presolve removed 178 rows and 220 columns (presolve time = 28s) ...
+Presolve removed 178 rows and 220 columns (presolve time = 48s) ...
+Presolve removed 178 rows and 220 columns (presolve time = 53s) ...
+Presolve removed 178 rows and 220 columns (presolve time = 58s) ...
+Presolve removed 178 rows and 220 columns (presolve time = 64s) ...
+Presolve removed 178 rows and 220 columns (presolve time = 70s) ...
+Presolve removed 178 rows and 220 columns (presolve time = 87s) ...
+Presolve removed 178 rows and 220 columns (presolve time = 94s) ...
+Presolve removed 178 rows and 220 columns (presolve time = 95s) ...
+Presolve removed 178 rows and 220 columns (presolve time = 100s) ...
+Presolve removed 178 rows and 220 columns (presolve time = 105s) ...
+Presolve removed 178 rows and 220 columns (presolve time = 130s) ...
+Presolve removed 178 rows and 220 columns (presolve time = 140s) ...
+Presolve removed 178 rows and 220 columns (presolve time = 142s) ...
+Presolve removed 178 rows and 220 columns (presolve time = 154s) ...
+Presolve removed 192 rows and 220 columns (presolve time = 155s) ...
+Presolve removed 192 rows and 220 columns (presolve time = 192s) ...
+Presolve removed 192 rows and 221 columns (presolve time = 197s) ...
+Presolve removed 192 rows and 221 columns (presolve time = 201s) ...
+Presolve removed 192 rows and 221 columns (presolve time = 208s) ...
+Presolve removed 192 rows and 221 columns (presolve time = 214s) ...
+Presolve removed 192 rows and 236 columns (presolve time = 219s) ...
+Presolve removed 192 rows and 236 columns (presolve time = 225s) ...
+Presolve removed 193 rows and 237 columns (presolve time = 243s) ...
+Presolve removed 193 rows and 237 columns (presolve time = 249s) ...
+Presolve removed 193 rows and 238 columns (presolve time = 250s) ...
+Presolve removed 193 rows and 238 columns (presolve time = 255s) ...
+Presolve removed 193 rows and 238 columns (presolve time = 260s) ...
+Presolve removed 193 rows and 238 columns (presolve time = 285s) ...
+Presolve removed 193 rows and 238 columns (presolve time = 290s) ...
+Presolve removed 193 rows and 238 columns (presolve time = 304s) ...
+Presolve removed 193 rows and 238 columns (presolve time = 305s) ...
+Presolve removed 193 rows and 238 columns (presolve time = 342s) ...
+Presolve removed 200 rows and 245 columns (presolve time = 345s) ...
+Presolve removed 200 rows and 245 columns (presolve time = 365s) ...
+Presolve removed 200 rows and 245 columns (presolve time = 383s) ...
+Presolve removed 200 rows and 245 columns (presolve time = 390s) ...
+Presolve removed 200 rows and 245 columns (presolve time = 391s) ...
+Presolve removed 200 rows and 245 columns (presolve time = 398s) ...
+Presolve removed 200 rows and 245 columns (presolve time = 413s) ...
+Presolve removed 200 rows and 245 columns (presolve time = 424s) ...
+Presolve removed 200 rows and 245 columns (presolve time = 433s) ...
+Presolve removed 200 rows and 245 columns (presolve time = 435s) ...
+Presolve removed 200 rows and 245 columns (presolve time = 440s) ...
+Presolve removed 200 rows and 245 columns (presolve time = 445s) ...
+Presolve removed 200 rows and 245 columns (presolve time = 450s) ...
+Presolve removed 200 rows and 245 columns (presolve time = 455s) ...
+Presolve removed 200 rows and 245 columns (presolve time = 460s) ...
+Presolve removed 200 rows and 245 columns (presolve time = 465s) ...
+Presolve removed 200 rows and 245 columns (presolve time = 470s) ...
+Presolve removed 200 rows and 245 columns (presolve time = 475s) ...
+Presolve removed 200 rows and 245 columns (presolve time = 480s) ...
+Presolve removed 200 rows and 245 columns (presolve time = 485s) ...
+Presolve removed 200 rows and 245 columns (presolve time = 490s) ...
+Presolve removed 200 rows and 245 columns (presolve time = 495s) ...
+Presolve removed 200 rows and 245 columns (presolve time = 500s) ...
+Presolve removed 200 rows and 245 columns (presolve time = 505s) ...
+Presolve removed 200 rows and 245 columns (presolve time = 510s) ...
+Presolve removed 200 rows and 245 columns (presolve time = 515s) ...
+Presolve removed 200 rows and 245 columns (presolve time = 520s) ...
+Presolve removed 200 rows and 245 columns (presolve time = 533s) ...
+Presolve removed 200 rows and 245 columns (presolve time = 542s) ...
+Presolve removed 200 rows and 245 columns (presolve time = 552s) ...
+Presolve removed 200 rows and 245 columns (presolve time = 558s) ...
+Presolve removed 200 rows and 245 columns (presolve time = 562s) ...
+Presolve removed 200 rows and 245 columns (presolve time = 590s) ...
+Presolve removed 200 rows and 245 columns (presolve time = 645s) ...
+Presolve removed 200 rows and 245 columns (presolve time = 651s) ...
+Presolve removed 200 rows and 245 columns (presolve time = 655s) ...
+Presolve removed 200 rows and 245 columns (presolve time = 660s) ...
+Presolve removed 200 rows and 245 columns (presolve time = 665s) ...
+Presolve removed 200 rows and 245 columns (presolve time = 670s) ...
+Presolve removed 200 rows and 245 columns (presolve time = 675s) ...
+Presolve removed 200 rows and 245 columns (presolve time = 680s) ...
+Presolve removed 200 rows and 245 columns (presolve time = 685s) ...
+Presolve removed 200 rows and 245 columns (presolve time = 690s) ...
+Presolve removed 200 rows and 245 columns (presolve time = 695s) ...
+Presolve removed 200 rows and 245 columns (presolve time = 700s) ...
+Presolve removed 200 rows and 245 columns (presolve time = 705s) ...
+Presolve removed 200 rows and 245 columns (presolve time = 710s) ...
+Presolve removed 200 rows and 245 columns (presolve time = 715s) ...
+Presolve removed 200 rows and 245 columns (presolve time = 720s) ...
+Presolve removed 200 rows and 245 columns (presolve time = 725s) ...
+Presolve removed 200 rows and 245 columns (presolve time = 730s) ...
+Presolve removed 200 rows and 245 columns (presolve time = 742s) ...
+Presolve removed 200 rows and 245 columns (presolve time = 746s) ...
+Presolve removed 200 rows and 245 columns (presolve time = 751s) ...
+Presolve removed 200 rows and 245 columns (presolve time = 755s) ...
+Presolve removed 200 rows and 245 columns (presolve time = 760s) ...
+Presolve removed 200 rows and 245 columns (presolve time = 766s) ...
+Presolve removed 200 rows and 245 columns (presolve time = 771s) ...
+Presolve removed 200 rows and 245 columns (presolve time = 776s) ...
+Presolve removed 200 rows and 245 columns (presolve time = 781s) ...
+Presolve removed 200 rows and 245 columns (presolve time = 785s) ...
+Presolve removed 200 rows and 245 columns (presolve time = 790s) ...
+Presolve removed 200 rows and 245 columns (presolve time = 795s) ...
+Presolve removed 200 rows and 245 columns (presolve time = 801s) ...
+Presolve removed 200 rows and 245 columns (presolve time = 806s) ...
+Presolve removed 200 rows and 245 columns (presolve time = 810s) ...
+Presolve removed 200 rows and 245 columns (presolve time = 816s) ...
+Presolve removed 200 rows and 245 columns (presolve time = 821s) ...
+Presolve removed 200 rows and 245 columns (presolve time = 825s) ...
+Presolve removed 200 rows and 245 columns (presolve time = 830s) ...
+Presolve removed 200 rows and 245 columns (presolve time = 835s) ...
+Presolve removed 200 rows and 245 columns (presolve time = 840s) ...
+Presolve removed 200 rows and 245 columns (presolve time = 845s) ...
+Presolve removed 200 rows and 245 columns (presolve time = 851s) ...
+Presolve removed 200 rows and 245 columns (presolve time = 855s) ...
+Presolve removed 200 rows and 245 columns (presolve time = 860s) ...
+Presolve removed 200 rows and 245 columns (presolve time = 865s) ...
+Presolve removed 200 rows and 245 columns (presolve time = 870s) ...
+Presolve removed 200 rows and 245 columns (presolve time = 875s) ...
+Presolve removed 200 rows and 245 columns (presolve time = 880s) ...
+Presolve removed 200 rows and 245 columns (presolve time = 885s) ...
+Presolve removed 200 rows and 245 columns (presolve time = 890s) ...
+Presolve removed 200 rows and 245 columns (presolve time = 895s) ...
+Presolve removed 200 rows and 245 columns (presolve time = 901s) ...
+Presolve removed 200 rows and 245 columns (presolve time = 923s) ...
+Presolve removed 200 rows and 245 columns (presolve time = 925s) ...
+Presolve removed 200 rows and 245 columns (presolve time = 931s) ...
+Presolve removed 200 rows and 245 columns (presolve time = 936s) ...
+Presolve removed 200 rows and 245 columns (presolve time = 941s) ...
+Presolve removed 200 rows and 245 columns (presolve time = 946s) ...
+Presolve removed 200 rows and 245 columns (presolve time = 951s) ...
+Presolve removed 200 rows and 245 columns (presolve time = 956s) ...
+Presolve removed 200 rows and 245 columns (presolve time = 961s) ...
+Presolve removed 200 rows and 245 columns (presolve time = 966s) ...
+Presolve removed 200 rows and 245 columns (presolve time = 970s) ...
+Presolve removed 200 rows and 245 columns (presolve time = 976s) ...
+Presolve removed 200 rows and 245 columns (presolve time = 980s) ...
+Presolve removed 200 rows and 245 columns (presolve time = 985s) ...
+Presolve removed 200 rows and 245 columns (presolve time = 990s) ...
+Presolve removed 200 rows and 245 columns (presolve time = 995s) ...
+Presolve removed 200 rows and 245 columns (presolve time = 1001s) ...
+Presolve removed 200 rows and 245 columns (presolve time = 1005s) ...
+Presolve removed 200 rows and 245 columns (presolve time = 1010s) ...
+Presolve removed 200 rows and 245 columns (presolve time = 1016s) ...
+Presolve removed 200 rows and 245 columns (presolve time = 1020s) ...
+Presolve removed 200 rows and 245 columns (presolve time = 1025s) ...
+Presolve removed 200 rows and 245 columns (presolve time = 1030s) ...
+Presolve removed 200 rows and 245 columns (presolve time = 1036s) ...
+Presolve removed 200 rows and 245 columns (presolve time = 1040s) ...
+Presolve removed 200 rows and 245 columns (presolve time = 1063s) ...
+Presolve removed 200 rows and 245 columns (presolve time = 1066s) ...
+Presolve removed 200 rows and 245 columns (presolve time = 1071s) ...
+Presolve removed 200 rows and 245 columns (presolve time = 1075s) ...
+Presolve removed 200 rows and 245 columns (presolve time = 1080s) ...
+Presolve removed 200 rows and 245 columns (presolve time = 1085s) ...
+Presolve removed 200 rows and 245 columns (presolve time = 1090s) ...
+Presolve removed 200 rows and 245 columns (presolve time = 1095s) ...
+Presolve removed 200 rows and 245 columns (presolve time = 1101s) ...
+Presolve removed 200 rows and 245 columns (presolve time = 1105s) ...
+Presolve removed 200 rows and 245 columns (presolve time = 1110s) ...
+Presolve removed 200 rows and 245 columns (presolve time = 1115s) ...
+Presolve removed 200 rows and 245 columns (presolve time = 1120s) ...
+Presolve removed 200 rows and 245 columns (presolve time = 1125s) ...
+Presolve removed 200 rows and 245 columns (presolve time = 1149s) ...
+Presolve removed 200 rows and 245 columns (presolve time = 1150s) ...
+Presolve removed 200 rows and 245 columns (presolve time = 1156s) ...
+Presolve removed 200 rows and 245 columns (presolve time = 1160s) ...
+Presolve removed 200 rows and 245 columns (presolve time = 1165s) ...
+Presolve removed 200 rows and 245 columns (presolve time = 1170s) ...
+Presolve removed 200 rows and 245 columns (presolve time = 1175s) ...
+Presolve removed 200 rows and 245 columns (presolve time = 1180s) ...
+Presolve removed 200 rows and 245 columns (presolve time = 1202s) ...
+Presolve removed 200 rows and 245 columns (presolve time = 1205s) ...
+Presolve removed 200 rows and 245 columns (presolve time = 1210s) ...
+Presolve removed 200 rows and 245 columns (presolve time = 1215s) ...
+Presolve removed 200 rows and 245 columns (presolve time = 1220s) ...
+Presolve removed 200 rows and 245 columns (presolve time = 1237s) ...
+Presolve removed 200 rows and 245 columns (presolve time = 1240s) ...
+Presolve removed 200 rows and 245 columns (presolve time = 1245s) ...
+Presolve removed 200 rows and 245 columns (presolve time = 1250s) ...
+Presolve removed 200 rows and 245 columns (presolve time = 1262s) ...
+Presolve removed 200 rows and 245 columns (presolve time = 1265s) ...
+Presolve removed 200 rows and 245 columns (presolve time = 1270s) ...
+Presolve removed 200 rows and 245 columns (presolve time = 1280s) ...
+Presolve removed 200 rows and 245 columns (presolve time = 1280s) ...
+Presolve removed 200 rows and 245 columns (presolve time = 1285s) ...
+Presolve removed 200 rows and 245 columns (presolve time = 1293s) ...
+Presolve removed 200 rows and 245 columns (presolve time = 1295s) ...
+Presolve removed 200 rows and 245 columns (presolve time = 1303s) ...
+Presolve removed 200 rows and 245 columns (presolve time = 1305s) ...
+Presolve removed 200 rows and 245 columns (presolve time = 1310s) ...
+Presolve removed 200 rows and 245 columns (presolve time = 1316s) ...
+Presolve removed 200 rows and 245 columns (presolve time = 1320s) ...
+Presolve removed 200 rows and 245 columns (presolve time = 1325s) ...
+Presolve removed 200 rows and 245 columns (presolve time = 1331s) ...
+Presolve removed 200 rows and 245 columns (presolve time = 1335s) ...
+Presolve removed 200 rows and 245 columns (presolve time = 1341s) ...
+Presolve removed 200 rows and 245 columns (presolve time = 1346s) ...
+Presolve removed 200 rows and 245 columns (presolve time = 1350s) ...
+Presolve removed 200 rows and 245 columns (presolve time = 1355s) ...
+Presolve removed 200 rows and 245 columns (presolve time = 1360s) ...
+Presolve removed 200 rows and 245 columns (presolve time = 1366s) ...
+Presolve removed 200 rows and 245 columns (presolve time = 1370s) ...
+Presolve removed 200 rows and 245 columns (presolve time = 1375s) ...
+Presolve removed 200 rows and 245 columns (presolve time = 1381s) ...
+Presolve removed 200 rows and 245 columns (presolve time = 1385s) ...
+Presolve removed 200 rows and 245 columns (presolve time = 1390s) ...
+Presolve removed 200 rows and 245 columns (presolve time = 1395s) ...
+Presolve removed 200 rows and 245 columns (presolve time = 1400s) ...
+Presolve removed 200 rows and 245 columns (presolve time = 1405s) ...
+Presolve removed 200 rows and 245 columns (presolve time = 1411s) ...
+Presolve removed 200 rows and 245 columns (presolve time = 1415s) ...
+Presolve removed 200 rows and 245 columns (presolve time = 1421s) ...
+Presolve removed 200 rows and 245 columns (presolve time = 1425s) ...
+Presolve removed 200 rows and 245 columns (presolve time = 1430s) ...
+Presolve removed 200 rows and 245 columns (presolve time = 1435s) ...
+Presolve removed 200 rows and 245 columns (presolve time = 1440s) ...
+Presolve removed 200 rows and 245 columns (presolve time = 1445s) ...
+Presolve removed 200 rows and 245 columns (presolve time = 1450s) ...
+Presolve removed 200 rows and 245 columns (presolve time = 1455s) ...
+Presolve removed 200 rows and 245 columns (presolve time = 1468s) ...
+Presolve removed 200 rows and 245 columns (presolve time = 1471s) ...
+Presolve removed 200 rows and 245 columns (presolve time = 1476s) ...
+Presolve removed 200 rows and 245 columns (presolve time = 1481s) ...
+Presolve removed 200 rows and 245 columns (presolve time = 1486s) ...
+Presolve removed 200 rows and 245 columns (presolve time = 1492s) ...
+Presolve removed 200 rows and 245 columns (presolve time = 1497s) ...
+Presolve removed 200 rows and 245 columns (presolve time = 1501s) ...
+Presolve removed 200 rows and 245 columns (presolve time = 1506s) ...
+Presolve removed 200 rows and 245 columns (presolve time = 1511s) ...
+Presolve removed 200 rows and 245 columns (presolve time = 1516s) ...
+Presolve removed 200 rows and 245 columns (presolve time = 1521s) ...
+Presolve removed 200 rows and 245 columns (presolve time = 1525s) ...
+Presolve removed 200 rows and 245 columns (presolve time = 1531s) ...
+Presolve removed 200 rows and 245 columns (presolve time = 1536s) ...
+Presolve removed 200 rows and 245 columns (presolve time = 1541s) ...
+Presolve removed 200 rows and 245 columns (presolve time = 1546s) ...
+Presolve removed 200 rows and 245 columns (presolve time = 1551s) ...
+Presolve removed 200 rows and 245 columns (presolve time = 1555s) ...
+Presolve removed 200 rows and 245 columns (presolve time = 1561s) ...
+Presolve removed 200 rows and 245 columns (presolve time = 1565s) ...
+Presolve removed 200 rows and 245 columns (presolve time = 1571s) ...
+Presolve removed 200 rows and 245 columns (presolve time = 1576s) ...
+Presolve removed 200 rows and 245 columns (presolve time = 1581s) ...
+Presolve removed 200 rows and 245 columns (presolve time = 1585s) ...
+Presolve removed 200 rows and 245 columns (presolve time = 1590s) ...
+Presolve removed 200 rows and 245 columns (presolve time = 1595s) ...
+Presolve removed 200 rows and 245 columns (presolve time = 1600s) ...
+Presolve removed 200 rows and 245 columns (presolve time = 1606s) ...
+Presolve removed 200 rows and 245 columns (presolve time = 1611s) ...
+Presolve removed 200 rows and 245 columns (presolve time = 1615s) ...
+Presolve removed 200 rows and 245 columns (presolve time = 1621s) ...
+Sparsify removed 59310065 nonzeros (35%)
+Presolve removed 200 rows and 245 columns (presolve time = 1627s) ...
+Presolve removed 200 rows and 245 columns (presolve time = 1652s) ...
+Presolve removed 200 rows and 245 columns
+Presolve time: 1652.13s
+Presolved: 1800 rows, 542898 columns, 107945418 nonzeros
+Found heuristic solution: objective 1143.0000000
+Variable types: 0 continuous, 542898 integer (542898 binary)
+
+Root simplex log...
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    5.8700000e+02   1.385000e+03   0.000000e+00   1783s
+
+Starting sifting (using dual simplex for sub-problems)...
+
+    Iter     Pivots    Primal Obj      Dual Obj        Time
+       0          0     infinity      5.8700000e+02   1783s
+       1      19801   1.1294155e+08   5.8965043e+02   1793s
+       2      25090   1.1294155e+08   5.8955197e+02   1795s
+       3      32429   1.1263153e+08   5.8953851e+02   1799s
+       4      40025   1.1125432e+08   5.8942608e+02   1801s
+       5      46335   1.1115012e+08   5.8936258e+02   1807s
+       6      52888   1.1075617e+08   5.8934463e+02   1811s
+       7      61259   1.0859389e+08   5.8927860e+02   1816s
+       8      69369   1.0794207e+08   5.8929169e+02   1819s
+       9      76990   1.0588397e+08   5.8922529e+02   1822s
+      10      87227   1.0479452e+08   5.8919625e+02   1826s
+      11      95448   1.0413704e+08   5.8920011e+02   1834s
+      12     110775   1.0150517e+08   5.8910794e+02   1858s
+      13     128257   9.4177642e+07   5.8899353e+02   1869s
+      14     153590   8.4385836e+07   5.8885511e+02   1896s
+      15     183272   4.6716211e+07   5.8836891e+02   1911s
+      16     217226   6.3706839e+06   5.8826488e+02   1930s
+      17     237214   6.5201149e+02   5.8858940e+02   1940s
+      18     258257   6.4440609e+02   5.8882734e+02   1954s
+      19     273478   6.4141091e+02   5.8957622e+02   1961s
+      20     288448   6.4061472e+02   5.9079733e+02   1968s
+      21     300714   6.4039430e+02   5.9858192e+02   1973s
+      22     310549   6.4037364e+02   6.2312742e+02   1977s
+      23     316980   6.4036509e+02   6.3777279e+02   1980s
+
+Sifting complete
+
+  321126    6.4206459e+02   0.000000e+00   0.000000e+00   2000s
+
+Root relaxation: objective 6.420646e+02, 321126 iterations, 312.15 seconds (188.77 work units)
+Total elapsed time = 2005.46s
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0  642.06459    0 1087 1143.00000  642.06459  43.8%     - 2107s
+H    0     0                     667.0000000  642.06459  3.74%     - 2201s
+H    0     0                     659.0000000  642.06459  2.57%     - 2345s
+     0     0  642.52856    0 1123  659.00000  642.52856  2.50%     - 3256s
+H    0     0                     658.0000000  642.52856  2.35%     - 3602s
+
+Cutting planes:
+  Clique: 3
+  Zero half: 1
+  RLT: 6
+
+Explored 1 nodes (337838 simplex iterations) in 3604.88 seconds (1642.94 work units)
+Thread count was 1 (of 80 available processors)
+
+Solution count 5: 658 659 667 ... 1178
+
+Time limit reached
+Best objective 6.580000000000e+02, best bound 6.430000000000e+02, gap 2.2796%
+Block ((8,), ()) at (0, 924)
+Block ((8,), ()) at (136, 58)
+Block ((8,), ()) at (212, 610)
+Block ((8,), ()) at (325, 795)
+Block ((8,), ()) at (467, 381)
+Block ((8,), ()) at (587, 465)
+Block ((8,), ()) at (759, 165)
+Block ((8,), ()) at (898, 512)
+Block ((17,), ()) at (226, 768)
+Block ((17,), ()) at (304, 504)
+Block ((17,), ()) at (402, 898)
+Block ((17,), ()) at (407, 581)
+Block ((17,), ()) at (429, 444)
+Block ((17,), ()) at (594, 771)
+Block ((17,), ()) at (618, 422)
+Block ((17,), ()) at (695, 389)
+Block ((17,), ()) at (839, 843)
+Block ((17,), ()) at (866, 848)
+Block ((17,), ()) at (892, 749)
+Block ((17,), ()) at (912, 336)
+Block ((17,), ()) at (967, 103)
+Block ((17, 5), (0,)) at (1, 784)
+Block ((5,), ()) at (22, 779)
+Block ((5,), ()) at (81, 88)
+Block ((5,), ()) at (229, 603)
+Block ((5,), ()) at (252, 854)
+Block ((5,), ()) at (294, 667)
+Block ((5,), ()) at (451, 661)
+Block ((5,), ()) at (502, 366)
+Block ((5,), ()) at (544, 651)
+Block ((5,), ()) at (561, 657)
+Block ((5,), ()) at (626, 237)
+Block ((5,), ()) at (679, 434)
+Block ((5,), ()) at (742, 436)
+Block ((5,), ()) at (870, 450)
+Block ((5,), ()) at (966, 213)
+Block ((5, 5), (0,)) at (528, 180)
+Block ((5, 14), (0,)) at (3, 692)
+Block ((14,), ()) at (290, 703)
+Block ((14,), ()) at (291, 580)
+Block ((14,), ()) at (335, 78)
+Block ((14,), ()) at (414, 995)
+Block ((14,), ()) at (454, 111)
+Block ((14,), ()) at (763, 748)
+Block ((14,), ()) at (895, 819)
+Block ((14, 8), (0,)) at (241, 890)
+Block ((14, 8), (0,)) at (427, 7)
+Block ((8, 6), (0,)) at (5, 501)
+Block ((6,), ()) at (64, 881)
+Block ((6,), ()) at (131, 134)
+Block ((6,), ()) at (191, 498)
+Block ((6,), ()) at (213, 500)
+Block ((6,), ()) at (278, 276)
+Block ((6,), ()) at (341, 350)
+Block ((6,), ()) at (582, 985)
+Block ((6,), ()) at (778, 110)
+Block ((6,), ()) at (847, 742)
+Block ((6,), ()) at (900, 546)
+Block ((6,), ()) at (925, 894)
+Block ((3,), ()) at (7, 669)
+Block ((3,), ()) at (46, 426)
+Block ((3,), ()) at (57, 888)
+Block ((3,), ()) at (286, 676)
+Block ((3,), ()) at (301, 635)
+Block ((3,), ()) at (436, 399)
+Block ((3,), ()) at (469, 136)
+Block ((3,), ()) at (716, 852)
+Block ((3,), ()) at (828, 935)
+Block ((3,), ()) at (995, 607)
+Block ((3, 16), (0,)) at (210, 757)
+Block ((16,), ()) at (43, 84)
+Block ((16,), ()) at (128, 858)
+Block ((16,), ()) at (146, 9)
+Block ((16,), ()) at (479, 203)
+Block ((16,), ()) at (568, 40)
+Block ((16,), ()) at (576, 298)
+Block ((16,), ()) at (743, 265)
+Block ((16,), ()) at (877, 106)
+Block ((16,), ()) at (931, 383)
+Block ((16,), ()) at (997, 956)
+Block ((16, 14, 7), (0, 0)) at (8, 961)
+Block ((7,), ()) at (54, 14)
+Block ((7,), ()) at (125, 251)
+Block ((7,), ()) at (324, 44)
+Block ((7,), ()) at (466, 686)
+Block ((7,), ()) at (501, 551)
+Block ((7,), ()) at (534, 185)
+Block ((7,), ()) at (537, 215)
+Block ((7,), ()) at (887, 474)
+Block ((7, 2), (0,)) at (420, 765)
+Block ((2,), ()) at (289, 801)
+Block ((2,), ()) at (338, 596)
+Block ((2,), ()) at (347, 536)
+Block ((2,), ()) at (432, 939)
+Block ((2,), ()) at (686, 770)
+Block ((2,), ()) at (767, 979)
+Block ((2,), ()) at (874, 671)
+Block ((2, 17), (0,)) at (11, 329)
+Block ((4,), ()) at (13, 461)
+Block ((4,), ()) at (25, 31)
+Block ((4,), ()) at (40, 168)
+Block ((4,), ()) at (70, 232)
+Block ((4,), ()) at (330, 497)
+Block ((4,), ()) at (574, 598)
+Block ((4,), ()) at (729, 634)
+Block ((4,), ()) at (775, 470)
+Block ((5, 4), (0,)) at (938, 119)
+Block ((5, 4, 5), (0, 0)) at (14, 158)
+Block ((16, 5), (0,)) at (17, 238)
+Block ((16, 10), (0,)) at (472, 139)
+Block ((16, 10, 14), (0, 0)) at (19, 423)
+Block ((10,), ()) at (65, 335)
+Block ((10,), ()) at (143, 206)
+Block ((10,), ()) at (224, 339)
+Block ((10,), ()) at (507, 218)
+Block ((10,), ()) at (709, 289)
+Block ((10,), ()) at (724, 763)
+Block ((10,), ()) at (749, 572)
+Block ((10,), ()) at (833, 146)
+Block ((10,), ()) at (994, 965)
+Block ((16, 8), (0,)) at (23, 796)
+Block ((16, 8), (0,)) at (483, 969)
+Block ((16, 8), (0,)) at (522, 361)
+Block ((4, 9), (0,)) at (845, 954)
+Block ((9,), ()) at (95, 199)
+Block ((9,), ()) at (202, 824)
+Block ((9,), ()) at (474, 879)
+Block ((9,), ()) at (579, 909)
+Block ((9,), ()) at (588, 386)
+Block ((9,), ()) at (655, 347)
+Block ((9,), ()) at (819, 256)
+Block ((9,), ()) at (884, 688)
+Block ((9, 8), (0,)) at (26, 337)
+Block ((9, 8), (0,)) at (462, 820)
+Block ((8, 8), (0,)) at (68, 653)
+Block ((8, 15), (0,)) at (28, 241)
+Block ((8, 15), (0,)) at (231, 29)
+Block ((15,), ()) at (223, 884)
+Block ((15,), ()) at (245, 331)
+Block ((15,), ()) at (363, 280)
+Block ((15,), ()) at (419, 35)
+Block ((15,), ()) at (477, 360)
+Block ((15,), ()) at (487, 176)
+Block ((15, 18), (0,)) at (514, 108)
+Block ((15, 18), (0,)) at (696, 475)
+Block ((18,), ()) at (98, 638)
+Block ((18,), ()) at (190, 274)
+Block ((18,), ()) at (235, 574)
+Block ((18,), ()) at (319, 130)
+Block ((18,), ()) at (722, 712)
+Block ((18,), ()) at (764, 950)
+Block ((18,), ()) at (961, 877)
+Block ((18, 12), (0,)) at (30, 115)
+Block ((12,), ()) at (80, 706)
+Block ((12,), ()) at (251, 255)
+Block ((12,), ()) at (279, 680)
+Block ((12,), ()) at (342, 849)
+Block ((12,), ()) at (354, 23)
+Block ((12,), ()) at (433, 579)
+Block ((12,), ()) at (543, 267)
+Block ((12,), ()) at (562, 62)
+Block ((12,), ()) at (694, 406)
+Block ((12,), ()) at (737, 311)
+Block ((12,), ()) at (861, 633)
+Block ((17, 14), (0,)) at (299, 71)
+Block ((17, 14), (0,)) at (893, 259)
+Block ((12, 13), (0,)) at (233, 725)
+Block ((12, 13), (0,)) at (258, 538)
+Block ((13,), ()) at (49, 13)
+Block ((13,), ()) at (167, 555)
+Block ((13,), ()) at (189, 927)
+Block ((13,), ()) at (399, 68)
+Block ((13,), ()) at (457, 15)
+Block ((13,), ()) at (468, 648)
+Block ((13,), ()) at (553, 721)
+Block ((13,), ()) at (556, 86)
+Block ((13,), ()) at (906, 632)
+Block ((13, 14), (0,)) at (943, 372)
+Block ((14, 13), (0,)) at (880, 345)
+Block ((4, 4), (0,)) at (614, 244)
+Block ((7, 16), (0,)) at (41, 2)
+Block ((17, 12), (0,)) at (44, 161)
+Block ((9, 10), (0,)) at (47, 343)
+Block ((10, 13), (0,)) at (96, 455)
+Block ((6, 6), (0,)) at (50, 530)
+Block ((6, 6), (0,)) at (572, 223)
+Block ((6, 8), (0,)) at (52, 674)
+Block ((6, 8), (0,)) at (377, 636)
+Block ((8, 7), (0,)) at (926, 21)
+Block ((7, 9), (0,)) at (885, 759)
+Block ((9, 14), (0,)) at (55, 207)
+Block ((14, 3), (0,)) at (850, 126)
+Block ((3, 4), (0,)) at (538, 948)
+Block ((4, 2), (0,)) at (58, 910)
+Block ((4, 2), (0,)) at (430, 761)
+Block ((2, 19), (0,)) at (989, 304)
+Block ((19,), ()) at (94, 663)
+Block ((19,), ()) at (121, 845)
+Block ((19,), ()) at (225, 89)
+Block ((19,), ()) at (315, 412)
+Block ((19,), ()) at (691, 774)
+Block ((19,), ()) at (762, 620)
+Block ((19,), ()) at (834, 570)
+Block ((19,), ()) at (844, 715)
+Block ((19,), ()) at (929, 643)
+Block ((19,), ()) at (949, 328)
+Block ((19, 13), (0,)) at (60, 623)
+Block ((11,), ()) at (99, 243)
+Block ((11,), ()) at (122, 112)
+Block ((11,), ()) at (497, 368)
+Block ((11,), ()) at (498, 486)
+Block ((11,), ()) at (575, 614)
+Block ((11,), ()) at (591, 355)
+Block ((11,), ()) at (683, 684)
+Block ((11,), ()) at (928, 384)
+Block ((11,), ()) at (930, 565)
+Block ((11,), ()) at (996, 334)
+Block ((11, 20), (0,)) at (62, 561)
+Block ((20,), ()) at (298, 431)
+Block ((20,), ()) at (478, 525)
+Block ((20,), ()) at (781, 49)
+Block ((20,), ()) at (871, 296)
+Block ((20,), ()) at (899, 483)
+Block ((20,), ()) at (903, 850)
+Block ((20,), ()) at (909, 786)
+Block ((20,), ()) at (942, 413)
+Block ((20,), ()) at (974, 291)
+Block ((7, 3), (0,)) at (66, 882)
+Block ((7, 3), (0,)) at (673, 812)
+Block ((7, 3), (0,)) at (689, 378)
+Block ((4, 18), (0,)) at (840, 11)
+Block ((18, 7), (0,)) at (71, 446)
+Block ((18, 7), (0,)) at (400, 780)
+Block ((18, 7), (0,)) at (441, 584)
+Block ((3, 16, 5), (0, 0)) at (73, 832)
+Block ((5, 6), (0,)) at (964, 855)
+Block ((4, 13), (0,)) at (352, 559)
+Block ((5, 3), (0,)) at (831, 895)
+Block ((3, 7), (0,)) at (82, 306)
+Block ((3, 7), (0,)) at (563, 802)
+Block ((9, 16), (0,)) at (84, 188)
+Block ((9, 16), (0,)) at (837, 577)
+Block ((15, 7), (0,)) at (86, 914)
+Block ((5, 17), (0,)) at (88, 814)
+Block ((17, 18), (0,)) at (134, 25)
+Block ((18, 18), (0,)) at (90, 933)
+Block ((15, 9), (0,)) at (92, 899)
+Block ((9, 19), (0,)) at (677, 348)
+Block ((19, 4), (0,)) at (100, 163)
+Block ((19, 4), (0,)) at (687, 358)
+Block ((19, 4), (0,)) at (842, 544)
+Block ((13, 5), (0,)) at (503, 625)
+Block ((6, 20), (0,)) at (735, 45)
+Block ((2, 16), (0,)) at (150, 220)
+Block ((16, 6), (0,)) at (256, 903)
+Block ((16, 6), (0,)) at (932, 363)
+Block ((4, 11), (0,)) at (214, 707)
+Block ((11, 17), (0,)) at (328, 19)
+Block ((11, 17), (0,)) at (449, 866)
+Block ((17, 11), (0,)) at (714, 740)
+Block ((11, 8), (0,)) at (339, 341)
+Block ((8, 19), (0,)) at (355, 628)
+Block ((8, 19), (0,)) at (852, 553)
+Block ((19, 15), (0,)) at (464, 484)
+Block ((2, 11), (0,)) at (624, 540)
+Block ((15, 15), (0,)) at (123, 292)
+Block ((7, 1), (0,)) at (447, 594)
+Block ((1,), ()) at (205, 752)
+Block ((1,), ()) at (230, 782)
+Block ((1,), ()) at (253, 118)
+Block ((1,), ()) at (540, 980)
+Block ((1,), ()) at (569, 459)
+Block ((1,), ()) at (723, 157)
+Block ((1,), ()) at (748, 95)
+Block ((1,), ()) at (954, 295)
+Block ((1,), ()) at (991, 66)
+Block ((1, 5), (0,)) at (126, 299)
+Block ((18, 6), (0,)) at (129, 277)
+Block ((6, 9), (0,)) at (524, 491)
+Block ((6, 9), (0,)) at (656, 959)
+Block ((9, 12), (0,)) at (132, 922)
+Block ((16, 9), (0,)) at (262, 586)
+Block ((16, 9), (0,)) at (744, 618)
+Block ((16, 9), (0,)) at (835, 750)
+Block ((13, 3), (0,)) at (144, 649)
+Block ((14, 9), (0,)) at (243, 901)
+Block ((14, 9), (0,)) at (249, 332)
+Block ((14, 9), (0,)) at (665, 967)
+Block ((14, 9, 20), (0, 0)) at (147, 745)
+Block ((9, 20), (0,)) at (422, 513)
+Block ((16, 19), (0,)) at (945, 387)
+Block ((10, 2), (0,)) at (577, 92)
+Block ((12, 4), (0,)) at (551, 356)
+Block ((13, 17), (0,)) at (545, 716)
+Block ((17, 9), (0,)) at (168, 82)
+Block ((9, 15), (0,)) at (733, 931)
+Block ((15, 5), (0,)) at (518, 506)
+Block ((6, 14), (0,)) at (936, 287)
+Block ((14, 2), (0,)) at (959, 38)
+Block ((2, 10), (0,)) at (738, 582)
+Block ((10, 15), (0,)) at (901, 677)
+Block ((15, 6), (0,)) at (470, 285)
+Block ((13, 8), (0,)) at (968, 407)
+Block ((8, 12), (0,)) at (184, 96)
+Block ((12, 7), (0,)) at (896, 54)
+Block ((12, 7), (0,)) at (975, 534)
+Block ((7, 9, 15), (0, 0)) at (186, 792)
+Block ((20, 13), (0,)) at (192, 440)
+Block ((15, 3), (0,)) at (541, 860)
+Block ((3, 13), (0,)) at (264, 937)
+Block ((3, 13), (0,)) at (952, 753)
+Block ((17, 8), (0,)) at (198, 743)
+Block ((17, 8), (0,)) at (287, 404)
+Block ((17, 8), (0,)) at (375, 438)
+Block ((17, 8), (0,)) at (815, 69)
+Block ((4, 8), (0,)) at (200, 353)
+Block ((8, 9), (0,)) at (499, 777)
+Block ((8, 9), (0,)) at (752, 166)
+Block ((8, 9), (0,)) at (955, 432)
+Block ((14, 10), (0,)) at (203, 448)
+Block ((14, 10), (0,)) at (439, 520)
+Block ((10, 1), (0,)) at (452, 532)
+Block ((10, 1), (0,)) at (820, 526)
+Block ((1, 1), (0,)) at (913, 148)
+Block ((1, 12), (0,)) at (206, 252)
+Block ((2, 12), (0,)) at (208, 575)
+Block ((11, 1), (0,)) at (595, 401)
+Block ((1, 4), (0,)) at (216, 63)
+Block ((1, 4), (0,)) at (773, 204)
+Block ((4, 1), (0,)) at (864, 200)
+Block ((1, 6), (0,)) at (218, 621)
+Block ((6, 11), (0,)) at (415, 173)
+Block ((6, 11, 19), (0, 0)) at (220, 905)
+Block ((19, 17), (0,)) at (373, 60)
+Block ((10, 17), (0,)) at (227, 971)
+Block ((6, 15), (0,)) at (236, 376)
+Block ((12, 7, 13), (0, 0)) at (238, 718)
+Block ((8, 14), (0,)) at (488, 322)
+Block ((15, 10, 9), (0, 0)) at (246, 225)
+Block ((10, 9), (0,)) at (915, 414)
+Block ((14, 15), (0,)) at (254, 508)
+Block ((14, 15), (0,)) at (445, 722)
+Block ((13, 10), (0,)) at (750, 616)
+Block ((10, 12), (0,)) at (260, 131)
+Block ((9, 3), (0,)) at (684, 510)
+Block ((13, 1), (0,)) at (350, 528)
+Block ((14, 6), (0,)) at (520, 713)
+Block ((12, 19), (0,)) at (859, 709)
+Block ((15, 14), (0,)) at (443, 806)
+Block ((14, 10, 10), (0, 0)) at (275, 548)
+Block ((10, 6), (0,)) at (331, 730)
+Block ((15, 4), (0,)) at (280, 701)
+Block ((11, 18), (0,)) at (282, 195)
+Block ((18, 16), (0,)) at (878, 442)
+Block ((16, 12), (0,)) at (284, 178)
+Block ((8, 2), (0,)) at (882, 523)
+Block ((14, 14), (0,)) at (437, 479)
+Block ((14, 14), (0,)) at (707, 150)
+Block ((5, 7), (0,)) at (292, 257)
+Block ((5, 7), (0,)) at (535, 41)
+Block ((5, 8), (0,)) at (585, 302)
+Block ((5, 8), (0,)) at (907, 912)
+Block ((8, 13, 15), (0, 0)) at (295, 192)
+Block ((9, 2), (0,)) at (302, 665)
+Block ((9, 2), (0,)) at (940, 808)
+Block ((3, 15), (0,)) at (305, 940)
+Block ((15, 19), (0,)) at (417, 681)
+Block ((15, 19), (0,)) at (980, 17)
+Block ((19, 3), (0,)) at (307, 925)
+Block ((19, 3), (0,)) at (675, 604)
+Block ((8, 3, 9), (0, 0)) at (309, 142)
+Block ((4, 9, 2), (0, 0)) at (312, 863)
+Block ((19, 18), (0,)) at (359, 463)
+Block ((19, 18), (0,)) at (592, 838)
+Block ((18, 3, 13), (0, 0)) at (316, 488)
+Block ((9, 7), (0,)) at (320, 810)
+Block ((9, 7), (0,)) at (710, 315)
+Block ((7, 4), (0,)) at (322, 80)
+Block ((7, 8), (0,)) at (493, 390)
+Block ((8, 5), (0,)) at (343, 515)
+Block ((5, 2), (0,)) at (326, 976)
+Block ((4, 10), (0,)) at (970, 996)
+Block ((4, 10), (0,)) at (998, 324)
+Block ((8, 16), (0,)) at (333, 991)
+Block ((8, 16), (0,)) at (917, 698)
+Block ((2, 8), (0,)) at (336, 798)
+Block ((1, 3), (0,)) at (345, 429)
+Block ((1, 3), (0,)) at (817, 320)
+Block ((6, 7), (0,)) at (348, 872)
+Block ((6, 7), (0,)) at (992, 409)
+Block ((19, 5), (0,)) at (589, 639)
+Block ((5, 13), (0,)) at (357, 916)
+Block ((18, 10), (0,)) at (495, 481)
+Block ((10, 5), (0,)) at (361, 495)
+Block ((10, 5), (0,)) at (530, 183)
+Block ((6, 19), (0,)) at (364, 370)
+Block ((7, 6), (0,)) at (366, 281)
+Block ((19, 8), (0,)) at (397, 920)
+Block ((7, 17), (0,)) at (455, 272)
+Block ((5, 11), (0,)) at (403, 986)
+Block ((11, 3), (0,)) at (921, 36)
+Block ((3, 12), (0,)) at (405, 427)
+Block ((2, 4), (0,)) at (408, 983)
+Block ((7, 12), (0,)) at (410, 467)
+Block ((12, 11), (0,)) at (412, 875)
+Block ((10, 16), (0,)) at (985, 47)
+Block ((10, 16, 17), (0, 0)) at (424, 695)
+Block ((2, 2), (0,)) at (580, 283)
+Block ((2, 2), (0,)) at (829, 945)
+Block ((12, 10), (0,)) at (434, 918)
+Block ((1, 11), (0,)) at (754, 229)
+Block ((6, 18), (0,)) at (458, 394)
+Block ((7, 18), (0,)) at (460, 52)
+Block ((9, 1), (0,)) at (890, 74)
+Block ((1, 15), (0,)) at (475, 417)
+Block ((9, 12, 12), (0, 0)) at (480, 835)
+Block ((2, 5), (0,)) at (485, 326)
+Block ((2, 5), (0,)) at (910, 942)
+Block ((20, 17, 4), (0, 0)) at (490, 825)
+Block ((5, 18), (0,)) at (947, 477)
+Block ((18, 4), (0,)) at (505, 846)
+Block ((14, 20, 10), (0, 0)) at (508, 973)
+Block ((19, 11, 7), (0, 0)) at (511, 868)
+Block ((7, 14), (0,)) at (516, 351)
+Block ((3, 20), (0,)) at (526, 137)
+Block ((16, 20), (0,)) at (532, 90)
+Block ((7, 20), (0,)) at (547, 392)
+Block ((17, 20), (0,)) at (549, 612)
+Block ((17, 20), (0,)) at (923, 216)
+Block ((20, 12), (0,)) at (583, 186)
+Block ((19, 6), (0,)) at (554, 592)
+Block ((12, 18), (0,)) at (854, 76)
+Block ((12, 18, 5, 7), (0, 0, 0)) at (557, 566)
+Block ((3, 4, 16), (0, 0)) at (565, 247)
+Block ((3, 6), (0,)) at (570, 641)
+Block ((7, 19), (0,)) at (616, 113)
+Block ((11, 5), (0,)) at (740, 727)
+Block ((13, 16), (0,)) at (934, 262)
+Block ((20, 11), (0,)) at (658, 50)
+Block ((3, 3), (0,)) at (667, 210)
+Block ((7, 11), (0,)) at (669, 817)
+Block ((2, 15), (0,)) at (671, 993)
+Block ((13, 11, 11), (0, 0)) at (680, 988)
+Block ((5, 19), (0,)) at (692, 235)
+Block ((1, 9), (0,)) at (712, 128)
+Block ((3, 1), (0,)) at (919, 542)
+Block ((1, 4, 20), (0, 0)) at (717, 517)
+Block ((11, 12), (0,)) at (720, 317)
+Block ((13, 19, 16, 17), (0, 0, 0)) at (725, 99)
+Block ((1, 16), (0,)) at (872, 313)
+Block ((1, 16, 16), (0, 0)) at (730, 308)
+Block ((4, 14), (0,)) at (746, 690)
+Block ((14, 1), (0,)) at (848, 123)
+Block ((5, 19, 18), (0, 0)) at (756, 828)
+Block ((18, 2), (0,)) at (760, 787)
+Block ((14, 18), (0,)) at (782, 452)
+Block ((5, 20), (0,)) at (765, 374)
+Block ((13, 19, 8), (0, 0)) at (768, 589)
+Block ((20, 3), (0,)) at (771, 152)
+Block ((18, 20), (0,)) at (776, 737)
+Block ((4, 15), (0,)) at (779, 0)
+Block ((10, 20), (0,)) at (822, 269)
+Block ((2, 18), (0,)) at (824, 556)
+Block ((3, 10), (0,)) at (826, 804)
+Block ((11, 19, 7), (0, 0)) at (856, 789)
+Block ((17, 16), (0,)) at (862, 155)
+Block ((7, 3, 7), (0, 0)) at (867, 170)
+Block ((16, 2), (0,)) at (987, 33)
+Block ((13, 13), (0,)) at (875, 655)
+Block ((13, 7), (0,)) at (888, 472)
+Block ((13, 7), (0,)) at (957, 396)
+Block ((12, 6), (0,)) at (904, 772)
+Block ((19, 2), (0,)) at (950, 929)
+Block ((9, 5), (0,)) at (962, 600)
+Block ((16, 13), (0,)) at (972, 457)
+Block ((15, 16, 4), (0, 0)) at (977, 733)
+Block <gurobi.Var C73910 (value 1.0)> at C73910
+Block <gurobi.Var C115552 (value 1.0)> at C115552
+Block <gurobi.Var C139266 (value 1.0)> at C139266
+Block <gurobi.Var C170088 (value 1.0)> at C170088
+Block <gurobi.Var C182937 (value 1.0)> at C182937
+Block <gurobi.Var C198047 (value 1.0)> at C198047
+Block <gurobi.Var C217681 (value 1.0)> at C217681
+Block <gurobi.Var C273162 (value 1.0)> at C273162
+Block <gurobi.Var C342875 (value 1.0)> at C342875
+Block <gurobi.Var C349785 (value 1.0)> at C349785
+Block <gurobi.Var C461509 (value 1.0)> at C461509
+Block <gurobi.Var C470132 (value 1.0)> at C470132
+Block <gurobi.Var C473175 (value 1.0)> at C473175
+Block <gurobi.Var C484933 (value 1.0)> at C484933
+Block <gurobi.Var C497154 (value 1.0)> at C497154
+Block <gurobi.Var C519493 (value 1.0)> at C519493
+Block <gurobi.Var C542730 (value 1.0)> at C542730
+Block <gurobi.Var C542901 (value 1.0)> at C542901
+Block <gurobi.Var C542905 (value 1.0)> at C542905
+Block <gurobi.Var C542906 (value 1.0)> at C542906
+Block <gurobi.Var C542907 (value 1.0)> at C542907
+Block <gurobi.Var C542909 (value 1.0)> at C542909
+Block <gurobi.Var C542911 (value 1.0)> at C542911
+Block <gurobi.Var C542912 (value 1.0)> at C542912
+Block <gurobi.Var C542914 (value 1.0)> at C542914
+Block <gurobi.Var C542916 (value 1.0)> at C542916
+Block <gurobi.Var C542917 (value 1.0)> at C542917
+Block <gurobi.Var C542918 (value 1.0)> at C542918
+Block <gurobi.Var C542919 (value 1.0)> at C542919
+Block <gurobi.Var C542920 (value 1.0)> at C542920
+Block <gurobi.Var C542921 (value 1.0)> at C542921
+Block <gurobi.Var C542922 (value 1.0)> at C542922
+Block <gurobi.Var C542923 (value 1.0)> at C542923
+Block <gurobi.Var C542924 (value 1.0)> at C542924
+Block <gurobi.Var C542926 (value 1.0)> at C542926
+Block <gurobi.Var C542928 (value 1.0)> at C542928
+Block <gurobi.Var C542929 (value 1.0)> at C542929
+Block <gurobi.Var C542931 (value 1.0)> at C542931
+Block <gurobi.Var C542933 (value 1.0)> at C542933
+Block <gurobi.Var C542934 (value 1.0)> at C542934
+Block <gurobi.Var C542935 (value 1.0)> at C542935
+Block <gurobi.Var C542936 (value 1.0)> at C542936
+Block <gurobi.Var C542937 (value 1.0)> at C542937
+Block <gurobi.Var C542938 (value 1.0)> at C542938
+Block <gurobi.Var C542939 (value 1.0)> at C542939
+Block <gurobi.Var C542940 (value 1.0)> at C542940
+Block <gurobi.Var C542941 (value 1.0)> at C542941
+Block <gurobi.Var C542942 (value 1.0)> at C542942
+Block <gurobi.Var C542943 (value 1.0)> at C542943
+Block <gurobi.Var C542945 (value 1.0)> at C542945
+Block <gurobi.Var C542948 (value 1.0)> at C542948
+Block <gurobi.Var C542950 (value 1.0)> at C542950
+Block <gurobi.Var C542951 (value 1.0)> at C542951
+Block <gurobi.Var C542952 (value 1.0)> at C542952
+Block <gurobi.Var C542953 (value 1.0)> at C542953
+Block <gurobi.Var C542954 (value 1.0)> at C542954
+Block <gurobi.Var C542955 (value 1.0)> at C542955
+Block <gurobi.Var C542956 (value 1.0)> at C542956
+Block <gurobi.Var C542957 (value 1.0)> at C542957
+Block <gurobi.Var C542959 (value 1.0)> at C542959
+Block <gurobi.Var C542961 (value 1.0)> at C542961
+Block <gurobi.Var C542962 (value 1.0)> at C542962
+Block <gurobi.Var C542963 (value 1.0)> at C542963
+Block <gurobi.Var C542964 (value 1.0)> at C542964
+Block <gurobi.Var C542965 (value 1.0)> at C542965
+Block <gurobi.Var C542966 (value 1.0)> at C542966
+Block <gurobi.Var C542967 (value 1.0)> at C542967
+Block <gurobi.Var C542968 (value 1.0)> at C542968
+Block <gurobi.Var C542969 (value 1.0)> at C542969
+Block <gurobi.Var C542970 (value 1.0)> at C542970
+Block <gurobi.Var C542971 (value 1.0)> at C542971
+Block <gurobi.Var C542972 (value 1.0)> at C542972
+Block <gurobi.Var C542973 (value 1.0)> at C542973
+Block <gurobi.Var C542974 (value 1.0)> at C542974
+Block <gurobi.Var C542975 (value 1.0)> at C542975
+Block <gurobi.Var C542976 (value 1.0)> at C542976
+Block <gurobi.Var C542977 (value 1.0)> at C542977
+Block <gurobi.Var C542978 (value 1.0)> at C542978
+Block <gurobi.Var C542979 (value 1.0)> at C542979
+Block <gurobi.Var C542980 (value 1.0)> at C542980
+Block <gurobi.Var C542981 (value 1.0)> at C542981
+Block <gurobi.Var C542982 (value 1.0)> at C542982
+Block <gurobi.Var C542983 (value 1.0)> at C542983
+Block <gurobi.Var C542984 (value 1.0)> at C542984
+Block <gurobi.Var C542985 (value 1.0)> at C542985
+Block <gurobi.Var C542986 (value 1.0)> at C542986
+Block <gurobi.Var C542987 (value 1.0)> at C542987
+Block <gurobi.Var C542988 (value 1.0)> at C542988
+Block <gurobi.Var C542989 (value 1.0)> at C542989
+Block <gurobi.Var C542992 (value 1.0)> at C542992
+Block <gurobi.Var C542996 (value 1.0)> at C542996
+Block <gurobi.Var C542997 (value 1.0)> at C542997
+Block <gurobi.Var C542998 (value 1.0)> at C542998
+Block <gurobi.Var C542999 (value 1.0)> at C542999
+Block <gurobi.Var C543000 (value 1.0)> at C543000
+Block <gurobi.Var C543001 (value 1.0)> at C543001
+Block <gurobi.Var C543002 (value 1.0)> at C543002
+Block <gurobi.Var C543003 (value 1.0)> at C543003
+Block <gurobi.Var C543004 (value 1.0)> at C543004
+Block <gurobi.Var C543005 (value 1.0)> at C543005
+Block <gurobi.Var C543006 (value 1.0)> at C543006
+Block <gurobi.Var C543008 (value 1.0)> at C543008
+Block <gurobi.Var C543010 (value 1.0)> at C543010
+Block <gurobi.Var C543011 (value 1.0)> at C543011
+Block <gurobi.Var C543012 (value 1.0)> at C543012
+Block <gurobi.Var C543013 (value 1.0)> at C543013
+Block <gurobi.Var C543014 (value 1.0)> at C543014
+Block <gurobi.Var C543015 (value 1.0)> at C543015
+Block <gurobi.Var C543016 (value 1.0)> at C543016
+Block <gurobi.Var C543017 (value 1.0)> at C543017
+Block <gurobi.Var C543019 (value 1.0)> at C543019
+Block <gurobi.Var C543021 (value 1.0)> at C543021
+Block <gurobi.Var C543022 (value 1.0)> at C543022
+Block <gurobi.Var C543023 (value 1.0)> at C543023
+Block <gurobi.Var C543024 (value 1.0)> at C543024
+Block <gurobi.Var C543025 (value 1.0)> at C543025
+Block <gurobi.Var C543026 (value 1.0)> at C543026
+Block <gurobi.Var C543027 (value 1.0)> at C543027
+Block <gurobi.Var C543029 (value 1.0)> at C543029
+Block <gurobi.Var C543031 (value 1.0)> at C543031
+Block <gurobi.Var C543032 (value 1.0)> at C543032
+Block <gurobi.Var C543033 (value 1.0)> at C543033
+Block <gurobi.Var C543035 (value 1.0)> at C543035
+Block <gurobi.Var C543040 (value 1.0)> at C543040
+Block <gurobi.Var C543047 (value 1.0)> at C543047
+Block <gurobi.Var C543050 (value 1.0)> at C543050
+Block <gurobi.Var C543054 (value 1.0)> at C543054
+Block <gurobi.Var C543055 (value 1.0)> at C543055
+Block <gurobi.Var C543056 (value 1.0)> at C543056
+Block <gurobi.Var C543057 (value 1.0)> at C543057
+Block <gurobi.Var C543059 (value 1.0)> at C543059
+Block <gurobi.Var C543061 (value 1.0)> at C543061
+Block <gurobi.Var C543062 (value 1.0)> at C543062
+Block <gurobi.Var C543063 (value 1.0)> at C543063
+Block <gurobi.Var C543064 (value 1.0)> at C543064
+Block <gurobi.Var C543065 (value 1.0)> at C543065
+Block <gurobi.Var C543066 (value 1.0)> at C543066
+Block <gurobi.Var C543067 (value 1.0)> at C543067
+Block <gurobi.Var C543069 (value 1.0)> at C543069
+Block <gurobi.Var C543071 (value 1.0)> at C543071
+Block <gurobi.Var C543072 (value 1.0)> at C543072
+Block <gurobi.Var C543073 (value 1.0)> at C543073
+Block <gurobi.Var C543074 (value 1.0)> at C543074
+Block <gurobi.Var C543075 (value 1.0)> at C543075
+Block <gurobi.Var C543076 (value 1.0)> at C543076
+Block <gurobi.Var C543078 (value 1.0)> at C543078
+Block <gurobi.Var C543080 (value 1.0)> at C543080
+Block <gurobi.Var C543081 (value 1.0)> at C543081
+Block <gurobi.Var C543082 (value 1.0)> at C543082
+Block <gurobi.Var C543084 (value 1.0)> at C543084
+Block <gurobi.Var C543086 (value 1.0)> at C543086
+Block <gurobi.Var C543087 (value 1.0)> at C543087
+Block <gurobi.Var C543088 (value 1.0)> at C543088
+Block <gurobi.Var C543090 (value 1.0)> at C543090
+Block <gurobi.Var C543092 (value 1.0)> at C543092
+Block <gurobi.Var C543095 (value 1.0)> at C543095
+Block <gurobi.Var C543099 (value 1.0)> at C543099
+Block <gurobi.Var C543100 (value 1.0)> at C543100
+Block <gurobi.Var C543101 (value 1.0)> at C543101
+Block <gurobi.Var C543102 (value 1.0)> at C543102
+Block <gurobi.Var C543103 (value 1.0)> at C543103
+Block <gurobi.Var C543104 (value 1.0)> at C543104
+Block <gurobi.Var C543105 (value 1.0)> at C543105
+Block <gurobi.Var C543106 (value 1.0)> at C543106
+Block <gurobi.Var C543107 (value 1.0)> at C543107
+Block <gurobi.Var C543108 (value 1.0)> at C543108
+Block <gurobi.Var C543111 (value 1.0)> at C543111
+Block <gurobi.Var C543115 (value 1.0)> at C543115
+Block <gurobi.Var C543117 (value 1.0)> at C543117
+Block <gurobi.Var C543119 (value 1.0)> at C543119
+Block <gurobi.Var C543120 (value 1.0)> at C543120
+Block <gurobi.Var C543121 (value 1.0)> at C543121
+Block <gurobi.Var C543122 (value 1.0)> at C543122
+Block <gurobi.Var C543123 (value 1.0)> at C543123
+Block <gurobi.Var C543124 (value 1.0)> at C543124
+Block <gurobi.Var C543127 (value 1.0)> at C543127
+Block <gurobi.Var C543132 (value 1.0)> at C543132
+Block <gurobi.Var C543134 (value 1.0)> at C543134
+Block <gurobi.Var C543135 (value 1.0)> at C543135
+Block <gurobi.Var C543136 (value 1.0)> at C543136
+Block <gurobi.Var C543138 (value 1.0)> at C543138
+Block <gurobi.Var C543141 (value 1.0)> at C543141
+### ESTATISTICAS
+runtime: 3605.5288507938385
+Tempo de execução para criação das estruturas: 1651.575671 segundos
+
+Tempo de execução do modelo: 5259.560832 segundos

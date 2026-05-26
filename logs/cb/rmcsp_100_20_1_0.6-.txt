@@ -1,0 +1,116 @@
+Set parameter TimeLimit to value 3600
+Set parameter Threads to value 1
+Warning: constraint name "unicidade de char 0 na str 1" has a space
+Gurobi Optimizer version 10.0.2 build v10.0.2rc0 (linux64)
+
+CPU model: Intel(R) Xeon(R) CPU E7- 4850  @ 2.00GHz, instruction set [SSE2]
+Thread count: 40 physical cores, 80 logical processors, using up to 1 threads
+
+Optimize a model with 200 rows, 641 columns and 1382 nonzeros
+Model fingerprint: 0x7de301ec
+Variable types: 0 continuous, 641 integer (641 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 91.0000000
+Presolve removed 35 rows and 61 columns
+Presolve time: 0.01s
+Presolved: 165 rows, 580 columns, 1250 nonzeros
+Found heuristic solution: objective 89.0000000
+Variable types: 0 continuous, 580 integer (580 binary)
+
+Root relaxation: objective 7.300000e+01, 141 iterations, 0.00 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+*    0     0               0      73.0000000   73.00000  0.00%     -    0s
+
+Explored 1 nodes (141 simplex iterations) in 0.01 seconds (0.00 work units)
+Thread count was 1 (of 80 available processors)
+
+Solution count 3: 73 89 91 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 7.300000000000e+01, best bound 7.300000000000e+01, gap 0.0000%
+Block ((9,), ()) at (0, 86)
+Block ((9,), ()) at (22, 80)
+Block ((9,), ()) at (29, 9)
+Block ((9,), ()) at (90, 70)
+Block ((9,), ()) at (98, 56)
+Block ((6,), ()) at (1, 92)
+Block ((6,), ()) at (52, 90)
+Block ((6,), ()) at (77, 48)
+Block ((14,), ()) at (2, 45)
+Block ((14,), ()) at (97, 58)
+Block ((17,), ()) at (14, 74)
+Block ((17,), ()) at (53, 94)
+Block ((17, 1), (0,)) at (3, 17)
+Block ((1,), ()) at (65, 4)
+Block ((1,), ()) at (74, 71)
+Block ((1,), ()) at (95, 10)
+Block ((12,), ()) at (5, 34)
+Block ((12,), ()) at (56, 26)
+Block ((12, 16), (0,)) at (20, 12)
+Block ((16,), ()) at (6, 42)
+Block ((16,), ()) at (36, 64)
+Block ((16,), ()) at (64, 22)
+Block ((9, 5), (0,)) at (7, 88)
+Block ((5,), ()) at (25, 93)
+Block ((5,), ()) at (85, 43)
+Block ((15,), ()) at (9, 96)
+Block ((15,), ()) at (82, 27)
+Block ((11,), ()) at (34, 11)
+Block ((11,), ()) at (72, 25)
+Block ((11,), ()) at (99, 44)
+Block ((11, 5), (0,)) at (10, 84)
+Block ((20,), ()) at (12, 39)
+Block ((20,), ()) at (44, 57)
+Block ((20,), ()) at (59, 81)
+Block ((7,), ()) at (13, 97)
+Block ((7,), ()) at (96, 95)
+Block ((13,), ()) at (15, 65)
+Block ((13,), ()) at (89, 21)
+Block ((10,), ()) at (16, 53)
+Block ((10,), ()) at (24, 87)
+Block ((7, 4, 16), (0, 0)) at (17, 50)
+Block ((4,), ()) at (45, 49)
+Block ((4,), ()) at (51, 61)
+Block ((8,), ()) at (23, 79)
+Block ((8,), ()) at (86, 16)
+Block ((3,), ()) at (26, 91)
+Block ((3,), ()) at (48, 31)
+Block ((9, 17), (0,)) at (27, 62)
+Block ((9, 14), (0,)) at (30, 0)
+Block ((1, 11), (0,)) at (32, 59)
+Block ((19,), ()) at (35, 46)
+Block ((19,), ()) at (61, 47)
+Block ((4, 1), (0,)) at (37, 72)
+Block ((11, 16), (0,)) at (39, 36)
+Block ((18,), ()) at (41, 35)
+Block ((18,), ()) at (73, 30)
+Block ((1, 2), (0,)) at (42, 28)
+Block ((2,), ()) at (60, 38)
+Block ((5, 8), (0,)) at (46, 2)
+Block ((11, 1), (0,)) at (49, 54)
+Block ((19, 15), (0,)) at (54, 7)
+Block ((1, 15), (0,)) at (57, 14)
+Block ((15, 20), (0,)) at (70, 68)
+Block ((12, 19), (0,)) at (62, 77)
+Block ((10, 10), (0,)) at (66, 32)
+Block ((3, 5), (0,)) at (68, 75)
+Block ((18, 8), (0,)) at (75, 40)
+Block ((14, 12), (0,)) at (78, 5)
+Block ((19, 17), (0,)) at (80, 98)
+Block ((10, 1), (0,)) at (83, 82)
+Block ((8, 9), (0,)) at (87, 66)
+Block ((17, 5), (0,)) at (91, 19)
+Block ((15, 5), (0,)) at (93, 23)
+### ESTATISTICAS
+runtime: 0.015105962753295898
+Tempo de execução para criação das estruturas: 0.097462 segundos
+
+Tempo de execução do modelo: 0.025062 segundos
+Tempo de execução total: 0.122524 segundos

@@ -1,0 +1,62 @@
+
+Gurobi 10.0.2 (linux64) logging started Tue May 19 08:39:57 2026
+
+Set parameter LogFile to value "logs/cg/rmcsp_30_10_1_0.8-.txt"
+Gurobi Optimizer version 10.0.2 build v10.0.2rc0 (linux64)
+
+CPU model: Intel(R) Xeon(R) CPU E7- 4850  @ 2.00GHz, instruction set [SSE2]
+Thread count: 40 physical cores, 80 logical processors, using up to 32 threads
+
+Optimize a model with 168 rows, 92 columns and 663 nonzeros
+Model fingerprint: 0x344af5cf
+Variable types: 0 continuous, 92 integer (92 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 24.0000000
+Presolve removed 155 rows and 78 columns
+Presolve time: 0.00s
+Presolved: 13 rows, 14 columns, 51 nonzeros
+Found heuristic solution: objective 21.0000000
+Variable types: 0 continuous, 14 integer (14 binary)
+
+Explored 0 nodes (0 simplex iterations) in 0.00 seconds (0.00 work units)
+Thread count was 32 (of 80 available processors)
+
+Solution count 2: 21 24 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 2.100000000000e+01, best bound 2.100000000000e+01, gap 0.0000%
+S1 = ( 8 9 8 10 3 6 10 2 1 5 5 10 1 2 4 9 1 5 5 8 7 3 3 7 5 8 1 8 9 1 )
+S2 = ( 8 9 3 7 8 5 4 9 1 9 8 2 5 10 10 2 5 1 6 3 3 5 5 1 1 8 10 1 8 7 )
+S1' = ( 8, 9 8, 10, 3, 6, 10 2, 1, 5 5, 10 1, 2, 4 9 1, 5, 5, 8 7, 3, 3 7, 5, 8, 1 8, 9, 1 )
+S2' = ( 8, 9, 3 7, 8, 5, 4 9 1, 9 8, 2, 5, 10, 10 2, 5, 1, 6, 3, 3, 5 5, 1, 1 8, 10 1, 8 7 )
+X = (  )
+Y = (  )
+σ(S1'0) = S2'0
+σ(S1'1) = S2'6
+σ(S1'2) = S2'9
+σ(S1'3) = S2'14
+σ(S1'4) = S2'13
+σ(S1'5) = S2'10
+σ(S1'6) = S2'12
+σ(S1'7) = S2'16
+σ(S1'8) = S2'19
+σ(S1'9) = S2'7
+σ(S1'10) = S2'5
+σ(S1'11) = S2'4
+σ(S1'11) = S2'4
+σ(S1'13) = S2'20
+σ(S1'3) = S2'14
+σ(S1'15) = S2'2
+σ(S1'11) = S2'4
+σ(S1'0) = S2'0
+σ(S1'18) = S2'18
+σ(S1'19) = S2'1
+σ(S1'6) = S2'12
+Partições Selecionadas = ( 8, 9 8, 10, 3, 6, 10 2, 1, 5 5, 10 1, 2, 4 9 1, 5, 5, 8 7, 3, 3 7, 5, 8, 1 8, 9, 1 )
+Tempo de execução para criação das estruturas: 0.051211 segundos
+Tempo de execução do modelo: 0.010017 segundos
+Tempo de execução total: 0.061228 segundos

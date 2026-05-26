@@ -1,0 +1,124 @@
+
+Gurobi 10.0.2 (linux64) logging started Tue May 19 08:42:49 2026
+
+Set parameter LogFile to value "logs/cg/rmcsp_120_100_20_5-.txt"
+Gurobi Optimizer version 10.0.2 build v10.0.2rc0 (linux64)
+
+CPU model: Intel(R) Xeon(R) CPU E7- 4850  @ 2.00GHz, instruction set [SSE2]
+Thread count: 40 physical cores, 80 logical processors, using up to 32 threads
+
+Optimize a model with 582 rows, 599 columns and 4290 nonzeros
+Model fingerprint: 0xb8689f19
+Variable types: 0 continuous, 599 integer (599 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Presolve removed 394 rows and 191 columns
+Presolve time: 0.02s
+Presolved: 188 rows, 408 columns, 1697 nonzeros
+Variable types: 0 continuous, 408 integer (404 binary)
+Found heuristic solution: objective 112.0000000
+Found heuristic solution: objective 95.0000000
+
+Root relaxation: objective 8.800000e+01, 160 iterations, 0.00 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+H    0     0                      88.0000000   61.00000  30.7%     -    0s
+     0     0          -    0        88.00000   88.00000  0.00%     -    0s
+
+Explored 1 nodes (207 simplex iterations) in 0.03 seconds (0.01 work units)
+Thread count was 32 (of 80 available processors)
+
+Solution count 3: 88 95 112 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 8.800000000000e+01, best bound 8.800000000000e+01, gap 0.0000%
+S1 = ( 13 19 10 8 7 15 6 10 12 4 17 1 19 11 5 4 14 8 13 3 7 16 9 4 2 7 18 17 9 2 4 11 7 17 18 18 7 1 11 5 4 17 11 8 14 16 20 4 6 3 14 2 10 13 13 16 18 4 17 5 17 12 4 20 19 3 15 5 20 6 6 10 4 20 7 2 9 17 7 15 19 18 16 18 1 4 1 11 5 9 9 12 19 8 1 16 5 13 6 20 12 13 6 5 20 2 9 3 1 9 3 8 15 1 11 19 19 13 7 17 )
+S2 = ( 10 11 5 13 1 14 7 1 20 2 3 20 15 14 16 20 20 19 15 6 1 6 19 5 7 1 5 12 3 15 11 13 10 14 10 6 1 7 1 19 16 16 2 16 4 4 1 16 16 20 8 7 12 7 19 9 8 1 7 13 18 11 15 19 1 18 4 16 19 17 8 19 20 17 15 3 4 6 13 17 15 10 18 14 19 12 8 5 19 10 18 3 11 13 4 3 5 2 3 5 )
+S1' = ( 13, 19 10, 8 7, 15 6, 10, 12, 4, 17, 1, 19, 11 5, 4, 14, 8, 13, 3, 7, 16, 18, 18, 7 1, 11, 5, 14 16 20, 4 6, 3, 14, 2, 10, 16, 20 19, 3 15, 5, 20, 10, 4, 20, 7, 2, 17, 7, 15 19, 18, 16, 18, 1, 4 1, 11, 5, 12, 19, 8 1, 16, 5, 13, 6, 20, 12, 13, 6, 5, 20 2, 3, 1, 9, 3, 8, 15, 1, 11, 19, 19, 13, 7, 17 )
+S2' = ( 10, 11 5, 13, 7, 1, 20 2, 3, 20, 15, 14 16 20, 20 19, 15 6, 1, 6, 19, 5, 7 1, 5, 12, 3 15, 11, 13, 10, 14, 10, 6, 1, 7, 16, 2, 16, 4, 4 1, 16, 16, 20, 8 7, 12, 7, 19, 9, 8 1, 7, 13, 18, 11, 15 19, 1, 18, 4, 17, 8, 19, 20, 17, 4 6, 13, 17, 18, 14, 19, 12, 8, 5, 19 10, 18, 3, 11, 13, 4, 3, 5, 2, 3, 5 )
+X = ( 9 4 2 7 18 17 9 2 4 11 7 17, 4 17 11 8, 13 13, 18 4 17 5 17 12 4, 6 6, 9, 9 9, 9 )
+Y = ( 1 14, 1 19 16, 16 19, 15 3, 15 10 )
+σ(S1'0) = S2'2
+σ(S1'1) = S2'64
+σ(S1'2) = S2'36
+σ(S1'3) = S2'11
+σ(S1'4) = S2'0
+σ(S1'5) = S2'18
+σ(S1'6) = S2'31
+σ(S1'7) = S2'50
+σ(S1'8) = S2'4
+σ(S1'9) = S2'14
+σ(S1'10) = S2'1
+σ(S1'6) = S2'31
+σ(S1'12) = S2'23
+σ(S1'13) = S2'51
+σ(S1'0) = S2'2
+σ(S1'15) = S2'6
+σ(S1'16) = S2'3
+σ(S1'17) = S2'28
+σ(S1'18) = S2'44
+σ(S1'18) = S2'44
+σ(S1'20) = S2'16
+σ(S1'21) = S2'20
+σ(S1'22) = S2'15
+σ(S1'23) = S2'9
+σ(S1'24) = S2'55
+σ(S1'15) = S2'6
+σ(S1'12) = S2'23
+σ(S1'27) = S2'29
+σ(S1'4) = S2'0
+σ(S1'17) = S2'28
+σ(S1'30) = S2'10
+σ(S1'31) = S2'19
+σ(S1'22) = S2'15
+σ(S1'33) = S2'7
+σ(S1'4) = S2'0
+σ(S1'6) = S2'31
+σ(S1'33) = S2'7
+σ(S1'16) = S2'3
+σ(S1'27) = S2'29
+σ(S1'7) = S2'50
+σ(S1'16) = S2'3
+σ(S1'41) = S2'46
+σ(S1'18) = S2'44
+σ(S1'17) = S2'28
+σ(S1'18) = S2'44
+σ(S1'8) = S2'4
+σ(S1'46) = S2'32
+σ(S1'21) = S2'20
+σ(S1'22) = S2'15
+σ(S1'5) = S2'18
+σ(S1'9) = S2'14
+σ(S1'51) = S2'41
+σ(S1'17) = S2'28
+σ(S1'22) = S2'15
+σ(S1'0) = S2'2
+σ(S1'55) = S2'13
+σ(S1'33) = S2'7
+σ(S1'5) = S2'18
+σ(S1'0) = S2'2
+σ(S1'55) = S2'13
+σ(S1'22) = S2'15
+σ(S1'61) = S2'5
+σ(S1'15) = S2'6
+σ(S1'8) = S2'4
+σ(S1'64) = S2'40
+σ(S1'15) = S2'6
+σ(S1'13) = S2'51
+σ(S1'67) = S2'8
+σ(S1'8) = S2'4
+σ(S1'21) = S2'20
+σ(S1'9) = S2'14
+σ(S1'9) = S2'14
+σ(S1'0) = S2'2
+σ(S1'16) = S2'3
+σ(S1'7) = S2'50
+Partições Selecionadas = ( 13, 19 10, 8 7, 15 6, 10, 12, 4, 17, 1, 19, 11 5, 4, 14, 8, 13, 3, 7, 16, 18, 18, 7 1, 11, 5, 14 16 20, 4 6, 3, 14, 2, 10, 16, 20 19, 3 15, 5, 20, 10, 4, 20, 7, 2, 17, 7, 15 19, 18, 16, 18, 1, 4 1, 11, 5, 12, 19, 8 1, 16, 5, 13, 6, 20, 12, 13, 6, 5, 20 2, 3, 1, 9, 3, 8, 15, 1, 11, 19, 19, 13, 7, 17 , 9 4 2 7 18 17 9 2 4 11 7 17, 4 17 11 8, 13 13, 18 4 17 5 17 12 4, 6 6, 9, 9 9, 9 , 1 14, 1 19 16, 16 19, 15 3, 15 10 )
+Tempo de execução para criação das estruturas: 1.576770 segundos
+Tempo de execução do modelo: 0.058192 segundos
+Tempo de execução total: 1.634962 segundos

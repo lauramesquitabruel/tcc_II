@@ -1,0 +1,93 @@
+
+Gurobi 10.0.2 (linux64) logging started Tue May 19 08:40:42 2026
+
+Set parameter LogFile to value "logs/cg/rmcsp_80_60_15_2-.txt"
+Gurobi Optimizer version 10.0.2 build v10.0.2rc0 (linux64)
+
+CPU model: Intel(R) Xeon(R) CPU E7- 4850  @ 2.00GHz, instruction set [SSE2]
+Thread count: 40 physical cores, 80 logical processors, using up to 32 threads
+
+Optimize a model with 384 rows, 517 columns and 3694 nonzeros
+Model fingerprint: 0x03a05d40
+Variable types: 0 continuous, 517 integer (517 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Presolve removed 216 rows and 85 columns
+Presolve time: 0.03s
+Presolved: 168 rows, 432 columns, 2347 nonzeros
+Variable types: 0 continuous, 432 integer (430 binary)
+Found heuristic solution: objective 82.0000000
+
+Root relaxation: objective 5.092308e+01, 155 iterations, 0.00 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0   50.92308    0   41   82.00000   50.92308  37.9%     -    0s
+H    0     0                      55.0000000   50.92308  7.41%     -    0s
+H    0     0                      53.0000000   50.92308  3.92%     -    0s
+H    0     0                      51.0000000   50.92308  0.15%     -    0s
+
+Cutting planes:
+  Gomory: 1
+  Zero half: 6
+
+Explored 1 nodes (159 simplex iterations) in 0.07 seconds (0.02 work units)
+Thread count was 32 (of 80 available processors)
+
+Solution count 4: 51 53 55 82 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 5.100000000000e+01, best bound 5.100000000000e+01, gap 0.0000%
+S1 = ( 9 8 15 3 12 15 13 3 14 9 6 9 6 4 3 9 10 2 14 1 8 7 13 1 12 3 14 7 15 6 13 2 13 3 7 5 3 12 1 10 14 5 13 4 2 9 5 2 14 13 5 5 9 8 14 5 1 9 10 13 3 7 2 10 10 11 8 6 4 7 11 13 11 4 14 5 5 4 8 13 )
+S2 = ( 8 12 1 1 15 2 15 12 1 14 11 6 3 15 15 5 6 13 15 10 1 5 12 10 6 7 15 6 3 13 11 1 3 9 7 9 14 7 5 9 15 7 15 3 12 4 14 5 8 14 2 8 11 4 11 9 10 5 12 12 )
+S1' = ( 9, 8, 15 3 12, 15, 6, 9, 6, 2, 14, 1, 1, 12, 3, 14, 7 15 6, 7 5, 3, 12 1, 5, 5, 9, 8 14, 5, 1, 9 10, 13, 3, 7, 2, 10, 10, 11, 8, 6, 4, 7, 11, 13 11, 4 14 5 )
+S2' = ( 8, 12 1, 2, 1, 14, 11, 6, 3, 5, 6, 13, 15, 10, 1, 5, 12, 10, 6, 7 15 6, 3, 13 11, 1, 3, 9, 7, 9, 14, 7 5, 9, 7, 15 3 12, 4 14 5, 8 14, 2, 8, 4, 11, 9 10, 5 )
+X = ( 13 3 14 9, 4 3 9 10, 8 7 13, 13 2 13 3, 10 14 5 13 4 2 9 5 2 14 13, 5 4 8 13 )
+Y = ( 1 15, 15 12, 15 15, 15, 11, 12 12 )
+σ(S1'0) = S2'23
+σ(S1'1) = S2'0
+σ(S1'2) = S2'30
+σ(S1'3) = S2'11
+σ(S1'4) = S2'6
+σ(S1'0) = S2'23
+σ(S1'4) = S2'6
+σ(S1'7) = S2'2
+σ(S1'8) = S2'4
+σ(S1'9) = S2'3
+σ(S1'9) = S2'3
+σ(S1'11) = S2'15
+σ(S1'12) = S2'7
+σ(S1'8) = S2'4
+σ(S1'14) = S2'18
+σ(S1'15) = S2'27
+σ(S1'12) = S2'7
+σ(S1'17) = S2'1
+σ(S1'18) = S2'8
+σ(S1'18) = S2'8
+σ(S1'0) = S2'23
+σ(S1'21) = S2'32
+σ(S1'18) = S2'8
+σ(S1'9) = S2'3
+σ(S1'24) = S2'37
+σ(S1'25) = S2'10
+σ(S1'12) = S2'7
+σ(S1'27) = S2'24
+σ(S1'7) = S2'2
+σ(S1'29) = S2'12
+σ(S1'29) = S2'12
+σ(S1'31) = S2'5
+σ(S1'1) = S2'0
+σ(S1'4) = S2'6
+σ(S1'34) = S2'35
+σ(S1'27) = S2'24
+σ(S1'31) = S2'5
+σ(S1'37) = S2'20
+σ(S1'38) = S2'31
+Partições Selecionadas = ( 9, 8, 15 3 12, 15, 6, 9, 6, 2, 14, 1, 1, 12, 3, 14, 7 15 6, 7 5, 3, 12 1, 5, 5, 9, 8 14, 5, 1, 9 10, 13, 3, 7, 2, 10, 10, 11, 8, 6, 4, 7, 11, 13 11, 4 14 5 , 13 3 14 9, 4 3 9 10, 8 7 13, 13 2 13 3, 10 14 5 13 4 2 9 5 2 14 13, 5 4 8 13 , 1 15, 15 12, 15 15, 15, 11, 12 12 )
+Tempo de execução para criação das estruturas: 0.511638 segundos
+Tempo de execução do modelo: 0.080654 segundos
+Tempo de execução total: 0.592292 segundos

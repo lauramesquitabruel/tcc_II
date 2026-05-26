@@ -1,0 +1,41 @@
+Set parameter TimeLimit to value 3600
+Set parameter Threads to value 1
+Warning: constraint name "unicidade de char 0 na str 1" has a space
+Gurobi Optimizer version 10.0.2 build v10.0.2rc0 (linux64)
+
+CPU model: Intel(R) Xeon(R) CPU E7- 4850  @ 2.00GHz, instruction set [SSE2]
+Thread count: 40 physical cores, 80 logical processors, using up to 1 threads
+
+Optimize a model with 18 rows, 22 columns and 62 nonzeros
+Model fingerprint: 0x1d52fad7
+Variable types: 0 continuous, 22 integer (22 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 8.0000000
+Presolve removed 18 rows and 22 columns
+Presolve time: 0.00s
+Presolve: All rows and columns removed
+
+Explored 0 nodes (0 simplex iterations) in 0.00 seconds (0.00 work units)
+Thread count was 1 (of 80 available processors)
+
+Solution count 1: 8 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 8.000000000000e+00, best bound 8.000000000000e+00, gap 0.0000%
+Block ((1,), ()) at (5, 4)
+Block ((1, 2, 3, 4), (0, 0, 0)) at (0, 0)
+Block ((2,), ()) at (4, 5)
+Block ((6,), ()) at (7, 7)
+Block <gurobi.Var C18 (value 1.0)> at C18
+Block <gurobi.Var C19 (value 1.0)> at C19
+Block <gurobi.Var C20 (value 1.0)> at C20
+Block <gurobi.Var C21 (value 1.0)> at C21
+### ESTATISTICAS
+runtime: 0.0009598731994628906
+Tempo de execução para criação das estruturas: 0.002227 segundos
+
+Tempo de execução do modelo: 0.006386 segundos

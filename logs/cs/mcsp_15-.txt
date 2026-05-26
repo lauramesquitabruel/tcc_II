@@ -1,0 +1,743 @@
+Set parameter TimeLimit to value 3600
+Set parameter Threads to value 1
+Warning: constraint name "unicidade de char 0 na str 1" has a space
+Gurobi Optimizer version 10.0.2 build v10.0.2rc0 (linux64)
+
+CPU model: Intel(R) Xeon(R) CPU E7- 4850  @ 2.00GHz, instruction set [SSE2]
+Thread count: 40 physical cores, 80 logical processors, using up to 1 threads
+
+Optimize a model with 2398 rows, 504154 columns and 167175919 nonzeros
+Model fingerprint: 0xd28c81dd
+Variable types: 0 continuous, 504154 integer (504154 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Presolve removed 0 rows and 0 columns (presolve time = 10s) ...
+Presolve removed 0 rows and 0 columns (presolve time = 16s) ...
+Presolve removed 188 rows and 229 columns (presolve time = 21s) ...
+Presolve removed 188 rows and 229 columns (presolve time = 28s) ...
+Presolve removed 606 rows and 647 columns (presolve time = 48s) ...
+Presolve removed 606 rows and 647 columns (presolve time = 55s) ...
+Presolve removed 606 rows and 649 columns (presolve time = 60s) ...
+Presolve removed 606 rows and 649 columns (presolve time = 66s) ...
+Presolve removed 606 rows and 649 columns (presolve time = 71s) ...
+Presolve removed 606 rows and 649 columns (presolve time = 88s) ...
+Presolve removed 606 rows and 649 columns (presolve time = 95s) ...
+Presolve removed 606 rows and 649 columns (presolve time = 95s) ...
+Presolve removed 606 rows and 649 columns (presolve time = 100s) ...
+Presolve removed 606 rows and 649 columns (presolve time = 105s) ...
+Presolve removed 606 rows and 649 columns (presolve time = 110s) ...
+Presolve removed 606 rows and 649 columns (presolve time = 131s) ...
+Presolve removed 714 rows and 757 columns (presolve time = 141s) ...
+Presolve removed 714 rows and 757 columns (presolve time = 156s) ...
+Presolve removed 714 rows and 757 columns (presolve time = 169s) ...
+Presolve removed 718 rows and 757 columns (presolve time = 170s) ...
+Presolve removed 722 rows and 757 columns (presolve time = 175s) ...
+Presolve removed 722 rows and 757 columns (presolve time = 212s) ...
+Presolve removed 722 rows and 757 columns (presolve time = 215s) ...
+Presolve removed 722 rows and 758 columns (presolve time = 220s) ...
+Presolve removed 722 rows and 758 columns (presolve time = 227s) ...
+Presolve removed 722 rows and 758 columns (presolve time = 234s) ...
+Presolve removed 722 rows and 758 columns (presolve time = 240s) ...
+Presolve removed 722 rows and 766 columns (presolve time = 240s) ...
+Presolve removed 722 rows and 766 columns (presolve time = 246s) ...
+Presolve removed 722 rows and 766 columns (presolve time = 251s) ...
+Presolve removed 722 rows and 766 columns (presolve time = 268s) ...
+Presolve removed 722 rows and 766 columns (presolve time = 274s) ...
+Presolve removed 722 rows and 766 columns (presolve time = 275s) ...
+Presolve removed 722 rows and 766 columns (presolve time = 280s) ...
+Presolve removed 722 rows and 766 columns (presolve time = 285s) ...
+Presolve removed 722 rows and 766 columns (presolve time = 290s) ...
+Presolve removed 722 rows and 766 columns (presolve time = 311s) ...
+Presolve removed 736 rows and 780 columns (presolve time = 316s) ...
+Presolve removed 736 rows and 780 columns (presolve time = 330s) ...
+Presolve removed 736 rows and 780 columns (presolve time = 343s) ...
+Presolve removed 736 rows and 780 columns (presolve time = 345s) ...
+Presolve removed 736 rows and 780 columns (presolve time = 350s) ...
+Presolve removed 736 rows and 780 columns (presolve time = 387s) ...
+Presolve removed 740 rows and 784 columns (presolve time = 390s) ...
+Presolve removed 740 rows and 784 columns (presolve time = 396s) ...
+Presolve removed 740 rows and 784 columns (presolve time = 401s) ...
+Presolve removed 740 rows and 784 columns (presolve time = 406s) ...
+Presolve removed 740 rows and 784 columns (presolve time = 423s) ...
+Presolve removed 740 rows and 784 columns (presolve time = 430s) ...
+Presolve removed 740 rows and 784 columns (presolve time = 430s) ...
+Presolve removed 740 rows and 784 columns (presolve time = 435s) ...
+Presolve removed 740 rows and 784 columns (presolve time = 440s) ...
+Presolve removed 740 rows and 784 columns (presolve time = 445s) ...
+Presolve removed 740 rows and 784 columns (presolve time = 466s) ...
+Presolve removed 741 rows and 785 columns (presolve time = 472s) ...
+Presolve removed 741 rows and 785 columns (presolve time = 486s) ...
+Presolve removed 741 rows and 785 columns (presolve time = 490s) ...
+Presolve removed 741 rows and 785 columns (presolve time = 527s) ...
+Presolve removed 741 rows and 785 columns (presolve time = 530s) ...
+Presolve removed 741 rows and 785 columns (presolve time = 545s) ...
+Presolve removed 741 rows and 785 columns (presolve time = 552s) ...
+Presolve removed 741 rows and 785 columns (presolve time = 558s) ...
+Presolve removed 741 rows and 785 columns (presolve time = 571s) ...
+Presolve removed 741 rows and 785 columns (presolve time = 589s) ...
+Presolve removed 741 rows and 785 columns (presolve time = 601s) ...
+Presolve removed 741 rows and 785 columns (presolve time = 611s) ...
+Presolve removed 741 rows and 785 columns (presolve time = 615s) ...
+Presolve removed 741 rows and 785 columns (presolve time = 620s) ...
+Presolve removed 741 rows and 785 columns (presolve time = 625s) ...
+Presolve removed 741 rows and 785 columns (presolve time = 630s) ...
+Presolve removed 741 rows and 785 columns (presolve time = 635s) ...
+Presolve removed 741 rows and 785 columns (presolve time = 640s) ...
+Presolve removed 741 rows and 785 columns (presolve time = 645s) ...
+Presolve removed 741 rows and 785 columns (presolve time = 650s) ...
+Presolve removed 741 rows and 785 columns (presolve time = 655s) ...
+Presolve removed 741 rows and 785 columns (presolve time = 660s) ...
+Presolve removed 741 rows and 785 columns (presolve time = 665s) ...
+Presolve removed 741 rows and 785 columns (presolve time = 670s) ...
+Presolve removed 741 rows and 785 columns (presolve time = 675s) ...
+Presolve removed 741 rows and 785 columns (presolve time = 680s) ...
+Presolve removed 741 rows and 785 columns (presolve time = 685s) ...
+Presolve removed 741 rows and 785 columns (presolve time = 690s) ...
+Presolve removed 741 rows and 785 columns (presolve time = 695s) ...
+Presolve removed 741 rows and 785 columns (presolve time = 700s) ...
+Presolve removed 741 rows and 785 columns (presolve time = 710s) ...
+Presolve removed 741 rows and 785 columns (presolve time = 717s) ...
+Presolve removed 741 rows and 785 columns (presolve time = 725s) ...
+Presolve removed 741 rows and 785 columns (presolve time = 727s) ...
+Presolve removed 741 rows and 785 columns (presolve time = 730s) ...
+Presolve removed 741 rows and 785 columns (presolve time = 763s) ...
+Presolve removed 741 rows and 785 columns (presolve time = 765s) ...
+Presolve removed 741 rows and 785 columns (presolve time = 804s) ...
+Presolve removed 741 rows and 785 columns (presolve time = 806s) ...
+Presolve removed 741 rows and 785 columns (presolve time = 828s) ...
+Presolve removed 741 rows and 785 columns
+Presolve time: 827.93s
+Presolved: 1657 rows, 503369 columns, 167174657 nonzeros
+Variable types: 0 continuous, 503369 integer (503367 binary)
+Found heuristic solution: objective 1160.0000000
+Found heuristic solution: objective 1064.0000000
+Found heuristic solution: objective 950.0000000
+
+Root simplex log...
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    1.6400000e+02   1.677000e+03   0.000000e+00   1120s
+
+Starting sifting (using dual simplex for sub-problems)...
+
+    Iter     Pivots    Primal Obj      Dual Obj        Time
+       0          0     infinity      1.6400000e+02   1120s
+       1       5687   2.4976383e+07   1.6453127e+02   1144s
+       2       7839   1.6607910e+07   1.6507326e+02   1153s
+       3      14950   1.3682469e+07   1.6681285e+02   1188s
+       4      23454   5.2826220e+06   1.7162873e+02   1202s
+       5      29761   6.5230247e+02   2.5175437e+02   1209s
+       6      37280   6.4484053e+02   3.6649937e+02   1217s
+       7      45736   6.3528830e+02   4.4737042e+02   1226s
+       8      53850   6.3366171e+02   5.3720485e+02   1234s
+
+Sifting complete
+
+   59316    6.3375298e+02   0.000000e+00   0.000000e+00   1271s
+
+Root relaxation: objective 6.337530e+02, 59316 iterations, 291.31 seconds (157.12 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0  633.75298    0 1084  950.00000  633.75298  33.3%     - 1377s
+H    0     0                     646.0000000  633.75298  1.90%     - 1453s
+H    0     0                     642.0000000  633.75298  1.28%     - 1659s
+     0     0  633.82631    0 1101  642.00000  633.82631  1.27%     - 1941s
+     0     0  633.82631    0 1086  642.00000  633.82631  1.27%     - 2274s
+     0     0  633.82631    0 1097  642.00000  633.82631  1.27%     - 2307s
+     0     0  633.82631    0 1097  642.00000  633.82631  1.27%     - 2401s
+     0     2  634.86323    0 1094  642.00000  634.86323  1.11%     - 2514s
+     1     4  634.86323    1 1081  642.00000  634.86323  1.11%   385 2516s
+     3     5  634.86323    2 1082  642.00000  634.86323  1.11%   263 2520s
+     6     8  634.86323    3 1076  642.00000  634.86323  1.11%   247 2525s
+     9    11  634.86323    5 1026  642.00000  634.86323  1.11%   245 2530s
+    11    13  634.86323    6 1046  642.00000  634.86323  1.11%   288 2537s
+    12    14  634.86323    6 1036  642.00000  634.86323  1.11%   317 2541s
+    15    17  634.86323    8 1073  642.00000  634.86323  1.11%   289 2545s
+    19    21  634.86323   10 1052  642.00000  634.86323  1.11%   273 2552s
+    21    23  634.86323   12 1040  642.00000  634.86323  1.11%   269 2555s
+    24    26  634.88581   13 1024  642.00000  634.86323  1.11%   271 2561s
+    26    28  635.12747   14 1033  642.00000  634.86323  1.11%   282 2567s
+    29    31  635.04074   16  966  642.00000  634.86323  1.11%   268 2571s
+    32    34  634.91432   18 1008  642.00000  634.86323  1.11%   263 2575s
+    35    37  635.01586   20 1029  642.00000  634.86323  1.11%   259 2580s
+    38    40  635.33284   21 1002  642.00000  634.86323  1.11%   255 2585s
+    42    44  635.50990   24 1000  642.00000  634.86323  1.11%   257 2592s
+    43    45  635.84549   25  951  642.00000  634.86323  1.11%   267 2596s
+    46    48  635.24968   27 1018  642.00000  634.86323  1.11%   259 2600s
+    51    53  635.58918   31 1017  642.00000  634.86323  1.11%   247 2605s
+    53    55  636.02702   32  917  642.00000  634.86323  1.11%   249 2610s
+    57    59  635.85094   35  931  642.00000  634.86323  1.11%   247 2616s
+    60    62  635.59268   37  918  642.00000  634.86323  1.11%   245 2621s
+    63    65  635.66190   38  934  642.00000  634.86323  1.11%   244 2626s
+    65    67  635.93888   39  932  642.00000  634.86323  1.11%   245 2630s
+    69    71  635.83636   42  920  642.00000  634.86323  1.11%   242 2636s
+    76    78  636.04998   48  893  642.00000  634.86323  1.11%   229 2642s
+    79    81  636.00049   50  906  642.00000  634.86323  1.11%   225 2645s
+    83    85  636.31421   53  912  642.00000  634.86323  1.11%   222 2650s
+    85    87  636.70789   54  835  642.00000  634.86323  1.11%   228 2656s
+    87    89  637.29299   55  875  642.00000  634.86323  1.11%   231 2661s
+    89    91  636.98800   56  873  642.00000  634.86323  1.11%   233 2665s
+    91    93  636.90049   57  863  642.00000  634.86323  1.11%   239 2671s
+    93    95  637.07661   58  904  642.00000  634.86323  1.11%   241 2675s
+    98   100  637.08579   62  893  642.00000  634.86323  1.11%   235 2680s
+   102   104  637.17936   65  870  642.00000  634.86323  1.11%   234 2685s
+   104   106  637.21003   66  811  642.00000  634.86323  1.11%   235 2690s
+   107   109  637.78345   67  854  642.00000  634.86323  1.11%   235 2695s
+   113   115  637.40184   72  770  642.00000  634.86323  1.11%   230 2700s
+   118   120  637.57064   76  773  642.00000  634.86323  1.11%   227 2705s
+   123   125  637.65922   79  762  642.00000  634.86323  1.11%   224 2710s
+   127   129  638.05192   82  788  642.00000  634.86323  1.11%   225 2715s
+   130   132  638.10850   84  744  642.00000  634.86323  1.11%   225 2722s
+   133   135  638.16070   86  773  642.00000  634.86323  1.11%   225 2725s
+   141   143  638.41338   92  723  642.00000  634.86323  1.11%   220 2731s
+   146   148  638.63918   95  704  642.00000  634.86323  1.11%   218 2735s
+   150   152  638.70895   97  665  642.00000  634.86323  1.11%   220 2740s
+   155   157  638.89327  101  742  642.00000  634.86323  1.11%   219 2745s
+   161   163  638.98962  105  690  642.00000  634.86323  1.11%   218 2750s
+   168   170  639.24131  109  673  642.00000  634.86323  1.11%   217 2755s
+   175   177  639.56431  114  612  642.00000  634.86323  1.11%   217 2760s
+   185   187  639.76552  122  564  642.00000  634.86323  1.11%   214 2765s
+   196   198  639.97037  129  557  642.00000  634.86323  1.11%   214 2770s
+   208   210  640.40313  137  531  642.00000  634.86323  1.11%   213 2777s
+   217   219  640.78558  143  529  642.00000  634.86323  1.11%   213 2780s
+   238   218  634.86323    2 1071  642.00000  634.86323  1.11%   199 2785s
+   241   221  634.86323    4 1032  642.00000  634.86323  1.11%   200 2791s
+   244   224  634.86323    6 1024  642.00000  634.86323  1.11%   201 2795s
+   248   228  635.02627    9 1010  642.00000  634.86323  1.11%   201 2800s
+   252   232  635.29097   12  999  642.00000  634.86323  1.11%   201 2806s
+   254   234  635.49442   13 1000  642.00000  634.86323  1.11%   202 2810s
+   257   237  635.62797   15 1009  642.00000  634.86323  1.11%   203 2815s
+   261   241  635.85186   18  976  642.00000  634.86323  1.11%   204 2820s
+   266   246  635.83754   22  996  642.00000  634.86323  1.11%   202 2825s
+   270   250  636.03871   24 1015  642.00000  634.86323  1.11%   203 2830s
+   274   254  636.30979   27  987  642.00000  634.86323  1.11%   202 2835s
+   279   259  636.40395   31  937  642.00000  634.86323  1.11%   202 2840s
+   283   263  636.51135   34  953  642.00000  634.86323  1.11%   202 2845s
+   288   268  636.60316   38  946  642.00000  634.86323  1.11%   202 2850s
+   291   271  636.69156   40  964  642.00000  634.86323  1.11%   202 2855s
+   295   275  636.81550   43  913  642.00000  634.86323  1.11%   202 2860s
+   300   280  637.22358   46  885  642.00000  634.86323  1.11%   202 2866s
+   304   284  637.17644   50  830  642.00000  634.86323  1.11%   202 2870s
+   307   287  637.32262   51  837  642.00000  634.86323  1.11%   204 2875s
+   311   291  637.72580   54  784  642.00000  634.86323  1.11%   204 2880s
+   316   296  637.84115   57  775  642.00000  634.86323  1.11%   205 2887s
+   320   300  637.84098   60  752  642.00000  634.86323  1.11%   205 2890s
+   326   306  638.34481   64  742  642.00000  634.86323  1.11%   205 2896s
+   330   310  638.59413   66  680  642.00000  634.86323  1.11%   206 2900s
+   338   318  638.14505   73  684  642.00000  634.86323  1.11%   204 2905s
+   342   322  638.21586   75  654  642.00000  634.86323  1.11%   205 2911s
+   348   328  638.80430   79  669  642.00000  634.86323  1.11%   205 2916s
+   354   334  639.12190   83  694  642.00000  634.86323  1.11%   206 2921s
+   360   340  639.18719   88  589  642.00000  634.86323  1.11%   206 2925s
+   367   347  639.55215   93  598  642.00000  634.86323  1.11%   207 2930s
+   373   353  639.39619   97  642  642.00000  634.86323  1.11%   207 2935s
+   384   364  639.71678  105  595  642.00000  634.86323  1.11%   207 2940s
+   394   374  640.00257  111  618  642.00000  634.86323  1.11%   208 2947s
+   403   383  640.49143  117  447  642.00000  634.86323  1.11%   208 2950s
+   431   399  634.86323    2 1047  642.00000  634.86323  1.11%   201 2956s
+   433   401  634.86323    4 1066  642.00000  634.86323  1.11%   202 2960s
+   437   405  634.92314    6 1044  642.00000  634.86323  1.11%   202 2965s
+   440   408  635.21301    8 1000  642.00000  634.86323  1.11%   203 2970s
+   444   412  635.44572   11 1018  642.00000  634.86323  1.11%   202 2975s
+   448   416  635.66571   14  923  642.00000  634.86323  1.11%   202 2980s
+   453   421  636.02285   18  937  642.00000  634.86323  1.11%   202 2986s
+   456   424  636.15525   20  922  642.00000  634.86323  1.11%   202 2990s
+   461   429  636.75653   24  900  642.00000  634.86323  1.11%   202 2996s
+   464   432  636.73330   26  879  642.00000  634.86323  1.11%   202 3001s
+   468   436  637.21766   29  911  642.00000  634.86323  1.11%   202 3006s
+   471   439  637.04945   31  850  642.00000  634.86323  1.11%   202 3010s
+   475   443  637.41932   33  936  642.00000  634.86323  1.11%   202 3015s
+   481   449  637.64577   38  760  642.00000  634.86323  1.11%   202 3020s
+   487   455  638.07367   43  863  642.00000  634.86323  1.11%   202 3025s
+   492   460  638.41325   46  793  642.00000  634.86323  1.11%   203 3030s
+   496   464  638.53816   50  751  642.00000  634.86323  1.11%   203 3038s
+   499   467  638.65275   53  797  642.00000  634.86323  1.11%   202 3040s
+   504   472  638.83998   56  763  642.00000  634.86323  1.11%   203 3045s
+   509   477  639.09443   58  750  642.00000  634.86323  1.11%   205 3050s
+   511   478  638.76273   54 1101  642.00000  634.86323  1.11%   204 3108s
+   513   479  635.59196   32 1084  642.00000  634.86323  1.11%   203 3211s
+   514   480  635.33334   22 1096  642.00000  634.86323  1.11%   203 3308s
+   515   481  635.25694   30 1091  642.00000  634.86323  1.11%   202 3310s
+H  515   456                     641.0000000  634.86323  0.96%   202 3356s
+   516   456  639.22396  112 1091  641.00000  634.86323  0.96%   202 3461s
+   517   458  637.29376   56 1101  641.00000  634.86323  0.96%   220 3467s
+   519   459  634.86323    7 1080  641.00000  634.86323  0.96%   219 3554s
+
+Cutting planes:
+  Zero half: 5
+
+Explored 519 nodes (197610 simplex iterations) in 3603.13 seconds (1761.46 work units)
+Thread count was 1 (of 80 available processors)
+
+Solution count 6: 641 642 646 ... 1160
+
+Time limit reached
+Best objective 6.410000000000e+02, best bound 6.350000000000e+02, gap 0.9360%
+Block ((15,), ()) at 13
+Block ((15,), ()) at 42
+Block ((15,), ()) at 195
+Block ((15,), ()) at 218
+Block ((15,), ()) at 320
+Block ((15,), ()) at 715
+Block ((15,), ()) at 848
+Block ((15, 12, 15), (0, 0)) at 0
+Block ((12,), ()) at 14
+Block ((12,), ()) at 18
+Block ((12,), ()) at 403
+Block ((12,), ()) at 693
+Block ((12, 15), (0,)) at 656
+Block ((15, 6), (0,)) at 397
+Block ((15, 6), (0,)) at 554
+Block ((6,), ()) at 3
+Block ((6,), ()) at 209
+Block ((6,), ()) at 327
+Block ((6,), ()) at 358
+Block ((6,), ()) at 528
+Block ((6,), ()) at 551
+Block ((6,), ()) at 634
+Block ((6,), ()) at 678
+Block ((6,), ()) at 686
+Block ((6,), ()) at 862
+Block ((6,), ()) at 867
+Block ((10,), ()) at 245
+Block ((10,), ()) at 291
+Block ((10,), ()) at 461
+Block ((10,), ()) at 487
+Block ((10,), ()) at 526
+Block ((10,), ()) at 669
+Block ((10,), ()) at 826
+Block ((10,), ()) at 835
+Block ((10,), ()) at 871
+Block ((10,), ()) at 874
+Block ((10,), ()) at 879
+Block ((10,), ()) at 918
+Block ((10,), ()) at 925
+Block ((10,), ()) at 926
+Block ((10, 19), (0,)) at 4
+Block ((10, 19), (0,)) at 681
+Block ((19,), ()) at 6
+Block ((19,), ()) at 115
+Block ((19,), ()) at 565
+Block ((19,), ()) at 603
+Block ((19,), ()) at 638
+Block ((19,), ()) at 853
+Block ((19,), ()) at 854
+Block ((19,), ()) at 943
+Block ((19,), ()) at 985
+Block ((19, 19), (0,)) at 456
+Block ((7,), ()) at 116
+Block ((7,), ()) at 214
+Block ((7,), ()) at 234
+Block ((7,), ()) at 257
+Block ((7,), ()) at 260
+Block ((7,), ()) at 275
+Block ((7,), ()) at 375
+Block ((7,), ()) at 495
+Block ((7,), ()) at 908
+Block ((7, 4), (0,)) at 7
+Block ((4,), ()) at 10
+Block ((4,), ()) at 38
+Block ((4,), ()) at 294
+Block ((4,), ()) at 664
+Block ((4,), ()) at 721
+Block ((4,), ()) at 795
+Block ((4,), ()) at 808
+Block ((4,), ()) at 815
+Block ((4, 11), (0,)) at 122
+Block ((11,), ()) at 9
+Block ((11,), ()) at 49
+Block ((11,), ()) at 89
+Block ((11,), ()) at 330
+Block ((11,), ()) at 763
+Block ((11,), ()) at 780
+Block ((11,), ()) at 814
+Block ((11,), ()) at 942
+Block ((4, 14), (0,)) at 246
+Block ((14,), ()) at 194
+Block ((14,), ()) at 215
+Block ((14,), ()) at 226
+Block ((14,), ()) at 284
+Block ((14,), ()) at 392
+Block ((14,), ()) at 494
+Block ((14,), ()) at 655
+Block ((14,), ()) at 794
+Block ((14,), ()) at 880
+Block ((14, 10), (0,)) at 11
+Block ((10, 15), (0,)) at 836
+Block ((20,), ()) at 15
+Block ((20,), ()) at 69
+Block ((20,), ()) at 472
+Block ((20,), ()) at 530
+Block ((20,), ()) at 547
+Block ((20,), ()) at 560
+Block ((20,), ()) at 658
+Block ((20,), ()) at 922
+Block ((20, 1), (0,)) at 252
+Block ((20, 1), (0,)) at 569
+Block ((20, 1), (0,)) at 845
+Block ((1,), ()) at 41
+Block ((1,), ()) at 529
+Block ((1,), ()) at 714
+Block ((1,), ()) at 759
+Block ((1,), ()) at 760
+Block ((1,), ()) at 896
+Block ((1, 7), (0,)) at 16
+Block ((1, 7), (0,)) at 341
+Block ((7, 12), (0,)) at 126
+Block ((9,), ()) at 59
+Block ((9,), ()) at 85
+Block ((9,), ()) at 186
+Block ((9,), ()) at 338
+Block ((9,), ()) at 396
+Block ((9,), ()) at 575
+Block ((9,), ()) at 633
+Block ((9,), ()) at 707
+Block ((9, 19), (0,)) at 916
+Block ((9, 19, 3), (0, 0)) at 19
+Block ((3,), ()) at 108
+Block ((3,), ()) at 297
+Block ((3,), ()) at 326
+Block ((3,), ()) at 452
+Block ((3,), ()) at 473
+Block ((3,), ()) at 548
+Block ((3,), ()) at 654
+Block ((3,), ()) at 703
+Block ((3,), ()) at 791
+Block ((3,), ()) at 842
+Block ((3,), ()) at 915
+Block ((13,), ()) at 193
+Block ((13,), ()) at 198
+Block ((13,), ()) at 540
+Block ((13,), ()) at 637
+Block ((13,), ()) at 640
+Block ((13,), ()) at 798
+Block ((13,), ()) at 857
+Block ((13,), ()) at 957
+Block ((13,), ()) at 964
+Block ((13,), ()) at 978
+Block ((13, 17), (0,)) at 22
+Block ((17,), ()) at 148
+Block ((17,), ()) at 206
+Block ((17,), ()) at 272
+Block ((17,), ()) at 290
+Block ((17,), ()) at 704
+Block ((17,), ()) at 921
+Block ((17,), ()) at 939
+Block ((17, 8), (0,)) at 606
+Block ((17, 8), (0,)) at 612
+Block ((8,), ()) at 24
+Block ((8,), ()) at 221
+Block ((8,), ()) at 393
+Block ((8,), ()) at 527
+Block ((8,), ()) at 639
+Block ((8,), ()) at 648
+Block ((8,), ()) at 803
+Block ((8,), ()) at 821
+Block ((8, 9), (0,)) at 604
+Block ((9, 12), (0,)) at 25
+Block ((12, 4), (0,)) at 135
+Block ((11, 1), (0,)) at 806
+Block ((11, 5), (0,)) at 538
+Block ((5,), ()) at 321
+Block ((5,), ()) at 355
+Block ((5,), ()) at 602
+Block ((5,), ()) at 777
+Block ((5,), ()) at 847
+Block ((5, 13), (0,)) at 801
+Block ((19, 13), (0,)) at 33
+Block ((18,), ()) at 58
+Block ((18,), ()) at 72
+Block ((18,), ()) at 121
+Block ((18,), ()) at 145
+Block ((18,), ()) at 339
+Block ((18,), ()) at 371
+Block ((18,), ()) at 515
+Block ((18,), ()) at 653
+Block ((18, 7, 9), (0, 0)) at 35
+Block ((9, 4), (0,)) at 302
+Block ((2,), ()) at 111
+Block ((2,), ()) at 271
+Block ((2,), ()) at 340
+Block ((2,), ()) at 453
+Block ((2,), ()) at 573
+Block ((2,), ()) at 628
+Block ((2,), ()) at 683
+Block ((2,), ()) at 764
+Block ((2,), ()) at 774
+Block ((2, 8), (0,)) at 39
+Block ((12, 1), (0,)) at 43
+Block ((1, 14), (0,)) at 726
+Block ((4, 20), (0,)) at 571
+Block ((4, 20), (0,)) at 881
+Block ((16,), ()) at 268
+Block ((16,), ()) at 337
+Block ((16,), ()) at 417
+Block ((16,), ()) at 523
+Block ((16,), ()) at 537
+Block ((16,), ()) at 574
+Block ((16, 17), (0,)) at 50
+Block ((16, 17), (0,)) at 295
+Block ((4, 3), (0,)) at 52
+Block ((4, 3), (0,)) at 73
+Block ((4, 15), (0,)) at 54
+Block ((15, 16), (0,)) at 191
+Block ((15, 16), (0,)) at 304
+Block ((16, 13), (0,)) at 56
+Block ((9, 20), (0,)) at 960
+Block ((20, 18), (0,)) at 60
+Block ((20, 18), (0,)) at 708
+Block ((12, 2), (0,)) at 62
+Block ((12, 2, 9), (0, 0)) at 156
+Block ((2, 9), (0,)) at 210
+Block ((9, 14), (0,)) at 64
+Block ((7, 18), (0,)) at 962
+Block ((7, 18, 12), (0, 0)) at 66
+Block ((3, 3), (0,)) at 70
+Block ((3, 12), (0,)) at 227
+Block ((12, 7), (0,)) at 75
+Block ((12, 7), (0,)) at 552
+Block ((5, 17), (0,)) at 676
+Block ((5, 17), (0,)) at 768
+Block ((17, 18), (0,)) at 831
+Block ((18, 20), (0,)) at 306
+Block ((18, 20), (0,)) at 543
+Block ((20, 6), (0,)) at 350
+Block ((20, 6), (0,)) at 649
+Block ((6, 9), (0,)) at 83
+Block ((9, 9), (0,)) at 824
+Block ((9, 9), (0,)) at 838
+Block ((6, 9, 18), (0, 0)) at 86
+Block ((11, 11), (0,)) at 222
+Block ((11, 6), (0,)) at 90
+Block ((3, 9), (0,)) at 92
+Block ((9, 10), (0,)) at 667
+Block ((10, 7), (0,)) at 94
+Block ((10, 7), (0,)) at 545
+Block ((12, 11), (0,)) at 146
+Block ((1, 5), (0,)) at 947
+Block ((5, 5), (0,)) at 207
+Block ((5, 5), (0,)) at 563
+Block ((5, 5), (0,)) at 623
+Block ((9, 5), (0,)) at 109
+Block ((9, 5), (0,)) at 298
+Block ((5, 2), (0,)) at 199
+Block ((10, 17, 11), (0, 0)) at 112
+Block ((14, 18), (0,)) at 521
+Block ((14, 18), (0,)) at 885
+Block ((14, 18, 11, 19), (0, 0, 0)) at 117
+Block ((11, 10), (0,)) at 694
+Block ((10, 4), (0,)) at 124
+Block ((18, 6), (0,)) at 965
+Block ((7, 8), (0,)) at 133
+Block ((8, 12), (0,)) at 958
+Block ((6, 13), (0,)) at 137
+Block ((13, 11), (0,)) at 979
+Block ((11, 18), (0,)) at 139
+Block ((12, 5), (0,)) at 141
+Block ((13, 20), (0,)) at 143
+Block ((13, 20), (0,)) at 189
+Block ((9, 7, 5), (0, 0)) at 149
+Block ((2, 17), (0,)) at 152
+Block ((17, 10), (0,)) at 919
+Block ((10, 6), (0,)) at 154
+Block ((10, 6), (0,)) at 418
+Block ((10, 6), (0,)) at 778
+Block ((6, 12), (0,)) at 333
+Block ((6, 8), (0,)) at 159
+Block ((13, 5), (0,)) at 556
+Block ((17, 17), (0,)) at 533
+Block ((2, 2), (0,)) at 863
+Block ((16, 5), (0,)) at 699
+Block ((15, 20), (0,)) at 442
+Block ((18, 14), (0,)) at 541
+Block ((14, 1), (0,)) at 264
+Block ((14, 1), (0,)) at 872
+Block ((5, 12), (0,)) at 674
+Block ((4, 10), (0,)) at 182
+Block ((8, 2), (0,)) at 184
+Block ((16, 1), (0,)) at 187
+Block ((16, 1), (0,)) at 684
+Block ((1, 13), (0,)) at 983
+Block ((20, 15), (0,)) at 229
+Block ((20, 15), (0,)) at 646
+Block ((20, 15), (0,)) at 827
+Block ((13, 14), (0,)) at 479
+Block ((15, 15), (0,)) at 716
+Block ((15, 8), (0,)) at 196
+Block ((2, 3), (0,)) at 201
+Block ((3, 10), (0,)) at 280
+Block ((10, 9), (0,)) at 923
+Block ((10, 9, 15), (0, 0)) at 203
+Block ((15, 17), (0,)) at 712
+Block ((17, 5), (0,)) at 897
+Block ((6, 20), (0,)) at 212
+Block ((6, 5), (0,)) at 216
+Block ((6, 5), (0,)) at 761
+Block ((15, 3), (0,)) at 224
+Block ((3, 19), (0,)) at 219
+Block ((3, 19), (0,)) at 705
+Block ((14, 3), (0,)) at 981
+Block ((7, 8, 9), (0, 0)) at 231
+Block ((7, 20), (0,)) at 356
+Block ((20, 16), (0,)) at 235
+Block ((16, 12), (0,)) at 644
+Block ((12, 4, 15), (0, 0)) at 237
+Block ((20, 9, 13), (0, 0)) at 240
+Block ((14, 16), (0,)) at 243
+Block ((14, 16), (0,)) at 490
+Block ((15, 2), (0,)) at 248
+Block ((15, 2), (0,)) at 937
+Block ((2, 20), (0,)) at 742
+Block ((2, 20), (0,)) at 986
+Block ((20, 17), (0,)) at 250
+Block ((20, 17), (0,)) at 953
+Block ((17, 20), (0,)) at 610
+Block ((17, 20), (0,)) at 724
+Block ((12, 10), (0,)) at 843
+Block ((12, 10, 15), (0, 0)) at 254
+Block ((14, 19), (0,)) at 258
+Block ((14, 19), (0,)) at 394
+Block ((20, 15, 5), (0, 0)) at 261
+Block ((16, 14), (0,)) at 266
+Block ((6, 18), (0,)) at 269
+Block ((18, 2), (0,)) at 829
+Block ((17, 12), (0,)) at 796
+Block ((12, 12), (0,)) at 273
+Block ((7, 10), (0,)) at 524
+Block ((10, 20), (0,)) at 276
+Block ((2, 6), (0,)) at 278
+Block ((10, 5), (0,)) at 860
+Block ((5, 7), (0,)) at 282
+Block ((4, 19, 10), (0, 0)) at 285
+Block ((14, 13), (0,)) at 288
+Block ((14, 13), (0,)) at 300
+Block ((17, 16), (0,)) at 292
+Block ((16, 4), (0,)) at 576
+Block ((13, 9), (0,)) at 972
+Block ((7, 16), (0,)) at 308
+Block ((15, 18), (0,)) at 318
+Block ((3, 15), (0,)) at 322
+Block ((9, 17), (0,)) at 324
+Block ((12, 17), (0,)) at 328
+Block ((8, 17), (0,)) at 331
+Block ((8, 17), (0,)) at 376
+Block ((17, 6), (0,)) at 662
+Block ((17, 14), (0,)) at 335
+Block ((17, 14), (0,)) at 466
+Block ((2, 1), (0,)) at 744
+Block ((14, 17), (0,)) at 343
+Block ((14, 17), (0,)) at 549
+Block ((14, 17), (0,)) at 877
+Block ((4, 18), (0,)) at 519
+Block ((4, 18), (0,)) at 730
+Block ((4, 18, 16), (0, 0)) at 345
+Block ((18, 16), (0,)) at 899
+Block ((10, 13), (0,)) at 348
+Block ((12, 9, 14), (0, 0)) at 352
+Block ((4, 13), (0,)) at 359
+Block ((2, 4), (0,)) at 600
+Block ((12, 12, 2), (0, 0)) at 372
+Block ((17, 7), (0,)) at 481
+Block ((17, 7), (0,)) at 909
+Block ((7, 5, 10), (0, 0)) at 378
+Block ((5, 10), (0,)) at 789
+Block ((2, 11), (0,)) at 851
+Block ((3, 20), (0,)) at 974
+Block ((6, 19), (0,)) at 498
+Block ((19, 2), (0,)) at 399
+Block ((20, 13), (0,)) at 401
+Block ((13, 12), (0,)) at 858
+Block ((20, 20), (0,)) at 420
+Block ((9, 1), (0,)) at 492
+Block ((4, 5), (0,)) at 535
+Block ((4, 5), (0,)) at 635
+Block ((8, 3), (0,)) at 775
+Block ((11, 20), (0,)) at 608
+Block ((10, 6, 14), (0, 0)) at 439
+Block ((3, 8, 9), (0, 0)) at 444
+Block ((12, 19), (0,)) at 447
+Block ((12, 19), (0,)) at 976
+Block ((19, 15), (0,)) at 595
+Block ((15, 17, 8), (0, 0)) at 449
+Block ((17, 1), (0,)) at 454
+Block ((18, 6, 12), (0, 0)) at 458
+Block ((5, 9), (0,)) at 462
+Block ((5, 9), (0,)) at 722
+Block ((8, 10), (0,)) at 464
+Block ((2, 14, 11, 16), (0, 0, 0)) at 468
+Block ((14, 11), (0,)) at 849
+Block ((16, 20), (0,)) at 792
+Block ((20, 11, 7), (0, 0)) at 474
+Block ((1, 8), (0,)) at 477
+Block ((18, 19), (0,)) at 483
+Block ((14, 9), (0,)) at 485
+Block ((14, 9), (0,)) at 672
+Block ((10, 18), (0,)) at 631
+Block ((18, 10), (0,)) at 488
+Block ((17, 13), (0,)) at 496
+Block ((10, 3), (0,)) at 840
+Block ((14, 12, 9), (0, 0)) at 512
+Block ((10, 13, 1), (0, 0)) at 516
+Block ((20, 19), (0,)) at 679
+Block ((20, 19), (0,)) at 883
+Block ((19, 11), (0,)) at 531
+Block ((6, 7), (0,)) at 558
+Block ((6, 7), (0,)) at 804
+Block ((5, 20), (0,)) at 561
+Block ((10, 18, 20), (0, 0)) at 566
+Block ((8, 19), (0,)) at 822
+Block ((10, 11, 2), (0, 0)) at 696
+Block ((2, 5), (0,)) at 691
+Block ((14, 1, 17), (0, 0)) at 597
+Block ((2, 14, 14), (0, 0)) at 625
+Block ((14, 14), (0,)) at 906
+Block ((18, 18), (0,)) at 629
+Block ((18, 18), (0,)) at 855
+Block ((13, 7), (0,)) at 710
+Block ((7, 6), (0,)) at 755
+Block ((7, 6, 8), (0, 0)) at 641
+Block ((12, 14), (0,)) at 651
+Block ((12, 14, 12), (0, 0)) at 659
+Block ((4, 12), (0,)) at 665
+Block ((1, 2), (0,)) at 670
+Block ((19, 6), (0,)) at 687
+Block ((15, 11), (0,)) at 689
+Block ((2, 12), (0,)) at 701
+Block ((18, 13), (0,)) at 875
+Block ((15, 10), (0,)) at 809
+Block ((10, 6, 13), (0, 0)) at 718
+Block ((9, 2), (0,)) at 728
+Block ((2, 4, 18), (0, 0)) at 786
+Block ((18, 5), (0,)) at 740
+Block ((18, 17), (0,)) at 757
+Block ((5, 16, 20), (0, 0)) at 765
+Block ((9, 13, 20, 2), (0, 0, 0)) at 770
+Block ((15, 19), (0,)) at 781
+Block ((3, 3, 15), (0, 0)) at 783
+Block ((7, 2), (0,)) at 799
+Block ((4, 14, 5), (0, 0)) at 811
+Block ((2, 15), (0,)) at 816
+Block ((6, 15, 6), (0, 0)) at 818
+Block ((2, 19), (0,)) at 833
+Block ((16, 8), (0,)) at 865
+Block ((2, 17, 14), (0, 0)) at 868
+Block ((2, 13), (0,)) at 967
+Block ((5, 18), (0,)) at 904
+Block ((3, 9, 20), (0, 0)) at 901
+Block ((3, 19, 2), (0, 0)) at 927
+Block ((11, 12), (0,)) at 940
+Block ((3, 14, 6), (0, 0)) at 944
+Block ((19, 17), (0,)) at 949
+Block ((1, 18), (0,)) at 951
+Block ((11, 13), (0,)) at 955
+Block ((1, 12, 2), (0, 0)) at 969
+### ESTATISTICAS
+runtime: 3603.7661049365997
+Tempo de execução para criação das estruturas: 1621.754900 segundos
+
+Tempo de execução do modelo: 5225.808956 segundos

@@ -1,0 +1,55 @@
+Set parameter Username
+Academic license - for non-commercial use only - expires 2026-08-06
+Set parameter TimeLimit to value 3600
+Set parameter Threads to value 1
+Warning: constraint name "unicidade de char 0 na str 1" has a space
+Gurobi Optimizer version 10.0.2 build v10.0.2rc0 (linux64)
+
+CPU model: Intel(R) Xeon(R) CPU E7- 4850  @ 2.00GHz, instruction set [SSE2]
+Thread count: 40 physical cores, 80 logical processors, using up to 1 threads
+
+Optimize a model with 34 rows, 116 columns and 448 nonzeros
+Model fingerprint: 0x2f7a145f
+Variable types: 0 continuous, 116 integer (116 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 14.0000000
+Presolve removed 14 rows and 59 columns
+Presolve time: 0.00s
+Presolved: 20 rows, 57 columns, 159 nonzeros
+Variable types: 0 continuous, 57 integer (57 binary)
+Found heuristic solution: objective 13.0000000
+
+Root relaxation: objective 8.000000e+00, 18 iterations, 0.00 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    8.00000    0    5   13.00000    8.00000  38.5%     -    0s
+H    0     0                       9.0000000    8.00000  11.1%     -    0s
+H    0     0                       8.0000000    8.00000  0.00%     -    0s
+     0     0    8.00000    0    5    8.00000    8.00000  0.00%     -    0s
+
+Explored 1 nodes (18 simplex iterations) in 0.01 seconds (0.00 work units)
+Thread count was 1 (of 80 available processors)
+
+Solution count 4: 8 9 13 14 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 8.000000000000e+00, best bound 8.000000000000e+00, gap 0.0000%
+Block ((5,), ()) at 0
+Block ((5, 4), (0,)) at 1
+Block ((4,), ()) at 9
+Block ((4,), ()) at 10
+Block ((1,), ()) at 3
+Block ((3, 4), (0,)) at 13
+Block ((4, 2), (0,)) at 11
+### ESTATISTICAS
+runtime: 0.005361080169677734
+Tempo de execução para criação das estruturas: 0.052977 segundos
+
+Tempo de execução do modelo: 0.013176 segundos
+Tempo de execução total: 0.066153 segundos

@@ -1,0 +1,492 @@
+
+Gurobi 10.0.2 (linux64) logging started Thu May  7 21:16:25 2026
+
+Set parameter LogFile to value "logs/rmcsp_05-.txt"
+Gurobi Optimizer version 10.0.2 build v10.0.2rc0 (linux64)
+
+CPU model: Intel(R) Xeon(R) CPU E7- 4850  @ 2.00GHz, instruction set [SSE2]
+Thread count: 40 physical cores, 80 logical processors, using up to 32 threads
+
+Optimize a model with 7483 rows, 506081 columns and 168704370 nonzeros
+Model fingerprint: 0x13f5c0e6
+Variable types: 0 continuous, 506081 integer (506081 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Presolve removed 0 rows and 0 columns (presolve time = 9s) ...
+Presolve removed 0 rows and 0 columns (presolve time = 12s) ...
+Presolve removed 0 rows and 0 columns (presolve time = 17s) ...
+Presolve removed 0 rows and 0 columns (presolve time = 21s) ...
+Presolve removed 732 rows and 501 columns (presolve time = 41s) ...
+Presolve removed 864 rows and 553 columns (presolve time = 47s) ...
+Presolve removed 864 rows and 553 columns (presolve time = 52s) ...
+Presolve removed 864 rows and 590 columns (presolve time = 56s) ...
+Presolve removed 864 rows and 590 columns (presolve time = 61s) ...
+Presolve removed 864 rows and 590 columns (presolve time = 67s) ...
+Presolve removed 4278 rows and 590 columns (presolve time = 70s) ...
+Presolve removed 4278 rows and 590 columns (presolve time = 75s) ...
+Presolve removed 4278 rows and 590 columns (presolve time = 80s) ...
+Presolve removed 4278 rows and 590 columns (presolve time = 101s) ...
+Presolve removed 4446 rows and 758 columns (presolve time = 110s) ...
+Presolve removed 4446 rows and 758 columns (presolve time = 112s) ...
+Presolve removed 4446 rows and 758 columns (presolve time = 122s) ...
+Presolve removed 4446 rows and 758 columns (presolve time = 125s) ...
+Presolve removed 4446 rows and 758 columns (presolve time = 139s) ...
+Presolve removed 4446 rows and 758 columns (presolve time = 140s) ...
+Presolve removed 4446 rows and 758 columns (presolve time = 145s) ...
+Presolve removed 4446 rows and 758 columns (presolve time = 150s) ...
+Presolve removed 4446 rows and 758 columns (presolve time = 186s) ...
+Presolve removed 4446 rows and 758 columns (presolve time = 190s) ...
+Presolve removed 4478 rows and 758 columns (presolve time = 197s) ...
+Presolve removed 4478 rows and 758 columns (presolve time = 201s) ...
+Presolve removed 4478 rows and 758 columns (presolve time = 206s) ...
+Presolve removed 4478 rows and 948 columns (presolve time = 211s) ...
+Presolve removed 4478 rows and 948 columns (presolve time = 217s) ...
+Presolve removed 4602 rows and 948 columns (presolve time = 220s) ...
+Presolve removed 4602 rows and 948 columns (presolve time = 225s) ...
+Presolve removed 4602 rows and 948 columns (presolve time = 230s) ...
+Presolve removed 4602 rows and 948 columns (presolve time = 250s) ...
+Presolve removed 4638 rows and 984 columns (presolve time = 255s) ...
+Presolve removed 4638 rows and 984 columns (presolve time = 268s) ...
+Presolve removed 4638 rows and 984 columns (presolve time = 270s) ...
+Presolve removed 4638 rows and 984 columns (presolve time = 293s) ...
+Presolve removed 4638 rows and 984 columns (presolve time = 295s) ...
+Presolve removed 4638 rows and 984 columns (presolve time = 300s) ...
+Presolve removed 4638 rows and 984 columns (presolve time = 305s) ...
+Presolve removed 4638 rows and 984 columns (presolve time = 310s) ...
+Presolve removed 4638 rows and 984 columns (presolve time = 345s) ...
+Presolve removed 4638 rows and 984 columns (presolve time = 350s) ...
+Presolve removed 4648 rows and 995 columns (presolve time = 355s) ...
+Presolve removed 4714 rows and 1017 columns (presolve time = 361s) ...
+Presolve removed 4714 rows and 1055 columns (presolve time = 367s) ...
+Presolve removed 4714 rows and 1055 columns (presolve time = 373s) ...
+Presolve removed 4726 rows and 1055 columns (presolve time = 387s) ...
+Presolve removed 4726 rows and 1055 columns (presolve time = 394s) ...
+Presolve removed 4726 rows and 1055 columns (presolve time = 395s) ...
+Presolve removed 4726 rows and 1055 columns (presolve time = 400s) ...
+Presolve removed 4726 rows and 1055 columns (presolve time = 405s) ...
+Presolve removed 4726 rows and 1055 columns (presolve time = 410s) ...
+Presolve removed 4726 rows and 1055 columns (presolve time = 431s) ...
+Presolve removed 4738 rows and 1067 columns (presolve time = 437s) ...
+Presolve removed 4738 rows and 1067 columns (presolve time = 450s) ...
+Presolve removed 4738 rows and 1067 columns (presolve time = 459s) ...
+Presolve removed 4738 rows and 1067 columns (presolve time = 460s) ...
+Presolve removed 4738 rows and 1067 columns (presolve time = 465s) ...
+Presolve removed 4738 rows and 1067 columns (presolve time = 499s) ...
+Presolve removed 4738 rows and 1067 columns (presolve time = 500s) ...
+Presolve removed 4738 rows and 1067 columns (presolve time = 505s) ...
+Presolve removed 4749 rows and 1077 columns (presolve time = 529s) ...
+Presolve removed 4749 rows and 1077 columns (presolve time = 532s) ...
+Presolve removed 4749 rows and 1077 columns (presolve time = 547s) ...
+Presolve removed 4749 rows and 1077 columns (presolve time = 553s) ...
+Presolve removed 4749 rows and 1077 columns (presolve time = 558s) ...
+Presolve removed 4749 rows and 1077 columns (presolve time = 561s) ...
+Presolve removed 4749 rows and 1077 columns (presolve time = 577s) ...
+Presolve removed 4749 rows and 1077 columns (presolve time = 587s) ...
+Presolve removed 4749 rows and 1077 columns (presolve time = 597s) ...
+Presolve removed 4749 rows and 1077 columns (presolve time = 600s) ...
+Presolve removed 4749 rows and 1078 columns (presolve time = 605s) ...
+Presolve removed 4749 rows and 1078 columns (presolve time = 610s) ...
+Presolve removed 4749 rows and 1078 columns (presolve time = 615s) ...
+Presolve removed 4749 rows and 1078 columns (presolve time = 620s) ...
+Presolve removed 4749 rows and 1078 columns (presolve time = 625s) ...
+Presolve removed 4749 rows and 1078 columns (presolve time = 630s) ...
+Presolve removed 4749 rows and 1078 columns (presolve time = 635s) ...
+Presolve removed 4749 rows and 1078 columns (presolve time = 640s) ...
+Presolve removed 4749 rows and 1078 columns (presolve time = 645s) ...
+Presolve removed 4749 rows and 1078 columns (presolve time = 650s) ...
+Presolve removed 4749 rows and 1078 columns (presolve time = 655s) ...
+Presolve removed 4749 rows and 1078 columns (presolve time = 660s) ...
+Presolve removed 4749 rows and 1078 columns (presolve time = 665s) ...
+Presolve removed 4749 rows and 1078 columns (presolve time = 670s) ...
+Presolve removed 4749 rows and 1078 columns (presolve time = 675s) ...
+Presolve removed 4749 rows and 1078 columns (presolve time = 680s) ...
+Presolve removed 4749 rows and 1078 columns (presolve time = 685s) ...
+Presolve removed 4749 rows and 1078 columns (presolve time = 690s) ...
+Presolve removed 4749 rows and 1078 columns (presolve time = 695s) ...
+Presolve removed 4749 rows and 1078 columns (presolve time = 700s) ...
+Presolve removed 4749 rows and 1078 columns (presolve time = 705s) ...
+Presolve removed 4749 rows and 1078 columns (presolve time = 710s) ...
+Presolve removed 4749 rows and 1078 columns (presolve time = 715s) ...
+Presolve removed 4749 rows and 1078 columns (presolve time = 720s) ...
+Presolve removed 4749 rows and 1078 columns (presolve time = 725s) ...
+Presolve removed 4749 rows and 1078 columns (presolve time = 730s) ...
+Presolve removed 4749 rows and 1078 columns (presolve time = 735s) ...
+Presolve removed 4749 rows and 1078 columns (presolve time = 740s) ...
+Presolve removed 4749 rows and 1078 columns (presolve time = 745s) ...
+Presolve removed 4749 rows and 1078 columns (presolve time = 750s) ...
+Presolve removed 4749 rows and 1078 columns (presolve time = 755s) ...
+Presolve removed 4749 rows and 1078 columns (presolve time = 760s) ...
+Presolve removed 4749 rows and 1078 columns (presolve time = 765s) ...
+Presolve removed 4749 rows and 1078 columns (presolve time = 770s) ...
+Presolve removed 4749 rows and 1078 columns (presolve time = 775s) ...
+Presolve removed 4749 rows and 1078 columns (presolve time = 780s) ...
+Presolve removed 4749 rows and 1078 columns (presolve time = 785s) ...
+Presolve removed 4749 rows and 1078 columns (presolve time = 790s) ...
+Presolve removed 4749 rows and 1078 columns (presolve time = 795s) ...
+Presolve removed 4749 rows and 1078 columns (presolve time = 809s) ...
+Presolve removed 4749 rows and 1078 columns (presolve time = 819s) ...
+Presolve removed 4749 rows and 1078 columns (presolve time = 828s) ...
+Presolve removed 4749 rows and 1078 columns (presolve time = 830s) ...
+Presolve removed 4749 rows and 1078 columns (presolve time = 835s) ...
+Presolve removed 4749 rows and 1078 columns (presolve time = 867s) ...
+Presolve removed 4749 rows and 1078 columns (presolve time = 909s) ...
+Presolve removed 4752 rows and 1078 columns (presolve time = 911s) ...
+Presolve removed 4752 rows and 1078 columns (presolve time = 933s) ...
+Presolve removed 4752 rows and 1078 columns
+Presolve time: 933.44s
+Presolved: 2731 rows, 505003 columns, 168192870 nonzeros
+Variable types: 0 continuous, 505003 integer (504988 binary)
+Deterministic concurrent LP optimizer: primal simplex, dual simplex, and barrier
+Showing barrier log only...
+
+Root barrier log...
+
+Ordering time: 0.02s
+
+Barrier statistics:
+ AA' NZ     : 2.021e+06
+ Factor NZ  : 2.203e+06 (roughly 200 MB of memory)
+ Factor Ops : 2.917e+09 (roughly 4 seconds per iteration)
+ Threads    : 30
+
+                  Objective                Residual
+Iter       Primal          Dual         Primal    Dual     Compl     Time
+   0   2.70889512e+06  1.54009098e+02  1.35e+06 0.00e+00  2.69e+00  1194s
+   1   5.07675100e+05  1.26303727e+02  2.49e+05 2.11e-12  5.08e-01  1210s
+   2   3.31057401e+04  2.34278373e+02  1.59e+04 1.72e-12  3.29e-02  1224s
+   3   6.44867751e+03  3.97666466e+02  2.86e+03 4.65e-12  6.08e-03  1242s
+   4   1.64841127e+03  4.63843965e+02  5.42e+02 2.59e-12  1.20e-03  1261s
+   5   6.31285667e+02  4.85075495e+02  5.94e+01 1.34e-12  1.51e-04  1282s
+   6   5.29367824e+02  4.94605729e+02  1.22e+01 9.38e-13  3.67e-05  1303s
+   7   5.14382334e+02  4.98138128e+02  5.89e+00 1.65e-12  1.73e-05  1326s
+   8   5.06121061e+02  4.99352630e+02  1.75e+00 1.16e-12  7.24e-06  1344s
+   9   5.04380471e+02  5.00500535e+02  9.24e-01 9.51e-13  4.17e-06  1359s
+  10   5.03789752e+02  5.00528906e+02  6.54e-01 1.68e-12  3.46e-06  1373s
+  11   5.03207293e+02  5.01128723e+02  3.84e-01 1.96e-12  2.22e-06  1383s
+  12   5.02780994e+02  5.01641653e+02  2.00e-01 1.70e-12  1.22e-06  1395s
+  13   5.02439081e+02  5.02112437e+02  5.60e-02 1.08e-12  3.56e-07  1409s
+  14   5.02276383e+02  5.02164375e+02  1.46e-03 9.67e-13  1.12e-07  1425s
+  15   5.02265119e+02  5.02231153e+02  4.57e-04 1.62e-12  3.45e-08  1445s
+  16   5.02258364e+02  5.02256318e+02  1.91e-05 1.32e-12  2.07e-09  1463s
+  17   5.02257877e+02  5.02257857e+02  2.10e-07 2.09e-12  1.95e-11  1479s
+  18   5.02257864e+02  5.02257864e+02  5.82e-10 1.05e-12  3.40e-14  1493s
+
+Barrier solved model in 18 iterations and 1493.05 seconds (796.45 work units)
+Optimal objective 5.02257864e+02
+
+
+Root crossover log...
+
+    1865 DPushes remaining with DInf 0.0000000e+00              1504s
+    1394 DPushes remaining with DInf 0.0000000e+00              1507s
+    1254 DPushes remaining with DInf 0.0000000e+00              1511s
+    1223 DPushes remaining with DInf 0.0000000e+00              1515s
+
+    1104 PPushes remaining with PInf 0.0000000e+00              1518s
+       0 PPushes remaining with PInf 0.0000000e+00              1518s
+
+  Push phase complete: Pinf 0.0000000e+00, Dinf 8.7041485e-14   1519s
+
+
+Root simplex log...
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+    1749    5.0225786e+02   0.000000e+00   0.000000e+00   1521s
+Concurrent spin time: 0.48s
+
+Solved with barrier
+
+Root relaxation: objective 5.022579e+02, 1749 iterations, 474.31 seconds (263.70 work units)
+Total elapsed time = 1526.74s
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0  502.25786    0  318          -  502.25786      -     - 1608s
+H    0     0                     508.0000000  502.25786  1.13%     - 2037s
+H    0     0                     503.0000000  502.25786  0.15%     - 2126s
+     0     0  502.25786    0  318  503.00000  502.25786  0.15%     - 2126s
+
+Explored 1 nodes (8053 simplex iterations) in 2130.11 seconds (1158.22 work units)
+Thread count was 32 (of 80 available processors)
+
+Solution count 2: 503 508 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 5.030000000000e+02, best bound 5.030000000000e+02, gap 0.0000%
+S1 = ( 2 4 2 2 4 4 3 1 2 4 4 1 2 4 2 1 3 3 3 3 1 1 4 4 1 3 4 4 2 1 4 1 2 2 4 3 1 2 3 4 1 1 4 4 4 2 3 2 3 1 4 4 1 3 2 4 4 2 2 3 3 3 3 3 2 4 1 2 1 3 2 2 1 1 4 2 3 2 1 2 4 2 3 3 3 3 4 3 4 1 2 1 2 4 3 1 2 3 2 4 4 3 2 2 3 2 2 3 4 1 1 4 4 3 4 1 4 2 2 3 1 1 1 3 4 3 1 3 2 2 2 4 1 1 3 1 3 2 4 2 4 2 3 2 1 3 1 1 3 1 2 3 1 3 2 2 2 1 1 1 2 3 4 1 1 4 4 2 4 1 1 4 3 4 2 1 3 1 4 3 1 3 2 1 2 4 3 3 1 4 4 2 1 4 4 3 3 2 2 1 4 4 4 4 2 4 2 3 2 1 4 2 3 1 3 2 3 4 3 3 3 2 2 2 1 4 4 2 1 2 1 4 2 1 4 3 4 1 1 1 2 3 2 3 4 2 3 1 1 1 2 4 2 4 4 4 4 3 3 1 3 4 2 4 4 2 4 3 1 2 1 4 1 4 1 4 2 4 4 2 2 2 2 2 3 3 2 4 2 2 2 2 4 1 4 2 2 2 2 4 3 1 3 1 2 4 3 3 2 1 4 3 3 1 2 4 2 2 4 2 4 2 3 1 2 1 3 1 3 1 1 3 4 2 3 1 4 2 3 1 3 4 3 1 4 3 3 2 3 1 4 2 3 4 3 3 3 2 1 4 1 3 4 1 4 3 2 2 3 2 4 3 1 1 1 2 2 4 2 3 3 4 2 3 2 3 2 3 1 1 1 1 3 1 4 1 1 4 2 2 1 4 2 1 2 3 4 3 2 3 2 2 1 2 1 1 4 2 4 3 4 4 3 1 1 4 2 2 3 4 1 3 4 1 2 3 2 2 3 3 3 3 2 2 2 1 3 3 2 2 4 1 2 4 2 1 1 2 2 4 3 1 3 3 3 4 3 4 1 3 3 1 3 1 4 4 4 1 2 3 1 4 2 2 2 4 4 4 2 1 1 2 1 4 2 4 2 4 1 1 4 1 2 4 1 1 3 1 4 2 4 3 2 2 2 4 2 4 1 3 1 1 1 4 2 4 3 3 2 1 2 3 3 1 2 3 1 1 1 3 3 4 4 2 3 3 3 3 1 4 2 2 1 2 2 1 4 2 3 3 4 1 4 3 3 3 4 4 2 2 2 1 4 4 2 2 4 3 1 2 3 2 1 2 2 4 2 1 1 2 1 2 3 2 2 4 3 3 3 1 3 2 2 2 3 3 2 2 3 1 3 4 4 4 3 4 3 4 4 3 1 4 3 1 4 4 3 4 3 3 1 2 2 1 1 3 4 4 3 1 3 1 4 3 2 1 3 1 3 4 3 3 4 4 3 2 1 1 4 3 2 1 1 3 1 4 1 1 1 4 2 1 4 4 2 2 2 3 1 3 4 3 4 2 1 4 1 2 4 2 1 2 2 4 2 1 2 3 3 1 1 4 4 2 4 1 2 4 4 2 2 4 3 2 3 2 3 2 3 1 3 1 1 2 3 3 2 2 2 4 1 1 2 3 3 1 2 1 4 2 3 2 3 4 2 3 3 1 1 1 4 4 2 1 3 4 3 1 3 3 4 3 1 1 1 3 3 2 3 4 3 1 1 3 2 3 4 1 1 1 2 1 1 1 1 1 1 2 4 1 4 2 4 2 2 2 1 4 3 2 4 1 1 1 2 1 2 1 1 2 4 1 4 4 1 2 3 3 4 4 4 4 4 4 3 3 3 4 4 1 3 1 1 3 2 2 2 1 3 3 4 2 2 2 2 3 3 1 1 3 1 2 2 3 1 4 1 3 2 3 4 4 4 3 1 1 4 3 4 4 2 4 1 1 3 4 3 4 1 4 4 3 3 1 3 4 4 2 2 1 4 2 4 3 3 2 3 3 1 3 1 2 2 4 2 3 1 1 3 3 4 1 2 2 3 2 3 4 3 4 2 2 1 3 4 3 4 4 3 1 2 4 3 1 1 4 2 3 3 4 4 2 3 3 1 1 1 4 2 2 3 2 1 4 4 4 1 1 1 2 4 1 3 4 1 3 4 4 3 3 2 3 2 2 3 3 4 1 1 3 2 4 2 4 2 4 4 2 1 3 3 1 3 3 3 4 4 1 1 3 )
+S2 = ( 2 350 3 3 4 4 82 2 3 3 4 28 1 4 4 3 124 101 1 304 377 216 46 363 284 3 3 1 2 2 2 3 3 402 3 4 3 1 4 2 3 2 2 94 157 1 242 348 253 23 90 266 2 4 365 4 272 117 332 292 3 1 4 1 1 3 1 1 3 3 288 1 3 3 4 4 3 129 179 1 14 1 4 3 2 1 1 3 87 3 1 277 2 204 27 2 262 2 390 4 114 4 145 3 176 247 99 1 1 20 3 4 307 369 1 1 1 4 3 3 4 105 278 1 367 2 4 3 2 1 343 186 1 3 1 3 4 2 3 4 3 2 185 2 359 349 189 342 35 39 2 191 4 2 322 167 125 1 3 5 3 3 324 2 4 159 3 4 2 3 3 2 4 3 4 235 3 44 74 13 352 2 1 160 392 75 338 22 2 71 1 360 2 2 4 2 2 34 286 4 2 158 2 130 2 308 149 4 3 3 3 45 1 1 3 36 250 290 72 3 113 1 136 399 2 1 1 302 6 4 42 2 296 120 1 96 317 4 258 2 166 1 4 2 2 4 383 1 1 52 2 2 268 4 3 1 4 1 198 2 2 2 323 3 376 3 207 2 1 289 1 4 1 57 3 221 326 4 3 4 3 1 1 140 1 3 373 4 4 1 4 353 110 173 3 2 3 2 53 256 1 3 315 1 209 1 309 148 230 11 1 137 3 3 3 395 3 3 3 50 3 4 1 388 267 4 4 85 139 1 276 199 4 239 3 30 270 1 3 70 1 4 1 41 294 381 274 131 168 123 3 1 1 4 1 3 141 1 2 4 255 127 153 65 305 29 1 1 2 4 273 1 107 1 1 2 3 4 303 1 3 4 3 4 1 1 4 193 2 385 4 4 103 3 32 3 2 384 2 184 336 4 2 344 4 3 196 370 155 143 2 401 375 12 112 54 269 3 3 214 4 3 138 4 1 51 3 346 1 2 1 194 4 347 393 3 333 1 1 2 80 156 4 259 219 366 91 1 2 146 1 58 299 1 133 202 4 1 4 73 100 3 1 2 4 25 134 391 1 3 357 3 8 236 3 1 2 4 164 2 1 4 115 1 4 3 2 40 257 228 3 312 4 201 356 2 83 2 222 197 1 310 2 3 178 2 2 240 3 4 4 4 263 362 24 318 170 2 1 1 3 2 3 1 4 1 93 1 3 2 2 38 102 182 2 3 4 3 1 2 212 4 2 378 67 275 1 3 3 389 118 106 281 3 2 144 3 2 62 1 3 1 1 2 3 4 233 280 206 4 2 1 301 218 271 2 227 4 10 48 84 2 345 2 314 337 4 331 4 3 215 3 92 4 81 3 76 132 328 4 368 64 47 3 43 4 2 200 1 4 161 3 1 4 165 371 1 3 4 4 2 2 327 4 2 4 175 97 334 4 3 1 1 279 4 3 3 3 4 2 4 2 169 4 121 2 181 210 4 2 335 4 4 2 2 1 55 382 31 4 2 2 2 3 287 2 387 109 2 104 4 3 320 1 3 241 1 225 243 2 56 355 265 3 1 2 18 285 1 217 1 234 163 231 4 2 4 4 3 398 1 1 3 2 1 2 188 4 4 4 60 4 2 2 2 2 321 3 400 2 3 1 4 147 63 4 190 2 2 3 3 4 4 3 3 2 291 386 282 26 1 4 95 1 245 1 246 17 2 3 2 3 142 254 2 394 2 2 4 319 374 2 1 4 358 2 3 2 78 2 3 2 3 3 261 1 3 1 3 249 1 403 3 3 4 4 2 2 4 3 213 248 1 177 3 19 293 404 126 4 3 2 69 4 1 4 325 1 311 330 205 3 226 1 3 79 4 354 396 2 88 180 4 2 1 3 2 86 2 152 15 3 4 298 4 316 4 4 1 183 1 203 3 3 260 98 1 2 1 306 4 3 1 2 3 4 2 3 2 1 3 237 2 4 3 2 3 252 2 1 4 1 251 341 208 1 1 3 2 1 1 4 1 211 37 329 4 1 339 2 89 1 3 192 340 4 2 4 2 49 2 361 1 1 4 116 128 2 1 108 119 264 4 3 154 1 59 380 4 3 3 151 16 224 4 2 195 4 122 174 3 61 21 66 68 3 3 238 295 1 3 2 300 3 150 1 2 283 372 4 9 3 3 187 4 2 2 3 1 7 162 4 77 1 220 364 1 3 172 2 379 1 3 1 351 223 2 135 4 3 397 1 244 232 297 3 111 2 229 3 1 313 2 1 171 3 33 3 1 3 )
+S1' = ( 2 4, 2 2 4, 4, 3 1 2 4, 4 1, 1 3, 2, 2 1 1, 4, 2, 3, 2, 1, 2 4, 2, 3 3 3, 3, 4, 3, 4, 1 2, 1, 2, 4 3 1 2 3, 2, 4, 4 3 2, 2 3 2 2, 3 4 1, 1 4 4 3, 4 1, 4 2 2 3 1, 1, 1, 3, 4 3, 1 3 2 2, 2, 4, 1, 1 3 1 3, 2, 4 2, 4 2 3 2 1 3, 1, 1, 3 1 2, 3, 1 3 2, 2, 2 1, 1 1 2 3 4, 1, 3 4 3 1 4, 3, 3, 2 3, 1 4, 2, 3, 4 3 3 3, 2 1 4 1, 3, 4 1 4, 3, 2 2 3, 2, 4 3, 1, 1 1, 2, 2 4, 2 3 3 4, 2, 3 2 3 2, 3 1 1, 1, 1, 3 1 4 1 1, 4, 2, 2 1 4, 2, 1, 2 3 4 3 2, 3 2, 2, 1 2 1, 1, 4, 2 4 3 4, 4 3 1 1, 4 2, 2 3 4, 1 3 4, 1 2, 3, 2 2, 3 3 3, 3 2, 2, 2, 1 3, 3, 2 2 4, 1 2 4, 2 1, 1 2, 2 4 3, 1, 3, 3 3 4, 3 4, 1 3, 3 1, 3 1 4, 4 4 1, 2 3 1 4, 2 2 2, 4 4 4, 2, 1, 1 2 1, 4, 2 4 2, 4, 1 1 4 1, 2, 4, 1, 1, 3, 2 1 1 3, 4 4 3, 1 3, 1 4 3 2, 1 3 1 3 4, 3 3 4 4 3, 2 1, 1 4 3 2 1 1 3, 1 4 1, 1, 1 4, 2 1 4, 4 2 2 2 3, 1 3, 4 3, 4 2, 1 4 1, 2, 4, 2, 1, 2 2, 4 2 1, 2, 3 3, 1 1 4, 4 2 4, 1 2, 4, 4 2, 2 4 3 2 3, 2 3 2 3, 1 3 1 1, 2 3 3, 2, 2 2 4, 1 1 2, 3 3 1 2, 1 4, 2 3 2, 3 4 2 3 3, 1 1 1 4, 4 2 1 3, 4 3, 1 3 3, 4, 3, 1, 1, 1, 3 3, 2 3, 4 3 1, 1, 3, 3 4, 4 4, 4 4, 4 3 3 3 4, 4 1 3, 1 1 3 2, 2, 2 1, 3 3, 4 2 2 2 2, 3, 3 1 1, 3 1, 2, 2 3 1 4 1, 3 2, 3 4 4 4, 3, 1 1, 4 3 4, 4 2, 4 1, 1 3, 4 3, 4 1 4, 4 3, 3 1 3, 4 4 2 2 1, 4 2, 4 3 3, 2, 3 3, 1 3 1, 2, 2, 4 2, 3 1 1 3 3, 4, 1, 2, 2, 3, 2 3 4 3, 4 2 2, 1 3 4 3 4, 4, 3 1 2 4, 3, 1, 1 4, 2, 3 3 4 4 2, 3 3, 1, 1 1 4, 2 2, 3 2 1, 4, 4 4, 1, 1 1 2 4, 1 3, 4, 1, 3 4 4 3 3 2, 3, 2 2 3 3, 4, 1 1 3 2, 4 2 4 2, 4, 4 2, 1 3, 3, 1 3, 3 3 4 4, 1 1 3 )
+S2' = ( 2, 3 3 4 4, 2 3 3 4, 1 4 4 3, 1, 3 3 1 2, 2 2 3 3, 3 4 3 1 4, 2 3 2 2, 1, 2 4, 4, 3 1 4 1 1, 3 1 1 3 3, 1, 3 3 4 4 3, 1, 1 4 3 2 1 1 3, 3 1, 2, 2, 2, 4, 4, 3, 1 1, 3 4, 1 1 1 4, 3 3 4, 1, 2 4, 3 2 1, 1 3 1 3 4, 2 3 4 3 2, 2, 2, 4 2, 1 3, 3 3, 2 4, 3 4 2 3 3, 2 4 3 4, 3, 2 1, 2, 1, 2 2 4, 2 2, 4 2, 2, 2, 4 3 3 3, 1 1 3, 3, 1, 2 1 1, 4, 2, 1, 4, 2, 1 4, 2 2 4, 1 1, 2 2, 4 3 1, 4 1, 2 2 2, 3, 3, 2 1, 1 4 1, 3, 4 3 4, 3 1 1, 1 3, 4 4, 1 4, 3 2 3 2, 1 3, 1, 1, 1, 3 3 3, 3 3 3, 3 4 1, 4 4, 1, 4, 3, 1 3, 1 4 1, 3 1 1, 4 1 3, 1 2 4, 1 1 2 4, 1, 1 1 2 3 4, 1 3 4 3 4, 1 1 4, 2, 4 4, 3, 3 2, 2, 4 2, 4 3, 2, 3 3, 4 3, 4 1, 3, 1 2 1, 4, 3, 1 1 2, 4, 1 2, 1, 1, 4 1 4, 3 1 2 4, 1 3, 3, 3 1 2 4, 2 1 4, 1 4 3 2, 3, 4, 2, 2, 1, 2 3, 2 2, 3 4 4 4, 2 1 1 3, 2 3 1 4 1, 1 3 2 2, 2 3 4 3, 1 2, 4 2, 1 3 3, 3 2, 3 2, 1 3 1 1, 2 3 4, 4 2 1, 2, 4, 2, 2, 4, 4 3, 3, 4, 3, 4, 3, 4 2, 1 4, 3 1 4, 1 3 4, 4 2 2, 4 2 4, 4 3 1 1, 4 3 3 3 4, 2 4 2, 4, 2, 4 2, 4 4 2 2 1, 4 2 2 2 3, 2, 2, 4 3, 1 3, 1, 2, 3 1 2, 1, 1, 4 2, 4 4 3, 1 1 3 2, 1 2, 4 4 4, 4 2 2 2 2, 3, 2 3 1 4, 4, 2 2 3, 3 4 4 3 3 2, 1 4, 1, 1, 2 3 2 3, 2, 2 2 4, 2 1 4, 2 3 2, 2 3, 2 3 3, 1 3 1 3, 1, 3 3 4 4 2, 2 4 3, 1, 3, 4 3 2, 4 1 4, 1, 3, 1 3, 4, 2, 4 2 1 3, 2, 2, 3 4, 4, 4 4 1, 1, 3 3, 1 2 1, 4 3 1 2 3, 4 2 3 2 1 3, 2 4 3 2 3, 2 1 4 1, 1 1 3 2, 1 1 4 1, 4 1, 2, 1 3, 4 2 4 2, 2, 1 1 4, 2 1, 4 3, 1, 4 3 3, 4 2, 4, 3, 3 3, 1 3 2, 3, 1 2, 4, 3 3, 4 2 2 3 1, 4, 1, 1 3, 2, 1 3 1, 2, 4 3, 1, 3, 2, 3 1, 2 1, 3, 3 1 3 )
+X = ( 2 4 2 1 3 3 3 3 1 1 4 4 1 3 4 4 2 1 4 1 2 2 4 3 1 2 3 4 1 1 4 4 4 2 3 2 3 1 4 4 1 3 2 4 4 2 2 3 3 3 3 3 2 4 1 2, 1 4 4 2 4 1 1 4 3 4 2 1 3 1 4 3 1 3 2 1 2 4 3 3 1 4 4 2 1 4 4 3 3 2 2 1 4 4 4 4 2 4 2 3 2 1 4 2 3 1 3 2 3 4 3 3 3 2 2 2 1 4 4 2 1 2 1 4 2 1 4 3 4 1 1 1 2 3 2 3 4 2 3 1 1 1 2 4 2 4 4 4 4 3 3 1 3 4 2 4 4 2 4 3 1 2 1 4 1 4 1 4 2 4 4 2 2 2 2 2 3 3 2 4 2 2 2 2 4 1 4 2 2 2 2 4 3 1 3 1 2 4 3 3 2 1 4 3 3 1 2 4 2 2 4 2 4 2 3 1 2 1 3 1 3 1 1 3 4 2 3 1 4 2 3 1, 1 4 2 4 3 2 2 2 4 2 4 1 3 1 1 1 4 2 4 3 3 2 1 2 3 3 1 2 3 1 1 1 3 3 4 4 2 3 3 3 3 1 4 2 2 1 2 2 1 4 2 3 3 4 1 4 3 3 3 4 4 2 2 2 1 4 4 2 2 4 3 1 2 3 2 1 2 2 4 2 1 1 2 1 2 3 2 2 4 3 3 3 1 3 2 2 2 3 3 2 2 3 1 3 4 4 4 3 4 3 4 4 3 1 4 3 1 4 4 3 4 3 3 1 2, 2 3 4 1 1 1 2 1 1 1 1 1 1 2 4 1 4 2 4 2 2 2 1 4 3 2 4 1 1 1 2 1 2 1 1 2 4 1 4 4 1 2 3 )
+Y = ( 350, 82, 28, 124 101, 304 377 216 46 363 284, 402, 94 157, 242 348 253 23 90 266, 365, 272 117 332 292, 288, 129 179, 14, 87, 277, 204 27, 262, 390, 114, 145, 176 247 99, 20, 307 369, 105 278, 367, 343 186, 185, 359 349 189 342 35 39, 191, 322 167 125, 5, 324, 159, 235, 44 74 13 352, 160 392 75 338 22, 71, 360, 34 286, 158, 130, 308 149, 45, 36 250 290 72, 113, 136 399, 302 6, 42, 296 120, 96 317, 258, 166, 383, 52, 268, 198, 323, 376, 207, 289, 57, 221 326, 140, 373, 353 110 173, 53 256, 315, 209, 309 148 230 11, 137, 395, 50, 388 267, 85 139, 276 199, 239, 30 270, 70, 41 294 381 274 131 168 123, 141, 255 127 153 65 305 29, 273, 107, 303, 193, 385, 103, 32, 384, 184 336, 344, 196 370 155 143, 401 375 12 112 54 269, 214, 138, 51, 346, 194, 347 393, 333, 80 156, 259 219 366 91, 146, 58 299, 133 202, 73 100, 25 134 391, 357, 8 236, 164, 115, 40 257 228, 312, 201 356, 83, 222 197, 310, 178, 240, 263 362 24 318 170, 93, 38 102 182, 212, 378 67 275, 389 118 106 281, 144, 62, 233 280 206, 301 218 271, 227, 10 48 84, 345, 314 337, 331, 215, 92, 81, 76 132 328, 368 64 47, 43, 200, 161, 165 371, 327, 175 97 334, 279, 169, 121, 181 210, 335, 55 382 31, 287, 387 109, 104, 320, 241, 225 243, 56 355 265, 18 285, 217, 234 163 231, 398, 188, 60, 321, 400, 147 63, 190, 291 386 282 26, 95, 245, 246 17, 142 254, 394, 319 374, 358, 78, 261, 249, 403, 213 248, 177, 19 293 404 126, 69, 325, 311 330 205, 226, 79, 354 396, 88 180, 86, 152 15, 298, 316, 183, 203, 260 98, 306, 237, 252, 251 341 208, 211 37 329, 339, 89, 192 340, 49, 361, 116 128, 108 119 264, 154, 59 380, 151 16 224, 195, 122 174, 61 21 66 68, 238 295, 300, 150, 283 372, 9, 187, 7 162, 77, 220 364, 172, 379, 351 223, 135, 397, 244 232 297, 111, 229, 313, 171, 33 )
+σ(S1'0) = S2'10
+σ(S1'1) = S2'46
+σ(S1'2) = S2'11
+σ(S1'3) = S2'121
+σ(S1'4) = S2'66
+σ(S1'5) = S2'37
+σ(S1'6) = S2'0
+σ(S1'7) = S2'55
+σ(S1'2) = S2'11
+σ(S1'6) = S2'0
+σ(S1'10) = S2'24
+σ(S1'6) = S2'0
+σ(S1'12) = S2'4
+σ(S1'0) = S2'10
+σ(S1'6) = S2'0
+σ(S1'15) = S2'83
+σ(S1'10) = S2'24
+σ(S1'2) = S2'11
+σ(S1'10) = S2'24
+σ(S1'2) = S2'11
+σ(S1'20) = S2'117
+σ(S1'12) = S2'4
+σ(S1'6) = S2'0
+σ(S1'23) = S2'224
+σ(S1'6) = S2'0
+σ(S1'2) = S2'11
+σ(S1'26) = S2'208
+σ(S1'27) = S2'8
+σ(S1'28) = S2'85
+σ(S1'29) = S2'3
+σ(S1'4) = S2'66
+σ(S1'31) = S2'249
+σ(S1'12) = S2'4
+σ(S1'12) = S2'4
+σ(S1'10) = S2'24
+σ(S1'35) = S2'106
+σ(S1'36) = S2'137
+σ(S1'6) = S2'0
+σ(S1'2) = S2'11
+σ(S1'12) = S2'4
+σ(S1'40) = S2'202
+σ(S1'6) = S2'0
+σ(S1'42) = S2'36
+σ(S1'43) = S2'225
+σ(S1'12) = S2'4
+σ(S1'12) = S2'4
+σ(S1'46) = S2'178
+σ(S1'10) = S2'24
+σ(S1'48) = S2'244
+σ(S1'6) = S2'0
+σ(S1'50) = S2'43
+σ(S1'51) = S2'97
+σ(S1'12) = S2'4
+σ(S1'53) = S2'7
+σ(S1'10) = S2'24
+σ(S1'10) = S2'24
+σ(S1'56) = S2'132
+σ(S1'57) = S2'61
+σ(S1'6) = S2'0
+σ(S1'10) = S2'24
+σ(S1'60) = S2'51
+σ(S1'61) = S2'227
+σ(S1'10) = S2'24
+σ(S1'63) = S2'120
+σ(S1'10) = S2'24
+σ(S1'65) = S2'190
+σ(S1'6) = S2'0
+σ(S1'35) = S2'106
+σ(S1'12) = S2'4
+σ(S1'69) = S2'25
+σ(S1'6) = S2'0
+σ(S1'0) = S2'10
+σ(S1'72) = S2'2
+σ(S1'6) = S2'0
+σ(S1'74) = S2'78
+σ(S1'75) = S2'74
+σ(S1'12) = S2'4
+σ(S1'12) = S2'4
+σ(S1'78) = S2'12
+σ(S1'2) = S2'11
+σ(S1'6) = S2'0
+σ(S1'81) = S2'125
+σ(S1'6) = S2'0
+σ(S1'12) = S2'4
+σ(S1'84) = S2'33
+σ(S1'85) = S2'103
+σ(S1'6) = S2'0
+σ(S1'87) = S2'112
+σ(S1'12) = S2'4
+σ(S1'2) = S2'11
+σ(S1'90) = S2'41
+σ(S1'91) = S2'164
+σ(S1'42) = S2'36
+σ(S1'93) = S2'145
+σ(S1'94) = S2'161
+σ(S1'20) = S2'117
+σ(S1'10) = S2'24
+σ(S1'97) = S2'47
+σ(S1'15) = S2'83
+σ(S1'85) = S2'103
+σ(S1'6) = S2'0
+σ(S1'6) = S2'0
+σ(S1'5) = S2'37
+σ(S1'10) = S2'24
+σ(S1'1) = S2'46
+σ(S1'105) = S2'94
+σ(S1'50) = S2'43
+σ(S1'20) = S2'117
+σ(S1'108) = S2'205
+σ(S1'12) = S2'4
+σ(S1'10) = S2'24
+σ(S1'111) = S2'28
+σ(S1'112) = S2'26
+σ(S1'5) = S2'37
+σ(S1'114) = S2'18
+σ(S1'115) = S2'160
+σ(S1'116) = S2'220
+σ(S1'117) = S2'188
+σ(S1'118) = S2'67
+σ(S1'119) = S2'185
+σ(S1'6) = S2'0
+σ(S1'12) = S2'4
+σ(S1'87) = S2'112
+σ(S1'2) = S2'11
+σ(S1'124) = S2'166
+σ(S1'2) = S2'11
+σ(S1'126) = S2'229
+σ(S1'6) = S2'0
+σ(S1'2) = S2'11
+σ(S1'12) = S2'4
+σ(S1'12) = S2'4
+σ(S1'10) = S2'24
+σ(S1'132) = S2'135
+σ(S1'133) = S2'182
+σ(S1'5) = S2'37
+σ(S1'135) = S2'126
+σ(S1'136) = S2'32
+σ(S1'137) = S2'15
+σ(S1'50) = S2'43
+σ(S1'139) = S2'17
+σ(S1'140) = S2'71
+σ(S1'12) = S2'4
+σ(S1'57) = S2'61
+σ(S1'81) = S2'125
+σ(S1'144) = S2'171
+σ(S1'5) = S2'37
+σ(S1'35) = S2'106
+σ(S1'42) = S2'36
+σ(S1'140) = S2'71
+σ(S1'6) = S2'0
+σ(S1'2) = S2'11
+σ(S1'6) = S2'0
+σ(S1'12) = S2'4
+σ(S1'97) = S2'47
+σ(S1'154) = S2'146
+σ(S1'6) = S2'0
+σ(S1'156) = S2'38
+σ(S1'157) = S2'99
+σ(S1'158) = S2'163
+σ(S1'20) = S2'117
+σ(S1'2) = S2'11
+σ(S1'42) = S2'36
+σ(S1'162) = S2'226
+σ(S1'163) = S2'195
+σ(S1'164) = S2'144
+σ(S1'165) = S2'201
+σ(S1'6) = S2'0
+σ(S1'1) = S2'46
+σ(S1'168) = S2'115
+σ(S1'169) = S2'5
+σ(S1'57) = S2'61
+σ(S1'171) = S2'199
+σ(S1'172) = S2'40
+σ(S1'173) = S2'27
+σ(S1'174) = S2'215
+σ(S1'35) = S2'106
+σ(S1'176) = S2'141
+σ(S1'2) = S2'11
+σ(S1'10) = S2'24
+σ(S1'12) = S2'4
+σ(S1'12) = S2'4
+σ(S1'12) = S2'4
+σ(S1'156) = S2'38
+σ(S1'56) = S2'132
+σ(S1'184) = S2'65
+σ(S1'12) = S2'4
+σ(S1'10) = S2'24
+σ(S1'112) = S2'26
+σ(S1'188) = S2'76
+σ(S1'188) = S2'76
+σ(S1'190) = S2'165
+σ(S1'191) = S2'93
+σ(S1'192) = S2'183
+σ(S1'6) = S2'0
+σ(S1'50) = S2'43
+σ(S1'156) = S2'38
+σ(S1'196) = S2'186
+σ(S1'10) = S2'24
+σ(S1'75) = S2'74
+σ(S1'114) = S2'18
+σ(S1'6) = S2'0
+σ(S1'201) = S2'136
+σ(S1'85) = S2'103
+σ(S1'203) = S2'134
+σ(S1'10) = S2'24
+σ(S1'69) = S2'25
+σ(S1'206) = S2'73
+σ(S1'42) = S2'36
+σ(S1'4) = S2'66
+σ(S1'5) = S2'37
+σ(S1'35) = S2'106
+σ(S1'63) = S2'120
+σ(S1'35) = S2'106
+σ(S1'213) = S2'263
+σ(S1'214) = S2'170
+σ(S1'42) = S2'36
+σ(S1'216) = S2'239
+σ(S1'6) = S2'0
+σ(S1'156) = S2'38
+σ(S1'219) = S2'254
+σ(S1'6) = S2'0
+σ(S1'6) = S2'0
+σ(S1'42) = S2'36
+σ(S1'223) = S2'13
+σ(S1'2) = S2'11
+σ(S1'12) = S2'4
+σ(S1'6) = S2'0
+σ(S1'6) = S2'0
+σ(S1'10) = S2'24
+σ(S1'229) = S2'138
+σ(S1'230) = S2'162
+σ(S1'231) = S2'98
+σ(S1'2) = S2'11
+σ(S1'3) = S2'121
+σ(S1'10) = S2'24
+σ(S1'12) = S2'4
+σ(S1'57) = S2'61
+σ(S1'6) = S2'0
+σ(S1'238) = S2'204
+σ(S1'156) = S2'38
+σ(S1'12) = S2'4
+σ(S1'157) = S2'99
+σ(S1'97) = S2'47
+σ(S1'243) = S2'31
+σ(S1'2) = S2'11
+σ(S1'188) = S2'76
+σ(S1'12) = S2'4
+σ(S1'247) = S2'95
+σ(S1'5) = S2'37
+σ(S1'2) = S2'11
+σ(S1'12) = S2'4
+σ(S1'251) = S2'191
+σ(S1'10) = S2'24
+σ(S1'253) = S2'6
+σ(S1'2) = S2'11
+σ(S1'192) = S2'183
+σ(S1'256) = S2'233
+σ(S1'2) = S2'11
+σ(S1'42) = S2'36
+σ(S1'5) = S2'37
+σ(S1'10) = S2'24
+σ(S1'5) = S2'37
+σ(S1'262) = S2'1
+σ(S1'263) = S2'52
+Partições Selecionadas = ( 2 4, 2 2 4, 4, 3 1 2 4, 4 1, 1 3, 2, 2 1 1, 4, 2, 3, 2, 1, 2 4, 2, 3 3 3, 3, 4, 3, 4, 1 2, 1, 2, 4 3 1 2 3, 2, 4, 4 3 2, 2 3 2 2, 3 4 1, 1 4 4 3, 4 1, 4 2 2 3 1, 1, 1, 3, 4 3, 1 3 2 2, 2, 4, 1, 1 3 1 3, 2, 4 2, 4 2 3 2 1 3, 1, 1, 3 1 2, 3, 1 3 2, 2, 2 1, 1 1 2 3 4, 1, 3 4 3 1 4, 3, 3, 2 3, 1 4, 2, 3, 4 3 3 3, 2 1 4 1, 3, 4 1 4, 3, 2 2 3, 2, 4 3, 1, 1 1, 2, 2 4, 2 3 3 4, 2, 3 2 3 2, 3 1 1, 1, 1, 3 1 4 1 1, 4, 2, 2 1 4, 2, 1, 2 3 4 3 2, 3 2, 2, 1 2 1, 1, 4, 2 4 3 4, 4 3 1 1, 4 2, 2 3 4, 1 3 4, 1 2, 3, 2 2, 3 3 3, 3 2, 2, 2, 1 3, 3, 2 2 4, 1 2 4, 2 1, 1 2, 2 4 3, 1, 3, 3 3 4, 3 4, 1 3, 3 1, 3 1 4, 4 4 1, 2 3 1 4, 2 2 2, 4 4 4, 2, 1, 1 2 1, 4, 2 4 2, 4, 1 1 4 1, 2, 4, 1, 1, 3, 2 1 1 3, 4 4 3, 1 3, 1 4 3 2, 1 3 1 3 4, 3 3 4 4 3, 2 1, 1 4 3 2 1 1 3, 1 4 1, 1, 1 4, 2 1 4, 4 2 2 2 3, 1 3, 4 3, 4 2, 1 4 1, 2, 4, 2, 1, 2 2, 4 2 1, 2, 3 3, 1 1 4, 4 2 4, 1 2, 4, 4 2, 2 4 3 2 3, 2 3 2 3, 1 3 1 1, 2 3 3, 2, 2 2 4, 1 1 2, 3 3 1 2, 1 4, 2 3 2, 3 4 2 3 3, 1 1 1 4, 4 2 1 3, 4 3, 1 3 3, 4, 3, 1, 1, 1, 3 3, 2 3, 4 3 1, 1, 3, 3 4, 4 4, 4 4, 4 3 3 3 4, 4 1 3, 1 1 3 2, 2, 2 1, 3 3, 4 2 2 2 2, 3, 3 1 1, 3 1, 2, 2 3 1 4 1, 3 2, 3 4 4 4, 3, 1 1, 4 3 4, 4 2, 4 1, 1 3, 4 3, 4 1 4, 4 3, 3 1 3, 4 4 2 2 1, 4 2, 4 3 3, 2, 3 3, 1 3 1, 2, 2, 4 2, 3 1 1 3 3, 4, 1, 2, 2, 3, 2 3 4 3, 4 2 2, 1 3 4 3 4, 4, 3 1 2 4, 3, 1, 1 4, 2, 3 3 4 4 2, 3 3, 1, 1 1 4, 2 2, 3 2 1, 4, 4 4, 1, 1 1 2 4, 1 3, 4, 1, 3 4 4 3 3 2, 3, 2 2 3 3, 4, 1 1 3 2, 4 2 4 2, 4, 4 2, 1 3, 3, 1 3, 3 3 4 4, 1 1 3 , 2 4 2 1 3 3 3 3 1 1 4 4 1 3 4 4 2 1 4 1 2 2 4 3 1 2 3 4 1 1 4 4 4 2 3 2 3 1 4 4 1 3 2 4 4 2 2 3 3 3 3 3 2 4 1 2, 1 4 4 2 4 1 1 4 3 4 2 1 3 1 4 3 1 3 2 1 2 4 3 3 1 4 4 2 1 4 4 3 3 2 2 1 4 4 4 4 2 4 2 3 2 1 4 2 3 1 3 2 3 4 3 3 3 2 2 2 1 4 4 2 1 2 1 4 2 1 4 3 4 1 1 1 2 3 2 3 4 2 3 1 1 1 2 4 2 4 4 4 4 3 3 1 3 4 2 4 4 2 4 3 1 2 1 4 1 4 1 4 2 4 4 2 2 2 2 2 3 3 2 4 2 2 2 2 4 1 4 2 2 2 2 4 3 1 3 1 2 4 3 3 2 1 4 3 3 1 2 4 2 2 4 2 4 2 3 1 2 1 3 1 3 1 1 3 4 2 3 1 4 2 3 1, 1 4 2 4 3 2 2 2 4 2 4 1 3 1 1 1 4 2 4 3 3 2 1 2 3 3 1 2 3 1 1 1 3 3 4 4 2 3 3 3 3 1 4 2 2 1 2 2 1 4 2 3 3 4 1 4 3 3 3 4 4 2 2 2 1 4 4 2 2 4 3 1 2 3 2 1 2 2 4 2 1 1 2 1 2 3 2 2 4 3 3 3 1 3 2 2 2 3 3 2 2 3 1 3 4 4 4 3 4 3 4 4 3 1 4 3 1 4 4 3 4 3 3 1 2, 2 3 4 1 1 1 2 1 1 1 1 1 1 2 4 1 4 2 4 2 2 2 1 4 3 2 4 1 1 1 2 1 2 1 1 2 4 1 4 4 1 2 3 , 350, 82, 28, 124 101, 304 377 216 46 363 284, 402, 94 157, 242 348 253 23 90 266, 365, 272 117 332 292, 288, 129 179, 14, 87, 277, 204 27, 262, 390, 114, 145, 176 247 99, 20, 307 369, 105 278, 367, 343 186, 185, 359 349 189 342 35 39, 191, 322 167 125, 5, 324, 159, 235, 44 74 13 352, 160 392 75 338 22, 71, 360, 34 286, 158, 130, 308 149, 45, 36 250 290 72, 113, 136 399, 302 6, 42, 296 120, 96 317, 258, 166, 383, 52, 268, 198, 323, 376, 207, 289, 57, 221 326, 140, 373, 353 110 173, 53 256, 315, 209, 309 148 230 11, 137, 395, 50, 388 267, 85 139, 276 199, 239, 30 270, 70, 41 294 381 274 131 168 123, 141, 255 127 153 65 305 29, 273, 107, 303, 193, 385, 103, 32, 384, 184 336, 344, 196 370 155 143, 401 375 12 112 54 269, 214, 138, 51, 346, 194, 347 393, 333, 80 156, 259 219 366 91, 146, 58 299, 133 202, 73 100, 25 134 391, 357, 8 236, 164, 115, 40 257 228, 312, 201 356, 83, 222 197, 310, 178, 240, 263 362 24 318 170, 93, 38 102 182, 212, 378 67 275, 389 118 106 281, 144, 62, 233 280 206, 301 218 271, 227, 10 48 84, 345, 314 337, 331, 215, 92, 81, 76 132 328, 368 64 47, 43, 200, 161, 165 371, 327, 175 97 334, 279, 169, 121, 181 210, 335, 55 382 31, 287, 387 109, 104, 320, 241, 225 243, 56 355 265, 18 285, 217, 234 163 231, 398, 188, 60, 321, 400, 147 63, 190, 291 386 282 26, 95, 245, 246 17, 142 254, 394, 319 374, 358, 78, 261, 249, 403, 213 248, 177, 19 293 404 126, 69, 325, 311 330 205, 226, 79, 354 396, 88 180, 86, 152 15, 298, 316, 183, 203, 260 98, 306, 237, 252, 251 341 208, 211 37 329, 339, 89, 192 340, 49, 361, 116 128, 108 119 264, 154, 59 380, 151 16 224, 195, 122 174, 61 21 66 68, 238 295, 300, 150, 283 372, 9, 187, 7 162, 77, 220 364, 172, 379, 351 223, 135, 397, 244 232 297, 111, 229, 313, 171, 33 )
+Tempo de execução para criação das estruturas: 2132.953868 segundos
+Tempo de execução do modelo: 4263.788462 segundos

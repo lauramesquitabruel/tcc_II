@@ -1,0 +1,58 @@
+
+Gurobi 10.0.2 (linux64) logging started Tue May 19 08:39:57 2026
+
+Set parameter LogFile to value "logs/cg/rmcsp_30_10_2_0.6-.txt"
+Gurobi Optimizer version 10.0.2 build v10.0.2rc0 (linux64)
+
+CPU model: Intel(R) Xeon(R) CPU E7- 4850  @ 2.00GHz, instruction set [SSE2]
+Thread count: 40 physical cores, 80 logical processors, using up to 32 threads
+
+Optimize a model with 187 rows, 132 columns and 961 nonzeros
+Model fingerprint: 0x0a0f965c
+Variable types: 0 continuous, 132 integer (132 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Presolve removed 157 rows and 96 columns
+Presolve time: 0.00s
+Presolved: 30 rows, 36 columns, 263 nonzeros
+Variable types: 0 continuous, 36 integer (36 binary)
+Found heuristic solution: objective 21.0000000
+Found heuristic solution: objective 17.0000000
+
+Explored 0 nodes (0 simplex iterations) in 0.01 seconds (0.00 work units)
+Thread count was 32 (of 80 available processors)
+
+Solution count 2: 17 21 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 1.700000000000e+01, best bound 1.700000000000e+01, gap 0.0000%
+S1 = ( 8 3 10 2 5 7 4 10 5 8 9 4 10 7 3 5 7 8 6 4 6 7 1 1 10 9 10 1 6 2 )
+S2 = ( 8 3 10 2 5 7 4 7 4 6 7 1 1 5 10 10 9 8 5 4 10 6 8 7 2 1 6 9 3 10 )
+S1' = ( 8 3 10 2 5 7 4, 10, 5, 8, 9, 4 10, 7, 3, 5, 7, 8, 6, 4 6 7 1 1, 10 9, 10, 1 6, 2 )
+S2' = ( 8 3 10 2 5 7 4, 7, 4 6 7 1 1, 5, 10, 10 9, 8, 5, 4 10, 6, 8, 7, 2, 1 6, 9, 3, 10 )
+X = (  )
+Y = (  )
+σ(S1'0) = S2'0
+σ(S1'1) = S2'4
+σ(S1'2) = S2'3
+σ(S1'3) = S2'6
+σ(S1'4) = S2'14
+σ(S1'5) = S2'8
+σ(S1'6) = S2'1
+σ(S1'7) = S2'15
+σ(S1'2) = S2'3
+σ(S1'6) = S2'1
+σ(S1'3) = S2'6
+σ(S1'11) = S2'9
+σ(S1'12) = S2'2
+σ(S1'13) = S2'5
+σ(S1'1) = S2'4
+σ(S1'15) = S2'13
+σ(S1'16) = S2'12
+Partições Selecionadas = ( 8 3 10 2 5 7 4, 10, 5, 8, 9, 4 10, 7, 3, 5, 7, 8, 6, 4 6 7 1 1, 10 9, 10, 1 6, 2 )
+Tempo de execução para criação das estruturas: 0.056406 segundos
+Tempo de execução do modelo: 0.012925 segundos
+Tempo de execução total: 0.069330 segundos

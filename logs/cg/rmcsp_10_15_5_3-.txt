@@ -1,0 +1,55 @@
+
+Gurobi 10.0.2 (linux64) logging started Tue May 19 08:39:36 2026
+
+Set parameter LogFile to value "logs/cg/rmcsp_10_15_5_3-.txt"
+Gurobi Optimizer version 10.0.2 build v10.0.2rc0 (linux64)
+
+CPU model: Intel(R) Xeon(R) CPU E7- 4850  @ 2.00GHz, instruction set [SSE2]
+Thread count: 40 physical cores, 80 logical processors, using up to 32 threads
+
+Optimize a model with 68 rows, 65 columns and 346 nonzeros
+Model fingerprint: 0xd6bf0a4f
+Variable types: 0 continuous, 65 integer (65 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 10.0000000
+Presolve removed 51 rows and 34 columns
+Presolve time: 0.00s
+Presolved: 17 rows, 31 columns, 100 nonzeros
+Variable types: 0 continuous, 31 integer (31 binary)
+
+Root relaxation: objective 8.666667e+00, 9 iterations, 0.00 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    8.66667    0    5   10.00000    8.66667  13.3%     -    0s
+*    0     0               0       9.0000000    9.00000  0.00%     -    0s
+
+Explored 1 nodes (10 simplex iterations) in 0.00 seconds (0.00 work units)
+Thread count was 32 (of 80 available processors)
+
+Solution count 2: 9 10 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 9.000000000000e+00, best bound 9.000000000000e+00, gap 0.0000%
+S1 = ( 4 4 3 2 4 5 3 2 1 2 )
+S2 = ( 4 1 4 3 3 2 5 5 1 2 4 2 1 2 2 )
+S1' = ( 4, 4 3, 2 4, 5, 3 2, 1, 2 )
+S2' = ( 4, 1, 4 3, 3 2, 5, 2 4, 2 )
+X = (  )
+Y = ( 5 1, 2 1 2 )
+σ(S1'0) = S2'0
+σ(S1'1) = S2'2
+σ(S1'2) = S2'5
+σ(S1'3) = S2'4
+σ(S1'4) = S2'3
+σ(S1'5) = S2'1
+σ(S1'6) = S2'6
+Partições Selecionadas = ( 4, 4 3, 2 4, 5, 3 2, 1, 2 , 5 1, 2 1 2 )
+Tempo de execução para criação das estruturas: 0.010665 segundos
+Tempo de execução do modelo: 0.011763 segundos
+Tempo de execução total: 0.022429 segundos

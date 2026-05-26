@@ -1,0 +1,54 @@
+Set parameter TimeLimit to value 3600
+Set parameter Threads to value 1
+Warning: constraint name "unicidade de char 0 na str 1" has a space
+Gurobi Optimizer version 10.0.2 build v10.0.2rc0 (linux64)
+
+CPU model: Intel(R) Xeon(R) CPU E7- 4850  @ 2.00GHz, instruction set [SSE2]
+Thread count: 40 physical cores, 80 logical processors, using up to 1 threads
+
+Optimize a model with 25 rows, 47 columns and 97 nonzeros
+Model fingerprint: 0x883e6d5f
+Variable types: 0 continuous, 47 integer (47 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 14.0000000
+Presolve removed 17 rows and 29 columns
+Presolve time: 0.00s
+Presolved: 8 rows, 18 columns, 38 nonzeros
+Found heuristic solution: objective 12.0000000
+Variable types: 0 continuous, 18 integer (18 binary)
+
+Root relaxation: objective 1.100000e+01, 3 iterations, 0.00 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+*    0     0               0      11.0000000   11.00000  0.00%     -    0s
+
+Explored 1 nodes (3 simplex iterations) in 0.00 seconds (0.00 work units)
+Thread count was 1 (of 80 available processors)
+
+Solution count 3: 11 12 14 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 1.100000000000e+01, best bound 1.100000000000e+01, gap 0.0000%
+Block ((5,), ()) at (0, 12)
+Block ((5,), ()) at (4, 9)
+Block ((3,), ()) at (1, 11)
+Block ((1,), ()) at (5, 2)
+Block ((1,), ()) at (6, 6)
+Block ((1, 2), (0,)) at (2, 13)
+Block ((4,), ()) at (7, 10)
+Block ((5, 5), (0,)) at (8, 3)
+Block <gurobi.Var C39 (value 1.0)> at C39
+Block <gurobi.Var C41 (value 1.0)> at C41
+Block <gurobi.Var C43 (value 1.0)> at C43
+### ESTATISTICAS
+runtime: 0.003206968307495117
+Tempo de execução para criação das estruturas: 0.003332 segundos
+
+Tempo de execução do modelo: 0.006572 segundos
+Tempo de execução total: 0.009905 segundos

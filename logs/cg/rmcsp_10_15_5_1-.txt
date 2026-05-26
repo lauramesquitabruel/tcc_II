@@ -1,0 +1,56 @@
+
+Gurobi 10.0.2 (linux64) logging started Tue May 19 08:39:36 2026
+
+Set parameter LogFile to value "logs/cg/rmcsp_10_15_5_1-.txt"
+Gurobi Optimizer version 10.0.2 build v10.0.2rc0 (linux64)
+
+CPU model: Intel(R) Xeon(R) CPU E7- 4850  @ 2.00GHz, instruction set [SSE2]
+Thread count: 40 physical cores, 80 logical processors, using up to 32 threads
+
+Optimize a model with 62 rows, 49 columns and 237 nonzeros
+Model fingerprint: 0x8cd540ea
+Variable types: 0 continuous, 49 integer (49 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 15.0000000
+Presolve removed 42 rows and 19 columns
+Presolve time: 0.00s
+Presolved: 20 rows, 30 columns, 78 nonzeros
+Variable types: 0 continuous, 30 integer (30 binary)
+
+Root relaxation: objective 1.100000e+01, 15 iterations, 0.00 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+*    0     0               0      11.0000000   11.00000  0.00%     -    0s
+
+Explored 1 nodes (15 simplex iterations) in 0.00 seconds (0.00 work units)
+Thread count was 32 (of 80 available processors)
+
+Solution count 2: 11 15 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 1.100000000000e+01, best bound 1.100000000000e+01, gap 0.0000%
+S1 = ( 3 1 5 4 1 2 2 5 3 4 )
+S2 = ( 2 4 4 5 1 4 4 2 1 3 5 1 3 3 1 )
+S1' = ( 3 1, 5, 4, 1, 2, 2, 5, 3, 4 )
+S2' = ( 2, 4, 4, 5, 2, 5, 1, 3, 3 1 )
+X = (  )
+Y = ( 1 4 4, 1 3 )
+σ(S1'0) = S2'8
+σ(S1'1) = S2'3
+σ(S1'2) = S2'1
+σ(S1'3) = S2'6
+σ(S1'4) = S2'0
+σ(S1'4) = S2'0
+σ(S1'1) = S2'3
+σ(S1'7) = S2'7
+σ(S1'2) = S2'1
+Partições Selecionadas = ( 3 1, 5, 4, 1, 2, 2, 5, 3, 4 , 1 4 4, 1 3 )
+Tempo de execução para criação das estruturas: 0.009560 segundos
+Tempo de execução do modelo: 0.011269 segundos
+Tempo de execução total: 0.020829 segundos

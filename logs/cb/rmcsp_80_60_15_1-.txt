@@ -1,0 +1,103 @@
+Set parameter TimeLimit to value 3600
+Set parameter Threads to value 1
+Warning: constraint name "unicidade de char 0 na str 1" has a space
+Gurobi Optimizer version 10.0.2 build v10.0.2rc0 (linux64)
+
+CPU model: Intel(R) Xeon(R) CPU E7- 4850  @ 2.00GHz, instruction set [SSE2]
+Thread count: 40 physical cores, 80 logical processors, using up to 1 threads
+
+Optimize a model with 140 rows, 952 columns and 4387 nonzeros
+Model fingerprint: 0x7cdf9fe8
+Variable types: 0 continuous, 952 integer (952 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 78.0000000
+Presolve removed 12 rows and 89 columns
+Presolve time: 0.05s
+Presolved: 128 rows, 863 columns, 3588 nonzeros
+Variable types: 0 continuous, 863 integer (863 binary)
+Found heuristic solution: objective 77.0000000
+
+Root relaxation: objective 5.272222e+01, 215 iterations, 0.00 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0   52.72222    0   37   77.00000   52.72222  31.5%     -    0s
+H    0     0                      57.0000000   52.72222  7.50%     -    0s
+H    0     0                      55.0000000   52.72222  4.14%     -    0s
+H    0     0                      54.0000000   52.72222  2.37%     -    0s
+
+Cutting planes:
+  Gomory: 1
+
+Explored 1 nodes (414 simplex iterations) in 0.08 seconds (0.03 work units)
+Thread count was 1 (of 80 available processors)
+
+Solution count 5: 54 55 57 ... 78
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 5.400000000000e+01, best bound 5.400000000000e+01, gap 0.0000%
+Block ((3,), ()) at (0, 16)
+Block ((3,), ()) at (18, 55)
+Block ((9,), ()) at (41, 31)
+Block ((5,), ()) at (60, 13)
+Block ((5,), ()) at (78, 4)
+Block ((13,), ()) at (4, 39)
+Block ((13,), ()) at (59, 19)
+Block ((13,), ()) at (79, 58)
+Block ((10,), ()) at (5, 41)
+Block ((10,), ()) at (66, 35)
+Block ((7,), ()) at (12, 32)
+Block ((7,), ()) at (23, 54)
+Block ((7,), ()) at (31, 59)
+Block ((7,), ()) at (67, 15)
+Block ((7,), ()) at (72, 20)
+Block ((11,), ()) at (35, 46)
+Block ((11, 4), (0,)) at (38, 5)
+Block ((11, 4), (0,)) at (70, 56)
+Block ((4,), ()) at (27, 28)
+Block ((4,), ()) at (73, 48)
+Block ((4, 5), (0,)) at (9, 26)
+Block ((1,), ()) at (11, 12)
+Block ((1,), ()) at (58, 44)
+Block ((1,), ()) at (61, 10)
+Block ((2,), ()) at (13, 51)
+Block ((2,), ()) at (19, 25)
+Block ((2,), ()) at (34, 11)
+Block ((15,), ()) at (14, 47)
+Block ((15,), ()) at (55, 14)
+Block ((15, 13), (0,)) at (53, 7)
+Block ((13, 8), (0,)) at (15, 33)
+Block ((8,), ()) at (17, 38)
+Block ((8,), ()) at (22, 45)
+Block ((14,), ()) at (40, 43)
+Block ((12,), ()) at (28, 40)
+Block ((12,), ()) at (32, 42)
+Block ((4, 3), (0,)) at (29, 17)
+Block ((1, 12), (0,)) at (36, 0)
+Block ((10, 1), (0,)) at (42, 36)
+Block ((1, 15), (0,)) at (56, 23)
+Block ((6,), ()) at (45, 9)
+Block ((9, 12), (0,)) at (51, 2)
+Block ((4, 7), (0,)) at (62, 29)
+Block ((4, 6), (0,)) at (68, 49)
+Block ((1, 9), (0,)) at (74, 21)
+Block ((7, 14), (0,)) at (76, 52)
+Block <gurobi.Var C401 (value 1.0)> at C401
+Block <gurobi.Var C411 (value 1.0)> at C411
+Block <gurobi.Var C453 (value 1.0)> at C453
+Block <gurobi.Var C504 (value 1.0)> at C504
+Block <gurobi.Var C556 (value 1.0)> at C556
+Block <gurobi.Var C608 (value 1.0)> at C608
+Block <gurobi.Var C655 (value 1.0)> at C655
+Block <gurobi.Var C859 (value 1.0)> at C859
+### ESTATISTICAS
+runtime: 0.08305716514587402
+Tempo de execução para criação das estruturas: 0.084475 segundos
+
+Tempo de execução do modelo: 0.094854 segundos
+Tempo de execução total: 0.179329 segundos
