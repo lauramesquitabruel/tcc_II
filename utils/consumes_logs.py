@@ -4,8 +4,8 @@ import csv
 from pathlib import Path
 
 def main():
-    #models = ["cg", "cs", "cb"]
-    models = ["cg"]
+    models = ["cg", "cs", "cb"]
+    #models = ["cs"]
     instances = {}
 
     for model in models:
@@ -22,17 +22,14 @@ def main():
             instance_key = None
 
             if match1:
-                print(match1)
                 s1, sigma, seed, frac = match1.groups()
                 s2 = s1
                 instance_key = (s1, sigma, seed, frac)
-            elif match2:
-                print(match2) 
+            elif match2: 
                 s1, s2, sigma, seed = match2.groups()
                 frac = "Random"
                 instance_key = (s1, s2, sigma, seed)
             elif match3:
-                print(match3)
                 index = int(match3.group(1))
                 if index > 4:
                     s1, s2, sigma, frac = "1000", "1000", "1000", "Random"
